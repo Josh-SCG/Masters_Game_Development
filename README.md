@@ -1,6 +1,6 @@
 # Masters_Game_Development
  This repository houses the game that is being developed as a part of my Master's studies
- The accompanying research aspect of this study can be found in [this repository][https://github.com/Josh-SCG/Masters_Research_Project]
+ The accompanying research aspect of this study can be found in [this repository](https://github.com/Josh-SCG/Masters_Research_Project)
  
  # What the goal of this game is
  The intentions behind the development of this game is to create a serious game that will teach users about digital wellbeing.
