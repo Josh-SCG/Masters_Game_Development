@@ -10,7 +10,8 @@ config_version=4
 
 [application]
 
-config/name="HeartBeast Tutorial"
+config/name="Learning Stage"
+config/description="Project centered around learning Godot in preparation for the digital wellbeing serious game development"
 run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
 
