@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/output.png" type="Texture" id=2]
@@ -157,6 +157,25 @@ tracks/0/keys = {
 "values": [ 35, 36, 37, 38, 39, 40, 34 ]
 }
 
+[sub_resource type="Animation" id=25]
+resource_name = "Sleep"
+length = 1.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 55, 56, 56, 57, 57, 58, 58, 58 ]
+}
+
+[sub_resource type="AnimationNodeBlendTree" id=31]
+
 [sub_resource type="AnimationNodeAnimation" id=11]
 animation = "IdleLeft"
 
@@ -207,25 +226,37 @@ min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id=26]
+animation = "Sleep"
+
 [sub_resource type="AnimationNodeStateMachineTransition" id=23]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=24]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
 [sub_resource type="AnimationNodeStateMachine" id=17]
+states/BlendTree/node = SubResource( 31 )
+states/BlendTree/position = Vector2( 680.333, 76.3333 )
 states/Idle/node = SubResource( 15 )
-states/Idle/position = Vector2( 353.667, 117.667 )
+states/Idle/position = Vector2( 353.667, 203 )
 states/Run/node = SubResource( 16 )
-states/Run/position = Vector2( 563, 117.222 )
-transitions = [ "Idle", "Run", SubResource( 23 ), "Run", "Idle", SubResource( 24 ) ]
+states/Run/position = Vector2( 625.667, 187.889 )
+states/Sleep/node = SubResource( 26 )
+states/Sleep/position = Vector2( 500.333, 41.6667 )
+transitions = [ "Idle", "Run", SubResource( 23 ), "Run", "Idle", SubResource( 24 ), "Idle", "Sleep", SubResource( 27 ), "Sleep", "Run", SubResource( 28 ), "Run", "Sleep", SubResource( 29 ), "Sleep", "Idle", SubResource( 30 ) ]
 start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=18]
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -4 )
@@ -251,6 +282,7 @@ anims/RunDown = SubResource( 7 )
 anims/RunLeft = SubResource( 8 )
 anims/RunRight = SubResource( 9 )
 anims/RunUp = SubResource( 10 )
+anims/Sleep = SubResource( 25 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 17 )

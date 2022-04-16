@@ -30,6 +30,9 @@ func _physics_process(delta): #up is negative, reversed in games; strange i forg
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	
+	if Input.is_key_pressed(KEY_S):
+		#animationTree.set("parameters/Run/blend_position", input_vector)
+		animationState.travel("Sleep")
 	velocity = move_and_slide(velocity)
 
 
