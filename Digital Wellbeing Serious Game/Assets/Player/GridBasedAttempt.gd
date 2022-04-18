@@ -1,11 +1,13 @@
 extends KinematicBody2D
 
 #Variables
-const MAX_SPEED = 73
-const ACCELERATION = 500
-const FRICTION = 750
+const WALK_SPEED = 4.0
+const TILE_SIZE = 16
 
-var velocity = Vector2.ZERO
+var initialPosition = Vector2(0,0) 
+var inputDirection = Vector2(0,0) 
+var isMoving = false
+var percentToNextTile = 0.0
 
 var Char1 = preload("res://Assets/Player//Char1.png")
 var Char2 = preload("res://Assets/Player//Char2.png")
@@ -21,31 +23,43 @@ onready var animationState = animationTree.get("parameters/playback")
 #Functions
 func _ready():
 	animationTree.active = true
+	initialPosition = position
+	
 
 func _physics_process(delta): #up is negative, reversed in games; strange i forgot this :p -> had the comment [A,D],[W,S] = [-1,1]
 	changeSprite()
-	movement(delta)
-
-func movement(delta):
-	var input_vector = Vector2.ZERO
-	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-	input_vector = input_vector.normalized()
-	#multiplying by delta makes it so the speed is tied to the games performance,; 
-		#ie. game chugs the movement wont slow
-		
-	if input_vector != Vector2.ZERO:
-		#Animation could work like "if input_vector.x >0: animationPlayer.play("RunRight") w/out AnimTree
-		animationTree.set("parameters/Idle/blend_position", input_vector)
-		animationTree.set("parameters/Run/blend_position", input_vector)
+	if isMoving == false:
+		processPlayerInput()
+	elif inputDirection != Vector2.ZERO:
 		animationState.travel("Run")
-		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
+		move(delta)
 	else:
 		animationState.travel("Idle")
-		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+		isMoving = false
+
+func processPlayerInput():
+	if inputDirection.y == 0:
+		inputDirection.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
+	if inputDirection.x == 0:
+		inputDirection.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 	
-	velocity = move_and_slide(velocity)
-	
+	if inputDirection != Vector2.ZERO:
+		animationTree.set("parameters/Idle/blend_position", inputDirection)
+		animationTree.set("parameters/Run/blend_position", inputDirection)
+		initialPosition = position
+		isMoving = true
+	else:
+		animationState.travel("Idle")
+
+func move(delta):
+	percentToNextTile += WALK_SPEED * delta
+	if percentToNextTile >= 1.0:
+		position = initialPosition + (TILE_SIZE * inputDirection)
+		percentToNextTile = 0.0
+		isMoving = false
+	else:
+		position = initialPosition + (TILE_SIZE * inputDirection * percentToNextTile)
+
 func changeSprite():
 	if Input.is_key_pressed(KEY_1):
 		var mysprite = get_node("Sprite")
@@ -65,5 +79,4 @@ func changeSprite():
 	if Input.is_key_pressed(KEY_6):
 		var mysprite = get_node("Sprite")
 		mysprite.set_texture(Char6)
-
 
