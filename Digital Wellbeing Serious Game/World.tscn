@@ -40,27 +40,27 @@ tile_data = PoolIntArray( 4, 0, 0, 5, 0, 1, 6, 0, 1, 7, 0, 1, 8, 0, 1, 9, 0, 1, 
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 16, 16 )
+position = Vector2( 160, 16 )
 
 [node name="Trees" type="YSort" parent="YSort"]
 
 [node name="Tree" parent="YSort/Trees" instance=ExtResource( 2 )]
-position = Vector2( 8, 56 )
+position = Vector2( 168, 120 )
 
 [node name="Tree2" parent="YSort/Trees" instance=ExtResource( 2 )]
-position = Vector2( 56, 40 )
+position = Vector2( 104, 24 )
 
 [node name="Tree3" parent="YSort/Trees" instance=ExtResource( 2 )]
-position = Vector2( 56, 8 )
+position = Vector2( 72, 24 )
 
 [node name="Tree4" parent="YSort/Trees" instance=ExtResource( 2 )]
-position = Vector2( 40, 56 )
+position = Vector2( 152, 120 )
 
 [node name="Tree5" parent="YSort/Trees" instance=ExtResource( 2 )]
-position = Vector2( 24, 56 )
+position = Vector2( 136, 24 )
 
 [node name="Tree6" parent="YSort/Trees" instance=ExtResource( 2 )]
-position = Vector2( 56, 56 )
+position = Vector2( 120, 24 )
 
 [node name="Tree7" parent="YSort/Trees" instance=ExtResource( 2 )]
-position = Vector2( 56, 24 )
+position = Vector2( 88, 24 )
