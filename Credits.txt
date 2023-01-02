@@ -1,0 +1,2 @@
+Character Sprites generated from "https://retro-sprite-creator.nihey.org/character" by Nihey Takizawa
+UI Elements from "[LPC] Pennomi's UI Elements" by pennomi, Buch and cemkalyincu found at https://opengameart.org/content/lpc-pennomis-ui-elements
