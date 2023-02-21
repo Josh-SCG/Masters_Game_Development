@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Player/Player Sprites/AAAAA.png" type="Texture" id=2]
@@ -23,22 +23,34 @@ animations = [ {
 "speed": 2.0
 } ]
 
+[sub_resource type="CapsuleShape2D" id=9]
+radius = 12.0
+height = 4.0
+
+[sub_resource type="CapsuleShape2D" id=10]
+radius = 14.0
+height = 24.0
+
 [node name="World" type="Node2D"]
 
 [node name="YSort" type="YSort" parent="."]
 
 [node name="NPC" type="KinematicBody2D" parent="YSort"]
-position = Vector2( 80, -16 )
-__meta__ = {
-"_edit_group_": true
-}
+position = Vector2( 80, -15 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/NPC"]
 frames = SubResource( 5 )
-frame = 2
+frame = 1
 playing = true
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/NPC"]
+shape = SubResource( 9 )
+
 [node name="Area2D" type="Area2D" parent="YSort/NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/NPC/Area2D"]
+position = Vector2( 0, 6 )
+shape = SubResource( 10 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 160, 24 )

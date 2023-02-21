@@ -128,7 +128,7 @@ custom_colors/default_color = Color( 1, 1, 1, 1 )
 custom_colors/selection_color = Color( 1, 1, 1, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 tab_size = 10
-text = "Chatacter"
+text = "Character"
 scroll_active = false
 
 [node name="ExitButton" type="TextureButton" parent="MarginContainer/VBoxContainer"]
