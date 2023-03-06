@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 #Variables
-const MAX_SPEED = 80
+const MAX_SPEED = 85
 const ACCELERATION = 500
 const FRICTION = 750
 
@@ -9,6 +9,7 @@ var velocity = Vector2.ZERO
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
+onready var rayCast = $InteractRayCast
 onready var animationState = animationTree.get("parameters/playback")
 onready var globalRef = get_node("/root/Global")
 
@@ -16,15 +17,32 @@ onready var globalRef = get_node("/root/Global")
 func _ready():
 	$Sprite.texture = load(globalRef.spriteSheetRef)
 	animationTree.active = true
+	rayCast.rotation_degrees = 90
 
 func _physics_process(delta): #up is negative, reversed in games; strange i forgot this :p -> had the comment [A,D],[W,S] = [-1,1]
 	movement(delta)
+	rayCastDir(delta)
+
+func rayCastDir(delta):
+	#Setting the direction of the raycast to the direction the player is facing
+	if Input.is_action_pressed("ui_down"):
+		rayCast.rotation_degrees = 0
+	elif Input.is_action_pressed("ui_left"):
+		rayCast.rotation_degrees = 90
+	elif Input.is_action_pressed("ui_up"):
+		rayCast.rotation_degrees = 180
+	elif Input.is_action_pressed("ui_right"):
+		rayCast.rotation_degrees = 270
 
 func movement(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized()
+	#if Input.is_action_pressed("Movement"):
+	#	rayCast.rotation_degrees = (input_vector.angle_to_point(Vector2.ZERO)*180/PI)-90
+	#print(rayCast.rotation_degrees)
+	
 	#multiplying by delta makes it so the speed is tied to the games performance,; 
 		#ie. game chugs the movement wont slow
 		

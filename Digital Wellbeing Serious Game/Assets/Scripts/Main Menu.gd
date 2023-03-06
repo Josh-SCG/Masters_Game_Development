@@ -5,7 +5,7 @@ func _on_StartButton_pressed():
 	get_tree().change_scene("res://World.tscn")
 
 func _on_How_to_Play_Button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Assets/Menu Scenes/How To.tscn")
 
 func _on_CharacterButton_pressed():
 	get_tree().change_scene("res://Assets/Menu Scenes/Character Select.tscn")

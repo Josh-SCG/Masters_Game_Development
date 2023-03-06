@@ -119,7 +119,7 @@ texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
 
 [node name="Label" type="RichTextLabel" parent="MarginContainer/VBoxContainer/CharacterButton"]
-margin_left = 26.0
+margin_left = 24.0
 margin_top = 5.0
 margin_right = 126.0
 margin_bottom = 22.0

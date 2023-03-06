@@ -1,0 +1,185 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Assets/Scripts/How To.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/UI/button_small_pressed.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/button_small_hover.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/button_small_inactive.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/confirm_bg.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fonts/Kenney High.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/UI/dialog_box.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 8
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 7 )
+
+[node name="How to" type="Node"]
+script = ExtResource( 1 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 244.0
+margin_top = 2.0
+margin_right = 322.0
+margin_bottom = 30.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureButton"]
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 70.0
+margin_bottom = 22.0
+mouse_filter = 1
+custom_fonts/normal_font = SubResource( 1 )
+text = "Menu"
+scroll_active = false
+
+[node name="InfoBox" type="Node" parent="."]
+
+[node name="InfoBoxSprite" type="Sprite" parent="InfoBox"]
+position = Vector2( 159.052, 89 )
+scale = Vector2( 1.61512, 1.90625 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Info" type="RichTextLabel" parent="InfoBox/InfoBoxSprite"]
+margin_left = -87.0
+margin_top = -21.0
+margin_right = 88.0
+margin_bottom = 21.0
+mouse_filter = 1
+custom_fonts/normal_font = SubResource( 2 )
+text = "Click Below For more Information"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InfoBox"]
+margin_left = 8.0
+margin_top = 149.0
+margin_right = 312.0
+margin_bottom = 177.0
+
+[node name="Movement" type="TextureButton" parent="InfoBox/HBoxContainer"]
+margin_right = 71.0
+margin_bottom = 28.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Movement"]
+margin_left = 12.0
+margin_top = 9.0
+margin_right = 64.0
+margin_bottom = 24.0
+mouse_filter = 1
+custom_fonts/normal_font = SubResource( 3 )
+text = "Movement"
+scroll_active = false
+
+[node name="Interaction" type="TextureButton" parent="InfoBox/HBoxContainer"]
+margin_left = 75.0
+margin_right = 146.0
+margin_bottom = 28.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Interaction"]
+margin_left = 14.0
+margin_top = 9.0
+margin_right = 66.0
+margin_bottom = 24.0
+mouse_filter = 1
+custom_fonts/normal_font = SubResource( 3 )
+text = "Interact"
+scroll_active = false
+
+[node name="Pausing" type="TextureButton" parent="InfoBox/HBoxContainer"]
+margin_left = 150.0
+margin_right = 221.0
+margin_bottom = 28.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Pausing"]
+margin_left = 16.0
+margin_top = 9.0
+margin_right = 68.0
+margin_bottom = 24.0
+mouse_filter = 1
+custom_fonts/normal_font = SubResource( 3 )
+text = "Pausing"
+scroll_active = false
+
+[node name="Placehold" type="TextureButton" parent="InfoBox/HBoxContainer"]
+margin_left = 225.0
+margin_right = 296.0
+margin_bottom = 28.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Placehold"]
+margin_left = 21.0
+margin_top = 9.0
+margin_right = 73.0
+margin_bottom = 24.0
+mouse_filter = 1
+custom_fonts/normal_font = SubResource( 3 )
+text = "ipsum"
+scroll_active = false
+
+[node name="PageTitle" type="TextureRect" parent="."]
+margin_left = 30.0
+margin_top = 3.0
+margin_right = 124.0
+margin_bottom = 29.0
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PageTitle"]
+margin_left = 15.0
+margin_top = 5.0
+margin_right = 88.0
+margin_bottom = 26.0
+mouse_filter = 1
+custom_colors/default_color = Color( 0.0784314, 0.796078, 0.678431, 1 )
+custom_fonts/normal_font = SubResource( 4 )
+text = "How To Play"
+scroll_active = false
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="InfoBox/HBoxContainer/Movement" to="." method="_on_Movement_pressed"]
+[connection signal="pressed" from="InfoBox/HBoxContainer/Interaction" to="." method="_on_Interaction_pressed"]
+[connection signal="pressed" from="InfoBox/HBoxContainer/Pausing" to="." method="_on_Pausing_pressed"]
