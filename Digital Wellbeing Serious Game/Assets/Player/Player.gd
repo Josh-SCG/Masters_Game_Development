@@ -1,17 +1,17 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 #Variables
 const MAX_SPEED = 85
 const ACCELERATION = 500
 const FRICTION = 750
 
-var velocity = Vector2.ZERO
+#var velocity = Vector2.ZERO
 
-onready var animationPlayer = $AnimationPlayer
-onready var animationTree = $AnimationTree
-onready var rayCast = $InteractRayCast
-onready var animationState = animationTree.get("parameters/playback")
-onready var globalRef = get_node("/root/Global")
+@onready var animationPlayer = $AnimationPlayer
+@onready var animationTree = $AnimationTree
+@onready var rayCast = $InteractRayCast
+@onready var animationState = animationTree.get("parameters/playback")
+@onready var globalRef = get_node("/root/Global")
 
 #Functions
 func _ready():
@@ -23,7 +23,7 @@ func _physics_process(delta): #up is negative, reversed in games; strange i forg
 	movement(delta)
 	rayCastDir(delta)
 
-func rayCastDir(delta):
+func rayCastDir(_delta):
 	#Setting the direction of the raycast to the direction the player is facing
 	if Input.is_action_pressed("ui_down"):
 		rayCast.rotation_degrees = 0
@@ -56,5 +56,5 @@ func movement(delta):
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	
-	velocity = move_and_slide(velocity)
+	move_and_slide()
 	

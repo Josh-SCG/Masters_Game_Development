@@ -1,58 +1,63 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=9 format=3 uid="uid://dhgtogl8s0sjd"]
 
-[ext_resource path="res://Assets/Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Player/Player Sprites/AAAAA.png" type="Texture" id=2]
+[ext_resource type="PackedScene" uid="uid://ygwdpcrdma8n" path="res://Assets/Player/Player.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://cdoglu0sw3itu" path="res://Assets/Player/Player Sprites/AAAAA.png" id="2"]
 
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 32, 32 )
+[sub_resource type="AtlasTexture" id="6"]
+atlas = ExtResource("2")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 2 )
-region = Rect2( 32, 0, 32, 32 )
+[sub_resource type="AtlasTexture" id="7"]
+atlas = ExtResource("2")
+region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 2 )
-region = Rect2( 64, 0, 32, 32 )
+[sub_resource type="AtlasTexture" id="8"]
+atlas = ExtResource("2")
+region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="SpriteFrames" id=5]
-animations = [ {
-"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+[sub_resource type="SpriteFrames" id="5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("6")
+}, {
+"duration": 1.0,
+"texture": SubResource("7")
+}, {
+"duration": 1.0,
+"texture": SubResource("8")
+}],
 "loop": true,
-"name": "default",
+"name": &"default",
 "speed": 2.0
-} ]
+}]
 
-[sub_resource type="CapsuleShape2D" id=9]
+[sub_resource type="CapsuleShape2D" id="9"]
 radius = 12.0
-height = 4.0
-
-[sub_resource type="CapsuleShape2D" id=10]
-radius = 14.0
 height = 24.0
+
+[sub_resource type="CapsuleShape2D" id="10"]
+radius = 13.0
+height = 54.0
 
 [node name="World" type="Node2D"]
 
-[node name="YSort" type="YSort" parent="."]
+[node name="YSort" type="Node2D" parent="."]
 
-[node name="NPC" type="KinematicBody2D" parent="YSort"]
-position = Vector2( 80, -15 )
+[node name="NPC" type="CharacterBody2D" parent="YSort"]
+position = Vector2(80, -15)
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/NPC"]
-frames = SubResource( 5 )
-playing = true
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="YSort/NPC"]
+sprite_frames = SubResource("5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/NPC"]
-shape = SubResource( 9 )
+shape = SubResource("9")
 
 [node name="Area2D" type="Area2D" parent="YSort/NPC"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/NPC/Area2D"]
-position = Vector2( 0, 6 )
-shape = SubResource( 10 )
+position = Vector2(0, 6)
+shape = SubResource("10")
 
-[node name="Player" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 160, 24 )
-__meta__ = {
-"_edit_group_": true
-}
+[node name="Player" parent="YSort" instance=ExtResource("1")]
+position = Vector2(160, 24)

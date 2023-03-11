@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var globalRef = get_node("/root/Global")
+@onready var globalRef = get_node("/root/Global")
 
 func _ready():
 	pass # Replace with function body.
@@ -24,25 +24,25 @@ func changeSprite():
 
 #Sprites to be sourced from: retro-sprite-creator.nihey.org
 
-func _on_GenderButton_pressed():
+func _on_gender_button_pressed():
 	if globalRef.gender == "M":
 		globalRef.gender = "F"
 	elif globalRef.gender == "F":
 		globalRef.gender = "M"
 		
-func _on_SkinToneButton_pressed():
+func _on_skin_tone_button_pressed():
 	if globalRef.skinTone == "W":
 		globalRef.skinTone = "B"
 	elif globalRef.skinTone == "B":
 		globalRef.skinTone = "W"
 
-func _on_OutfitButton_pressed():
+func _on_outfit_button_pressed():
 	if globalRef.outfit == "F":
 		globalRef.outfit = "C"
 	elif globalRef.outfit == "C":
 		globalRef.outfit = "F"
 
-func _on_HairButton_pressed():
+func _on_hair_button_pressed():
 	if globalRef.hairStyle == "S":
 		globalRef.hairStyle = "L"
 	elif globalRef.hairStyle == "L":
@@ -50,21 +50,12 @@ func _on_HairButton_pressed():
 	elif globalRef.hairStyle == "B":
 		globalRef.hairStyle = "S"
 
-func _on_HairColourButton_pressed():
+func _on_hair_colour_button_pressed():
 	if globalRef.hairColour == "D":
 		globalRef.hairColour = "L"
 	elif globalRef.hairColour == "L":
 		globalRef.hairColour = "D"
 		
 
-func _on_DoneButton_pressed():
-	get_tree().change_scene("res://Assets/Menu Scenes/Main Menu.tscn")
-
-
-
-
-
-
-
-
-
+func _on_done_button_pressed():
+	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Main Menu.tscn")
