@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://4tpjnpgvxk31"]
+
+[ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="1_462g3"]
+[ext_resource type="Script" path="res://Assets/Scripts/Dialogue.gd" id="1_fbqwj"]
+[ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="2_cl8ix"]
+[ext_resource type="FontFile" uid="uid://r7pt54bjmcnd" path="res://Assets/Fonts/Kenney Pixel.ttf" id="3_poqo0"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_label.gd" id="5_wpxv4"]
+
+[node name="DialogueWindow" type="CanvasLayer"]
+script = ExtResource("1_fbqwj")
+
+[node name="BackgroundRect" type="NinePatchRect" parent="."]
+offset_left = 70.0
+offset_top = 340.0
+offset_right = 900.0
+offset_bottom = 520.0
+texture = ExtResource("1_462g3")
+
+[node name="MarginContainer" type="MarginContainer" parent="BackgroundRect"]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 18.0
+offset_right = 775.0
+offset_bottom = 142.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackgroundRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Speaker" type="RichTextLabel" parent="BackgroundRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_cl8ix")
+text = "Name"
+fit_content = true
+
+[node name="Text" type="RichTextLabel" parent="BackgroundRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("3_poqo0")
+theme_override_font_sizes/normal_font_size = 24
+text = "Text Text Text"
+fit_content = true
+scroll_active = false
+script = ExtResource("5_wpxv4")
+
+[node name="Options" type="GridContainer" parent="BackgroundRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 4
+
+[node name="OptionButton" type="Button" parent="."]
+visible = false
+offset_left = 129.0
+offset_top = 455.0
+offset_right = 853.0
+offset_bottom = 478.0
+text = "Option"

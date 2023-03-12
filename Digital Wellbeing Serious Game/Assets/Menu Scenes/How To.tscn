@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dhn8ao1ar8nmb" path="res://Assets/UI/button_small_inactive.png" id="5"]
 [ext_resource type="FontFile" uid="uid://baep36n7gkbpu" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="5_yok68"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="8"]
+[ext_resource type="FontFile" uid="uid://hvhsr86weewy" path="res://Assets/Fonts/Kenney Pixel Square.ttf" id="7_wt0tg"]
 
 [node name="How to" type="Node"]
 script = ExtResource("1")
@@ -18,10 +18,10 @@ texture_hover = ExtResource("4")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TextureButton"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 4.0
-offset_right = 87.0
-offset_bottom = 55.0
+offset_left = 15.0
+offset_top = 3.0
+offset_right = 58.0
+offset_bottom = 24.0
 mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("5_yok68")
 text = "Menu"
@@ -30,27 +30,26 @@ scroll_active = false
 [node name="InfoBox" type="Node" parent="."]
 
 [node name="InfoBoxSprite" type="Sprite2D" parent="InfoBox"]
-position = Vector2(548, 253)
+position = Vector2(476, 253)
 scale = Vector2(4.06771, 4.07812)
 texture = ExtResource("6")
 
 [node name="Info" type="RichTextLabel" parent="InfoBox"]
-offset_left = 195.0
-offset_top = 167.0
-offset_right = 912.0
-offset_bottom = 349.0
+offset_left = 119.0
+offset_top = 162.0
+offset_right = 836.0
+offset_bottom = 344.0
 mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("5_yok68")
 theme_override_font_sizes/normal_font_size = 32
 text = "Click Below For more Information"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="InfoBox"]
-offset_left = 255.0
-offset_top = 503.0
-offset_right = 551.0
-offset_bottom = 531.0
+offset_left = 191.0
+offset_top = 430.0
+offset_right = 487.0
+offset_bottom = 458.0
 scale = Vector2(2, 2)
-metadata/_edit_group_ = true
 
 [node name="Movement" type="TextureButton" parent="InfoBox/HBoxContainer"]
 layout_mode = 2
@@ -60,10 +59,10 @@ texture_hover = ExtResource("4")
 
 [node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Movement"]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 9.0
-offset_right = 107.0
-offset_bottom = 36.0
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 57.0
+offset_bottom = 19.0
 mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("5_yok68")
 theme_override_font_sizes/normal_font_size = 8
@@ -78,10 +77,10 @@ texture_hover = ExtResource("4")
 
 [node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Interaction"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 8.0
-offset_right = 87.0
-offset_bottom = 31.0
+offset_left = 18.0
+offset_top = 9.0
+offset_right = 54.0
+offset_bottom = 20.0
 mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("5_yok68")
 theme_override_font_sizes/normal_font_size = 8
@@ -96,10 +95,10 @@ texture_hover = ExtResource("4")
 
 [node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Pausing"]
 layout_mode = 0
-offset_left = 15.0
-offset_top = 8.0
-offset_right = 81.0
-offset_bottom = 31.0
+offset_left = 19.5
+offset_top = 9.0
+offset_right = 52.5
+offset_bottom = 20.0
 mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("5_yok68")
 theme_override_font_sizes/normal_font_size = 8
@@ -124,20 +123,24 @@ theme_override_font_sizes/normal_font_size = 8
 text = "ipsum"
 scroll_active = false
 
-[node name="PageTitle" type="TextureRect" parent="."]
-texture = ExtResource("8")
-expand_mode = 1
-stretch_mode = 1
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 281.0
+offset_top = 12.0
+offset_right = 473.0
+offset_bottom = 76.0
+scale = Vector2(2, 1.5)
+texture = ExtResource("6")
+stretch_mode = 3
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PageTitle"]
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
 layout_mode = 0
-offset_left = 480.0
-offset_top = 14.0
-offset_right = 607.0
-offset_bottom = 68.0
-mouse_filter = 1
-theme_override_fonts/normal_font = ExtResource("5_yok68")
-text = "How To Play"
+offset_left = 35.0
+offset_top = 16.0
+offset_right = 173.0
+offset_bottom = 51.0
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("7_wt0tg")
+text = "How to Play"
 scroll_active = false
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

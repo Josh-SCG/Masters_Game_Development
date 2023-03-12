@@ -1,0 +1,21 @@
+~ start
+Coco: Dialogue Testing 
+- Yes
+- No
+~ testQuestion
+Coco: What is 1+1? ihebiehbviherbv ebviebvieirierybvierbvieir irvirierbveiuriur iriuerbbribierubvrviobeov roieyrbveioybvierbvoeriyvbrivribi ioervbeirbvioer obvrir rviyryeriyreiryveriovor r v rvoierbvierbvoir vor eovivio ryv ivov i
+- 2
+	Coco: Correct.
+	=> END!
+- Window
+	Coco: That's not a number.
+	=> testQuestion
+- 3
+	Coco: Wrong. Try Again.
+	=> testQuestion
+- 4
+	Coco: Wrong. Try Again.
+	=> testQuestion
+
+
+	#Syntax for a function is to have it enabled in settings - then "do function()"

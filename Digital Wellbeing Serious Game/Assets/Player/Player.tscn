@@ -1,12 +1,11 @@
-[gd_scene load_steps=30 format=3 uid="uid://ygwdpcrdma8n"]
+[gd_scene load_steps=29 format=3 uid="uid://ygwdpcrdma8n"]
 
 [ext_resource type="Texture2D" uid="uid://cdoglu0sw3itu" path="res://Assets/Player/Player Sprites/AAAAA.png" id="1"]
 [ext_resource type="Script" path="res://Assets/Player/Player.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://dwq1hbw80577h" path="res://Assets/UI/radiobutton_1.png" id="3"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
-radius = 3.0
-height = 10.0
+radius = 5.0
+height = 20.0
 
 [sub_resource type="Animation" id="2"]
 resource_name = "IdleDown"
@@ -247,16 +246,17 @@ transitions = ["Idle", "Run", SubResource("21"), "Run", "Idle", SubResource("22"
 [sub_resource type="AnimationNodeStateMachinePlayback" id="24"]
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(0, -5)
+position = Vector2(0, -10)
 script = ExtResource("2")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1")
 hframes = 3
 vframes = 4
+region_rect = Rect2(0, 1, 96, 128)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 13)
+position = Vector2(0, 10)
 rotation = -1.5708
 shape = SubResource("1")
 
@@ -273,10 +273,10 @@ parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Run/blend_position = Vector2(-0.0293103, -0.0126147)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
 
 [node name="InteractRayCast" type="RayCast2D" parent="."]
+position = Vector2(0, 11)
+target_position = Vector2(0, 15)
+collision_mask = 15
 collide_with_areas = true
-
-[node name="Sprite" type="Sprite2D" parent="InteractRayCast"]
-position = Vector2(0, 28)
-texture = ExtResource("3")

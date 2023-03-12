@@ -2,7 +2,7 @@ extends Node
 
 #Following functions deal with how the buttons will react to being clicked
 func _on_StartButton_pressed():
-	get_tree().change_scene_to_file("res://World.tscn")
+	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Level Select.tscn")
 
 func _on_How_to_Play_Button_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/How To.tscn")

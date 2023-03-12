@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://bn8sgm8aslbhe"
+path="res://.godot/imported/WorldTest.dialogue-d78dc5aefdf6ca96477d0e6671d1aa04.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/WorldTest.dialogue"
+dest_files=["res://.godot/imported/WorldTest.dialogue-d78dc5aefdf6ca96477d0e6671d1aa04.tres"]
+
+[params]
+

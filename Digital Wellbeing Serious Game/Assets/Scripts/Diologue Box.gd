@@ -1,8 +1,8 @@
 extends TextureRect
 
-export var diologPath = ""
-export var path = ""
-export(float) var textSpeed = 0.05
+@export var diologPath = ""
+@export var path = ""
+@export var textSpeed = 0.05
 
 var diologue
 var phraseNum = 0
@@ -23,13 +23,13 @@ func _process(_delta):
 			$Text.visible_characters = len($Text.text)
 
 func getDiologue() -> Array:
-	var file = File.new()
+	var file = FileAccess.open(diologPath,FileAccess.READ)
 	assert(file.file_exists(diologPath), "File Path Invalid")
 	
-	file.open(diologPath, File.READ)
+	file.open(diologPath, FileAccess.READ)
 	var json = file.get_as_text()
 	
-	var output = parse_json(json)
+	var output = JSON.parse_string(json)
 	
 	if typeof(output) == TYPE_ARRAY:
 		return output
@@ -48,7 +48,7 @@ func nextPhrase() -> void:
 	
 	$Text.visible_characters = 0
 	
-	var file = File.new()
+	var file = FileAccess.open(diologPath,FileAccess.READ)
 	var img = path + diologue[phraseNum]["Name"] + diologue[phraseNum]["Emotion"] + ".png"
 	if file.file_exists(img):
 		$Portrait.texture = load(img)
@@ -59,7 +59,7 @@ func nextPhrase() -> void:
 		$Text.visible_characters += 1
 		
 		$Timer.start()
-		yield($Timer, "timeout")
+		await $Timer.timeout
 		
 	finished = true
 	phraseNum += 1

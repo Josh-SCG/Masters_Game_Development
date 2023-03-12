@@ -1,0 +1,323 @@
+[gd_scene load_steps=19 format=3 uid="uid://dtlp45wv17hrd"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/Level Select.gd" id="1_aa3sn"]
+[ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="1_vbbgi"]
+[ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="2_ul53b"]
+[ext_resource type="Texture2D" uid="uid://c5bq3xhb31qnn" path="res://Assets/UI/portrait.png" id="4_fgyku"]
+[ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="5_eimgj"]
+[ext_resource type="Texture2D" uid="uid://bhhglwkngwtfl" path="res://Assets/UI/button_default_pressed.png" id="6_qd6nr"]
+[ext_resource type="FontFile" uid="uid://hvhsr86weewy" path="res://Assets/Fonts/Kenney Pixel Square.ttf" id="6_qy2gt"]
+[ext_resource type="Texture2D" uid="uid://fa0kbm8kxlrt" path="res://Assets/UI/checkbox_0.png" id="7_fxhi4"]
+[ext_resource type="Texture2D" uid="uid://caj61jfrfikuk" path="res://Assets/UI/button_default_hover.png" id="7_uvanr"]
+[ext_resource type="Texture2D" uid="uid://dvib2yrg4n08h" path="res://Assets/UI/radiobutton_0.png" id="8_n8wag"]
+[ext_resource type="Texture2D" uid="uid://dhn8ao1ar8nmb" path="res://Assets/UI/button_small_inactive.png" id="9_sxo6p"]
+[ext_resource type="Texture2D" uid="uid://dy6p51wpct7l8" path="res://Assets/UI/button_small_pressed.png" id="10_qyd1e"]
+[ext_resource type="Texture2D" uid="uid://sb78a4kb11fd" path="res://Assets/UI/button_small_hover.png" id="11_w48tj"]
+[ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="14_dooxb"]
+[ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="15_bfsrm"]
+[ext_resource type="Texture2D" uid="uid://dtsfn4fnb3cef" path="res://Assets/UI/button_x_inactive.png" id="16_ewt44"]
+[ext_resource type="Texture2D" uid="uid://diip3wlrkbhur" path="res://Assets/UI/button_x_pressed.png" id="17_ycjts"]
+[ext_resource type="Texture2D" uid="uid://pa1lbsj12tk5" path="res://Assets/UI/button_x_hover.png" id="18_lm2l1"]
+
+[node name="Level Select" type="Node2D"]
+script = ExtResource("1_aa3sn")
+
+[node name="Header" type="TextureRect" parent="."]
+offset_left = 376.0
+offset_top = 4.0
+offset_right = 568.0
+offset_bottom = 68.0
+texture = ExtResource("1_vbbgi")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Header"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 178.0
+offset_bottom = 46.0
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("2_ul53b")
+text = "Level Select"
+
+[node name="Menu" type="TextureButton" parent="."]
+offset_right = 71.0
+offset_bottom = 40.0
+texture_normal = ExtResource("9_sxo6p")
+texture_pressed = ExtResource("10_qyd1e")
+texture_hover = ExtResource("11_w48tj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Menu"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 7.0
+offset_right = 53.0
+offset_bottom = 22.0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("6_qy2gt")
+theme_override_font_sizes/normal_font_size = 8
+text = "Menu"
+scroll_active = false
+
+[node name="PhysicalLevelBox" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 70.0
+offset_top = 140.0
+offset_right = 70.0
+offset_bottom = 180.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="PhysicalLevelBox"]
+position = Vector2(76, 107)
+scale = Vector2(3.43103, 3.64493)
+texture = ExtResource("4_fgyku")
+
+[node name="StartPhysicalButton" type="TextureButton" parent="PhysicalLevelBox"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -2.0
+offset_right = 129.0
+offset_bottom = 30.0
+scale = Vector2(1, 1.2)
+texture_normal = ExtResource("5_eimgj")
+texture_pressed = ExtResource("6_qd6nr")
+texture_hover = ExtResource("7_uvanr")
+
+[node name="Name" type="RichTextLabel" parent="PhysicalLevelBox/StartPhysicalButton"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 3.33333
+offset_right = 129.0
+offset_bottom = 33.3333
+scale = Vector2(1, 0.8)
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("6_qy2gt")
+text = "Physical"
+scroll_active = false
+
+[node name="MiniDesc" type="RichTextLabel" parent="PhysicalLevelBox"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 41.0
+offset_right = 162.0
+offset_bottom = 135.0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("2_ul53b")
+theme_override_font_sizes/normal_font_size = 14
+text = "Content on physical aspect of digital wellbeing"
+scroll_active = false
+
+[node name="Complete" type="TextureRect" parent="PhysicalLevelBox"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = -11.0
+offset_right = 173.0
+offset_bottom = 29.0
+texture = ExtResource("7_fxhi4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PhysicalLevelBox"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 180.0
+offset_right = 74.0
+offset_bottom = 220.0
+scale = Vector2(2, 1)
+metadata/_edit_group_ = true
+
+[node name="Score1" type="TextureRect" parent="PhysicalLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="Score2" type="TextureRect" parent="PhysicalLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="Score3" type="TextureRect" parent="PhysicalLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="MentalLevelBox" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 390.0
+offset_top = 140.0
+offset_right = 597.0
+offset_bottom = 403.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="MentalLevelBox"]
+position = Vector2(76, 107)
+scale = Vector2(3.43103, 3.64493)
+texture = ExtResource("4_fgyku")
+
+[node name="StartMentalButton" type="TextureButton" parent="MentalLevelBox"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -2.0
+offset_right = 129.0
+offset_bottom = 30.0
+scale = Vector2(1, 1.2)
+texture_normal = ExtResource("5_eimgj")
+texture_pressed = ExtResource("6_qd6nr")
+texture_hover = ExtResource("7_uvanr")
+
+[node name="Name" type="RichTextLabel" parent="MentalLevelBox/StartMentalButton"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 3.33333
+offset_right = 129.0
+offset_bottom = 33.3333
+scale = Vector2(1, 0.8)
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("6_qy2gt")
+text = "Mental
+"
+scroll_active = false
+
+[node name="MiniDesc" type="RichTextLabel" parent="MentalLevelBox"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 41.0
+offset_right = 162.0
+offset_bottom = 135.0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("2_ul53b")
+theme_override_font_sizes/normal_font_size = 14
+text = "Content on mental aspect of digital wellbeing"
+scroll_active = false
+
+[node name="Complete" type="TextureRect" parent="MentalLevelBox"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = -11.0
+offset_right = 173.0
+offset_bottom = 29.0
+texture = ExtResource("7_fxhi4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MentalLevelBox"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 180.0
+offset_right = 74.0
+offset_bottom = 220.0
+scale = Vector2(2, 1)
+metadata/_edit_group_ = true
+
+[node name="Score1" type="TextureRect" parent="MentalLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="Score2" type="TextureRect" parent="MentalLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="Score3" type="TextureRect" parent="MentalLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="SecurityLevelBox" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 720.0
+offset_top = 140.0
+offset_right = 927.0
+offset_bottom = 403.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="SecurityLevelBox"]
+position = Vector2(76, 107)
+scale = Vector2(3.43103, 3.64493)
+texture = ExtResource("4_fgyku")
+
+[node name="StartSecurityButton" type="TextureButton" parent="SecurityLevelBox"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -2.0
+offset_right = 129.0
+offset_bottom = 30.0
+scale = Vector2(1, 1.2)
+texture_normal = ExtResource("5_eimgj")
+texture_pressed = ExtResource("6_qd6nr")
+texture_hover = ExtResource("7_uvanr")
+
+[node name="Name" type="RichTextLabel" parent="SecurityLevelBox/StartSecurityButton"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 3.33333
+offset_right = 129.0
+offset_bottom = 33.3333
+scale = Vector2(1, 0.8)
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("6_qy2gt")
+text = "Security"
+scroll_active = false
+
+[node name="MiniDesc" type="RichTextLabel" parent="SecurityLevelBox"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 41.0
+offset_right = 162.0
+offset_bottom = 135.0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("2_ul53b")
+theme_override_font_sizes/normal_font_size = 14
+text = "Content on security aspect of digital wellbeing"
+scroll_active = false
+
+[node name="Complete" type="TextureRect" parent="SecurityLevelBox"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = -11.0
+offset_right = 173.0
+offset_bottom = 29.0
+texture = ExtResource("7_fxhi4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SecurityLevelBox"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 180.0
+offset_right = 74.0
+offset_bottom = 220.0
+scale = Vector2(2, 1)
+metadata/_edit_group_ = true
+
+[node name="Score1" type="TextureRect" parent="SecurityLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="Score2" type="TextureRect" parent="SecurityLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="Score3" type="TextureRect" parent="SecurityLevelBox/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("8_n8wag")
+
+[node name="extraInformation" type="TextureRect" parent="."]
+offset_left = 15.0
+offset_top = 391.0
+offset_right = 970.0
+offset_bottom = 529.0
+texture = ExtResource("14_dooxb")
+
+[node name="informationLabel" type="RichTextLabel" parent="extraInformation"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 21.0
+offset_right = 885.0
+offset_bottom = 116.0
+theme_override_fonts/normal_font = ExtResource("15_bfsrm")
+text = "lorum ipsum"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 864.0
+offset_top = 15.0
+offset_right = 888.0
+offset_bottom = 39.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("16_ewt44")
+texture_pressed = ExtResource("17_ycjts")
+texture_hover = ExtResource("18_lm2l1")
+
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

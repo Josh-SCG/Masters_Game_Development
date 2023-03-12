@@ -1,63 +1,22 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhgtogl8s0sjd"]
+[gd_scene load_steps=7 format=3 uid="uid://dhgtogl8s0sjd"]
 
 [ext_resource type="PackedScene" uid="uid://ygwdpcrdma8n" path="res://Assets/Player/Player.tscn" id="1"]
-[ext_resource type="Texture2D" uid="uid://cdoglu0sw3itu" path="res://Assets/Player/Player Sprites/AAAAA.png" id="2"]
-
-[sub_resource type="AtlasTexture" id="6"]
-atlas = ExtResource("2")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="7"]
-atlas = ExtResource("2")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="8"]
-atlas = ExtResource("2")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="5"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("6")
-}, {
-"duration": 1.0,
-"texture": SubResource("7")
-}, {
-"duration": 1.0,
-"texture": SubResource("8")
-}],
-"loop": true,
-"name": &"default",
-"speed": 2.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="9"]
-radius = 12.0
-height = 24.0
-
-[sub_resource type="CapsuleShape2D" id="10"]
-radius = 13.0
-height = 54.0
+[ext_resource type="Script" path="res://Assets/Scripts/UI.gd" id="1_5ekjt"]
+[ext_resource type="PackedScene" uid="uid://4tpjnpgvxk31" path="res://Assets/Diologue/dialogue_window.tscn" id="2_p6so1"]
+[ext_resource type="PackedScene" uid="uid://yus1loxriev2" path="res://Assets/Diologue/portraits_balloon/balloon.tscn" id="3_ho8i6"]
+[ext_resource type="PackedScene" uid="uid://bn20f7mq60o72" path="res://Assets/Diologue/portraits_balloon/small_balloon.tscn" id="4_a1141"]
+[ext_resource type="PackedScene" path="res://npc.tscn" id="5_yqxd7"]
 
 [node name="World" type="Node2D"]
+y_sort_enabled = true
 
-[node name="YSort" type="Node2D" parent="."]
+[node name="UI" type="Node2D" parent="."]
+script = ExtResource("1_5ekjt")
+dialogue_window = ExtResource("2_p6so1")
+Balloon = ExtResource("3_ho8i6")
+SmallBalloon = ExtResource("4_a1141")
 
-[node name="NPC" type="CharacterBody2D" parent="YSort"]
-position = Vector2(80, -15)
-
-[node name="AnimatedSprite" type="AnimatedSprite2D" parent="YSort/NPC"]
-sprite_frames = SubResource("5")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/NPC"]
-shape = SubResource("9")
-
-[node name="Area2D" type="Area2D" parent="YSort/NPC"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/NPC/Area2D"]
-position = Vector2(0, 6)
-shape = SubResource("10")
-
-[node name="Player" parent="YSort" instance=ExtResource("1")]
+[node name="Player" parent="." instance=ExtResource("1")]
 position = Vector2(160, 24)
+
+[node name="NPC" parent="." instance=ExtResource("5_yqxd7")]
