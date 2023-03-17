@@ -3,7 +3,8 @@ extends CanvasLayer
 
 const DIALOGUE_PITCHES = {
 	Nathan = 0.8,
-	Coco = 1
+	Coco = 1,
+	Josh = 0.5
 }
 
 

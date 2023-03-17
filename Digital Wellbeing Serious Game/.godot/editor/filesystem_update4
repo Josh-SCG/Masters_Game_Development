@@ -1,3 +1,6 @@
-res://Assets/Diologue/dialogue_window.tscn
-res://World.tscn
+res://Assets/Player/Player.tscn
+res://npc.tscn
 res://Assets/Diologue/portraits_balloon/balloon.tscn
+res://World.tscn
+res://Assets/Scripts/Shaders/static.gdshader
+res://Assets/Menu Scenes/Main Menu.tscn

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://yus1loxriev2"]
 
 [ext_resource type="Script" path="res://Assets/Diologue/portraits_balloon/balloon.gd" id="1_bdrf4"]
-[ext_resource type="AudioStream" uid="uid://cng7ex3hvatxl" path="res://Assets/Diologue/portraits_balloon/talk.wav" id="2_b2tey"]
+[ext_resource type="AudioStream" uid="uid://roljbcen8wlm" path="res://Assets/Auido/Effects/talk.wav" id="2_bikd5"]
 [ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="3_tk1ed"]
 [ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="4_42geh"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="4_m3ccg"]
@@ -27,7 +27,7 @@ script = ExtResource("1_bdrf4")
 response_template = NodePath("Balloon/Margin/VBox/ResponseTemplate")
 
 [node name="TalkSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_b2tey")
+stream = ExtResource("2_bikd5")
 
 [node name="Balloon" type="NinePatchRect" parent="."]
 texture_filter = 2

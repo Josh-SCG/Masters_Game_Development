@@ -1,0 +1,21 @@
+~ start
+Josh: Dialogue Testing 
+- Yes
+- No
+~ testQuestion
+Josh: What is 1+1? 
+- 2
+	Josh: Correct.
+	=> END!
+- Window
+	Josh: That's not a number.
+	=> testQuestion
+- 3
+	Josh: Wrong. Try Again.
+	=> testQuestion
+- 4
+	Josh: Wrong. Try Again.
+	=> testQuestion
+
+
+	#Syntax for a function is to have it enabled in settings - then "do function()"

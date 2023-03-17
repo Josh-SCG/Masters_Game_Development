@@ -6,13 +6,14 @@ const ACCELERATION = 500
 const FRICTION = 750
 
 #var velocity = Vector2.ZERO
-
 @onready var animationPlayer = $AnimationPlayer
 @onready var animationTree = $AnimationTree
 @onready var rayCast = $InteractRayCast
 @onready var sprite = $Sprite
 @onready var animationState = animationTree.get("parameters/playback")
 @onready var globalRef = get_node("/root/Global")
+
+var isTalking = false
 
 #Functions
 func _ready():
@@ -21,10 +22,12 @@ func _ready():
 	rayCast.rotation_degrees = 90
 
 func _physics_process(delta): #up is negative, reversed in games; strange i forgot this :p -> had the comment [A,D],[W,S] = [-1,1]
-	movement(delta)
-	rayCastDir(delta)
-	if Input.is_action_just_pressed("Interact"):
-		interact(delta)
+	
+	if not isTalking:
+		movement(delta)
+		rayCastDir(delta)
+		if Input.is_action_just_pressed("Interact"):
+			interact(delta)
 
 func rayCastDir(_delta):
 	#Setting the direction of the raycast to the direction the player is facing
@@ -70,4 +73,5 @@ func interact(_delta):
 		return
 	var collidingObject = rayCast.get_collider()
 	if collidingObject.is_in_group("NPC"):
+		isTalking = true
 		collidingObject.startDialogue()

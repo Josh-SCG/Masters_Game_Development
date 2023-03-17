@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdoyqhmsn2wix"]
+[gd_scene load_steps=9 format=3 uid="uid://bdoyqhmsn2wix"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/How To.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://dy6p51wpct7l8" path="res://Assets/UI/button_small_pressed.png" id="3"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dhn8ao1ar8nmb" path="res://Assets/UI/button_small_inactive.png" id="5"]
 [ext_resource type="FontFile" uid="uid://baep36n7gkbpu" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="5_yok68"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="6"]
+[ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="7_eh4ax"]
 [ext_resource type="FontFile" uid="uid://hvhsr86weewy" path="res://Assets/Fonts/Kenney Pixel Square.ttf" id="7_wt0tg"]
 
 [node name="How to" type="Node"]
@@ -40,7 +41,7 @@ offset_top = 162.0
 offset_right = 836.0
 offset_bottom = 344.0
 mouse_filter = 1
-theme_override_fonts/normal_font = ExtResource("5_yok68")
+theme_override_fonts/normal_font = ExtResource("7_eh4ax")
 theme_override_font_sizes/normal_font_size = 32
 text = "Click Below For more Information"
 
@@ -59,12 +60,12 @@ texture_hover = ExtResource("4")
 
 [node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Movement"]
 layout_mode = 0
-offset_left = 15.0
-offset_top = 8.0
-offset_right = 57.0
-offset_bottom = 19.0
+offset_left = 13.0
+offset_top = 8.5
+offset_right = 66.0
+offset_bottom = 19.5
 mouse_filter = 1
-theme_override_fonts/normal_font = ExtResource("5_yok68")
+theme_override_fonts/normal_font = ExtResource("7_eh4ax")
 theme_override_font_sizes/normal_font_size = 8
 text = "Movement"
 scroll_active = false
@@ -77,12 +78,12 @@ texture_hover = ExtResource("4")
 
 [node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Interaction"]
 layout_mode = 0
-offset_left = 18.0
-offset_top = 9.0
-offset_right = 54.0
-offset_bottom = 20.0
+offset_left = 16.5
+offset_top = 8.5
+offset_right = 60.5
+offset_bottom = 19.5
 mouse_filter = 1
-theme_override_fonts/normal_font = ExtResource("5_yok68")
+theme_override_fonts/normal_font = ExtResource("7_eh4ax")
 theme_override_font_sizes/normal_font_size = 8
 text = "Interact"
 scroll_active = false
@@ -95,12 +96,12 @@ texture_hover = ExtResource("4")
 
 [node name="Label" type="RichTextLabel" parent="InfoBox/HBoxContainer/Pausing"]
 layout_mode = 0
-offset_left = 19.5
-offset_top = 9.0
-offset_right = 52.5
-offset_bottom = 20.0
+offset_left = 18.0
+offset_top = 9.5
+offset_right = 64.0
+offset_bottom = 20.5
 mouse_filter = 1
-theme_override_fonts/normal_font = ExtResource("5_yok68")
+theme_override_fonts/normal_font = ExtResource("7_eh4ax")
 theme_override_font_sizes/normal_font_size = 8
 text = "Pausing"
 scroll_active = false
@@ -118,7 +119,7 @@ offset_top = 9.0
 offset_right = 74.0
 offset_bottom = 30.0
 mouse_filter = 1
-theme_override_fonts/normal_font = ExtResource("5_yok68")
+theme_override_fonts/normal_font = ExtResource("7_eh4ax")
 theme_override_font_sizes/normal_font_size = 8
 text = "ipsum"
 scroll_active = false

@@ -1,0 +1,36 @@
+Somewhat top-down pixel game where using devices moves player to a digital world of some kind
+	*Poster idea can be implemented by having a generic poster in-game and when interacted with brings up the full version
+	*Links the pysical wellbeing aspect of that one Feerrar framework nicely into the core gameplay if a ""sanity-like" bar from Amnesia games is implemented
+	*Have social media sections in digi-world that could increase mental health distress depending on given events
+		-ie. If major world event happens, leads to doomscrolling, worse mental health
+
+Link the physical aspects of DW to the interaction with the core design of the game
+	* have a timer to remind them of breaks and have a hard limit - have a quiz for when the user starts again - gotta add some form of active learning engagement ig
+		- have a Xmin timer go off every Ymin when no action is happening for a stretch or two 
+
+Other aspects of DW are in the content of the SG
+	* as per the top point + the sections idea can be expanded to include a security section
+
+Digital wellbeing tools through users lens (Almourad, 2021)
+
+https://www.youtube.com/playlist?list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a
+
+https://opengameart.org - public domain art assets, music, etc...
+
+You are a student at the NWU, lately a few of your friends and class mates are having unhealthy or lackluster experiences
+or relationships with technology. Luckily for you, you recently met DigiBot - a robot intent on developing good reltaionships
+with technology for humans - possibly for the future AI war ;P
+	*Have game map/level layout be based on parts of campus with select areas housing a friend that needs help with 
+	 a specific aspect of digital wellbeing and near them is a portal to DigiBot's world where users will play a level
+	 designed to help understand and better that specific relationship with technology
+	*Can take that quiz idea and use it when explaining to friends:
+		-They ask a question
+		-You give a response from a list
+		-If right move on, else DigiBot reminds/hints towards the right answer
+	* Could have DigiBot quiz the user on the way back to the portal too
+	*Gameplay other that this still needs ideas... maybe a generic 2d hack'n'slash of shooter or have each section need
+	 the player to make use of the knowledge they just learnt to return
+
+
+Users could select a player class akin to warrior, mage, etc. but instead it's stuff like secratary, programmer, etc. which 
+could help specify advice to each user - i.e. digital detox won't be viable for a programmer as the work requires tech

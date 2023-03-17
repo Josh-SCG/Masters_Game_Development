@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_yimnb"]
+
+[resource]
+script = ExtResource("1_yimnb")
+titles = {
+"this_is_a_node_title": "3"
+}
+character_names = PackedStringArray("Nathan")
+first_title = "3"
+lines = {
+"1": {
+"next_id": "3",
+"text": "this_is_a_node_title",
+"type": "title"
+},
+"10": {
+"next_id": "end",
+"next_id_after": "11",
+"text": "End the conversation",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "End the conversation",
+"type": "response"
+},
+"11": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "13",
+"text": "For more information see the online documentation.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "For more information see the online documentation.",
+"type": "dialogue"
+},
+"13": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "4",
+"text": "[[Hi|Hello|Howdy]], this is some dialogue.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hi|Hello|Howdy]], this is some dialogue.",
+"type": "dialogue"
+},
+"4": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "5",
+"text": "Here are some choices.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Here are some choices.",
+"type": "dialogue"
+},
+"5": {
+"next_id": "6",
+"next_id_after": "11",
+"responses": PackedStringArray("5", "7", "9", "10"),
+"text": "First one",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "First one",
+"type": "response"
+},
+"6": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"parent_id": "5",
+"text": "You picked the first one.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You picked the first one.",
+"type": "dialogue"
+},
+"7": {
+"next_id": "8",
+"next_id_after": "11",
+"text": "Second one",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Second one",
+"type": "response"
+},
+"8": {
+"character": "Nathan",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"parent_id": "7",
+"text": "You picked the second one.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You picked the second one.",
+"type": "dialogue"
+},
+"9": {
+"next_id": "3",
+"next_id_after": "11",
+"text": "Start again",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Start again",
+"type": "response"
+}
+}
+metadata/dialogue_manager_version = "2.11.3"

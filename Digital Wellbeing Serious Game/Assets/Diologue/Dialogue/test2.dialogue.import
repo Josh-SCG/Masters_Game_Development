@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://cexvrxokloryl"
+path="res://.godot/imported/test2.dialogue-09ac2d461c74a6d5eb47f4f7200400ce.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/test2.dialogue"
+dest_files=["res://.godot/imported/test2.dialogue-09ac2d461c74a6d5eb47f4f7200400ce.tres"]
+
+[params]
+

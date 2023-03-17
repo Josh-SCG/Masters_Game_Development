@@ -1,0 +1,157 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_mnj1q"]
+
+[resource]
+script = ExtResource("1_mnj1q")
+titles = {
+"start": "2",
+"testQuestion": "6"
+}
+character_names = PackedStringArray("Josh")
+first_title = "2"
+lines = {
+"1": {
+"next_id": "2",
+"text": "start",
+"type": "title"
+},
+"10": {
+"next_id": "11",
+"next_id_after": "end!",
+"text": "Window",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Window",
+"type": "response"
+},
+"11": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "12",
+"parent_id": "10",
+"text": "That's not a number.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "That's not a number.",
+"type": "dialogue"
+},
+"12": {
+"is_snippet": false,
+"next_id": "6",
+"parent_id": "10",
+"type": "goto"
+},
+"13": {
+"next_id": "14",
+"next_id_after": "end!",
+"text": "3",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "3",
+"type": "response"
+},
+"14": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "15",
+"parent_id": "13",
+"text": "Wrong. Try Again.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Wrong. Try Again.",
+"type": "dialogue"
+},
+"15": {
+"is_snippet": false,
+"next_id": "6",
+"parent_id": "13",
+"type": "goto"
+},
+"16": {
+"next_id": "17",
+"next_id_after": "end!",
+"text": "4",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "4",
+"type": "response"
+},
+"17": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "18",
+"parent_id": "16",
+"text": "Wrong. Try Again.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Wrong. Try Again.",
+"type": "dialogue"
+},
+"18": {
+"is_snippet": false,
+"next_id": "6",
+"parent_id": "16",
+"type": "goto"
+},
+"2": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "3",
+"text": "Dialogue Testing",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dialogue Testing",
+"type": "dialogue"
+},
+"3": {
+"next_id": "6",
+"next_id_after": "6",
+"responses": PackedStringArray("3", "4"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"4": {
+"next_id": "6",
+"next_id_after": "6",
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": "response"
+},
+"5": {
+"next_id": "6",
+"text": "testQuestion",
+"type": "title"
+},
+"6": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"text": "What is 1+1?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is 1+1?",
+"type": "dialogue"
+},
+"7": {
+"next_id": "8",
+"next_id_after": "end!",
+"responses": PackedStringArray("7", "10", "13", "16"),
+"text": "2",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "2",
+"type": "response"
+},
+"8": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "9",
+"parent_id": "7",
+"text": "Correct.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Correct.",
+"type": "dialogue"
+},
+"9": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "7",
+"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "2.11.3"

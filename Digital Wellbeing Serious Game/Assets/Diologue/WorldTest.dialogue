@@ -1,20 +1,25 @@
 ~ start
-Coco: Dialogue Testing 
+%1 Josh: Dialogue Testing 
+%3 Josh: Dialogue Testing??
+%3 Josh: Yes?
 - Yes
+	Josh: Okay
 - No
+	Josh: Now you are.
+
 ~ testQuestion
-Coco: What is 1+1? ihebiehbviherbv ebviebvieirierybvierbvieir irvirierbveiuriur iriuerbbribierubvrviobeov roieyrbveioybvierbvoeriyvbrivribi ioervbeirbvioer obvrir rviyryeriyreiryveriovor r v rvoierbvierbvoir vor eovivio ryv ivov i
+Josh: What is 1+1? 
 - 2
-	Coco: Correct.
+	Josh: Correct.
 	=> END!
 - Window
-	Coco: That's not a number.
+	Josh: That's not a number.
 	=> testQuestion
 - 3
-	Coco: Wrong. Try Again.
+	Josh: Wrong. Try Again.
 	=> testQuestion
 - 4
-	Coco: Wrong. Try Again.
+	Josh: Wrong. Try Again.
 	=> testQuestion
 
 

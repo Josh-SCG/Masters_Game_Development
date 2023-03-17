@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 #Following functions deal with how the buttons will react to being clicked
 func _on_StartButton_pressed():
@@ -14,7 +14,7 @@ func _on_ExitButton_pressed():
 	get_tree().quit()
 
 func _on_ResourcesUsedButton_pressed():
-	pass # Replace with function body.
+	OS.shell_open("http://godotengine.org")
 
 
 

@@ -13,6 +13,7 @@ config_version=5
 config/name="Digital Wellbeing Serious Game"
 run/main_scene="res://Assets/Menu Scenes/Main Menu.tscn"
 config/features=PackedStringArray("4.0")
+boot_splash/bg_color=Color(0.0705882, 0.215686, 0.239216, 1)
 config/icon="res://icon.png"
 
 [autoload]
@@ -83,7 +84,7 @@ dialogueInteract={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/WorldTest.dialogue", "res://Assets/Diologue/WorldTest.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/WorldTest.dialogue", "res://Assets/Diologue/WorldTest.dialogue", "res://Assets/Diologue/Dialogue/test2.dialogue", "res://Assets/Diologue/Dialogue/WorldTest.dialogue")
 
 [physics]
 

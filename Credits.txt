@@ -1,3 +1,5 @@
 Character Sprites generated from "https://retro-sprite-creator.nihey.org/character" by Nihey Takizawa
-UI Elements from "[LPC] Pennomi's UI Elements" by pennomi, Buch and cemkalyincu found at https://opengameart.org/content/lpc-pennomis-ui-elements
+UI Elements from "[LPC] Pennomi's UI Elements" by pennomi, Buch and cemkalyincu found at https://opengameart.org/content/lpc-pennomis-ui-elements by pennomi, Buch and cemkalyoncu
 Dialogue Manager plugin from the asset library or https://github.com/nathanhoad/godot_dialogue_manager by nathanhoad
+
+Gum Bot Sprites from https://opengameart.org/content/gum-bot-sprites by GrafxKid and additional frames by me
