@@ -1,4 +1,5 @@
 ~ start
+Josh: [[Hello|Hi|Howdy]]!
 %1 Josh: Dialogue Testing 
 %3 Josh: Dialogue Testing??
 %3 Josh: Yes?
@@ -11,7 +12,10 @@
 Josh: What is 1+1? 
 - 2
 	Josh: Correct.
-	=> END!
+	do Global.testScore +=1
+	do Global.levelComplete1 = 1
+	do Global.chooseQuestions()
+	=> testShowScore
 - Window
 	Josh: That's not a number.
 	=> testQuestion
@@ -22,5 +26,8 @@ Josh: What is 1+1?
 	Josh: Wrong. Try Again.
 	=> testQuestion
 
+~ testShowScore
+Josh: Your score is {{Global.testScore}}
+=> END!
 
 	#Syntax for a function is to have it enabled in settings - then "do function()"

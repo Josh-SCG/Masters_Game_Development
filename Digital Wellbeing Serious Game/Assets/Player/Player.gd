@@ -28,6 +28,11 @@ func _physics_process(delta): #up is negative, reversed in games; strange i forg
 		rayCastDir(delta)
 		if Input.is_action_just_pressed("Interact"):
 			interact(delta)
+		if Input.is_action_just_pressed("Pause"):
+			#Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			#get_tree().change_scene_to_file("res://Assets/Menu Scenes/Level Select.tscn")
+			Global.chooseQuestions()
+			
 
 func rayCastDir(_delta):
 	#Setting the direction of the raycast to the direction the player is facing
