@@ -54,27 +54,33 @@ var level3SessionScore = 0
 #returns this to the dialogue which processes based of a if-else tree;
 #i.e.  (if questionSelected == "phys5a": =>phys5a) 
 
+var numPoolTest = [1,2,3]#,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 var numPool = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 var answerPool = ["a","b","c","d"]
-var questionSelected = ""
+var questionDict = {}
+var qNum = 0
+var qAns = ""
 func chooseQuestions():
 	numPool.shuffle()
-	var questionSelection = []
+	questionDict = {}
 	for i in range(0,10):
 		var answerLoc = answerPool.pick_random()
-		questionSelection.append(str(numPool[i])+answerLoc)
-	print(questionSelection)
+		questionDict[numPool[i]] = answerLoc
+	print(questionDict)
 	
+func chooseQuestionsTest():
+	numPoolTest.shuffle()
+	questionDict = {}
+	for i in range(0,3):#10):
+		var answerLoc = answerPool.pick_random()
+		questionDict[numPool[i]] = answerLoc
+	print(questionDict)
 
+func setQuestion(num):
+	var dictKeys = questionDict.keys()
+	var questionKey = dictKeys[num-1]
+	return questionKey
 
-
-
-
-
-
-
-
-
-
-
-
+func setAnswer(key):
+	var ansLetter = questionDict[key]
+	return ansLetter

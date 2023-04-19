@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://b4ji8ye26yyyx"
+path="res://.godot/imported/questionTest.dialogue-fcbeaf8259f452aec030bb9dba88e6c7.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/questionTest.dialogue"
+dest_files=["res://.godot/imported/questionTest.dialogue-fcbeaf8259f452aec030bb9dba88e6c7.tres"]
+
+[params]
+

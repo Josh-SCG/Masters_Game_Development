@@ -1,0 +1,962 @@
+~ questionSelection
+if Global.qNum == 1
+	do Global.qAns = Global.setAnswer(1)
+	if Global.qAns == "a"
+		=> Q1a
+	elif Global.qAns == "b"
+		=> Q1b
+	elif Global.qAns == "c"
+		=> Q1c
+	elif Global.qAns == "d"
+		=> Q1d
+elif Global.qNum == 2
+ 	do Global.qAns = Global.setAnswer(2)
+	if Global.qAns == "a"
+		=> Q2a
+	elif Global.qAns == "b"
+		=> Q2b
+	elif Global.qAns == "c"
+		=> Q2c
+	elif Global.qAns == "d"
+		=> Q2d
+elif Global.qNum == 3
+	do Global.qAns = Global.setAnswer(3)
+	if Global.qAns == "a"
+		=> Q3a
+	elif Global.qAns == "b"
+		=> Q3b
+	elif Global.qAns == "c"
+		=> Q3c
+	elif Global.qAns == "d"
+		=> Q3d
+elif Global.qNum == 4
+	do Global.qAns = Global.setAnswer(4)
+	if Global.qAns == "a"
+		=> Q4a
+	elif Global.qAns == "b"
+		=> Q4b
+	elif Global.qAns == "c"
+		=> Q4c
+	elif Global.qAns == "d"
+		=> Q4d
+elif Global.qNum == 5
+	do Global.qAns = Global.setAnswer(5)
+	if Global.qAns == "a"
+		=> Q5a
+	elif Global.qAns == "b"
+		=> Q5b
+	elif Global.qAns == "c"
+		=> Q5c
+	elif Global.qAns == "d"
+		=> Q5d
+elif Global.qNum == 6
+	do Global.qAns = Global.setAnswer(6)
+	if Global.qAns == "a"
+		=> Q6a
+	elif Global.qAns == "b"
+		=> Q6b
+	elif Global.qAns == "c"
+		=> Q6c
+	elif Global.qAns == "d"
+		=> Q6d
+elif Global.qNum == 7
+	do Global.qAns = Global.setAnswer(7)
+	if Global.qAns == "a"
+		=> Q7a
+	elif Global.qAns == "b"
+		=> Q7b
+	elif Global.qAns == "c"
+		=> Q7c
+	elif Global.qAns == "d"
+		=> Q7d
+elif Global.qNum == 8
+	do Global.qAns = Global.setAnswer(8)
+	if Global.qAns == "a"
+		=> Q8a
+	elif Global.qAns == "b"
+		=> Q8b
+	elif Global.qAns == "c"
+		=> Q8c
+	elif Global.qAns == "d"
+		=> Q8d
+elif Global.qNum == 9
+	do Global.qAns = Global.setAnswer(9)
+	if Global.qAns == "a"
+		=> Q9a
+	elif Global.qAns == "b"
+		=> Q9b
+	elif Global.qAns == "c"
+		=> Q9c
+	elif Global.qAns == "d"
+		=> Q9d
+elif Global.qNum == 10
+	do Global.qAns = Global.setAnswer(10)
+	if Global.qAns == "a"
+		=> Q10a
+	elif Global.qAns == "b"
+		=> Q10b
+	elif Global.qAns == "c"
+		=> Q10c
+	elif Global.qAns == "d"
+		=> Q10d
+elif Global.qNum == 11
+	do Global.qAns = Global.setAnswer(11)
+	if Global.qAns == "a"
+		=> Q11a
+	elif Global.qAns == "b"
+		=> Q11b
+	elif Global.qAns == "c"
+		=> Q11c
+	elif Global.qAns == "d"
+		=> Q11d
+elif Global.qNum == 12
+	do Global.qAns = Global.setAnswer(12)
+	if Global.qAns == "a"
+		=> Q12a
+	elif Global.qAns == "b"
+		=> Q12b
+	elif Global.qAns == "c"
+		=> Q12c
+	elif Global.qAns == "d"
+		=> Q12d
+elif Global.qNum == 13
+	do Global.qAns = Global.setAnswer(13)
+	if Global.qAns == "a"
+		=> Q13a
+	elif Global.qAns == "b"
+		=> Q13b
+	elif Global.qAns == "c"
+		=> Q13c
+	elif Global.qAns == "d"
+		=> Q13d
+elif Global.qNum == 14
+	do Global.qAns = Global.setAnswer(14)
+	if Global.qAns == "a"
+		=> Q14a
+	elif Global.qAns == "b"
+		=> Q14b
+	elif Global.qAns == "c"
+		=> Q14c
+	elif Global.qAns == "d"
+		=> Q14d
+elif Global.qNum == 15
+	do Global.qAns = Global.setAnswer(15)
+	if Global.qAns == "a"
+		=> Q15a
+	elif Global.qAns == "b"
+		=> Q15b
+	elif Global.qAns == "c"
+		=> Q15c
+	elif Global.qAns == "d"
+		=> Q15d
+elif Global.qNum == 16
+	do Global.qAns = Global.setAnswer(16)
+	if Global.qAns == "a"
+		=> Q16a
+	elif Global.qAns == "b"
+		=> Q16b
+	elif Global.qAns == "c"
+		=> Q16c
+	elif Global.qAns == "d"
+		=> Q16d
+elif Global.qNum == 17
+	do Global.qAns = Global.setAnswer(17)
+	if Global.qAns == "a"
+		=> Q17a
+	elif Global.qAns == "b"
+		=> Q17b
+	elif Global.qAns == "c"
+		=> Q17c
+	elif Global.qAns == "d"
+		=> Q17d
+elif Global.qNum == 18
+	do Global.qAns = Global.setAnswer(18)
+	if Global.qAns == "a"
+		=> Q18a
+	elif Global.qAns == "b"
+		=> Q18b
+	elif Global.qAns == "c"
+		=> Q18c
+	elif Global.qAns == "d"
+		=> Q18d
+elif Global.qNum == 19
+	do Global.qAns = Global.setAnswer(19)
+	if Global.qAns == "a"
+		=> Q19a
+	elif Global.qAns == "b"
+		=> Q19b
+	elif Global.qAns == "c"
+		=> Q19c
+	elif Global.qAns == "d"
+		=> Q19d
+elif Global.qNum == 20
+	do Global.qAns = Global.setAnswer(20)
+	if Global.qAns == "a"
+		=> Q20a
+	elif Global.qAns == "b"
+		=> Q20b
+	elif Global.qAns == "c"
+		=> Q20c
+	elif Global.qAns == "d"
+		=> Q20d
+
+~ Q1a
+Josh: Q1a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q1b
+Josh: Q1b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q1c
+Josh: Q1c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q1d
+Josh: Q1d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q2a
+Josh: Q2a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q2b
+Josh: Q2b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q2c
+Josh: Q2c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q2d
+Josh: Q2d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q3a
+Josh: Q3a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q3b
+Josh: Q3b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q3c
+Josh: Q3c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q3d
+Josh: Q3d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q4a
+Josh: Q4a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q4b
+Josh: Q4b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q4c
+Josh: Q4c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q4d
+Josh: Q4d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q5a
+Josh: Q5a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q5b
+Josh: Q5b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q5c
+Josh: Q5c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q5d
+Josh: Q5d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q6a
+Josh: Q6a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q6b
+Josh: Q6b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q6c
+Josh: Q6c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q6d
+Josh: Q6d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q7a
+Josh: Q7a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q7b
+Josh: Q7b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q7c
+Josh: Q7c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q7d
+Josh: Q7d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q8a
+Josh: Q8a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q8b
+Josh: Q8b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q8c
+Josh: Q8c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q8d
+Josh: Q8d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q9a
+Josh: Q9a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q9b
+Josh: Q9b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q9c
+Josh: Q9c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q9d
+Josh: Q9d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q10a
+Josh: Q10a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q10b
+Josh: Q10b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q10c
+Josh: Q10c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q10d
+Josh: Q10d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q11a
+Josh: Q11a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q11b
+Josh: Q11b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q11c
+Josh: Q11c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q11d
+Josh: Q11d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q12a
+Josh: Q12a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q12b
+Josh: Q12b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q12c
+Josh: Q12c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q12d
+Josh: Q12d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q13a
+Josh: Q13a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q13b
+Josh: Q13b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q13c
+Josh: Q13c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q13d
+Josh: Q13d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q14a
+Josh: Q14a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q14b
+Josh: Q14b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q14c
+Josh: Q14c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q14d
+Josh: Q14d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q15a
+Josh: Q15a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q15b
+Josh: Q15b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q15c
+Josh: Q15c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q15d
+Josh: Q15d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q16a
+Josh: Q16a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q16b
+Josh: Q16b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q16c
+Josh: Q16c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q16d
+Josh: Q16d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q17a
+Josh: Q17a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q17b
+Josh: Q17b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q17c
+Josh: Q17c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q17d
+Josh: Q17d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q18a
+Josh: Q18a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q18b
+Josh: Q18b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q18c
+Josh: Q18c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q18d
+Josh: Q18d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q19a
+Josh: Q19a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q19b
+Josh: Q19b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q19c
+Josh: Q19c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q19d
+Josh: Q19d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ Q20a
+Josh: Q20a
+- Option A Corect
+	do Global.testScore +=1
+- Option B
+- Option C
+- Option D
+=> END
+
+~ Q20b
+Josh: Q20b
+- Option A
+- Option B Corect
+	do Global.testScore +=1
+- Option C
+- Option D
+=> END
+
+~ Q20c
+Josh: Q20c
+- Option A
+- Option B
+- Option C Corect
+	do Global.testScore +=1
+- Option D
+=> END
+
+~ Q20d
+Josh: Q20d
+- Option A
+- Option B
+- Option C
+- Option D Corect
+	do Global.testScore +=1
+=> END
+
+~ securityQ1
+do Global.chooseQuestions()
+do Global.qNum = Global.setQuestion(1)
+=>< questionSelection
+
+~ securityQ2
+do Global.qNum = Global.setQuestion(2)
+=>< questionSelection
+
+~ securityQ3
+do Global.qNum = Global.setQuestion(3)
+=>< questionSelection
+
+~ securityQ4
+do Global.qNum = Global.setQuestion(4)
+=>< questionSelection
+
+~ securityQ5
+do Global.qNum = Global.setQuestion(5)
+=>< questionSelection
+
+~ securityQ6
+do Global.qNum = Global.setQuestion(6)
+=>< questionSelection
+
+~ securityQ7
+do Global.qNum = Global.setQuestion(7)
+=>< questionSelection
+
+~ securityQ8
+do Global.qNum = Global.setQuestion(8)
+=>< questionSelection
+
+~ securityQ9
+do Global.qNum = Global.setQuestion(9)
+=>< questionSelection
+
+~ securityQ10
+do Global.qNum = Global.setQuestion(10)
+=>< questionSelection

@@ -1,0 +1,152 @@
+~ questionSelection
+if Global.qNum == 1
+	do Global.qAns = Global.setAnswer(1)
+	if Global.qAns == "a"
+		=> Q1a
+	elif Global.qAns == "b"
+		=> Q1b
+	elif Global.qAns == "c"
+		=> Q1c
+	elif Global.qAns == "d"
+		=> Q1d
+elif Global.qNum == 2
+ 	do Global.qAns = Global.setAnswer(2)
+	if Global.qAns == "a"
+		=> Q2a
+	elif Global.qAns == "b"
+		=> Q2b
+	elif Global.qAns == "c"
+		=> Q2c
+	elif Global.qAns == "d"
+		=> Q2d
+elif Global.qNum == 3
+	do Global.qAns = Global.setAnswer(3)
+	if Global.qAns == "a"
+		=> Q3a
+	elif Global.qAns == "b"
+		=> Q3b
+	elif Global.qAns == "c"
+		=> Q3c
+	elif Global.qAns == "d"
+		=> Q3d
+
+~ Q1a
+Josh: What is 4 + 7?
+- 11
+	do Global.testScore +=1
+- 12
+- 9
+- 10
+=> END
+
+~ Q1b
+Josh: What is 4 + 7?
+- 12
+- 11
+	do Global.testScore +=1
+- 10
+- 9
+=> END
+
+~ Q1c
+Josh: What is 4 + 7?
+- 10
+- 9
+- 11
+	do Global.testScore +=1
+- 12
+=> END
+
+~ Q1d
+Josh: What is 4 + 7?
+- 12
+- 9
+- 10
+- 11
+	do Global.testScore +=1
+=> END
+
+~ Q2a
+Josh: What is the square root of 64?
+- 8
+	do Global.testScore +=1
+- 2
+- 10
+- 6
+=> END
+
+~ Q2b
+Josh: What is the square root of 64?
+- 10
+- 8
+	do Global.testScore +=1
+- 6
+- 2
+=> END
+
+~ Q2c
+Josh: What is the square root of 64?
+- 2
+- 6
+- 8
+	do Global.testScore +=1
+- 10
+=> END
+
+~ Q2d
+Josh: What is the square root of 64?
+- 6
+- 10
+- 2
+- 8
+	do Global.testScore +=1
+=> END
+
+~ Q3a
+Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?
+- 50
+	do Global.testScore +=1
+- 25
+- 10
+- 5
+=> END
+
+~ Q3b
+Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?
+- 10
+- 50
+	do Global.testScore +=1
+- 5
+- 25
+=> END
+
+~ Q3c
+Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?
+- 25
+- 5
+- 50
+	do Global.testScore +=1
+- 10
+=> END
+
+~ Q3d
+Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?
+- 5
+- 10
+- 25
+- 50
+	do Global.testScore +=1
+=> END
+
+~ testQ1
+do Global.chooseQuestionsTest()
+do Global.qNum = Global.setQuestion(1)
+=>< questionSelection
+
+~ testQ2
+do Global.qNum = Global.setQuestion(2)
+=>< questionSelection
+
+~ testQ3
+do Global.qNum = Global.setQuestion(3)
+=>< questionSelection

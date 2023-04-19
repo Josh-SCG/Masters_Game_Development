@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://b0jvd1awf0uxe"
+path="res://.godot/imported/PhysicalQuestions.dialogue-86b26bc2272361105f35abfb37c5394d.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Question Files/PhysicalQuestions.dialogue"
+dest_files=["res://.godot/imported/PhysicalQuestions.dialogue-86b26bc2272361105f35abfb37c5394d.tres"]
+
+[params]
+

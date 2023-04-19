@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://cyima50jwvpmw"
+path="res://.godot/imported/SecurityQuestions.dialogue-4bdcd382682f3ab0c7a35733b38a3c4f.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Question Files/SecurityQuestions.dialogue"
+dest_files=["res://.godot/imported/SecurityQuestions.dialogue-4bdcd382682f3ab0c7a35733b38a3c4f.tres"]
+
+[params]
+

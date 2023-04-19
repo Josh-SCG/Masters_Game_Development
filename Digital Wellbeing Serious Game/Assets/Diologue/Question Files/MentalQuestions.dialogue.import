@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://dr116fci2y0pb"
+path="res://.godot/imported/MentalQuestions.dialogue-da3a976bca2a18c098ee037758683471.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Question Files/MentalQuestions.dialogue"
+dest_files=["res://.godot/imported/MentalQuestions.dialogue-da3a976bca2a18c098ee037758683471.tres"]
+
+[params]
+

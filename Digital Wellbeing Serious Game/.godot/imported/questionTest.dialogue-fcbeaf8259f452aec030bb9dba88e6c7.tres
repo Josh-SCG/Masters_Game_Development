@@ -1,0 +1,1583 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_lkees"]
+
+[resource]
+script = ExtResource("1_lkees")
+titles = {
+"Q1a": "34",
+"Q1b": "43",
+"Q1c": "52",
+"Q1d": "61",
+"Q2a": "70",
+"Q2b": "79",
+"Q2c": "88",
+"Q2d": "97",
+"Q3a": "106",
+"Q3b": "115",
+"Q3c": "124",
+"Q3d": "133",
+"questionSelection": "2",
+"testQ1": "142",
+"testQ2": "147",
+"testQ3": "151"
+}
+character_names = PackedStringArray("Josh")
+first_title = "2"
+lines = {
+"1": {
+"next_id": "2",
+"text": "questionSelection",
+"type": "title"
+},
+"10": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "34",
+"next_id": "11",
+"next_id_after": "34",
+"parent_id": "2",
+"type": "condition"
+},
+"100": {
+"next_id": "103",
+"next_id_after": "103",
+"text": "2",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "2",
+"type": "response"
+},
+"101": {
+"next_id": "102",
+"next_id_after": "103",
+"text": "8",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "8",
+"type": "response"
+},
+"102": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "103",
+"parent_id": "101",
+"type": "mutation"
+},
+"103": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"105": {
+"next_id": "106",
+"text": "Q3a",
+"type": "title"
+},
+"106": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "107",
+"text": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"type": "dialogue"
+},
+"107": {
+"next_id": "108",
+"next_id_after": "112",
+"responses": PackedStringArray("107", "109", "110", "111"),
+"text": "50",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "50",
+"type": "response"
+},
+"108": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "112",
+"parent_id": "107",
+"type": "mutation"
+},
+"109": {
+"next_id": "112",
+"next_id_after": "112",
+"text": "25",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "25",
+"type": "response"
+},
+"11": {
+"is_snippet": false,
+"next_id": "61",
+"parent_id": "10",
+"type": "goto"
+},
+"110": {
+"next_id": "112",
+"next_id_after": "112",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"111": {
+"next_id": "112",
+"next_id_after": "112",
+"text": "5",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "5",
+"type": "response"
+},
+"112": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"114": {
+"next_id": "115",
+"text": "Q3b",
+"type": "title"
+},
+"115": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "116",
+"text": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"type": "dialogue"
+},
+"116": {
+"next_id": "121",
+"next_id_after": "121",
+"responses": PackedStringArray("116", "117", "119", "120"),
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"117": {
+"next_id": "118",
+"next_id_after": "121",
+"text": "50",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "50",
+"type": "response"
+},
+"118": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "121",
+"parent_id": "117",
+"type": "mutation"
+},
+"119": {
+"next_id": "121",
+"next_id_after": "121",
+"text": "5",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "5",
+"type": "response"
+},
+"12": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_conditional_id": "22",
+"next_id": "13",
+"next_id_after": "34",
+"type": "condition"
+},
+"120": {
+"next_id": "121",
+"next_id_after": "121",
+"text": "25",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "25",
+"type": "response"
+},
+"121": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"123": {
+"next_id": "124",
+"text": "Q3c",
+"type": "title"
+},
+"124": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "125",
+"text": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"type": "dialogue"
+},
+"125": {
+"next_id": "130",
+"next_id_after": "130",
+"responses": PackedStringArray("125", "126", "127", "129"),
+"text": "25",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "25",
+"type": "response"
+},
+"126": {
+"next_id": "130",
+"next_id_after": "130",
+"text": "5",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "5",
+"type": "response"
+},
+"127": {
+"next_id": "128",
+"next_id_after": "130",
+"text": "50",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "50",
+"type": "response"
+},
+"128": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "130",
+"parent_id": "127",
+"type": "mutation"
+},
+"129": {
+"next_id": "130",
+"next_id_after": "130",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"13": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "14",
+"parent_id": "12",
+"type": "mutation"
+},
+"130": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"132": {
+"next_id": "133",
+"text": "Q3d",
+"type": "title"
+},
+"133": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "134",
+"text": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?",
+"type": "dialogue"
+},
+"134": {
+"next_id": "139",
+"next_id_after": "139",
+"responses": PackedStringArray("134", "135", "136", "137"),
+"text": "5",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "5",
+"type": "response"
+},
+"135": {
+"next_id": "139",
+"next_id_after": "139",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"136": {
+"next_id": "139",
+"next_id_after": "139",
+"text": "25",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "25",
+"type": "response"
+},
+"137": {
+"next_id": "138",
+"next_id_after": "139",
+"text": "50",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "50",
+"type": "response"
+},
+"138": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "139",
+"parent_id": "137",
+"type": "mutation"
+},
+"139": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"14": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "16",
+"next_id": "15",
+"next_id_after": "34",
+"parent_id": "12",
+"type": "condition"
+},
+"141": {
+"next_id": "142",
+"text": "testQ1",
+"type": "title"
+},
+"142": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "chooseQuestionsTest",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "143",
+"type": "mutation"
+},
+"143": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "144",
+"type": "mutation"
+},
+"144": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "147",
+"type": "goto"
+},
+"146": {
+"next_id": "147",
+"text": "testQ2",
+"type": "title"
+},
+"147": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "148",
+"type": "mutation"
+},
+"148": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "151",
+"type": "goto"
+},
+"15": {
+"is_snippet": false,
+"next_id": "70",
+"parent_id": "14",
+"type": "goto"
+},
+"150": {
+"next_id": "151",
+"text": "testQ3",
+"type": "title"
+},
+"151": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "152",
+"type": "mutation"
+},
+"152": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "",
+"type": "goto"
+},
+"16": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "18",
+"next_id": "17",
+"next_id_after": "34",
+"parent_id": "12",
+"type": "condition"
+},
+"17": {
+"is_snippet": false,
+"next_id": "79",
+"parent_id": "16",
+"type": "goto"
+},
+"18": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "20",
+"next_id": "19",
+"next_id_after": "34",
+"parent_id": "12",
+"type": "condition"
+},
+"19": {
+"is_snippet": false,
+"next_id": "88",
+"parent_id": "18",
+"type": "goto"
+},
+"2": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_conditional_id": "12",
+"next_id": "3",
+"next_id_after": "34",
+"type": "condition"
+},
+"20": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "34",
+"next_id": "21",
+"next_id_after": "34",
+"parent_id": "12",
+"type": "condition"
+},
+"21": {
+"is_snippet": false,
+"next_id": "97",
+"parent_id": "20",
+"type": "goto"
+},
+"22": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 3
+}])
+},
+"next_conditional_id": "34",
+"next_id": "23",
+"next_id_after": "34",
+"type": "condition"
+},
+"23": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "24",
+"parent_id": "22",
+"type": "mutation"
+},
+"24": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "26",
+"next_id": "25",
+"next_id_after": "34",
+"parent_id": "22",
+"type": "condition"
+},
+"25": {
+"is_snippet": false,
+"next_id": "106",
+"parent_id": "24",
+"type": "goto"
+},
+"26": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "28",
+"next_id": "27",
+"next_id_after": "34",
+"parent_id": "22",
+"type": "condition"
+},
+"27": {
+"is_snippet": false,
+"next_id": "115",
+"parent_id": "26",
+"type": "goto"
+},
+"28": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "30",
+"next_id": "29",
+"next_id_after": "34",
+"parent_id": "22",
+"type": "condition"
+},
+"29": {
+"is_snippet": false,
+"next_id": "124",
+"parent_id": "28",
+"type": "goto"
+},
+"3": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "4",
+"parent_id": "2",
+"type": "mutation"
+},
+"30": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "34",
+"next_id": "31",
+"next_id_after": "34",
+"parent_id": "22",
+"type": "condition"
+},
+"31": {
+"is_snippet": false,
+"next_id": "133",
+"parent_id": "30",
+"type": "goto"
+},
+"33": {
+"next_id": "34",
+"text": "Q1a",
+"type": "title"
+},
+"34": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "35",
+"text": "What is 4 + 7?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is 4 + 7?",
+"type": "dialogue"
+},
+"35": {
+"next_id": "36",
+"next_id_after": "40",
+"responses": PackedStringArray("35", "37", "38", "39"),
+"text": "11",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "11",
+"type": "response"
+},
+"36": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "40",
+"parent_id": "35",
+"type": "mutation"
+},
+"37": {
+"next_id": "40",
+"next_id_after": "40",
+"text": "12",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "12",
+"type": "response"
+},
+"38": {
+"next_id": "40",
+"next_id_after": "40",
+"text": "9",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "9",
+"type": "response"
+},
+"39": {
+"next_id": "40",
+"next_id_after": "40",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"4": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "6",
+"next_id": "5",
+"next_id_after": "34",
+"parent_id": "2",
+"type": "condition"
+},
+"40": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"42": {
+"next_id": "43",
+"text": "Q1b",
+"type": "title"
+},
+"43": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "44",
+"text": "What is 4 + 7?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is 4 + 7?",
+"type": "dialogue"
+},
+"44": {
+"next_id": "49",
+"next_id_after": "49",
+"responses": PackedStringArray("44", "45", "47", "48"),
+"text": "12",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "12",
+"type": "response"
+},
+"45": {
+"next_id": "46",
+"next_id_after": "49",
+"text": "11",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "11",
+"type": "response"
+},
+"46": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "49",
+"parent_id": "45",
+"type": "mutation"
+},
+"47": {
+"next_id": "49",
+"next_id_after": "49",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"48": {
+"next_id": "49",
+"next_id_after": "49",
+"text": "9",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "9",
+"type": "response"
+},
+"49": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"5": {
+"is_snippet": false,
+"next_id": "34",
+"parent_id": "4",
+"type": "goto"
+},
+"51": {
+"next_id": "52",
+"text": "Q1c",
+"type": "title"
+},
+"52": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "53",
+"text": "What is 4 + 7?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is 4 + 7?",
+"type": "dialogue"
+},
+"53": {
+"next_id": "58",
+"next_id_after": "58",
+"responses": PackedStringArray("53", "54", "55", "57"),
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"54": {
+"next_id": "58",
+"next_id_after": "58",
+"text": "9",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "9",
+"type": "response"
+},
+"55": {
+"next_id": "56",
+"next_id_after": "58",
+"text": "11",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "11",
+"type": "response"
+},
+"56": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "58",
+"parent_id": "55",
+"type": "mutation"
+},
+"57": {
+"next_id": "58",
+"next_id_after": "58",
+"text": "12",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "12",
+"type": "response"
+},
+"58": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"6": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "8",
+"next_id": "7",
+"next_id_after": "34",
+"parent_id": "2",
+"type": "condition"
+},
+"60": {
+"next_id": "61",
+"text": "Q1d",
+"type": "title"
+},
+"61": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "62",
+"text": "What is 4 + 7?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is 4 + 7?",
+"type": "dialogue"
+},
+"62": {
+"next_id": "67",
+"next_id_after": "67",
+"responses": PackedStringArray("62", "63", "64", "65"),
+"text": "12",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "12",
+"type": "response"
+},
+"63": {
+"next_id": "67",
+"next_id_after": "67",
+"text": "9",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "9",
+"type": "response"
+},
+"64": {
+"next_id": "67",
+"next_id_after": "67",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"65": {
+"next_id": "66",
+"next_id_after": "67",
+"text": "11",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "11",
+"type": "response"
+},
+"66": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "67",
+"parent_id": "65",
+"type": "mutation"
+},
+"67": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"69": {
+"next_id": "70",
+"text": "Q2a",
+"type": "title"
+},
+"7": {
+"is_snippet": false,
+"next_id": "43",
+"parent_id": "6",
+"type": "goto"
+},
+"70": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "71",
+"text": "What is the square root of 64?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is the square root of 64?",
+"type": "dialogue"
+},
+"71": {
+"next_id": "72",
+"next_id_after": "76",
+"responses": PackedStringArray("71", "73", "74", "75"),
+"text": "8",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "8",
+"type": "response"
+},
+"72": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "76",
+"parent_id": "71",
+"type": "mutation"
+},
+"73": {
+"next_id": "76",
+"next_id_after": "76",
+"text": "2",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "2",
+"type": "response"
+},
+"74": {
+"next_id": "76",
+"next_id_after": "76",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"75": {
+"next_id": "76",
+"next_id_after": "76",
+"text": "6",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "6",
+"type": "response"
+},
+"76": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"78": {
+"next_id": "79",
+"text": "Q2b",
+"type": "title"
+},
+"79": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "80",
+"text": "What is the square root of 64?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is the square root of 64?",
+"type": "dialogue"
+},
+"8": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "10",
+"next_id": "9",
+"next_id_after": "34",
+"parent_id": "2",
+"type": "condition"
+},
+"80": {
+"next_id": "85",
+"next_id_after": "85",
+"responses": PackedStringArray("80", "81", "83", "84"),
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"81": {
+"next_id": "82",
+"next_id_after": "85",
+"text": "8",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "8",
+"type": "response"
+},
+"82": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "85",
+"parent_id": "81",
+"type": "mutation"
+},
+"83": {
+"next_id": "85",
+"next_id_after": "85",
+"text": "6",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "6",
+"type": "response"
+},
+"84": {
+"next_id": "85",
+"next_id_after": "85",
+"text": "2",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "2",
+"type": "response"
+},
+"85": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"87": {
+"next_id": "88",
+"text": "Q2c",
+"type": "title"
+},
+"88": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "89",
+"text": "What is the square root of 64?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is the square root of 64?",
+"type": "dialogue"
+},
+"89": {
+"next_id": "94",
+"next_id_after": "94",
+"responses": PackedStringArray("89", "90", "91", "93"),
+"text": "2",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "2",
+"type": "response"
+},
+"9": {
+"is_snippet": false,
+"next_id": "52",
+"parent_id": "8",
+"type": "goto"
+},
+"90": {
+"next_id": "94",
+"next_id_after": "94",
+"text": "6",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "6",
+"type": "response"
+},
+"91": {
+"next_id": "92",
+"next_id_after": "94",
+"text": "8",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "8",
+"type": "response"
+},
+"92": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "94",
+"parent_id": "91",
+"type": "mutation"
+},
+"93": {
+"next_id": "94",
+"next_id_after": "94",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+},
+"94": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"96": {
+"next_id": "97",
+"text": "Q2d",
+"type": "title"
+},
+"97": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "98",
+"text": "What is the square root of 64?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is the square root of 64?",
+"type": "dialogue"
+},
+"98": {
+"next_id": "103",
+"next_id_after": "103",
+"responses": PackedStringArray("98", "99", "100", "101"),
+"text": "6",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "6",
+"type": "response"
+},
+"99": {
+"next_id": "103",
+"next_id_after": "103",
+"text": "10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "10",
+"type": "response"
+}
+}
+metadata/dialogue_manager_version = "2.11.3"
