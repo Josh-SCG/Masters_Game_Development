@@ -3,9 +3,6 @@ extends Node2D
 @onready var globalRef = get_node("/root/Global")
 
 #Set the display of level completion
-
-
-
 func _ready():
 	$PhysicalLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete1)+".png")
 	$MentalLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete2)+".png")
@@ -25,7 +22,6 @@ func _ready():
 
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Main Menu.tscn")
-
 
 func _on_texture_button_pressed():
 	get_tree().change_scene_to_file("res://World.tscn")

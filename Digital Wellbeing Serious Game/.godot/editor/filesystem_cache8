@@ -1,10 +1,10 @@
 c218887d040eac7ede602d457f2de48c
-::res://::1681923222
+::res://::1682004076
 default_env.tres::Environment::-1::1678186776::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1673440601::0::1::::<><>::
 icon.png::CompressedTexture2D::9092958461749031703::1650143807::1678545425::1::::<><>::
 npc.tscn::PackedScene::8428463695355646107::1681815314::0::1::::<><>::res://Assets/Scripts/NPC.gd<>uid://cdoglu0sw3itu
-World.tscn::PackedScene::7664149180704496069::1681922116::0::1::::<><>::uid://ygwdpcrdma8n<>res://Assets/Scripts/UI.gd<>uid://4tpjnpgvxk31<>uid://yus1loxriev2<>uid://bn20f7mq60o72<>uid://dsc2th5iryvwl<>uid://pa2dqdag7e2j<>uid://cexvrxokloryl
+World.tscn::PackedScene::7664149180704496069::1682004094::0::1::::<><>::uid://ygwdpcrdma8n<>res://Assets/Scripts/UI.gd<>uid://4tpjnpgvxk31<>uid://yus1loxriev2<>uid://bn20f7mq60o72<>uid://dsc2th5iryvwl<>uid://pa2dqdag7e2j<>uid://cexvrxokloryl
 ::res://addons/::1678631525
 ::res://addons/dialogue_manager/::1681910068
 constants.gd::GDScript::-1::1681910068::0::1::::<>Node<>::
@@ -53,28 +53,29 @@ main_view.gd::GDScript::-1::1681910068::0::1::::<>Control<>::
 main_view.tscn::PackedScene::4884668666408697448::1681908638::0::1::::<><>::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u<>uid://dnufpcdrreva3<>uid://ctns6ouwwd68i<>uid://co8yl23idiwbi<>uid://gr8nakpbrhby<>uid://cs8pwrxr5vxix<>uid://cpg4lg1r3ff6m
 settings_view.gd::GDScript::-1::1681908638::0::1::::<>VBoxContainer<>::
 settings_view.tscn::PackedScene::5839841081119266502::1681908638::0::1::::<><>::res://addons/dialogue_manager/views/settings_view.gd
-::res://Assets/::1678712609
+::res://Assets/::1682003005
 ::res://Assets/Auido/::1678712620
 ::res://Assets/Auido/Effects/::1678712723
 talk.wav::AudioStreamWAV::1222795645282358450::1678647700::1678712649::1::::<><>::
 ::res://Assets/Auido/Songs/::1678712617
-::res://Assets/Diologue/::1681923376
+::res://Assets/Diologue/::1681990324
 dialogue_window.tscn::PackedScene::2075627176143926146::1678696622::0::1::::<><>::uid://d080xym6qs6u<>res://Assets/Scripts/Dialogue.gd<>uid://be5or0ipenrtn<>uid://r7pt54bjmcnd<>res://addons/dialogue_manager/dialogue_label.gd
-questionTest.dialogue::Resource::4441022484132347319::1681922010::1681922011::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+questionTest.dialogue::Resource::4441022484132347319::1681990323::1681990324::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 test_scene.gd::GDScript::-1::1678647700::0::1::::<>Node2D<>::
 WorldTest.dialogue::Resource::1054478215774191823::1681923376::1681923376::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 ::res://Assets/Diologue/Dialogue/::1681910088
 DiologueWorld.json::JSON::-1::1678622879::0::1::::<><>::
 test2.dialogue::Resource::5102384075760125279::1678714853::1681910088::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 WorldTest.dialogue::Resource::3368104418787955630::1678697711::1681910088::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-::res://Assets/Diologue/portraits_balloon/::1681910068
+::res://Assets/Diologue/portraits_balloon/::1681998105
 balloon.gd::GDScript::-1::1681910068::0::1::::<>CanvasLayer<>::
-balloon.tscn::PackedScene::1726959739357462053::1681815314::0::1::::<><>::res://Assets/Diologue/portraits_balloon/balloon.gd<>uid://roljbcen8wlm<>uid://d080xym6qs6u<>uid://b1st861nsc7ve<>uid://ckvgyvclnwggo<>uid://be5or0ipenrtn
+balloon.tscn::PackedScene::1726959739357462053::1681998105::0::1::::<><>::res://Assets/Diologue/portraits_balloon/balloon.gd<>uid://roljbcen8wlm<>uid://d080xym6qs6u<>uid://b1st861nsc7ve<>uid://ckvgyvclnwggo<>uid://be5or0ipenrtn
 small_balloon.tscn::PackedScene::3356142404190072779::1678661140::0::1::::<><>::res://Assets/Diologue/portraits_balloon/balloon.gd<>uid://cng7ex3hvatxl<>uid://ckvgyvclnwggo<>uid://d080xym6qs6u
-::res://Assets/Diologue/Question Files/::1681923338
-MentalQuestions.dialogue::Resource::8407780482061284435::1681923297::1681923298::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-PhysicalQuestions.dialogue::Resource::4161002955274630330::1681922411::1681922411::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-SecurityQuestions.dialogue::Resource::6474618855404431186::1681923337::1681923338::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+::res://Assets/Diologue/Question Files/::1681990193
+MentalQuestions.dialogue::Resource::8407780482061284435::1681990192::1681990193::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+PhysicalQuestions.dialogue::Resource::4161002955274630330::1681990192::1681990193::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+SecurityQuestions.dialogue::Resource::6474618855404431186::1681990192::1681990193::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+::res://Assets/Files/::1682003055
 ::res://Assets/Fonts/::1678545424
 Kenney Blocks.ttf::FontFile::2556506809533704837::1665581867::1678545424::1::::<><>::
 Kenney Future Narrow.ttf::FontFile::2729989113391734495::1665581867::1678545424::1::::<><>::
@@ -91,16 +92,16 @@ Kenney Rocket.ttf::FontFile::1375528586049778572::1665581868::1678545424::1::::<
 ::res://Assets/Images/::1678545425
 blob.png::CompressedTexture2D::905118915992493742::1650237267::1678545425::1::::<><>::
 ::res://Assets/Level Scenes/::1671601079
-::res://Assets/Menu Scenes/::1681923376
-Character Select.tscn::PackedScene::7310416555340524152::1678709990::0::1::::<><>::res://Assets/Scripts/Character Select.gd<>uid://hlvs1qnixage<>uid://bhhglwkngwtfl<>uid://c0g60si44u800<>uid://d3peisp3dgqmm<>uid://caj61jfrfikuk<>uid://baep36n7gkbpu
-Credits.tscn::PackedScene::1172749683444205586::1678710483::0::1::::<><>::
-How To.tscn::PackedScene::2627374670730309479::1678709990::0::1::::<><>::res://Assets/Scripts/How To.gd<>uid://dy6p51wpct7l8<>uid://sb78a4kb11fd<>uid://dhn8ao1ar8nmb<>uid://baep36n7gkbpu<>uid://df5kamaduab0q<>uid://be5or0ipenrtn<>uid://hvhsr86weewy
-Level Select.tscn::PackedScene::8516522389087671457::1681923376::0::1::::<><>::res://Assets/Scripts/Level Select.gd<>uid://df5kamaduab0q<>uid://b1st861nsc7ve<>uid://c5bq3xhb31qnn<>uid://hlvs1qnixage<>uid://bhhglwkngwtfl<>uid://hvhsr86weewy<>uid://fa0kbm8kxlrt<>uid://caj61jfrfikuk<>uid://dvib2yrg4n08h<>uid://dhn8ao1ar8nmb<>uid://dy6p51wpct7l8<>uid://sb78a4kb11fd<>uid://d080xym6qs6u<>uid://be5or0ipenrtn<>uid://dtsfn4fnb3cef<>uid://diip3wlrkbhur<>uid://pa1lbsj12tk5
-Main Menu.tscn::PackedScene::8971859430109403801::1681922116::0::1::::<><>::uid://hlvs1qnixage<>uid://bhhglwkngwtfl<>uid://caj61jfrfikuk<>uid://sb78a4kb11fd<>uid://baep36n7gkbpu<>uid://dhn8ao1ar8nmb<>res://Assets/Scripts/Main Menu.gd<>uid://dy6p51wpct7l8<>uid://c5bq3xhb31qnn<>uid://d080xym6qs6u<>uid://be5or0ipenrtn<>uid://b1st861nsc7ve
-::res://Assets/Player/::1681906037
+::res://Assets/Menu Scenes/::1682004084
+Character Select.tscn::PackedScene::7310416555340524152::1681990687::0::1::::<><>::res://Assets/Scripts/Character Select.gd<>uid://hlvs1qnixage<>uid://bhhglwkngwtfl<>uid://c0g60si44u800<>uid://d3peisp3dgqmm<>uid://caj61jfrfikuk<>uid://baep36n7gkbpu<>uid://df5kamaduab0q<>uid://b1st861nsc7ve
+Credits.tscn::PackedScene::1172749683444205586::1682003578::0::1::::<><>::res://Assets/Scripts/Credits.gd<>uid://d080xym6qs6u<>uid://b1st861nsc7ve<>uid://dhn8ao1ar8nmb<>uid://dy6p51wpct7l8<>uid://sb78a4kb11fd<>uid://hvhsr86weewy<>uid://df5kamaduab0q<>uid://be5or0ipenrtn
+How To.tscn::PackedScene::2627374670730309479::1682003578::0::1::::<><>::res://Assets/Scripts/How To.gd<>uid://dy6p51wpct7l8<>uid://sb78a4kb11fd<>uid://dhn8ao1ar8nmb<>uid://df5kamaduab0q<>uid://be5or0ipenrtn<>uid://hvhsr86weewy
+Level Select.tscn::PackedScene::8516522389087671457::1682003578::0::1::::<><>::res://Assets/Scripts/Level Select.gd<>uid://df5kamaduab0q<>uid://b1st861nsc7ve<>uid://c5bq3xhb31qnn<>uid://hlvs1qnixage<>uid://bhhglwkngwtfl<>uid://hvhsr86weewy<>uid://fa0kbm8kxlrt<>uid://caj61jfrfikuk<>uid://dvib2yrg4n08h<>uid://dhn8ao1ar8nmb<>uid://dy6p51wpct7l8<>uid://sb78a4kb11fd<>uid://d080xym6qs6u<>uid://be5or0ipenrtn<>uid://dtsfn4fnb3cef<>uid://diip3wlrkbhur<>uid://pa1lbsj12tk5
+Main Menu.tscn::PackedScene::8971859430109403801::1682004084::0::1::::<><>::uid://hlvs1qnixage<>uid://bhhglwkngwtfl<>uid://caj61jfrfikuk<>uid://sb78a4kb11fd<>uid://baep36n7gkbpu<>uid://dhn8ao1ar8nmb<>res://Assets/Scripts/Main Menu.gd<>uid://dy6p51wpct7l8<>uid://c5bq3xhb31qnn<>uid://d080xym6qs6u<>uid://be5or0ipenrtn<>uid://b1st861nsc7ve
+::res://Assets/Player/::1681996453
 GridBasedAttempt.gd::GDScript::-1::1672661445::0::1::::<>KinematicBody2D<>::
-Player.gd::GDScript::-1::1681906037::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::1698260436776457759::1681815314::0::1::::<><>::uid://cdoglu0sw3itu<>res://Assets/Player/Player.gd
+Player.gd::GDScript::-1::1681996356::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::1698260436776457759::1681996453::0::1::::<><>::uid://cdoglu0sw3itu<>res://Assets/Player/Player.gd
 ::res://Assets/Player/Player Sprites/::1678583211
 AAAAA.png::CompressedTexture2D::5012694222482149498::1672570174::1678570824::1::::<><>::
 FBCBD.png::CompressedTexture2D::3620896002772846340::1672569175::1678545425::1::::<><>::
@@ -151,16 +152,17 @@ MWFLD.png::CompressedTexture2D::4055668933219283110::1672568814::1678545425::1::
 MWFLL.png::CompressedTexture2D::8738132107529317402::1672568818::1678583211::1::::<><>::
 MWFSD.png::CompressedTexture2D::5080758891369955528::1672568808::1678545425::1::::<><>::
 MWFSL.png::CompressedTexture2D::7214413670184832419::1672568810::1678545425::1::::<><>::
-::res://Assets/Scripts/::1681923283
-Character Select.gd::GDScript::-1::1678548223::0::1::::<>Node2D<>::
+::res://Assets/Scripts/::1682003492
+Character Select.gd::GDScript::-1::1681996431::0::1::::<>Node2D<>::
+Credits.gd::GDScript::-1::1682002688::0::1::::<>Node2D<>::
 Dialogue.gd::GDScript::-1::1678658627::0::1::::<>CanvasLayer<>::
 Diologue Box.gd::GDScript::-1::1678622879::0::1::::<>TextureRect<>::
-Global.gd::GDScript::-1::1681922116::0::1::::<>Node<>::
-How To.gd::GDScript::-1::1678548601::0::1::::<>Node<>::
-Level Select.gd::GDScript::-1::1681815314::0::1::::<>Node2D<>::
-Main Menu.gd::GDScript::-1::1678710289::0::1::::<>Node2D<>::
-NPC.gd::GDScript::-1::1681923283::0::1::::<>Area2D<>::
-UI.gd::GDScript::-1::1681923283::0::1::::<>Node2D<>::
+Global.gd::GDScript::-1::1681996431::0::1::::<>Node<>::
+How To.gd::GDScript::-1::1681996431::0::1::::<>Node<>::
+Level Select.gd::GDScript::-1::1681996431::0::1::::<>Node2D<>::
+Main Menu.gd::GDScript::-1::1682003492::0::1::::<>Node2D<>::
+NPC.gd::GDScript::-1::1681996453::0::1::::<>Area2D<>::
+UI.gd::GDScript::-1::1681996453::0::1::::<>Node2D<>::
 ::res://Assets/Scripts/Shaders/::1678748526
 static.gdshader::Shader::-1::1678748526::0::1::::<><>::
 ::res://Assets/TileMaps/::1678700138

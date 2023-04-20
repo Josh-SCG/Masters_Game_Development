@@ -55,7 +55,6 @@ func _on_hair_colour_button_pressed():
 		globalRef.hairColour = "L"
 	elif globalRef.hairColour == "L":
 		globalRef.hairColour = "D"
-		
 
 func _on_done_button_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Main Menu.tscn")

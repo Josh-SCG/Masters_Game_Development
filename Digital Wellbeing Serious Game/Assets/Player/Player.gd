@@ -14,6 +14,7 @@ const FRICTION = 750
 @onready var globalRef = get_node("/root/Global")
 
 var isTalking = false
+var isPaused = false
 
 #Functions
 func _ready():
@@ -22,17 +23,11 @@ func _ready():
 	rayCast.rotation_degrees = 90
 
 func _physics_process(delta): #up is negative, reversed in games; strange i forgot this :p -> had the comment [A,D],[W,S] = [-1,1]
-	
 	if not isTalking:
 		movement(delta)
 		rayCastDir(delta)
 		if Input.is_action_just_pressed("Interact"):
 			interact(delta)
-		if Input.is_action_just_pressed("Pause"):
-			#Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			#get_tree().change_scene_to_file("res://Assets/Menu Scenes/Level Select.tscn")
-			Global.chooseQuestions()
-			
 
 func rayCastDir(_delta):
 	#Setting the direction of the raycast to the direction the player is facing
@@ -44,23 +39,26 @@ func rayCastDir(_delta):
 		rayCast.rotation_degrees = 180
 	elif Input.is_action_pressed("ui_right"):
 		rayCast.rotation_degrees = 270
-	
 	#print(rayCast.is_colliding())
+
+func pauseGame(): #Needs popup as unpause process can't happen if game paused; maybe make own sceene
+	if Input.is_action_just_pressed("Pause"):
+		if isPaused == false and isTalking == false:
+			get_tree().paused = true
+			isPaused = true
+		elif isPaused:
+			get_tree().paused = false
+			isPaused = false
 
 func movement(delta):
 	var input_vector = Vector2.ZERO
-	
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")	
-	
-	
-	#if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		#if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		#input_vector = get_global_mouse_position() - position
-	
 	input_vector = input_vector.normalized()
 	#multiplying by delta makes it so the speed is tied to the games performance,; 
 		#ie. game chugs the movement wont slow
-		
 	if input_vector != Vector2.ZERO:
 		#Animation could work like "if input_vector.x >0: animationPlayer.play("RunRight") w/out AnimTree
 		animationTree.set("parameters/Idle/blend_position", input_vector)
@@ -70,9 +68,8 @@ func movement(delta):
 	else:
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-	
 	move_and_slide()
-	
+
 func interact(_delta):
 	if rayCast.is_colliding() == false:
 		return

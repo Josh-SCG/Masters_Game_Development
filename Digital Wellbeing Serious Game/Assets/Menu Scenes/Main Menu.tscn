@@ -137,10 +137,10 @@ scale = Vector2(4, 4)
 texture = ExtResource("9")
 
 [node name="Label" type="RichTextLabel" parent="InfoBoxNode"]
-offset_left = 715.0
-offset_top = 233.0
-offset_right = 906.0
-offset_bottom = 400.0
+offset_left = 716.0
+offset_top = 234.0
+offset_right = 907.0
+offset_bottom = 401.0
 mouse_filter = 1
 theme_override_fonts/normal_font = ExtResource("10_bwcbe")
 theme_override_font_sizes/normal_font_size = 16

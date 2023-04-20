@@ -9,6 +9,8 @@ if Global.qNum == 1
 		=> Q1c
 	elif Global.qAns == "d"
 		=> Q1d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 2
  	do Global.qAns = Global.setAnswer(2)
 	if Global.qAns == "a"
@@ -19,6 +21,8 @@ elif Global.qNum == 2
 		=> Q2c
 	elif Global.qAns == "d"
 		=> Q2d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 3
 	do Global.qAns = Global.setAnswer(3)
 	if Global.qAns == "a"
@@ -29,6 +33,8 @@ elif Global.qNum == 3
 		=> Q3c
 	elif Global.qAns == "d"
 		=> Q3d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 4
 	do Global.qAns = Global.setAnswer(4)
 	if Global.qAns == "a"
@@ -39,6 +45,8 @@ elif Global.qNum == 4
 		=> Q4c
 	elif Global.qAns == "d"
 		=> Q4d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 5
 	do Global.qAns = Global.setAnswer(5)
 	if Global.qAns == "a"
@@ -49,6 +57,8 @@ elif Global.qNum == 5
 		=> Q5c
 	elif Global.qAns == "d"
 		=> Q5d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 6
 	do Global.qAns = Global.setAnswer(6)
 	if Global.qAns == "a"
@@ -59,6 +69,8 @@ elif Global.qNum == 6
 		=> Q6c
 	elif Global.qAns == "d"
 		=> Q6d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 7
 	do Global.qAns = Global.setAnswer(7)
 	if Global.qAns == "a"
@@ -69,6 +81,8 @@ elif Global.qNum == 7
 		=> Q7c
 	elif Global.qAns == "d"
 		=> Q7d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 8
 	do Global.qAns = Global.setAnswer(8)
 	if Global.qAns == "a"
@@ -79,6 +93,8 @@ elif Global.qNum == 8
 		=> Q8c
 	elif Global.qAns == "d"
 		=> Q8d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 9
 	do Global.qAns = Global.setAnswer(9)
 	if Global.qAns == "a"
@@ -89,6 +105,8 @@ elif Global.qNum == 9
 		=> Q9c
 	elif Global.qAns == "d"
 		=> Q9d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 10
 	do Global.qAns = Global.setAnswer(10)
 	if Global.qAns == "a"
@@ -99,6 +117,8 @@ elif Global.qNum == 10
 		=> Q10c
 	elif Global.qAns == "d"
 		=> Q10d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 11
 	do Global.qAns = Global.setAnswer(11)
 	if Global.qAns == "a"
@@ -109,6 +129,8 @@ elif Global.qNum == 11
 		=> Q11c
 	elif Global.qAns == "d"
 		=> Q11d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 12
 	do Global.qAns = Global.setAnswer(12)
 	if Global.qAns == "a"
@@ -119,6 +141,8 @@ elif Global.qNum == 12
 		=> Q12c
 	elif Global.qAns == "d"
 		=> Q12d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 13
 	do Global.qAns = Global.setAnswer(13)
 	if Global.qAns == "a"
@@ -129,6 +153,8 @@ elif Global.qNum == 13
 		=> Q13c
 	elif Global.qAns == "d"
 		=> Q13d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 14
 	do Global.qAns = Global.setAnswer(14)
 	if Global.qAns == "a"
@@ -139,6 +165,8 @@ elif Global.qNum == 14
 		=> Q14c
 	elif Global.qAns == "d"
 		=> Q14d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 15
 	do Global.qAns = Global.setAnswer(15)
 	if Global.qAns == "a"
@@ -149,6 +177,8 @@ elif Global.qNum == 15
 		=> Q15c
 	elif Global.qAns == "d"
 		=> Q15d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 16
 	do Global.qAns = Global.setAnswer(16)
 	if Global.qAns == "a"
@@ -159,6 +189,8 @@ elif Global.qNum == 16
 		=> Q16c
 	elif Global.qAns == "d"
 		=> Q16d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 17
 	do Global.qAns = Global.setAnswer(17)
 	if Global.qAns == "a"
@@ -169,6 +201,8 @@ elif Global.qNum == 17
 		=> Q17c
 	elif Global.qAns == "d"
 		=> Q17d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 18
 	do Global.qAns = Global.setAnswer(18)
 	if Global.qAns == "a"
@@ -179,6 +213,8 @@ elif Global.qNum == 18
 		=> Q18c
 	elif Global.qAns == "d"
 		=> Q18d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 19
 	do Global.qAns = Global.setAnswer(19)
 	if Global.qAns == "a"
@@ -189,6 +225,8 @@ elif Global.qNum == 19
 		=> Q19c
 	elif Global.qAns == "d"
 		=> Q19d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 20
 	do Global.qAns = Global.setAnswer(20)
 	if Global.qAns == "a"
@@ -199,6 +237,14 @@ elif Global.qNum == 20
 		=> Q20c
 	elif Global.qAns == "d"
 		=> Q20d
+	else
+		=> somethingIsWrong
+else
+	=> somethingIsWrong
+
+~ somethingIsWrong
+Josh: Oops. Something is wrong. Please try again. If this persists, welp, contact the dev...
+=> END
 
 ~ Q1a
 Josh: Q1a

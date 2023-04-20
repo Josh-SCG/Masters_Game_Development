@@ -7,12 +7,10 @@ extends Node2D
 @export var startPoint = "start"
 var window = null
 
-
 func _ready():
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	await get_tree().create_timer(0.4).timeout
-
 
 func show_dialogue(resource, key) -> void:
 	assert(resource != null, "\"dialogue_resource\" property needs a to point to a DialogueResource.")
@@ -24,7 +22,6 @@ func show_dialogue(resource, key) -> void:
 	balloon.start(resource, key)
 
 func setDialogue(resource, StartPoint):
-	
 	window = dialogue_window.instantiate()
 	add_child(window)
 	window.startDialogue(resource, StartPoint)

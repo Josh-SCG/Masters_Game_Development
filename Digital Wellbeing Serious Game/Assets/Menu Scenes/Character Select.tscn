@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcfhq0pg043xc"]
+[gd_scene load_steps=10 format=3 uid="uid://dcfhq0pg043xc"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Character Select.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="2"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://d3peisp3dgqmm" path="res://Assets/Player/Player Sprites/MWFBD.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://caj61jfrfikuk" path="res://Assets/UI/button_default_hover.png" id="6"]
 [ext_resource type="FontFile" uid="uid://baep36n7gkbpu" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="7_mkv7f"]
+[ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="8_126fi"]
+[ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="9_v46lv"]
 
 [node name="Character Select" type="Node2D"]
 script = ExtResource("1")
@@ -137,6 +139,23 @@ text = "Done"
 scroll_active = false
 meta_underlined = false
 deselect_on_focus_loss_enabled = false
+
+[node name="Header" type="TextureRect" parent="."]
+offset_left = 317.0
+offset_top = 1.0
+offset_right = 582.0
+offset_bottom = 65.0
+texture = ExtResource("8_126fi")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Header"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 23.0
+offset_right = 239.0
+offset_bottom = 47.0
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("9_v46lv")
+text = "Character Select"
 
 [connection signal="pressed" from="ButtonVbox/GenderButton" to="." method="_on_gender_button_pressed"]
 [connection signal="pressed" from="ButtonVbox/SkinToneButton" to="." method="_on_skin_tone_button_pressed"]

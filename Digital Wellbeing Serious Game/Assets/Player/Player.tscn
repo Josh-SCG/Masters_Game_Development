@@ -277,7 +277,7 @@ zoom = Vector2(2, 2)
 position_smoothing_speed = 180.0
 
 [node name="InteractRayCast" type="RayCast2D" parent="."]
-position = Vector2(0, 10)
+position = Vector2(0, 14)
 target_position = Vector2(0, 15)
 collision_mask = 3
 hit_from_inside = true

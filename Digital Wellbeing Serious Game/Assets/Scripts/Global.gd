@@ -11,7 +11,6 @@ var hairColour = "D"
 
 var spriteSheetRef = "res://Assets/Player//Player Sprites//"+gender+skinTone+outfit+hairStyle+hairColour+".png"
 
-
 ######################
 #Level Menu variables#
 ######################
@@ -62,7 +61,7 @@ var qNum = 0
 var qAns = ""
 func chooseQuestions():
 	numPool.shuffle()
-	questionDict = {}
+	questionDict.clear()
 	for i in range(0,10):
 		var answerLoc = answerPool.pick_random()
 		questionDict[numPool[i]] = answerLoc
@@ -70,8 +69,8 @@ func chooseQuestions():
 	
 func chooseQuestionsTest():
 	numPoolTest.shuffle()
-	questionDict = {}
-	for i in range(0,3):#10):
+	questionDict.clear()
+	for i in range(0,3):
 		var answerLoc = answerPool.pick_random()
 		questionDict[numPool[i]] = answerLoc
 	print(questionDict)

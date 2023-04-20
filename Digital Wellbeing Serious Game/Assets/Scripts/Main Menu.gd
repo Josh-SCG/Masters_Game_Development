@@ -14,7 +14,9 @@ func _on_ExitButton_pressed():
 	get_tree().quit()
 
 func _on_ResourcesUsedButton_pressed():
-	OS.shell_open("http://godotengine.org")
+	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Credits.tscn")
 
-
-
+func _on_external_link_button_pressed():
+	#Might want to add multiple files so maybe either a big interactable pdf or webpage from github.io
+	var path = ProjectSettings.globalize_path("res://Assets/Files/Final.pdf")
+	OS.shell_open(path)

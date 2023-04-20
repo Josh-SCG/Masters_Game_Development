@@ -9,6 +9,8 @@ if Global.qNum == 1
 		=> Q1c
 	elif Global.qAns == "d"
 		=> Q1d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 2
  	do Global.qAns = Global.setAnswer(2)
 	if Global.qAns == "a"
@@ -19,6 +21,8 @@ elif Global.qNum == 2
 		=> Q2c
 	elif Global.qAns == "d"
 		=> Q2d
+	else
+		=> somethingIsWrong
 elif Global.qNum == 3
 	do Global.qAns = Global.setAnswer(3)
 	if Global.qAns == "a"
@@ -29,11 +33,20 @@ elif Global.qNum == 3
 		=> Q3c
 	elif Global.qAns == "d"
 		=> Q3d
+	else
+		=> somethingIsWrong
+else
+	=> somethingIsWrong
+
+~ somethingIsWrong
+Josh: Oops. Something is wrong. Please try again. If this persists, welp, contact the dev...
+=> END
 
 ~ Q1a
 Josh: What is 4 + 7?
 - 11
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 12
 - 9
 - 10
@@ -44,6 +57,7 @@ Josh: What is 4 + 7?
 - 12
 - 11
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 10
 - 9
 => END
@@ -54,6 +68,7 @@ Josh: What is 4 + 7?
 - 9
 - 11
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 12
 => END
 
@@ -64,12 +79,14 @@ Josh: What is 4 + 7?
 - 10
 - 11
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 => END
 
 ~ Q2a
 Josh: What is the square root of 64?
 - 8
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 2
 - 10
 - 6
@@ -80,6 +97,7 @@ Josh: What is the square root of 64?
 - 10
 - 8
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 6
 - 2
 => END
@@ -90,6 +108,7 @@ Josh: What is the square root of 64?
 - 6
 - 8
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 10
 => END
 
@@ -100,12 +119,14 @@ Josh: What is the square root of 64?
 - 2
 - 8
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 => END
 
 ~ Q3a
 Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area in cm²?
 - 50
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 25
 - 10
 - 5
@@ -116,6 +137,7 @@ Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area
 - 10
 - 50
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 5
 - 25
 => END
@@ -126,6 +148,7 @@ Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area
 - 5
 - 50
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 - 10
 => END
 
@@ -136,6 +159,7 @@ Josh: If a rectangle has a length of 10 cm and a width of 5 cm, what is its area
 - 25
 - 50
 	do Global.testScore +=1
+	Josh: Great! Next Question.
 => END
 
 ~ testQ1
