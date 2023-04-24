@@ -198,3 +198,4 @@ scroll_active = false
 [connection signal="pressed" from="MarginContainer/VBoxContainer/How to Play Button" to="." method="_on_How_to_Play_Button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CharacterButton" to="." method="_on_CharacterButton_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="InfoBoxNode/ExternalLinkButton" to="." method="_on_external_link_button_pressed"]

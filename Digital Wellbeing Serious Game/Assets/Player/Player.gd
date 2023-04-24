@@ -12,9 +12,11 @@ const FRICTION = 750
 @onready var sprite = $Sprite
 @onready var animationState = animationTree.get("parameters/playback")
 @onready var globalRef = get_node("/root/Global")
+@export var PausePopUp:PackedScene
 
 var isTalking = false
 var isPaused = false
+var popUp = null
 
 #Functions
 func _ready():
@@ -28,6 +30,7 @@ func _physics_process(delta): #up is negative, reversed in games; strange i forg
 		rayCastDir(delta)
 		if Input.is_action_just_pressed("Interact"):
 			interact(delta)
+		pauseGame()
 
 func rayCastDir(_delta):
 	#Setting the direction of the raycast to the direction the player is facing
@@ -43,12 +46,11 @@ func rayCastDir(_delta):
 
 func pauseGame(): #Needs popup as unpause process can't happen if game paused; maybe make own sceene
 	if Input.is_action_just_pressed("Pause"):
-		if isPaused == false and isTalking == false:
+		if isTalking == false:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			popUp = PausePopUp.instantiate()
+			add_child(popUp)
 			get_tree().paused = true
-			isPaused = true
-		elif isPaused:
-			get_tree().paused = false
-			isPaused = false
 
 func movement(delta):
 	var input_vector = Vector2.ZERO

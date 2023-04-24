@@ -1,7 +1,3 @@
-res://Assets/Menu Scenes/Level Select.tscn
-res://Assets/Player/Player.tscn
-res://World.tscn
-res://Assets/Menu Scenes/Main Menu.tscn
-res://Assets/Diologue/portraits_balloon/balloon.tscn
-res://Assets/Menu Scenes/How To.tscn
 res://Assets/Menu Scenes/Credits.tscn
+res://Assets/Menu Scenes/Level Select.tscn
+res://Assets/Menu Scenes/How To.tscn

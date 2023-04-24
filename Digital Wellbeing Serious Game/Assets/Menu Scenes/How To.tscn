@@ -20,6 +20,7 @@ texture_pressed = ExtResource("3")
 texture_hover = ExtResource("4")
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="TextureButton"]
+layout_mode = 0
 offset_left = 23.0
 offset_top = 8.0
 offset_right = 57.0

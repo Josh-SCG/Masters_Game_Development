@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dtlp45wv17hrd"]
+[gd_scene load_steps=22 format=3 uid="uid://dtlp45wv17hrd"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Level Select.gd" id="1_aa3sn"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="1_vbbgi"]
@@ -18,6 +18,15 @@
 [ext_resource type="Texture2D" uid="uid://dtsfn4fnb3cef" path="res://Assets/UI/button_x_inactive.png" id="16_ewt44"]
 [ext_resource type="Texture2D" uid="uid://diip3wlrkbhur" path="res://Assets/UI/button_x_pressed.png" id="17_ycjts"]
 [ext_resource type="Texture2D" uid="uid://pa1lbsj12tk5" path="res://Assets/UI/button_x_hover.png" id="18_lm2l1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqftp"]
+size = Vector2(211, 205)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_th114"]
+size = Vector2(229, 212)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q64of"]
+size = Vector2(216, 211)
 
 [node name="Level Select" type="Node2D"]
 script = ExtResource("1_aa3sn")
@@ -66,6 +75,7 @@ offset_left = 70.0
 offset_top = 140.0
 offset_right = 70.0
 offset_bottom = 180.0
+mouse_filter = 2
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="PhysicalLevelBox"]
@@ -144,6 +154,7 @@ offset_left = 390.0
 offset_top = 140.0
 offset_right = 597.0
 offset_bottom = 403.0
+mouse_filter = 2
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="MentalLevelBox"]
@@ -223,6 +234,7 @@ offset_left = 720.0
 offset_top = 140.0
 offset_right = 927.0
 offset_bottom = 403.0
+mouse_filter = 2
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="SecurityLevelBox"]
@@ -308,7 +320,7 @@ offset_top = 21.0
 offset_right = 885.0
 offset_bottom = 116.0
 theme_override_fonts/normal_font = ExtResource("15_bfsrm")
-text = "lorum ipsum"
+text = "Hover over a level's mini description to see more."
 
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 864.0
@@ -320,5 +332,32 @@ texture_normal = ExtResource("16_ewt44")
 texture_pressed = ExtResource("17_ycjts")
 texture_hover = ExtResource("18_lm2l1")
 
+[node name="PhysicalExplination" type="Area2D" parent="."]
+position = Vector2(69, 185)
+
+[node name="PhysCollision" type="CollisionShape2D" parent="PhysicalExplination"]
+position = Vector2(76.5, 35.5)
+shape = SubResource("RectangleShape2D_yqftp")
+
+[node name="MenatlExplination" type="Area2D" parent="."]
+position = Vector2(389, 188)
+
+[node name="MentalCollision" type="CollisionShape2D" parent="MenatlExplination"]
+position = Vector2(80.5, 29)
+shape = SubResource("RectangleShape2D_th114")
+
+[node name="SecurityExplination" type="Area2D" parent="."]
+position = Vector2(720, 140)
+
+[node name="SecColliosion" type="CollisionShape2D" parent="SecurityExplination"]
+position = Vector2(78, 80.5)
+shape = SubResource("RectangleShape2D_q64of")
+
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="PhysicalExplination" to="." method="_on_physical_explination_mouse_entered"]
+[connection signal="mouse_exited" from="PhysicalExplination" to="." method="_on_physical_explination_mouse_exited"]
+[connection signal="mouse_entered" from="MenatlExplination" to="." method="_on_menatl_explination_mouse_entered"]
+[connection signal="mouse_exited" from="MenatlExplination" to="." method="_on_menatl_explination_mouse_exited"]
+[connection signal="mouse_entered" from="SecurityExplination" to="." method="_on_security_explination_mouse_entered"]
+[connection signal="mouse_exited" from="SecurityExplination" to="." method="_on_security_explination_mouse_exited"]

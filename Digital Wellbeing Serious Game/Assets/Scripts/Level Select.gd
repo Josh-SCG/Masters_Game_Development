@@ -25,3 +25,21 @@ func _on_menu_pressed():
 
 func _on_texture_button_pressed():
 	get_tree().change_scene_to_file("res://World.tscn")
+
+func _on_physical_explination_mouse_entered():
+	$extraInformation/informationLabel.text = "This level deals with the ideas of physical health in relation to technology. This includes eye strain, back pain, etc."
+
+func _on_menatl_explination_mouse_entered():
+	$extraInformation/informationLabel.text = "This level deals with mental health and technology use. This includes concepts such as doomscrolling, FOMO, etc. and how they affect mental health."
+
+func _on_security_explination_mouse_entered():
+	$extraInformation/informationLabel.text = "This level deals with devices security. This includes passwords, social engineering concepts and general security practices to follow."
+
+func _on_physical_explination_mouse_exited():
+	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."
+	
+func _on_menatl_explination_mouse_exited():
+	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."
+
+func _on_security_explination_mouse_exited():
+	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."

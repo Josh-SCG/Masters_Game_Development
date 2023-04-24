@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjebxc8hwt1ty"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/PausePopUp.gd" id="1_8e5m6"]
+[ext_resource type="Shader" path="res://Assets/Scripts/Shaders/static.gdshader" id="1_8tuuu"]
+[ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="1_oa18k"]
+[ext_resource type="Texture2D" uid="uid://bhhglwkngwtfl" path="res://Assets/UI/button_default_pressed.png" id="2_jxhwu"]
+[ext_resource type="Texture2D" uid="uid://caj61jfrfikuk" path="res://Assets/UI/button_default_hover.png" id="3_imj5k"]
+[ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="4_emcjs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lcg4e"]
+shader = ExtResource("1_8tuuu")
+shader_parameter/amount = 40.0
+
+[node name="PausePopUp" type="CanvasLayer"]
+process_mode = 2
+layer = 10
+script = ExtResource("1_8e5m6")
+
+[node name="Background" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_lcg4e")
+offset_right = 960.0
+offset_bottom = 540.0
+color = Color(0.156863, 0.509804, 0.509804, 0.196078)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 359.0
+offset_top = 232.0
+offset_right = 501.0
+offset_bottom = 292.0
+scale = Vector2(1.5, 1.5)
+alignment = 1
+metadata/_edit_group_ = true
+
+[node name="UnPause" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_oa18k")
+texture_pressed = ExtResource("2_jxhwu")
+texture_hover = ExtResource("3_imj5k")
+metadata/_edit_group_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/UnPause"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 5.0
+offset_right = 124.0
+offset_bottom = 45.0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("4_emcjs")
+text = "Unpause"
+
+[node name="Menu" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_oa18k")
+texture_pressed = ExtResource("2_jxhwu")
+texture_hover = ExtResource("3_imj5k")
+metadata/_edit_group_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Menu"]
+layout_mode = 0
+offset_left = 24.3334
+offset_top = 5.0
+offset_right = 128.333
+offset_bottom = 45.0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("4_emcjs")
+text = "Main Menu"
+
+[connection signal="pressed" from="VBoxContainer/UnPause" to="." method="_on_un_pause_pressed"]
+[connection signal="pressed" from="VBoxContainer/Menu" to="." method="_on_menu_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=29 format=3 uid="uid://ygwdpcrdma8n"]
+[gd_scene load_steps=30 format=3 uid="uid://ygwdpcrdma8n"]
 
 [ext_resource type="Texture2D" uid="uid://cdoglu0sw3itu" path="res://Assets/Player/Player Sprites/AAAAA.png" id="1"]
 [ext_resource type="Script" path="res://Assets/Player/Player.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://cjebxc8hwt1ty" path="res://Assets/Menu Scenes/PausePopUp.tscn" id="2_l75lc"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 5.0
@@ -248,6 +249,7 @@ transitions = ["Idle", "Run", SubResource("21"), "Run", "Idle", SubResource("22"
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(0, -10)
 script = ExtResource("2")
+PausePopUp = ExtResource("2_l75lc")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1")
