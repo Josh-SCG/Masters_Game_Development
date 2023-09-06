@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://qydasoyqogh3"]
+[gd_scene load_steps=11 format=3 uid="uid://qydasoyqogh3"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Credits.gd" id="1_qjf6l"]
 [ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="2_pq2oe"]
+[ext_resource type="Texture2D" uid="uid://dhp28i6vj1wh1" path="res://Assets/Misc Art/grid_bg.png" id="2_yhv6v"]
 [ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="3_d537w"]
 [ext_resource type="Texture2D" uid="uid://dhn8ao1ar8nmb" path="res://Assets/UI/button_small_inactive.png" id="4_d8ikn"]
 [ext_resource type="Texture2D" uid="uid://dy6p51wpct7l8" path="res://Assets/UI/button_small_pressed.png" id="5_ubbbx"]
@@ -11,7 +12,13 @@
 [ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="9_xw6b5"]
 
 [node name="Credits" type="Node2D"]
+texture_filter = 1
 script = ExtResource("1_qjf6l")
+
+[node name="GridBg" type="Sprite2D" parent="."]
+position = Vector2(480, 266)
+scale = Vector2(1.2275, 0.933333)
+texture = ExtResource("2_yhv6v")
 
 [node name="Header" type="TextureRect" parent="."]
 offset_left = 202.0
@@ -98,7 +105,7 @@ offset_top = 11.0
 offset_right = 139.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/normal_font_size = 12
 text = "Character Sprites: 
 Nihey Takizawa"
 
@@ -125,7 +132,7 @@ offset_top = 11.0
 offset_right = 139.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/normal_font_size = 12
 text = "UI Elements:
 pennomi, 
 Buch, and 
@@ -154,7 +161,7 @@ offset_top = 11.0
 offset_right = 162.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/normal_font_size = 12
 text = "Dialogue Manager:
 nathanhoad"
 
@@ -181,7 +188,7 @@ offset_top = 11.0
 offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/normal_font_size = 12
 text = "Gum Bot Sprites:
 GrafxKid"
 
@@ -200,20 +207,23 @@ texture_hover = ExtResource("6_sics3")
 [node name="ArtAssets2" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
 
-[node name="a" type="TextureRect" parent="HBoxContainer/ArtAssets2"]
+[node name="UI_BG" type="TextureRect" parent="HBoxContainer/ArtAssets2"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets2/a"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets2/UI_BG"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
 offset_right = 139.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/normal_font_size = 12
+text = "Grid background:
+ joshshshsh
+"
 
-[node name="aLink" type="TextureButton" parent="HBoxContainer/ArtAssets2/a"]
+[node name="UI_BGLink" type="TextureButton" parent="HBoxContainer/ArtAssets2/UI_BG"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -305,3 +315,4 @@ texture_hover = ExtResource("6_sics3")
 [connection signal="pressed" from="HBoxContainer/ArtAssets/UI/UILink" to="." method="_on_ui_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets/DialogueManager/DialogueManagerLink" to="." method="_on_dialogue_manager_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets/Bot/BotLink" to="." method="_on_bot_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets2/UI_BG/UI_BGLink" to="." method="_on_ui_bg_link_pressed"]

@@ -14,3 +14,7 @@ func _on_dialogue_manager_link_pressed():
 
 func _on_bot_link_pressed():
 	OS.shell_open("https://opengameart.org/content/gum-bot-sprites")
+
+
+func _on_ui_bg_link_pressed():
+	OS.shell_open("https://opengameart.org/content/grid-background")

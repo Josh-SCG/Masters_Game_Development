@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ol30f"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_hruih"]
 
 [resource]
-script = ExtResource("1_ol30f")
+script = ExtResource("1_hruih")
 titles = {
 "Q10a": "574",
 "Q10b": "583",

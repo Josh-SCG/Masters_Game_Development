@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://dtlp45wv17hrd"]
+[gd_scene load_steps=23 format=3 uid="uid://dtlp45wv17hrd"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Level Select.gd" id="1_aa3sn"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="1_vbbgi"]
+[ext_resource type="Texture2D" uid="uid://dhp28i6vj1wh1" path="res://Assets/Misc Art/grid_bg.png" id="2_hofru"]
 [ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="2_ul53b"]
 [ext_resource type="Texture2D" uid="uid://c5bq3xhb31qnn" path="res://Assets/UI/portrait.png" id="4_fgyku"]
 [ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="5_eimgj"]
@@ -29,7 +30,13 @@ size = Vector2(229, 212)
 size = Vector2(216, 211)
 
 [node name="Level Select" type="Node2D"]
+texture_filter = 1
 script = ExtResource("1_aa3sn")
+
+[node name="GridBg" type="Sprite2D" parent="."]
+position = Vector2(480, 266)
+scale = Vector2(1.2275, 0.933333)
+texture = ExtResource("2_hofru")
 
 [node name="Header" type="TextureRect" parent="."]
 offset_left = 376.0

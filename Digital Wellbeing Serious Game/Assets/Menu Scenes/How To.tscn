@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdoyqhmsn2wix"]
+[gd_scene load_steps=9 format=3 uid="uid://bdoyqhmsn2wix"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/How To.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dhp28i6vj1wh1" path="res://Assets/Misc Art/grid_bg.png" id="2_s4v3a"]
 [ext_resource type="Texture2D" uid="uid://dy6p51wpct7l8" path="res://Assets/UI/button_small_pressed.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://sb78a4kb11fd" path="res://Assets/UI/button_small_hover.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://dhn8ao1ar8nmb" path="res://Assets/UI/button_small_inactive.png" id="5"]
@@ -11,7 +12,14 @@
 [node name="How to" type="Node"]
 script = ExtResource("1")
 
+[node name="GridBg" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(480, 266)
+scale = Vector2(1.2275, 0.933333)
+texture = ExtResource("2_s4v3a")
+
 [node name="TextureButton" type="TextureButton" parent="."]
+texture_filter = 1
 offset_right = 71.0
 offset_bottom = 28.0
 scale = Vector2(1.333, 1.333)
@@ -34,6 +42,7 @@ scroll_active = false
 [node name="InfoBox" type="Node" parent="."]
 
 [node name="InfoBoxSprite" type="Sprite2D" parent="InfoBox"]
+texture_filter = 1
 position = Vector2(476, 253)
 scale = Vector2(4.06771, 4.07812)
 texture = ExtResource("6")
@@ -49,6 +58,7 @@ theme_override_font_sizes/normal_font_size = 32
 text = "Click Below For more Information"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="InfoBox"]
+texture_filter = 1
 offset_left = 191.0
 offset_top = 430.0
 offset_right = 487.0
@@ -128,6 +138,7 @@ text = "ipsum"
 scroll_active = false
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
 offset_left = 281.0
 offset_top = 12.0
 offset_right = 473.0

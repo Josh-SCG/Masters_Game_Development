@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fyds5"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rlbdn"]
 
 [resource]
-script = ExtResource("1_fyds5")
+script = ExtResource("1_rlbdn")
 titles = {
 "this_is_a_node_title": "3"
 }

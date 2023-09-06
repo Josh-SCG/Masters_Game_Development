@@ -11,6 +11,7 @@
 
 [node name="World" type="Node2D"]
 y_sort_enabled = true
+texture_filter = 1
 
 [node name="UI" type="Node2D" parent="."]
 script = ExtResource("1_5ekjt")

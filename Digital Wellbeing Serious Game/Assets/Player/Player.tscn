@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://ygwdpcrdma8n"]
+[gd_scene load_steps=29 format=3 uid="uid://ygwdpcrdma8n"]
 
 [ext_resource type="Texture2D" uid="uid://cdoglu0sw3itu" path="res://Assets/Player/Player Sprites/AAAAA.png" id="1"]
 [ext_resource type="Script" path="res://Assets/Player/Player.gd" id="2"]
@@ -244,14 +244,13 @@ states/Run/node = SubResource("20")
 states/Run/position = Vector2(593.667, 61.6667)
 transitions = ["Idle", "Run", SubResource("21"), "Run", "Idle", SubResource("22")]
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id="24"]
-
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(0, -10)
 script = ExtResource("2")
 PausePopUp = ExtResource("2_l75lc")
 
 [node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
 texture = ExtResource("1")
 hframes = 3
 vframes = 4
@@ -270,11 +269,11 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("23")
 anim_player = NodePath("../AnimationPlayer")
-parameters/playback = SubResource("24")
 parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Run/blend_position = Vector2(-0.0293103, -0.0126147)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+texture_filter = 1
 zoom = Vector2(2, 2)
 position_smoothing_speed = 180.0
 

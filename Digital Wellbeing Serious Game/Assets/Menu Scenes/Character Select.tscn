@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dcfhq0pg043xc"]
+[gd_scene load_steps=11 format=3 uid="uid://dcfhq0pg043xc"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Character Select.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dhp28i6vj1wh1" path="res://Assets/Misc Art/grid_bg.png" id="2_apxb1"]
 [ext_resource type="Texture2D" uid="uid://bhhglwkngwtfl" path="res://Assets/UI/button_default_pressed.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://c0g60si44u800" path="res://Assets/UI/slot.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://d3peisp3dgqmm" path="res://Assets/Player/Player Sprites/MWFBD.png" id="5"]
@@ -11,7 +12,13 @@
 [ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="9_v46lv"]
 
 [node name="Character Select" type="Node2D"]
+texture_filter = 1
 script = ExtResource("1")
+
+[node name="GridBg" type="Sprite2D" parent="."]
+position = Vector2(480, 266)
+scale = Vector2(1.2275, 0.933333)
+texture = ExtResource("2_apxb1")
 
 [node name="CharacterBoxSprite" type="Sprite2D" parent="."]
 position = Vector2(220, 225)
