@@ -5,5 +5,6 @@ extends Area2D
 func _ready():
 	add_to_group("NPC")
 
+#Displays current entity's "content" in the dialogue popup with NPC_Dialogue being set in editor
 func startDialogue():
 	get_parent().get_node("UI").show_dialogue(NPC_Dialogue, "start")

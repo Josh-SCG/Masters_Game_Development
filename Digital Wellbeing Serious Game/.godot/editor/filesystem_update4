@@ -1,1 +1,2 @@
-res://Assets/Menu Scenes/Main Menu.tscn
+res://Assets/Player/Player.tscn
+res://Assets/Scripts/Shaders/static.gdshader

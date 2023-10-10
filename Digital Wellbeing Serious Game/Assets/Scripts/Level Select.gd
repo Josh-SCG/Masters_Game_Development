@@ -20,12 +20,14 @@ func _ready():
 	$SecurityLevelBox/HBoxContainer/Score2.texture =  load("res://Assets/UI/radiobutton_"+str(globalRef.level3Score2)+".png")
 	$SecurityLevelBox/HBoxContainer/Score3.texture =  load("res://Assets/UI/radiobutton_"+str(globalRef.level3Score3)+".png")
 
+#Following functions start relevant level selected
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Main Menu.tscn")
 
 func _on_texture_button_pressed():
 	get_tree().change_scene_to_file("res://World.tscn")
 
+#These functions change the botton box to display information depending on where player is hovering over
 func _on_physical_explination_mouse_entered():
 	$extraInformation/informationLabel.text = "This level deals with the ideas of physical health in relation to technology. This includes eye strain, back pain, etc."
 

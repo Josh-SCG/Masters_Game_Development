@@ -1,6 +1,6 @@
 extends Node2D
 
-#Following functions deal with how the buttons will react to being clicked
+#Following functions deal with how the buttons will react to being clicked (Button name = scene taken too)
 func _on_StartButton_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Level Select.tscn")
 

@@ -72,6 +72,8 @@ func movement(delta):
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	move_and_slide()
 
+#checks if player is interacting with something that has "content" and 
+#sends the signal to that entitiy to start the "content"
 func interact(_delta):
 	if rayCast.is_colliding() == false:
 		return

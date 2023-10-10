@@ -3,6 +3,7 @@ extends Node
 func _on_TextureButton_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Main Menu.tscn")
 
+#Button functions to change info displayed
 func _on_Movement_pressed():
 	$InfoBox/Info.text = "Move the character with the W,S,A,D or Arrow Keys"
 
