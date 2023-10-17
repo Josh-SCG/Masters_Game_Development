@@ -15,6 +15,13 @@ func _on_dialogue_manager_link_pressed():
 func _on_bot_link_pressed():
 	OS.shell_open("https://opengameart.org/content/gum-bot-sprites")
 
-
 func _on_ui_bg_link_pressed():
 	OS.shell_open("https://opengameart.org/content/grid-background")
+
+
+func _on_pixel_pack_1_link_pressed():
+	OS.shell_open("https://opengameart.org/content/isaiah658s-pixel-pack-1")
+
+
+func _on_signpost_link_pressed():
+	OS.shell_open("https://opengameart.org/content/lpc-signposts-graves-line-cloths-and-scare-crow")

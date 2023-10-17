@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_xldf8"]
+
+[resource]
+script = ExtResource("1_xldf8")
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Digibot")
+first_title = "2"
+lines = {
+"1": {
+"next_id": "2",
+"text": "start",
+"type": "title"
+},
+"10": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "15",
+"parent_id": "6",
+"text": "Good luck and have fun!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Good luck and have fun!",
+"type": "dialogue"
+},
+"11": {
+"next_id": "12",
+"next_id_after": "15",
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": "response"
+},
+"12": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "13",
+"parent_id": "11",
+"text": "Alright. Don't wander off before you speak to me about this place.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alright. Don't wander off before you speak to me about this place.",
+"type": "dialogue"
+},
+"13": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "11",
+"type": "goto"
+},
+"15": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
+},
+"2": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "3",
+"text": "[[Hello|Hi|Howdy]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hello|Hi|Howdy]]!",
+"type": "dialogue"
+},
+"3": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "4",
+"text": "We've made it to the farm.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We've made it to the farm.",
+"type": "dialogue"
+},
+"4": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "5",
+"text": "This is where you'll learn about the physical aspects of digital wellbeing.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This is where you'll learn about the physical aspects of digital wellbeing.",
+"type": "dialogue"
+},
+"5": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "6",
+"text": "Are you ready to start learning?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Are you ready to start learning?",
+"type": "dialogue"
+},
+"6": {
+"next_id": "7",
+"next_id_after": "15",
+"responses": PackedStringArray("6", "11"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"7": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "8",
+"parent_id": "6",
+"text": "Great! There are a bunch of signs around the area. You should go and read what each of them say.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Great! There are a bunch of signs around the area. You should go and read what each of them say.",
+"type": "dialogue"
+},
+"8": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "9",
+"parent_id": "6",
+"text": "They should have some information relating to what they are next to and digital wellbeing.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "They should have some information relating to what they are next to and digital wellbeing.",
+"type": "dialogue"
+},
+"9": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "10",
+"parent_id": "6",
+"text": "Come find me when you're done with them all.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Come find me when you're done with them all.",
+"type": "dialogue"
+}
+}
+metadata/dialogue_manager_version = "2.11.3"

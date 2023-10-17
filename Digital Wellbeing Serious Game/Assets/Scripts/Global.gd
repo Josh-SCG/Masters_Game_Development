@@ -5,8 +5,8 @@ extends Node
 ###############################
 var gender = "M"
 var skinTone = "W"
-var outfit = "F"
-var hairStyle = "B"
+var outfit = "C"
+var hairStyle = "L"
 var hairColour = "D"
 
 var spriteSheetRef = "res://Assets/Player//Player Sprites//"+gender+skinTone+outfit+hairStyle+hairColour+".png"
@@ -14,6 +14,8 @@ var spriteSheetRef = "res://Assets/Player//Player Sprites//"+gender+skinTone+out
 ######################
 #Level Menu variables#
 ######################
+
+var currentLevel = 0
 
 #level 1 - physical
 var levelComplete1 = 0

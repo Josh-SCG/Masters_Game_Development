@@ -1,0 +1,15 @@
+~ start
+Digibot: [[Hello|Hi|Howdy]]!
+Digibot: We've made it to the farm. 
+Digibot: This is where you'll learn about the physical aspects of digital wellbeing. 
+Digibot: Are you ready to start learning? 
+- Yes
+	Digibot: Great! There are a bunch of signs around the area. You should go and read what each of them say.
+	Digibot: They should have some information relating to what they are next to and digital wellbeing. 
+	Digibot: Come find me when you're done with them all.
+	Digibot: Good luck and have fun! 
+- No
+	Digibot: Alright. Don't wander off before you speak to me about this place.
+	=> END!
+
+=> END!

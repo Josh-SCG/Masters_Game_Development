@@ -252,12 +252,14 @@ PausePopUp = ExtResource("2_l75lc")
 [node name="Sprite" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = ExtResource("1")
+offset = Vector2(0, -16)
 hframes = 3
 vframes = 4
 region_rect = Rect2(0, 1, 96, 128)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 10)
+z_index = 1
+position = Vector2(0, -6)
 rotation = -1.5708
 shape = SubResource("1")
 
@@ -273,12 +275,20 @@ parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Run/blend_position = Vector2(-0.0293103, -0.0126147)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+y_sort_enabled = true
 texture_filter = 1
 zoom = Vector2(2, 2)
+process_callback = 0
+limit_left = -32
+limit_top = -32
+limit_right = 1600
+limit_bottom = 800
+limit_smoothed = true
 position_smoothing_speed = 180.0
+editor_draw_limits = true
 
 [node name="InteractRayCast" type="RayCast2D" parent="."]
-position = Vector2(0, 14)
+position = Vector2(0, -2)
 target_position = Vector2(0, 15)
 collision_mask = 3
 hit_from_inside = true

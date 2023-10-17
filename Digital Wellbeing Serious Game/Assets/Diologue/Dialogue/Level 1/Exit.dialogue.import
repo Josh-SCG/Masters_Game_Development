@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://bre28kyoesug"
+path="res://.godot/imported/Exit.dialogue-e5ef06eb8c4856dab7e74bb793db33c6.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/Level 1/Exit.dialogue"
+dest_files=["res://.godot/imported/Exit.dialogue-e5ef06eb8c4856dab7e74bb793db33c6.tres"]
+
+[params]
+

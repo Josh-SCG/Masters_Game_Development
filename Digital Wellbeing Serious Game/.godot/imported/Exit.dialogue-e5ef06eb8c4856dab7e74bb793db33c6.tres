@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8iee4"]
+
+[resource]
+script = ExtResource("1_8iee4")
+titles = {
+"sign": "7",
+"start": "4"
+}
+character_names = PackedStringArray("You", "Disembodied Voice")
+first_title = "4"
+lines = {
+"10": {
+"character": "Disembodied Voice",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"text": "Do you want to leave?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you want to leave?",
+"type": "dialogue"
+},
+"11": {
+"next_id": "12",
+"next_id_after": "16",
+"responses": PackedStringArray("11", "13"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"12": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Exit"
+}, {
+"type": "dot"
+}, {
+"function": "returnToMenu",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "16",
+"parent_id": "11",
+"type": "mutation"
+},
+"13": {
+"next_id": "14",
+"next_id_after": "16",
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": "response"
+},
+"14": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "13",
+"type": "goto"
+},
+"16": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
+},
+"3": {
+"next_id": "4",
+"text": "start",
+"type": "title"
+},
+"4": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"text": "[[This is the way home.|I can leave this way.|Let's go home.]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[This is the way home.|I can leave this way.|Let's go home.]]!",
+"type": "dialogue"
+},
+"6": {
+"next_id": "7",
+"text": "sign",
+"type": "title"
+},
+"7": {
+"character": "Disembodied Voice",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "8",
+"text": "You're not done here.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You're not done here.",
+"type": "dialogue"
+},
+"8": {
+"character": "Disembodied Voice",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "9",
+"text": "Are you sure you want to leave? There knowldege to be gained..",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Are you sure you want to leave? There knowldege to be gained..",
+"type": "dialogue"
+},
+"9": {
+"character": "Disembodied Voice",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "10",
+"text": "You will lose all progress for the level if you leave.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You will lose all progress for the level if you leave.",
+"type": "dialogue"
+}
+}
+metadata/dialogue_manager_version = "2.11.3"

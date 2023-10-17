@@ -1,0 +1,16 @@
+
+
+~ start
+You: [[This is the way home.|I can leave this way.|Let's go home.]]!
+
+~ sign
+Disembodied Voice: You're not done here.
+Disembodied Voice: Are you sure you want to leave? There knowldege to be gained.. 
+Disembodied Voice: You will lose all progress for the level if you leave. 
+Disembodied Voice: Do you want to leave?
+- Yes
+	do Exit.returnToMenu()
+- No
+	=> END!
+
+=> END!

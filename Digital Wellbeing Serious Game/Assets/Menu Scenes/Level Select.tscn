@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dtlp45wv17hrd"]
+[gd_scene load_steps=20 format=3 uid="uid://dtlp45wv17hrd"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Level Select.gd" id="1_aa3sn"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="1_vbbgi"]
@@ -16,9 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://sb78a4kb11fd" path="res://Assets/UI/button_small_hover.png" id="11_w48tj"]
 [ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="14_dooxb"]
 [ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="15_bfsrm"]
-[ext_resource type="Texture2D" uid="uid://dtsfn4fnb3cef" path="res://Assets/UI/button_x_inactive.png" id="16_ewt44"]
-[ext_resource type="Texture2D" uid="uid://diip3wlrkbhur" path="res://Assets/UI/button_x_pressed.png" id="17_ycjts"]
-[ext_resource type="Texture2D" uid="uid://pa1lbsj12tk5" path="res://Assets/UI/button_x_hover.png" id="18_lm2l1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yqftp"]
 size = Vector2(211, 205)
@@ -329,16 +326,6 @@ offset_bottom = 116.0
 theme_override_fonts/normal_font = ExtResource("15_bfsrm")
 text = "Hover over a level's mini description to see more."
 
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 864.0
-offset_top = 15.0
-offset_right = 888.0
-offset_bottom = 39.0
-scale = Vector2(3, 3)
-texture_normal = ExtResource("16_ewt44")
-texture_pressed = ExtResource("17_ycjts")
-texture_hover = ExtResource("18_lm2l1")
-
 [node name="PhysicalExplination" type="Area2D" parent="."]
 position = Vector2(69, 185)
 
@@ -361,7 +348,7 @@ position = Vector2(78, 80.5)
 shape = SubResource("RectangleShape2D_q64of")
 
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="PhysicalLevelBox/StartPhysicalButton" to="." method="_on_start_physical_button_pressed"]
 [connection signal="mouse_entered" from="PhysicalExplination" to="." method="_on_physical_explination_mouse_entered"]
 [connection signal="mouse_exited" from="PhysicalExplination" to="." method="_on_physical_explination_mouse_exited"]
 [connection signal="mouse_entered" from="MenatlExplination" to="." method="_on_menatl_explination_mouse_entered"]

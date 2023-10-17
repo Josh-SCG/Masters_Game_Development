@@ -24,9 +24,6 @@ func _ready():
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Main Menu.tscn")
 
-func _on_texture_button_pressed():
-	get_tree().change_scene_to_file("res://World.tscn")
-
 #These functions change the botton box to display information depending on where player is hovering over
 func _on_physical_explination_mouse_entered():
 	$extraInformation/informationLabel.text = "This level deals with the ideas of physical health in relation to technology. This includes eye strain, back pain, etc."
@@ -45,3 +42,8 @@ func _on_menatl_explination_mouse_exited():
 
 func _on_security_explination_mouse_exited():
 	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."
+
+
+func _on_start_physical_button_pressed():
+	globalRef.currentLevel = 1
+	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/level_1_a.tscn")

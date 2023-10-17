@@ -46,16 +46,19 @@ monitoring = false
 script = ExtResource("1_fwycf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_do77o")
 autoplay = "default"
 frame_progress = 0.19077
+offset = Vector2(0, -16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3.85842e-06, 5.5)
+position = Vector2(0, -10.5)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_ah282")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(0, -16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(0, 8)

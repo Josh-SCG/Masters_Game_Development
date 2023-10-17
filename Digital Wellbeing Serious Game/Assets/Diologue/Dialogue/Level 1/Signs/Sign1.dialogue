@@ -1,0 +1,14 @@
+~ start
+You: [[It's one of those signs.|A sign!|INFORMATION!]]!
+
+~ sign
+Sign: Physical Digital Wellbeing Information #1:
+Sign: It is important to stay active while working at a desk. 
+Sign: You should be standing and stretching every so often. 
+You: Do you want to re-read the sign?
+- Yes
+	=> sign
+- No
+	=> END!
+
+=> END!

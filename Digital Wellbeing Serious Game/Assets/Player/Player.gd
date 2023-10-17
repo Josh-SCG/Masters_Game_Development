@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 #Variables
-const MAX_SPEED = 85
-const ACCELERATION = 500
-const FRICTION = 750
+const MAX_SPEED = 125 #Old Speed @85
+const ACCELERATION = 750 #Old Accel @500
+const FRICTION = 1000 #Old Friction @750
 
 #var velocity = Vector2.ZERO
 @onready var animationPlayer = $AnimationPlayer

@@ -14,7 +14,11 @@ config/name="Digital Wellbeing Serious Game"
 run/main_scene="res://Assets/Menu Scenes/Main Menu.tscn"
 config/features=PackedStringArray("4.1")
 boot_splash/bg_color=Color(0.0705882, 0.215686, 0.239216, 1)
+boot_splash/image="res://splash.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://icon.png"
+boot_splash/minimum_display_time=2000
 
 [autoload]
 
@@ -90,7 +94,7 @@ Pause={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/WorldTest.dialogue", "res://Assets/Diologue/WorldTest.dialogue", "res://Assets/Diologue/Dialogue/test2.dialogue", "res://Assets/Diologue/Dialogue/WorldTest.dialogue", "res://Assets/Diologue/questionTest.dialogue", "res://Assets/Diologue/Question Files/PhysicalQuestions.dialogue", "res://Assets/Diologue/Question Files/MentalQuestions.dialogue", "res://Assets/Diologue/Question Files/SecurityQuestions.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/WorldTest.dialogue", "res://Assets/Diologue/WorldTest.dialogue", "res://Assets/Diologue/Dialogue/test2.dialogue", "res://Assets/Diologue/Dialogue/WorldTest.dialogue", "res://Assets/Diologue/questionTest.dialogue", "res://Assets/Diologue/Question Files/PhysicalQuestions.dialogue", "res://Assets/Diologue/Question Files/MentalQuestions.dialogue", "res://Assets/Diologue/Question Files/SecurityQuestions.dialogue", "res://Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign1.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Exit.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1a.dialogue")
 
 [physics]
 
