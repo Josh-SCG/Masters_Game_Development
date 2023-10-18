@@ -1,5 +1,6 @@
-res://Assets/Scripts/Shaders/static.gdshader
 res://Assets/Menu Scenes/Level Select.tscn
-res://Assets/Level Scenes/Level 1/level_1.tscn
+res://Assets/Scripts/Shaders/static.gdshader
 res://Assets/Level Scenes/Level 1/level_1_a.tscn
 res://Presets/fade_in_out_colour_rect.tscn
+res://Assets/Scripts/Global.gd
+res://Assets/Level Scenes/Level 1/level_1.tscn

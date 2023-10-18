@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7kjxsturbhvn"]
 
 [sub_resource type="Animation" id="Animation_3r4kt"]
-length = 1.5
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

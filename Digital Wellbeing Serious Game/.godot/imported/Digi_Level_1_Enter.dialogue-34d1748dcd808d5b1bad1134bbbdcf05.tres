@@ -1,10 +1,13 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_d2lil"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_bbetl"]
 
 [resource]
-script = ExtResource("1_d2lil")
+script = ExtResource("1_bbetl")
 titles = {
+"inProgress": "27",
+"init": "12",
+"leave": "52",
 "start": "2"
 }
 character_names = PackedStringArray("Digibot")
@@ -15,119 +18,600 @@ lines = {
 "text": "start",
 "type": "title"
 },
-"10": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "15",
-"parent_id": "6",
-"text": "Good luck and have fun!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Good luck and have fun!",
-"type": "dialogue"
-},
 "11": {
 "next_id": "12",
-"next_id_after": "15",
-"text": "No",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "No",
-"type": "response"
+"text": "init",
+"type": "title"
 },
 "12": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "13",
-"parent_id": "11",
-"text": "Alright. Don't wander off before you speak to me about this place.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Alright. Don't wander off before you speak to me about this place.",
-"type": "dialogue"
-},
-"13": {
-"is_snippet": false,
-"next_id": "end!",
-"parent_id": "11",
-"type": "goto"
-},
-"15": {
-"is_snippet": false,
-"next_id": "end!",
-"type": "goto"
-},
-"2": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "3",
-"text": "[[Hello|Hi|Howdy]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hello|Hi|Howdy]]!",
-"type": "dialogue"
-},
-"3": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "4",
 "text": "We've made it to the farm.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We've made it to the farm.",
 "type": "dialogue"
 },
-"4": {
+"13": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "5",
+"next_id": "14",
 "text": "This is where you'll learn about the physical aspects of digital wellbeing.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "This is where you'll learn about the physical aspects of digital wellbeing.",
 "type": "dialogue"
 },
-"5": {
+"14": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "6",
+"next_id": "15",
 "text": "Are you ready to start learning?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Are you ready to start learning?",
 "type": "dialogue"
 },
-"6": {
-"next_id": "7",
-"next_id_after": "15",
-"responses": PackedStringArray("6", "11"),
+"15": {
+"next_id": "16",
+"next_id_after": "27",
+"responses": PackedStringArray("15", "22"),
 "text": "Yes",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes",
 "type": "response"
 },
-"7": {
+"16": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "8",
-"parent_id": "6",
+"next_id": "17",
+"parent_id": "15",
 "text": "Great! There are a bunch of signs around the area. You should go and read what each of them say.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Great! There are a bunch of signs around the area. You should go and read what each of them say.",
 "type": "dialogue"
 },
-"8": {
+"17": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "9",
-"parent_id": "6",
+"next_id": "18",
+"parent_id": "15",
 "text": "They should have some information relating to what they are next to and digital wellbeing.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "They should have some information relating to what they are next to and digital wellbeing.",
 "type": "dialogue"
 },
-"9": {
+"18": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "10",
-"parent_id": "6",
+"next_id": "19",
+"parent_id": "15",
 "text": "Come find me when you're done with them all.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Come find me when you're done with them all.",
 "type": "dialogue"
+},
+"19": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "20",
+"parent_id": "15",
+"text": "Good luck and have fun!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Good luck and have fun!",
+"type": "dialogue"
+},
+"2": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "4",
+"text": "[[Hello|Hi|Howdy]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hello|Hi|Howdy]]!",
+"type": "dialogue"
+},
+"20": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "initLevelConvo"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "21",
+"parent_id": "15",
+"type": "mutation"
+},
+"21": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "15",
+"type": "goto"
+},
+"22": {
+"next_id": "23",
+"next_id_after": "27",
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": "response"
+},
+"23": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "24",
+"parent_id": "22",
+"text": "Alright. Don't wander off before you speak to me about this place.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alright. Don't wander off before you speak to me about this place.",
+"type": "dialogue"
+},
+"24": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "22",
+"type": "goto"
+},
+"26": {
+"next_id": "27",
+"text": "inProgress",
+"type": "title"
+},
+"27": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "28",
+"text": "Remember, you're looking for signs around the farm with information about digital wellbeing on them.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Remember, you're looking for signs around the farm with information about digital wellbeing on them.",
+"type": "dialogue"
+},
+"28": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "30",
+"text": "There should be a few more signs around here. You've seen {{Global.level1SignsSeen}}.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level1SignsSeen"
+}]),
+"value_in_text": "{{Global.level1SignsSeen}}"
+}]),
+"translation_key": "There should be a few more signs around here. You've seen {{Global.level1SignsSeen}}.",
+"type": "dialogue"
+},
+"30": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "randomHint",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level1Signs"
+}])])
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_conditional_id": "33",
+"next_id": "31",
+"next_id_after": "49",
+"type": "condition"
+},
+"31": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "30",
+"text": "You didn't miss the one right to the left did you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You didn't miss the one right to the left did you?",
+"type": "dialogue"
+},
+"33": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "randomHint",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level1Signs"
+}])])
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_conditional_id": "36",
+"next_id": "34",
+"next_id_after": "49",
+"type": "condition"
+},
+"34": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "33",
+"text": "Drinking water is always important which probably explains that big tank over there.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Drinking water is always important which probably explains that big tank over there.",
+"type": "dialogue"
+},
+"36": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "randomHint",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level1Signs"
+}])])
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 3
+}])
+},
+"next_conditional_id": "39",
+"next_id": "37",
+"next_id_after": "49",
+"type": "condition"
+},
+"37": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "36",
+"text": "You know, it makes sense the laundry is hung to dry this far out.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You know, it makes sense the laundry is hung to dry this far out.",
+"type": "dialogue"
+},
+"39": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "randomHint",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level1Signs"
+}])])
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 4
+}])
+},
+"next_conditional_id": "42",
+"next_id": "40",
+"next_id_after": "49",
+"type": "condition"
+},
+"4": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "initLevelConvo"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_conditional_id": "6",
+"next_id": "5",
+"next_id_after": "12",
+"type": "condition"
+},
+"40": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "39",
+"text": "Have you seen the dancing flower gardern yet?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Have you seen the dancing flower gardern yet?",
+"type": "dialogue"
+},
+"42": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "randomHint",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level1Signs"
+}])])
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 5
+}])
+},
+"next_conditional_id": "45",
+"next_id": "43",
+"next_id_after": "49",
+"type": "condition"
+},
+"43": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "42",
+"text": "Sometimes checking the corners is helpful.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sometimes checking the corners is helpful.",
+"type": "dialogue"
+},
+"45": {
+"next_conditional_id": "49",
+"next_id": "46",
+"next_id_after": "49",
+"type": "condition"
+},
+"46": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "45",
+"text": "I appear to be glitching and cannot give you a hint at this time.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I appear to be glitching and cannot give you a hint at this time.",
+"type": "dialogue"
+},
+"49": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
+},
+"5": {
+"is_snippet": false,
+"next_id": "12",
+"parent_id": "4",
+"type": "goto"
+},
+"51": {
+"next_id": "52",
+"text": "leave",
+"type": "title"
+},
+"52": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "53",
+"text": "It looks like you've seen all the signs here on the farm.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "It looks like you've seen all the signs here on the farm.",
+"type": "dialogue"
+},
+"53": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "54",
+"text": "Hopefully you found them insightful.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hopefully you found them insightful.",
+"type": "dialogue"
+},
+"54": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "55",
+"text": "If you're done here, we can head back.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you're done here, we can head back.",
+"type": "dialogue"
+},
+"55": {
+"next_id": "56",
+"next_id_after": "62",
+"responses": PackedStringArray("55", "58"),
+"text": "We can head back now",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We can head back now",
+"type": "response"
+},
+"56": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "57",
+"parent_id": "55",
+"text": "Great! Let's go!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Great! Let's go!",
+"type": "dialogue"
+},
+"57": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "get_tree",
+"type": "function",
+"value": Array[Array]([])
+}, {
+"type": "dot"
+}, {
+"function": "change_scene_to_file",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "res://Assets/Level Scenes/Level 1/level_1_b.tscn"
+}])])
+}])
+},
+"next_id": "62",
+"parent_id": "55",
+"type": "mutation"
+},
+"58": {
+"next_id": "59",
+"next_id_after": "62",
+"text": "I still want to look around for a bit.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I still want to look around for a bit.",
+"type": "response"
+},
+"59": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "60",
+"parent_id": "58",
+"text": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
+"type": "dialogue"
+},
+"6": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "initLevelConvo"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_conditional_id": "8",
+"next_id": "7",
+"next_id_after": "12",
+"type": "condition"
+},
+"60": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "58",
+"type": "goto"
+},
+"62": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
+},
+"7": {
+"is_snippet": false,
+"next_id": "27",
+"parent_id": "6",
+"type": "goto"
+},
+"8": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "initLevelConvo"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_conditional_id": "12",
+"next_id": "9",
+"next_id_after": "12",
+"type": "condition"
+},
+"9": {
+"is_snippet": false,
+"next_id": "52",
+"parent_id": "8",
+"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

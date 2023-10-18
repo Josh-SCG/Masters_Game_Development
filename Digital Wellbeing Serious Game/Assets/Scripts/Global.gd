@@ -23,17 +23,26 @@ var level1Score1 = 0
 var level1Score2 = 0
 var level1Score3 = 0
 
+var level1Signs = [1,2,3,4,5]
+var level1SignsSeen = 0
+
 #level 2 - mental
 var levelComplete2 = 0
 var level2Score1 = 0
 var level2Score2 = 0
 var level2Score3 = 0
 
+var level2Signs = [1,2,3,4,5]
+var level2SignsSeen = 0
+
 #level 3 - Security
 var levelComplete3 = 0
 var level3Score1 = 0
 var level3Score2 = 0
 var level3Score3 = 0
+
+var level3Signs = [1,2,3,4,5]
+var level3SignsSeen = 0
 
 ###############
 #Level  Scores#
@@ -47,6 +56,13 @@ var level3HighScore = 0
 var level1SessionScore = 0
 var level2SessionScore = 0
 var level3SessionScore = 0
+
+####################
+## Other Variables##
+####################
+
+var initLevelConvo = 0
+var signCheck = false
 
 ####################
 #Question Selection#
@@ -85,3 +101,55 @@ func setQuestion(num):
 func setAnswer(key):
 	var ansLetter = questionDict[key]
 	return ansLetter
+
+####################
+## Misc Functions ##
+####################
+#These functions are used to help with dialogue about a players progress with regards to how many signs are left
+func signRemoval(levelArray, signNum) -> bool:
+	var i = levelArray.find(signNum)
+	if i != -1:
+		levelArray.remove_at(i)
+		print(level1Signs, signNum)
+		return true
+	return false
+
+func arrayReset(array):
+	array.clear()
+	var temp = [1,2,3,4,5]
+	array.append_array(temp)
+
+#Reset the scores and completion of the player if they leave the level with pause menu
+func resetLevelProgress():
+	signCheck = false
+	initLevelConvo = 0
+	
+	if currentLevel == 1:
+		level1Score1 = 0
+		level1Score2 = 0
+		level1Score3 = 0
+		level1SessionScore = 0
+		level1SignsSeen = 0
+		arrayReset(level1Signs)
+
+	elif currentLevel == 2:
+		level2Score1 = 0
+		level2Score2 = 0
+		level2Score3 = 0
+		level2SessionScore = 0
+		level2SignsSeen = 0
+		arrayReset(level2Signs)
+	
+	elif currentLevel == 3:
+		level3Score1 = 0
+		level3Score2 = 0
+		level3Score3 = 0
+		level3SessionScore = 0
+		level3SignsSeen = 0
+		arrayReset(level3Signs)
+	
+	currentLevel = 0
+
+func randomHint(array) -> int:
+	return array.pick_random()
+	

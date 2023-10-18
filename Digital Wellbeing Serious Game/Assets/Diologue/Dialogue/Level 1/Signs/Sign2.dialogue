@@ -2,13 +2,14 @@
 You: [[It's one of those signs|A sign!|INFORMATION!]]!
 
 ~ sign
-Sign: Physical Digital Wellbeing Information #1:
+Sign: Physical Digital Wellbeing Information #2:
+
 
 You: Do you want to re-read the sign?
 - Yes
 	=> sign
 - No
-	do Global.signCheck = Global.signRemoval(Global.level1Signs, 1)
+	do Global.signCheck = Global.signRemoval(Global.level1Signs, 2)
 	if Global.signCheck
 		do Global.level1SignsSeen += 1
 	if Global.level1SignsSeen == 5

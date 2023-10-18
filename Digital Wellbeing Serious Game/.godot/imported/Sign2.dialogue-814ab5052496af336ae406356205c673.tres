@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_bb36e"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_xk056"]
 
 [resource]
-script = ExtResource("1_bb36e")
+script = ExtResource("1_xk056")
 titles = {
 "sign": "5",
 "start": "2"
@@ -17,14 +17,20 @@ lines = {
 "type": "title"
 },
 "10": {
-"next_id": "11",
-"next_id_after": "18",
+"is_snippet": false,
+"next_id": "5",
+"parent_id": "9",
+"type": "goto"
+},
+"11": {
+"next_id": "12",
+"next_id_after": "19",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"11": {
+"12": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -55,15 +61,15 @@ lines = {
 "value": "level1Signs"
 }]), Array[Dictionary]([{
 "type": "number",
-"value": 1
+"value": 2
 }])])
 }])
 },
-"next_id": "12",
-"parent_id": "10",
+"next_id": "13",
+"parent_id": "11",
 "type": "mutation"
 },
-"12": {
+"13": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -75,13 +81,13 @@ lines = {
 "value": "signCheck"
 }])
 },
-"next_conditional_id": "14",
-"next_id": "13",
-"next_id_after": "14",
-"parent_id": "10",
+"next_conditional_id": "15",
+"next_id": "14",
+"next_id_after": "15",
+"parent_id": "11",
 "type": "condition"
 },
-"13": {
+"14": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -99,11 +105,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "14",
-"parent_id": "12",
+"next_id": "15",
+"parent_id": "13",
 "type": "mutation"
 },
-"14": {
+"15": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -121,13 +127,13 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "16",
-"next_id": "15",
-"next_id_after": "16",
-"parent_id": "10",
+"next_conditional_id": "17",
+"next_id": "16",
+"next_id_after": "17",
+"parent_id": "11",
 "type": "condition"
 },
-"15": {
+"16": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -145,17 +151,17 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "16",
-"parent_id": "14",
+"next_id": "17",
+"parent_id": "15",
 "type": "mutation"
 },
-"16": {
+"17": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "10",
+"parent_id": "11",
 "type": "goto"
 },
-"18": {
+"19": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
@@ -177,35 +183,29 @@ lines = {
 "5": {
 "character": "Sign",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "7",
-"text": "Physical Digital Wellbeing Information #1:",
+"next_id": "8",
+"text": "Physical Digital Wellbeing Information #2:",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Physical Digital Wellbeing Information #1:",
+"translation_key": "Physical Digital Wellbeing Information #2:",
 "type": "dialogue"
 },
-"7": {
+"8": {
 "character": "You",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "8",
+"next_id": "9",
 "text": "Do you want to re-read the sign?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Do you want to re-read the sign?",
 "type": "dialogue"
 },
-"8": {
-"next_id": "9",
-"next_id_after": "18",
-"responses": PackedStringArray("8", "10"),
+"9": {
+"next_id": "10",
+"next_id_after": "19",
+"responses": PackedStringArray("9", "11"),
 "text": "Yes",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes",
 "type": "response"
-},
-"9": {
-"is_snippet": false,
-"next_id": "5",
-"parent_id": "8",
-"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"
