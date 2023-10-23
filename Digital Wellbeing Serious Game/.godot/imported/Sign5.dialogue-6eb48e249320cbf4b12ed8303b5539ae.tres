@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_85pe3"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_e30lh"]
 
 [resource]
-script = ExtResource("1_85pe3")
+script = ExtResource("1_e30lh")
 titles = {
 "sign": "5",
 "start": "2"
@@ -183,11 +183,32 @@ lines = {
 "5": {
 "character": "Sign",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "8",
+"next_id": "7",
 "text": "Physical Digital Wellbeing Information #5:",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Physical Digital Wellbeing Information #5:",
 "type": "dialogue"
+},
+"7": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "achievementSign"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "8",
+"type": "mutation"
 },
 "8": {
 "character": "You",

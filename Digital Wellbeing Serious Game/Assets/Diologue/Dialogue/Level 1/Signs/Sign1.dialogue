@@ -4,6 +4,7 @@ You: [[It's one of those signs|A sign!|INFORMATION!]]!
 ~ sign
 Sign: Physical Digital Wellbeing Information #1:
 
+set Global.achievementSign = 0
 You: Do you want to re-read the sign?
 - Yes
 	=> sign

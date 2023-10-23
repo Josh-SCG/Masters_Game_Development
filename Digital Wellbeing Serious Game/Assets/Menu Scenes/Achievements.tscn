@@ -1,0 +1,205 @@
+[gd_scene load_steps=12 format=3 uid="uid://dhupimxjxuul3"]
+
+[ext_resource type="Texture2D" uid="uid://dhp28i6vj1wh1" path="res://Assets/Misc Art/grid_bg.png" id="1_5gdyy"]
+[ext_resource type="Script" path="res://Assets/Scripts/Achievements.gd" id="1_k1aqv"]
+[ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="3_o8uuk"]
+[ext_resource type="Texture2D" uid="uid://dhn8ao1ar8nmb" path="res://Assets/UI/button_small_inactive.png" id="3_rwvs7"]
+[ext_resource type="Texture2D" uid="uid://dy6p51wpct7l8" path="res://Assets/UI/button_small_pressed.png" id="4_cby4i"]
+[ext_resource type="Texture2D" uid="uid://sb78a4kb11fd" path="res://Assets/UI/button_small_hover.png" id="5_byeax"]
+[ext_resource type="FontFile" uid="uid://hvhsr86weewy" path="res://Assets/Fonts/Kenney Pixel Square.ttf" id="6_c1skh"]
+[ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="8_sxmx1"]
+[ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="9_7f2pr"]
+[ext_resource type="Texture2D" uid="uid://crr7pkfdohdqd" path="res://Assets/Misc Art/signpost1.png" id="10_gek47"]
+[ext_resource type="AudioStream" uid="uid://d3bepa3o613mp" path="res://Assets/Music/Party Sector.mp3" id="11_jt041"]
+
+[node name="Achievements" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_k1aqv")
+
+[node name="GridBg" type="Sprite2D" parent="."]
+position = Vector2(480, 266)
+scale = Vector2(1.2275, 0.933333)
+texture = ExtResource("1_5gdyy")
+
+[node name="HeaderRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 281.0
+offset_top = 12.0
+offset_right = 473.0
+offset_bottom = 76.0
+scale = Vector2(2, 1.5)
+texture = ExtResource("3_o8uuk")
+stretch_mode = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HeaderRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 183.0
+offset_bottom = 51.0
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("6_c1skh")
+text = "Achievements"
+scroll_active = false
+
+[node name="MenuButton" type="TextureButton" parent="."]
+texture_filter = 1
+offset_right = 71.0
+offset_bottom = 28.0
+scale = Vector2(1.333, 1.333)
+texture_normal = ExtResource("3_rwvs7")
+texture_pressed = ExtResource("4_cby4i")
+texture_hover = ExtResource("5_byeax")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="MenuButton"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 8.0
+offset_right = 57.0
+offset_bottom = 23.0
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("6_c1skh")
+theme_override_font_sizes/normal_font_size = 8
+text = "Menu"
+scroll_active = false
+
+[node name="extraInformation" type="TextureRect" parent="."]
+visible = false
+offset_left = 15.0
+offset_top = 391.0
+offset_right = 970.0
+offset_bottom = 529.0
+texture = ExtResource("8_sxmx1")
+
+[node name="informationLabel" type="RichTextLabel" parent="extraInformation"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 21.0
+offset_right = 885.0
+offset_bottom = 116.0
+theme_override_fonts/normal_font = ExtResource("9_7f2pr")
+text = "Hover over an achievement to see more information about it. Can you get them all?"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 70.0
+offset_top = 170.0
+offset_right = 710.0
+offset_bottom = 330.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+theme_override_constants/separation = 32
+metadata/_edit_group_ = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 32
+
+[node name="AchievementStartLevel" type="TextureRect" parent="VBoxContainer/HBoxContainer2"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_o8uuk")
+stretch_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/HBoxContainer2/AchievementStartLevel"]
+position = Vector2(31.077, 32.4615)
+texture = ExtResource("10_gek47")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/AchievementStartLevel"]
+offset_left = 70.0
+offset_top = 13.0
+offset_right = 175.0
+offset_bottom = 53.0
+theme_override_fonts/normal_font = ExtResource("9_7f2pr")
+text = "Start a level"
+
+[node name="AchievementFinishLevel" type="TextureRect" parent="VBoxContainer/HBoxContainer2"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_o8uuk")
+stretch_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/HBoxContainer2/AchievementFinishLevel"]
+position = Vector2(31.077, 32.4615)
+texture = ExtResource("10_gek47")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/AchievementFinishLevel"]
+offset_left = 70.0
+offset_top = 13.0
+offset_right = 175.0
+offset_bottom = 53.0
+theme_override_fonts/normal_font = ExtResource("9_7f2pr")
+text = "Finish a level"
+
+[node name="AchievementLevel100" type="TextureRect" parent="VBoxContainer/HBoxContainer2"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_o8uuk")
+stretch_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/HBoxContainer2/AchievementLevel100"]
+position = Vector2(31.077, 32.4615)
+texture = ExtResource("10_gek47")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/AchievementLevel100"]
+offset_left = 70.0
+offset_top = 13.0
+offset_right = 175.0
+offset_bottom = 53.0
+theme_override_fonts/normal_font = ExtResource("9_7f2pr")
+text = "get 100% on a level"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 32
+
+[node name="AchievementReadSign" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_o8uuk")
+stretch_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/HBoxContainer/AchievementReadSign"]
+position = Vector2(31.077, 32.4615)
+texture = ExtResource("10_gek47")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/AchievementReadSign"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 13.0
+offset_right = 175.0
+offset_bottom = 53.0
+theme_override_fonts/normal_font = ExtResource("9_7f2pr")
+text = "Read a signpost"
+
+[node name="AchievementMinigame" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_o8uuk")
+stretch_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/HBoxContainer/AchievementMinigame"]
+position = Vector2(31.077, 32.4615)
+texture = ExtResource("10_gek47")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/AchievementMinigame"]
+offset_left = 70.0
+offset_top = 13.0
+offset_right = 175.0
+offset_bottom = 53.0
+theme_override_fonts/normal_font = ExtResource("9_7f2pr")
+text = "Beat a minigame"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_jt041")
+
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]

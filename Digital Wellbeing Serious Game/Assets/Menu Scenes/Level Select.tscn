@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dtlp45wv17hrd"]
+[gd_scene load_steps=21 format=3 uid="uid://dtlp45wv17hrd"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Level Select.gd" id="1_aa3sn"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="1_vbbgi"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://sb78a4kb11fd" path="res://Assets/UI/button_small_hover.png" id="11_w48tj"]
 [ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="14_dooxb"]
 [ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="15_bfsrm"]
+[ext_resource type="AudioStream" uid="uid://d3bepa3o613mp" path="res://Assets/Music/Party Sector.mp3" id="17_ii7iv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yqftp"]
 size = Vector2(211, 205)
@@ -346,6 +347,9 @@ position = Vector2(720, 140)
 [node name="SecColliosion" type="CollisionShape2D" parent="SecurityExplination"]
 position = Vector2(78, 80.5)
 shape = SubResource("RectangleShape2D_q64of")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_ii7iv")
 
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="PhysicalLevelBox/StartPhysicalButton" to="." method="_on_start_physical_button_pressed"]

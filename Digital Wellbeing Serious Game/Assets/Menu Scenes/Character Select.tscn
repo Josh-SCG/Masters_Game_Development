@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dcfhq0pg043xc"]
+[gd_scene load_steps=12 format=3 uid="uid://dcfhq0pg043xc"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Character Select.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="2"]
@@ -10,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://baep36n7gkbpu" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="7_mkv7f"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="8_126fi"]
 [ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="9_v46lv"]
+[ext_resource type="AudioStream" uid="uid://d3bepa3o613mp" path="res://Assets/Music/Party Sector.mp3" id="11_af7ma"]
 
 [node name="Character Select" type="Node2D"]
 texture_filter = 1
@@ -163,6 +164,9 @@ offset_bottom = 47.0
 theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
 theme_override_fonts/normal_font = ExtResource("9_v46lv")
 text = "Character Select"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_af7ma")
 
 [connection signal="pressed" from="ButtonVbox/GenderButton" to="." method="_on_gender_button_pressed"]
 [connection signal="pressed" from="ButtonVbox/SkinToneButton" to="." method="_on_skin_tone_button_pressed"]

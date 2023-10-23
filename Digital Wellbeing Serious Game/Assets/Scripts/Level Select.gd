@@ -46,4 +46,5 @@ func _on_security_explination_mouse_exited():
 
 func _on_start_physical_button_pressed():
 	globalRef.currentLevel = 1
+	globalRef.achievementLevelStart = 0
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/level_1_a.tscn")

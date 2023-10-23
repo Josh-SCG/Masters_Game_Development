@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_bbetl"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ebixu"]
 
 [resource]
-script = ExtResource("1_bbetl")
+script = ExtResource("1_ebixu")
 titles = {
 "inProgress": "27",
 "init": "12",
@@ -74,9 +74,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "18",
 "parent_id": "15",
-"text": "They should have some information relating to what they are next to and digital wellbeing.",
+"text": "They should have some information relating to the physical parts of digital wellbeing.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "They should have some information relating to what they are next to and digital wellbeing.",
+"translation_key": "They should have some information relating to the physical parts of digital wellbeing.",
 "type": "dialogue"
 },
 "18": {
@@ -195,8 +195,19 @@ lines = {
 "type": "dialogue"
 },
 "30": {
-"condition": {
+"mutation": {
 "expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "randHint"
+}, {
+"type": "assignment",
+"value": "="
+}, {
 "type": "variable",
 "value": "Global"
 }, {
@@ -213,6 +224,21 @@ lines = {
 "type": "variable",
 "value": "level1Signs"
 }])])
+}])
+},
+"next_id": "31",
+"type": "mutation"
+},
+"31": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "randHint"
 }, {
 "type": "comparison",
 "value": "=="
@@ -221,22 +247,22 @@ lines = {
 "value": 1
 }])
 },
-"next_conditional_id": "33",
-"next_id": "31",
+"next_conditional_id": "34",
+"next_id": "32",
 "next_id_after": "49",
 "type": "condition"
 },
-"31": {
+"32": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "49",
-"parent_id": "30",
+"parent_id": "31",
 "text": "You didn't miss the one right to the left did you?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You didn't miss the one right to the left did you?",
 "type": "dialogue"
 },
-"33": {
+"34": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -244,17 +270,8 @@ lines = {
 }, {
 "type": "dot"
 }, {
-"function": "randomHint",
-"type": "function",
-"value": Array[Array]([Array[Dictionary]([{
 "type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "level1Signs"
-}])])
+"value": "randHint"
 }, {
 "type": "comparison",
 "value": "=="
@@ -263,22 +280,22 @@ lines = {
 "value": 2
 }])
 },
-"next_conditional_id": "36",
-"next_id": "34",
+"next_conditional_id": "37",
+"next_id": "35",
 "next_id_after": "49",
 "type": "condition"
 },
-"34": {
+"35": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "49",
-"parent_id": "33",
+"parent_id": "34",
 "text": "Drinking water is always important which probably explains that big tank over there.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Drinking water is always important which probably explains that big tank over there.",
 "type": "dialogue"
 },
-"36": {
+"37": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -286,17 +303,8 @@ lines = {
 }, {
 "type": "dot"
 }, {
-"function": "randomHint",
-"type": "function",
-"value": Array[Array]([Array[Dictionary]([{
 "type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "level1Signs"
-}])])
+"value": "randHint"
 }, {
 "type": "comparison",
 "value": "=="
@@ -305,52 +313,20 @@ lines = {
 "value": 3
 }])
 },
-"next_conditional_id": "39",
-"next_id": "37",
+"next_conditional_id": "40",
+"next_id": "38",
 "next_id_after": "49",
 "type": "condition"
 },
-"37": {
+"38": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "49",
-"parent_id": "36",
+"parent_id": "37",
 "text": "You know, it makes sense the laundry is hung to dry this far out.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You know, it makes sense the laundry is hung to dry this far out.",
 "type": "dialogue"
-},
-"39": {
-"condition": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"function": "randomHint",
-"type": "function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "level1Signs"
-}])])
-}, {
-"type": "comparison",
-"value": "=="
-}, {
-"type": "number",
-"value": 4
-}])
-},
-"next_conditional_id": "42",
-"next_id": "40",
-"next_id_after": "49",
-"type": "condition"
 },
 "4": {
 "condition": {
@@ -376,16 +352,6 @@ lines = {
 "type": "condition"
 },
 "40": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "49",
-"parent_id": "39",
-"text": "Have you seen the dancing flower gardern yet?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Have you seen the dancing flower gardern yet?",
-"type": "dialogue"
-},
-"42": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -393,17 +359,41 @@ lines = {
 }, {
 "type": "dot"
 }, {
-"function": "randomHint",
-"type": "function",
-"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "randHint"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 4
+}])
+},
+"next_conditional_id": "43",
+"next_id": "41",
+"next_id_after": "49",
+"type": "condition"
+},
+"41": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "40",
+"text": "Have you seen the dancing flower gardern yet?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Have you seen the dancing flower gardern yet?",
+"type": "dialogue"
+},
+"43": {
+"condition": {
+"expression": Array[Dictionary]([{
 "type": "variable",
 "value": "Global"
 }, {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "level1Signs"
-}])])
+"value": "randHint"
 }, {
 "type": "comparison",
 "value": "=="
@@ -412,32 +402,32 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "45",
-"next_id": "43",
+"next_conditional_id": "46",
+"next_id": "44",
 "next_id_after": "49",
 "type": "condition"
 },
-"43": {
+"44": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "49",
-"parent_id": "42",
+"parent_id": "43",
 "text": "Sometimes checking the corners is helpful.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Sometimes checking the corners is helpful.",
 "type": "dialogue"
 },
-"45": {
+"46": {
 "next_conditional_id": "49",
-"next_id": "46",
+"next_id": "47",
 "next_id_after": "49",
 "type": "condition"
 },
-"46": {
+"47": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "49",
-"parent_id": "45",
+"parent_id": "46",
 "text": "I appear to be glitching and cannot give you a hint at this time.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I appear to be glitching and cannot give you a hint at this time.",

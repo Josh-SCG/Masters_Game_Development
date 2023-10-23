@@ -57,6 +57,18 @@ var level1SessionScore = 0
 var level2SessionScore = 0
 var level3SessionScore = 0
 
+#######################
+#Achievement Variables#
+#######################
+
+#These are flipped, with 1 being undone and 0 being done as the image file names use 0 as a filled sign and 1 as an empty one
+
+var achievementLevelStart = 1
+var achievementLevelFinish = 1
+var achievementLevel100 = 1
+var achievementSign = 1
+var achievementMiniGame = 1
+
 ####################
 ## Other Variables##
 ####################
@@ -150,6 +162,8 @@ func resetLevelProgress():
 	
 	currentLevel = 0
 
+
+var randHint = 0
 func randomHint(array) -> int:
 	return array.pick_random()
 	

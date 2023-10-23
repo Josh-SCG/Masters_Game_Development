@@ -14,7 +14,7 @@ Digibot: This is where you'll learn about the physical aspects of digital wellbe
 Digibot: Are you ready to start learning? 
 - Yes
 	Digibot: Great! There are a bunch of signs around the area. You should go and read what each of them say.
-	Digibot: They should have some information relating to what they are next to and digital wellbeing. 
+	Digibot: They should have some information relating to the physical parts of digital wellbeing. 
 	Digibot: Come find me when you're done with them all.
 	Digibot: Good luck and have fun! 
 	do Global.initLevelConvo = 1
@@ -27,24 +27,24 @@ Digibot: Are you ready to start learning?
 Digibot: Remember, you're looking for signs around the farm with information about digital wellbeing on them.
 Digibot: There should be a few more signs around here. You've seen {{Global.level1SignsSeen}}.
 
-if Global.randomHint(Global.level1Signs) == 1
+do Global.randHint = Global.randomHint(Global.level1Signs)
+if Global.randHint == 1
 	Digibot: You didn't miss the one right to the left did you?
 
-elif Global.randomHint(Global.level1Signs) == 2
+elif Global.randHint == 2
 	Digibot: Drinking water is always important which probably explains that big tank over there.
 
-elif Global.randomHint(Global.level1Signs) == 3
+elif Global.randHint == 3
 	Digibot: You know, it makes sense the laundry is hung to dry this far out.
 
-elif Global.randomHint(Global.level1Signs) == 4
+elif Global.randHint == 4
 	Digibot: Have you seen the dancing flower gardern yet?
 
-elif Global.randomHint(Global.level1Signs) == 5
+elif Global.randHint == 5
 	Digibot: Sometimes checking the corners is helpful.
 
 else
 	Digibot: I appear to be glitching and cannot give you a hint at this time. 
-
 
 => END!
 

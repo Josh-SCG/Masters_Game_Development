@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://qydasoyqogh3"]
+[gd_scene load_steps=12 format=3 uid="uid://qydasoyqogh3"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Credits.gd" id="1_qjf6l"]
 [ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="2_pq2oe"]
@@ -10,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://hvhsr86weewy" path="res://Assets/Fonts/Kenney Pixel Square.ttf" id="7_e84px"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="8_asv2j"]
 [ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="9_xw6b5"]
+[ext_resource type="AudioStream" uid="uid://d3bepa3o613mp" path="res://Assets/Music/Party Sector.mp3" id="11_2ksha"]
 
 [node name="Credits" type="Node2D"]
 texture_filter = 1
@@ -313,6 +314,9 @@ scale = Vector2(0.75, 0.75)
 texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_2ksha")
 
 [connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets/CharSprites/CharLink" to="." method="_on_char_link_pressed"]

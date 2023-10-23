@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bdoyqhmsn2wix"]
+[gd_scene load_steps=10 format=3 uid="uid://bdoyqhmsn2wix"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/How To.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://dhp28i6vj1wh1" path="res://Assets/Misc Art/grid_bg.png" id="2_s4v3a"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="6"]
 [ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="7_eh4ax"]
 [ext_resource type="FontFile" uid="uid://hvhsr86weewy" path="res://Assets/Fonts/Kenney Pixel Square.ttf" id="7_wt0tg"]
+[ext_resource type="AudioStream" uid="uid://d3bepa3o613mp" path="res://Assets/Music/Party Sector.mp3" id="9_v4qrp"]
 
 [node name="How to" type="Node"]
 script = ExtResource("1")
@@ -157,6 +158,9 @@ theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
 theme_override_fonts/normal_font = ExtResource("7_wt0tg")
 text = "How to Play"
 scroll_active = false
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_v4qrp")
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="InfoBox/HBoxContainer/Movement" to="." method="_on_Movement_pressed"]
