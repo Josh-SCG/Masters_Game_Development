@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://rmfe82dkkdko"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/Platformer Item Movement.gd" id="1_2bdtv"]
+[ext_resource type="Texture2D" uid="uid://0hnyjrsxhugd" path="res://Assets/TileMaps/signpost-outsidestuff.png" id="1_4rq8y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8747"]
+size = Vector2(22, 26)
+
+[node name="SignObstacle" type="Node2D"]
+texture_filter = 1
+position = Vector2(0, -32)
+scale = Vector2(2, 2)
+script = ExtResource("1_2bdtv")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_4rq8y")
+hframes = 4
+vframes = 4
+frame = 1
+
+[node name="Sign" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sign"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_i8747")
+
+[connection signal="body_entered" from="Sign" to="." method="_on_sign_body_entered"]

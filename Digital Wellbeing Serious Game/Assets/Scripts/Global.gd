@@ -53,9 +53,59 @@ var level1HighScore = 0
 var level2HighScore = 0
 var level3HighScore = 0
 
+var level1MiniScore = 0
+var level2MiniScore = 0
+var level3MiniScore = 0
+
 var level1SessionScore = 0
 var level2SessionScore = 0
 var level3SessionScore = 0
+
+func setScores():
+	if currentLevel == 1:
+		level1SessionScore = testScore
+		if level1SessionScore > level1HighScore:
+			level1HighScore = level1SessionScore
+		if level1HighScore == 10:
+			achievementLevel100 = 0
+			level1Score1 = 1
+			level1Score2 = 1
+			level1Score3 = 1
+		elif level1HighScore < 10 && level1HighScore > 5:
+			level1Score1 = 1
+			level1Score2 = 1
+		else:
+			level1Score1 = 1
+
+	elif currentLevel == 2:
+		level2SessionScore = testScore
+		if level2SessionScore > level2HighScore:
+			level2HighScore = level2SessionScore
+		if level2HighScore == 10:
+			achievementLevel100 = 0
+			level2Score1 = 1
+			level2Score2 = 1
+			level2Score3 = 1
+		elif level2HighScore < 10 && level2HighScore > 5:
+			level2Score1 = 1
+			level2Score2 = 1
+		else:
+			level2Score1 = 1
+	
+	elif currentLevel == 3:
+		level3SessionScore = testScore
+		if level3SessionScore > level3HighScore:
+			level3HighScore = level3SessionScore
+		if level3HighScore == 10:
+			achievementLevel100 = 0
+			level3Score1 = 1
+			level3Score2 = 1
+			level3Score3 = 1
+		elif level3HighScore < 10 && level3HighScore > 5:
+			level3Score1 = 1
+			level3Score2 = 1
+		else:
+			level3Score1 = 1
 
 #######################
 #Achievement Variables#
@@ -135,28 +185,23 @@ func arrayReset(array):
 func resetLevelProgress():
 	signCheck = false
 	initLevelConvo = 0
+	testScore = 0
 	
 	if currentLevel == 1:
-		level1Score1 = 0
-		level1Score2 = 0
-		level1Score3 = 0
 		level1SessionScore = 0
+		level1MiniScore = 0
 		level1SignsSeen = 0
 		arrayReset(level1Signs)
 
 	elif currentLevel == 2:
-		level2Score1 = 0
-		level2Score2 = 0
-		level2Score3 = 0
 		level2SessionScore = 0
+		level2MiniScore = 0
 		level2SignsSeen = 0
 		arrayReset(level2Signs)
 	
 	elif currentLevel == 3:
-		level3Score1 = 0
-		level3Score2 = 0
-		level3Score3 = 0
 		level3SessionScore = 0
+		level3MiniScore = 0
 		level3SignsSeen = 0
 		arrayReset(level3Signs)
 	

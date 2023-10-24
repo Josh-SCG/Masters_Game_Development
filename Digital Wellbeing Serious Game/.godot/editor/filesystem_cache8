@@ -1,5 +1,5 @@
 a351e940ae262d4f723fbde0f5c22d34
-::res://::1698062903
+::res://::1698145739
 anim_test.gd::GDScript::-1::1682515652::0::1::::<>Node2D<>::
 anim_test.tscn::PackedScene::1216303556852912415::1695855728::0::1::::<><>::uid://b16y84sdntos8
 default_env.tres::Environment::-1::1678186778::0::1::::<><>::
@@ -68,9 +68,10 @@ WorldTest.dialogue::Resource::1054478215774191823::1681923378::1693930293::1::::
 DiologueWorld.json::JSON::-1::1678622880::0::1::::<><>::
 test2.dialogue::Resource::5102384075760125279::1678714854::1693930292::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 WorldTest.dialogue::Resource::3368104418787955630::1678697712::1693930293::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-::res://Assets/Diologue/Dialogue/Level 1/::1698078438
+::res://Assets/Diologue/Dialogue/Level 1/::1698149462
 Digi_Level_1a.dialogue::Resource::7024204637865153310::1697543256::1697543256::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-Digi_Level_1_Enter.dialogue::Resource::4558949871962343403::1698078438::1698078438::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Digi_Level_1_Enter.dialogue::Resource::4558949871962343403::1698148197::1698148197::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Digi_Level_1_Exit_Quiz.dialogue::Resource::2742499337971839458::1698149462::1698149462::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 Exit.dialogue::Resource::105576099691483126::1697535379::1697535380::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 ::res://Assets/Diologue/Dialogue/Level 1/Signs/::1698078518
 Sign1.dialogue::Resource::4842869737424159786::1698078517::1698078518::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
@@ -103,27 +104,35 @@ Kenney Rocket.ttf::FontFile::1375528586049778572::1665581870::1693930293::1::::<
 ::res://Assets/Images/::1693930293
 blob.png::CompressedTexture2D::905118915992493742::1650237268::1693930293::1::::<><>::
 ::res://Assets/Level Scenes/::1693964917
-::res://Assets/Level Scenes/Level 1/::1698079104
+::res://Assets/Level Scenes/Level 1/::1698149283
 Exit.gd::GDScript::-1::1697535379::0::1::::<>Area2D<>::
-level_1.tscn::PackedScene::2202712037627874852::1698079104::0::1::::<><>::uid://c5x7o632agrg4::::res://Assets/TileMaps/32x32 first tileset.png<>uid://dvxe7spanny28::::res://Assets/Player/ui.tscn<>uid://ygwdpcrdma8n::::res://Assets/Player/Player.tscn<>uid://qqhed7q5ui7i::::res://Assets/TileMaps/dirtpath_tiles.png<>uid://c7kjxsturbhvn::::res://Presets/fade_in_out_colour_rect.tscn<>uid://csguiwpkyd7bc::::res://Assets/TileMaps/fence_tiles.png<>uid://d4ag0g8ja7lyv::::res://Assets/TileMaps/Reyoh TileSet.png<>uid://bliydm4fke1bb::::res://Assets/Misc Art/Flower/flower32x32transparentanimated1.png<>uid://bi1l2dyt4ycg::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign2.dialogue<>uid://uiebrnkpi65o::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign3.dialogue<>uid://crvgd0cjwmddb::::res://Assets/Misc Art/Flower/flower32x32transparentanimated2.png<>uid://b0rgwu80xhb20::::res://Assets/Misc Art/street.png<>uid://d05cdq0of8f2h::::res://Assets/Misc Art/Flower/flower32x32transparentanimated3.png<>uid://bslfnd5ywg15m::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign4.dialogue<>uid://dkdjglhntpgq6::::res://Assets/Misc Art/Flower/flower32x32transparentanimated4.png<>uid://b5qcrqdkkjk4v::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign5.dialogue<>uid://c5b2oylcmiyi8::::res://Assets/Misc Art/Flower/flower32x32transparentanimated5.png<>uid://bd67nb028r2cr::::res://Assets/Misc Art/Flower/flower32x32transparentanimated6.png<>uid://cas786lpkmiup::::res://Assets/Misc Art/Flower/flower32x32transparentanimated7.png<>uid://bhlphcf7xphsm::::res://Assets/Misc Art/Flower/flower32x32transparentanimated8.png<>uid://dypbviqnrl1t1::::res://Assets/Misc Art/Flower/flower32x32transparentanimated9.png<>uid://cw6a42i5u078d::::res://Assets/Misc Art/Flower/flower32x32transparentanimated10.png<>uid://4v13l12oqjad::::res://Assets/Misc Art/Flower/flower32x32transparentanimated11.png<>uid://ce7a53v6ygx8m::::res://Assets/Misc Art/Flower/flower32x32transparentanimated12.png<>uid://cpoeeq1korm7t::::res://Assets/Misc Art/Flower/flower32x32transparentanimated13.png<>uid://j84o07nboo7t::::res://Assets/Misc Art/Flower/flower32x32transparentanimated14.png<>uid://4mtfxdpxiplq::::res://Assets/Misc Art/vehicles.png<>uid://siijw4pkehjb::::res://Assets/Misc Art/buildings.png<>uid://0hnyjrsxhugd::::res://Assets/TileMaps/signpost-outsidestuff.png<>uid://f3ptakqo4cwc::::res://Presets/Sign.tscn<>uid://ca86meypa3x11::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign1.dialogue<>uid://bfl2em23m05rn::::res://Presets/Digibot.tscn<>uid://b57nidq7ahvvv::::res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Enter.dialogue<>uid://d1aoxsuorjx5n::::res://Assets/Misc Art/Bus.png<>uid://dsc2th5iryvwl::::res://Presets/npc.tscn<>uid://pa2dqdag7e2j::::res://Assets/Diologue/WorldTest.dialogue
+level_1.tscn::PackedScene::2202712037627874852::1698149283::0::1::::<><>::uid://c5x7o632agrg4::::res://Assets/TileMaps/32x32 first tileset.png<>uid://dvxe7spanny28::::res://Assets/Player/ui.tscn<>uid://ygwdpcrdma8n::::res://Assets/Player/Player.tscn<>uid://qqhed7q5ui7i::::res://Assets/TileMaps/dirtpath_tiles.png<>uid://c7kjxsturbhvn::::res://Presets/fade_in_out_colour_rect.tscn<>uid://csguiwpkyd7bc::::res://Assets/TileMaps/fence_tiles.png<>uid://d4ag0g8ja7lyv::::res://Assets/TileMaps/Reyoh TileSet.png<>uid://bliydm4fke1bb::::res://Assets/Misc Art/Flower/flower32x32transparentanimated1.png<>uid://bi1l2dyt4ycg::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign2.dialogue<>uid://uiebrnkpi65o::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign3.dialogue<>uid://crvgd0cjwmddb::::res://Assets/Misc Art/Flower/flower32x32transparentanimated2.png<>uid://b0rgwu80xhb20::::res://Assets/Misc Art/street.png<>uid://d05cdq0of8f2h::::res://Assets/Misc Art/Flower/flower32x32transparentanimated3.png<>uid://bslfnd5ywg15m::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign4.dialogue<>uid://dkdjglhntpgq6::::res://Assets/Misc Art/Flower/flower32x32transparentanimated4.png<>uid://b5qcrqdkkjk4v::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign5.dialogue<>uid://c5b2oylcmiyi8::::res://Assets/Misc Art/Flower/flower32x32transparentanimated5.png<>uid://bd67nb028r2cr::::res://Assets/Misc Art/Flower/flower32x32transparentanimated6.png<>uid://cas786lpkmiup::::res://Assets/Misc Art/Flower/flower32x32transparentanimated7.png<>uid://bhlphcf7xphsm::::res://Assets/Misc Art/Flower/flower32x32transparentanimated8.png<>uid://dypbviqnrl1t1::::res://Assets/Misc Art/Flower/flower32x32transparentanimated9.png<>uid://cw6a42i5u078d::::res://Assets/Misc Art/Flower/flower32x32transparentanimated10.png<>uid://4v13l12oqjad::::res://Assets/Misc Art/Flower/flower32x32transparentanimated11.png<>uid://ce7a53v6ygx8m::::res://Assets/Misc Art/Flower/flower32x32transparentanimated12.png<>uid://cpoeeq1korm7t::::res://Assets/Misc Art/Flower/flower32x32transparentanimated13.png<>uid://j84o07nboo7t::::res://Assets/Misc Art/Flower/flower32x32transparentanimated14.png<>uid://4mtfxdpxiplq::::res://Assets/Misc Art/vehicles.png<>uid://siijw4pkehjb::::res://Assets/Misc Art/buildings.png<>uid://0hnyjrsxhugd::::res://Assets/TileMaps/signpost-outsidestuff.png<>uid://f3ptakqo4cwc::::res://Presets/Sign.tscn<>uid://ca86meypa3x11::::res://Assets/Diologue/Dialogue/Level 1/Signs/Sign1.dialogue<>uid://bfl2em23m05rn::::res://Presets/Digibot.tscn<>uid://b57nidq7ahvvv::::res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Enter.dialogue<>uid://d1aoxsuorjx5n::::res://Assets/Misc Art/Bus.png
 level_1_a.tscn::PackedScene::7107100214150593422::1697546801::0::1::::<><>::uid://d0xbkgsytjmie
+level_1_c.tscn::PackedScene::2895632698239902803::1698149283::0::1::::<><>::uid://dvxe7spanny28
+mini_game_platformer.tscn::PackedScene::3537010143051946011::1698149283::0::1::::<><>::res://Assets/Scripts/mini_game_platformer.gd<>uid://c7kjxsturbhvn::::res://Presets/fade_in_out_colour_rect.tscn<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://fbnptro0tkgx::::res://Assets/Fonts/Kenney Rocket Square.ttf<>uid://b21s8xrf42h76::::res://Assets/Misc Art/sea_forest_bg.png<>uid://dsjnms1j7dndr::::res://Assets/Level Scenes/Level 1/Minigame/platform_player.tscn<>uid://domi73dpq8uby::::res://Assets/Level Scenes/Level 1/Minigame/endless_sprite.tscn<>res://Assets/Scripts/Shaders/endless_sprite.gdshader<>uid://c1nv3vx2ej0ku::::res://Assets/TileMaps/platformerTiles.png<>uid://cjebxc8hwt1ty::::res://Assets/Menu Scenes/PausePopUp.tscn<>res://Assets/Scripts/SpawnerLvl1.gd<>uid://cv7uilhbkvyri::::res://Assets/Level Scenes/Level 1/Minigame/laptop_collectible.tscn<>uid://rmfe82dkkdko::::res://Assets/Level Scenes/Level 1/Minigame/sign_obstacle.tscn
+::res://Assets/Level Scenes/Level 1/Minigame/::1698149283
+endless_sprite.tscn::PackedScene::8167222752400012466::1698127559::0::1::::<><>::res://Assets/Scripts/Shaders/endless_sprite.gdshader
+laptop_collectible.tscn::PackedScene::6314096386751498450::1698149283::0::1::::<><>::res://Assets/Scripts/Platformer Item Movement.gd<>uid://fdca5egg45ea::::res://Assets/TileMaps/Laptop.png
+platform_player.tscn::PackedScene::8442052372820278883::1698127559::0::1::::<><>::res://Assets/Scripts/PlatformPlayer.gd<>uid://cdoglu0sw3itu::::res://Assets/Player/Player Sprites/AAAAA.png
+sign_obstacle.tscn::PackedScene::1218295378165060222::1698138950::0::1::::<><>::res://Assets/Scripts/Platformer Item Movement.gd<>uid://0hnyjrsxhugd::::res://Assets/TileMaps/signpost-outsidestuff.png
 ::res://Assets/Level Scenes/Level 2/::1693964910
 ::res://Assets/Level Scenes/Level 3/::1693964917
-::res://Assets/Menu Scenes/::1698079131
-Achievements.tscn::PackedScene::7692797219120628946::1698079129::0::1::::<><>::uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>res://Assets/Scripts/Achievements.gd<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://crr7pkfdohdqd::::res://Assets/Misc Art/signpost1.png<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
-Character Select.tscn::PackedScene::7310416555340524152::1698079131::0::1::::<><>::res://Assets/Scripts/Character Select.gd<>uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://c0g60si44u800::::res://Assets/UI/slot.png<>uid://d3peisp3dgqmm::::res://Assets/Player/Player Sprites/MWFBD.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://baep36n7gkbpu::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
-Credits.tscn::PackedScene::1172749683444205586::1698079104::0::1::::<><>::res://Assets/Scripts/Credits.gd<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
-How To.tscn::PackedScene::2627374670730309479::1698079122::0::1::::<><>::res://Assets/Scripts/How To.gd<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
-Level Select.tscn::PackedScene::8516522389087671457::1698079130::0::1::::<><>::res://Assets/Scripts/Level Select.gd<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://c5bq3xhb31qnn::::res://Assets/UI/portrait.png<>uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://fa0kbm8kxlrt::::res://Assets/UI/checkbox_0.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://dvib2yrg4n08h::::res://Assets/UI/radiobutton_0.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
-Main Menu.tscn::PackedScene::8971859430109403801::1698079128::0::1::::<><>::uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://baep36n7gkbpu::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>res://Assets/Scripts/Main Menu.gd<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
+::res://Assets/Menu Scenes/::1698149507
+Achievements.tscn::PackedScene::7692797219120628946::1698138950::0::1::::<><>::uid://dhp28i6vj1wh1
+Character Select.tscn::PackedScene::7310416555340524152::1698079131::0::1::::<><>::res://Assets/Scripts/Character Select.gd<>uid://hlvs1qnixage
+Credits.tscn::PackedScene::1172749683444205586::1698079132::0::1::::<><>::res://Assets/Scripts/Credits.gd<>uid://d080xym6qs6u
+How To.tscn::PackedScene::2627374670730309479::1698127559::0::1::::<><>::res://Assets/Scripts/How To.gd<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
+Level Select.tscn::PackedScene::8516522389087671457::1698149507::0::1::::<><>::res://Assets/Scripts/Level Select.gd<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://c5bq3xhb31qnn::::res://Assets/UI/portrait.png<>uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://fa0kbm8kxlrt::::res://Assets/UI/checkbox_0.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://dvib2yrg4n08h::::res://Assets/UI/radiobutton_0.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
+Main Menu.tscn::PackedScene::8971859430109403801::1698106566::0::1::::<><>::uid://hlvs1qnixage
 PausePopUp.tscn::PackedScene::5412900417770782622::1695855727::0::1::::<><>::res://Assets/Scripts/PausePopUp.gd<>res://Assets/Scripts/Shaders/static.gdshader<>uid://hlvs1qnixage
 ::res://Assets/Mini-Games Standalone/::1693964890
-::res://Assets/Misc Art/::1697540930
+::res://Assets/Misc Art/::1698127322
 buildings.png::CompressedTexture2D::1280417216612428463::1680067392::1697522155::1::::<><>::
 Bus.png::CompressedTexture2D::8985064073802274173::1697535961::1697535976::1::::<><>::
 Coffee Cup.png::CompressedTexture2D::435607680167451063::1636525890::1697540930::1::::<><>::
 E+A+Usable - Gum Bot sprites.png::CompressedTexture2D::1095162629998061730::1649895998::1697526564::1::::<><>::
 grid_bg.png::CompressedTexture2D::7683248381902939168::1693924729::1693930293::1::::<><>::
+sea_forest_bg.png::CompressedTexture2D::4336346355159917187::1698127293::1698127322::1::::<><>::
 signpost0.png::CompressedTexture2D::5003149142182952977::1697522139::1697522155::1::::<><>::
 signpost1.png::CompressedTexture2D::6003116394841686759::1697522111::1697522155::1::::<><>::
 street.png::CompressedTexture2D::4176640888497880507::1680067392::1697522155::1::::<><>::
@@ -145,10 +154,10 @@ flower32x32transparentanimated13.png::CompressedTexture2D::5854826202672473387::
 flower32x32transparentanimated14.png::CompressedTexture2D::701611215641219371::1614146134::1697511880::1::::<><>::
 ::res://Assets/Music/::1698078911
 Party Sector.mp3::AudioStreamMP3::9126883749511009687::1698078893::1698078911::1::::<><>::
-::res://Assets/Player/::1697537503
+::res://Assets/Player/::1698127559
 GridBasedAttempt.gd::GDScript::-1::1672661446::0::1::::<>KinematicBody2D<>::
 Player.gd::GDScript::-1::1697535532::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::1698260436776457759::1697537503::0::1::::<><>::uid://cdoglu0sw3itu
+Player.tscn::PackedScene::1698260436776457759::1698127559::0::1::::<><>::uid://cdoglu0sw3itu::::res://Assets/Player/Player Sprites/AAAAA.png<>res://Assets/Player/Player.gd<>uid://cjebxc8hwt1ty::::res://Assets/Menu Scenes/PausePopUp.tscn
 ui.tscn::PackedScene::8681009437807661455::1697537211::0::1::::<><>::res://Assets/Scripts/UI.gd<>uid://4tpjnpgvxk31
 ::res://Assets/Player/Player Sprites/::1693930293
 AAAAA.png::CompressedTexture2D::5012694222482149498::1672570176::1693930293::1::::<><>::
@@ -200,21 +209,26 @@ MWFLD.png::CompressedTexture2D::4055668933219283110::1672568816::1693930293::1::
 MWFLL.png::CompressedTexture2D::8738132107529317402::1672568820::1693930293::1::::<><>::
 MWFSD.png::CompressedTexture2D::5080758891369955528::1672568810::1693930293::1::::<><>::
 MWFSL.png::CompressedTexture2D::7214413670184832419::1672568812::1693930293::1::::<><>::
-::res://Assets/Scripts/::1698078395
+::res://Assets/Scripts/::1698149507
 Achievements.gd::GDScript::-1::1698077588::0::1::::<>Node2D<>::
 Character Select.gd::GDScript::-1::1681996432::0::1::::<>Node2D<>::
 Credits.gd::GDScript::-1::1697036683::0::1::::<>Node2D<>::
 Dialogue.gd::GDScript::-1::1678658628::0::1::::<>CanvasLayer<>::
 Diologue Box.gd::GDScript::-1::1678622880::0::1::::<>TextureRect<>::
-Global.gd::GDScript::-1::1698078395::0::1::::<>Node<>::
+Global.gd::GDScript::-1::1698149279::0::1::::<>Node<>::
 How To.gd::GDScript::-1::1695855666::0::1::::<>Node<>::
-Level Select.gd::GDScript::-1::1698077808::0::1::::<>Node2D<>::
+Level Select.gd::GDScript::-1::1698149120::0::1::::<>Node2D<>::
 Main Menu.gd::GDScript::-1::1698063174::0::1::::<>Node2D<>::
-NPC.gd::GDScript::-1::1698063174::0::1::::<>Area2D<>::
+mini_game_platformer.gd::GDScript::-1::1698148554::0::1::::<>Node2D<>::
+NPC.gd::GDScript::-1::1698106499::0::1::::<>Area2D<>::
 PausePopUp.gd::GDScript::-1::1697639383::0::1::::<>CanvasLayer<>::
-UI.gd::GDScript::-1::1698063174::0::1::::<>Node2D<>::
-::res://Assets/Scripts/Shaders/::1698079131
-static.gdshader::Shader::-1::1698079131::0::1::::<><>::
+Platformer Item Movement.gd::GDScript::-1::1698149507::0::1::::<>Node2D<>::
+PlatformPlayer.gd::GDScript::-1::1698129793::0::1::::<>CharacterBody2D<>::
+SpawnerLvl1.gd::GDScript::-1::1698128576::0::1::::<>Node2D<>::
+UI.gd::GDScript::-1::1698106499::0::1::::<>Node2D<>::
+::res://Assets/Scripts/Shaders/::1698149507
+endless_sprite.gdshader::Shader::-1::1698149507::0::1::::<><>::
+static.gdshader::Shader::-1::1698149507::0::1::::<><>::
 ::res://Assets/TestAssets/::1697511767
 DP1.png::CompressedTexture2D::1050975847275996273::1682511626::1693930293::1::::<><>::
 DP2.png::CompressedTexture2D::1820290539435935433::1682511718::1693930293::1::::<><>::
@@ -222,7 +236,7 @@ Faerona.png::CompressedTexture2D::4276844018821128709::1682506160::1693930293::1
 FaeronaD.png::CompressedTexture2D::3952065292663997404::1682506684::1693930293::1::::<><>::
 Miana.png::CompressedTexture2D::4818653242178970754::1682507320::1693930293::1::::<><>::
 TV, Widescreen.png::CompressedTexture2D::147088517465080096::1636467896::1697444841::1::::<><>::
-::res://Assets/TileMaps/::1697540930
+::res://Assets/TileMaps/::1698126867
 32x32 first tileset.png::CompressedTexture2D::6927956982459134141::1651936592::1697451560::1::::<><>::
 Bins.png::CompressedTexture2D::6246680565234135938::1636516740::1697540930::1::::<><>::
 castle.png::CompressedTexture2D::8961542749368091836::1697540789::1697540930::1::::<><>::
@@ -232,6 +246,7 @@ fences.png::CompressedTexture2D::4874290486987705071::1680067392::1697451560::1:
 fence_tiles.png::CompressedTexture2D::6049856624774062780::1673817234::1697451560::1::::<><>::
 Laptop.png::CompressedTexture2D::357260367599401352::1636521566::1697540930::1::::<><>::
 Office Portraits.png::CompressedTexture2D::4434739926568300972::1636527624::1697540930::1::::<><>::
+platformerTiles.png::CompressedTexture2D::6625914411608593396::1698126865::1698126867::1::::<><>::
 Reyoh TileSet.png::CompressedTexture2D::9195147829915300177::1620782048::1697451560::1::::<><>::
 signpost-outsidestuff.png::CompressedTexture2D::1770004415009607751::1697444665::1697451560::1::::<><>::
 street.png::CompressedTexture2D::7931905517908690999::1680067392::1697451560::1::::<><>::

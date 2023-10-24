@@ -1,0 +1,101 @@
+[gd_scene load_steps=7 format=3 uid="uid://cv7uilhbkvyri"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/Platformer Item Movement.gd" id="1_4m22b"]
+[ext_resource type="Texture2D" uid="uid://fdca5egg45ea" path="res://Assets/TileMaps/Laptop.png" id="1_x3b5g"]
+
+[sub_resource type="Animation" id="Animation_dxhu1"]
+resource_name = "Hover"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -4), Vector2(0, 0), Vector2(0, 2), Vector2(0, 0), Vector2(0, -4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 0.9), Vector2(1, 1), Vector2(0.9, 1), Vector2(1, 1), Vector2(1, 0.9)]
+}
+
+[sub_resource type="Animation" id="Animation_ueoyy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 0.9)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_txqei"]
+_data = {
+"Hover": SubResource("Animation_dxhu1"),
+"RESET": SubResource("Animation_ueoyy")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pkogq"]
+size = Vector2(21.2616, 25.6507)
+
+[node name="LaptopCollectible" type="Node2D"]
+position = Vector2(0, -32)
+scale = Vector2(2, 2)
+script = ExtResource("1_4m22b")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -4)
+scale = Vector2(1, 0.9)
+texture = ExtResource("1_x3b5g")
+hframes = 4
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+autoplay = "Hover"
+libraries = {
+"": SubResource("AnimationLibrary_txqei")
+}
+
+[node name="Laptop" type="Area2D" parent="Sprite2D"]
+position = Vector2(0, -1.27777)
+scale = Vector2(1.06825, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Laptop"]
+position = Vector2(-0.468056, 1.77593)
+scale = Vector2(1.01265, 0.968352)
+shape = SubResource("RectangleShape2D_pkogq")
+
+[connection signal="body_entered" from="Sprite2D/Laptop" to="." method="_on_laptop_body_entered"]

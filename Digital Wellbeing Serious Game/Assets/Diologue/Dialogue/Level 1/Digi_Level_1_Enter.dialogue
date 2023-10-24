@@ -54,7 +54,13 @@ Digibot: Hopefully you found them insightful.
 Digibot: If you're done here, we can head back.
 - We can head back now
 	Digibot: Great! Let's go!
-	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/level_1_b.tscn")
+	Digibot: ... 
+	Digibot: ...
+	Digibot: Actually, why don't we play a little game first.
+	Digibot: It's simple, you just need to run around and collect some of my data that leaked out on the way here. It should look like laptops to you. You also just need to be careful not to trip over any signs as you do this.
+	Digibot: If you do trip on a sign I'll just take us back to your room.
+	set Global.initLevelConvo = 0
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/mini_game_platformer.tscn")
 - I still want to look around for a bit.
 	Digibot: Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!
 	=> END!

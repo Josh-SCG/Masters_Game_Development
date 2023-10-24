@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ebixu"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_xhc5k"]
 
 [resource]
-script = ExtResource("1_ebixu")
+script = ExtResource("1_xhc5k")
 titles = {
 "inProgress": "27",
 "init": "12",
@@ -478,8 +478,8 @@ lines = {
 },
 "55": {
 "next_id": "56",
-"next_id_after": "62",
-"responses": PackedStringArray("55", "58"),
+"next_id_after": "68",
+"responses": PackedStringArray("55", "64"),
 "text": "We can head back now",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We can head back now",
@@ -496,42 +496,33 @@ lines = {
 "type": "dialogue"
 },
 "57": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"function": "get_tree",
-"type": "function",
-"value": Array[Array]([])
-}, {
-"type": "dot"
-}, {
-"function": "change_scene_to_file",
-"type": "function",
-"value": Array[Array]([Array[Dictionary]([{
-"type": "string",
-"value": "res://Assets/Level Scenes/Level 1/level_1_b.tscn"
-}])])
-}])
-},
-"next_id": "62",
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "58",
 "parent_id": "55",
-"type": "mutation"
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": "dialogue"
 },
 "58": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "59",
-"next_id_after": "62",
-"text": "I still want to look around for a bit.",
+"parent_id": "55",
+"text": "...",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "I still want to look around for a bit.",
-"type": "response"
+"translation_key": "...",
+"type": "dialogue"
 },
 "59": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "60",
-"parent_id": "58",
-"text": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
+"parent_id": "55",
+"text": "Actually, why don't we play a little game first.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
+"translation_key": "Actually, why don't we play a little game first.",
 "type": "dialogue"
 },
 "6": {
@@ -558,12 +549,93 @@ lines = {
 "type": "condition"
 },
 "60": {
-"is_snippet": false,
-"next_id": "end!",
-"parent_id": "58",
-"type": "goto"
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "61",
+"parent_id": "55",
+"text": "It's simple, you just need to run around and collect some of my data that leaked out on the way here. It should look like laptops to you. You also just need to be careful not to trip over any signs as you do this.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "It's simple, you just need to run around and collect some of my data that leaked out on the way here. It should look like laptops to you. You also just need to be careful not to trip over any signs as you do this.",
+"type": "dialogue"
+},
+"61": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "62",
+"parent_id": "55",
+"text": "If you do trip on a sign I'll just take us back to your room.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you do trip on a sign I'll just take us back to your room.",
+"type": "dialogue"
 },
 "62": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "initLevelConvo"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "63",
+"parent_id": "55",
+"type": "mutation"
+},
+"63": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "get_tree",
+"type": "function",
+"value": Array[Array]([])
+}, {
+"type": "dot"
+}, {
+"function": "change_scene_to_file",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "res://Assets/Level Scenes/Level 1/mini_game_platformer.tscn"
+}])])
+}])
+},
+"next_id": "68",
+"parent_id": "55",
+"type": "mutation"
+},
+"64": {
+"next_id": "65",
+"next_id_after": "68",
+"text": "I still want to look around for a bit.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I still want to look around for a bit.",
+"type": "response"
+},
+"65": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "66",
+"parent_id": "64",
+"text": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
+"type": "dialogue"
+},
+"66": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "64",
+"type": "goto"
+},
+"68": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"

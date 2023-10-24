@@ -1,8 +1,10 @@
-res://Assets/Scripts/Shaders/static.gdshader
-res://Assets/Menu Scenes/Main Menu.tscn
 res://Assets/Level Scenes/Level 1/level_1.tscn
-res://Assets/Menu Scenes/Achievements.tscn
-res://Assets/Menu Scenes/Level Select.tscn
-res://Assets/Menu Scenes/Character Select.tscn
-res://Assets/Menu Scenes/Credits.tscn
+res://Assets/Scripts/Shaders/static.gdshader
+res://Assets/Player/Player.tscn
+res://Assets/Level Scenes/Level 1/Minigame/sign_obstacle.tscn
 res://Assets/Menu Scenes/How To.tscn
+res://Assets/Level Scenes/Level 1/Minigame/platform_player.tscn
+res://Assets/Scripts/Shaders/endless_sprite.gdshader
+res://Assets/Level Scenes/Level 1/Minigame/endless_sprite.tscn
+res://Assets/Level Scenes/Level 1/mini_game_platformer.tscn
+res://Assets/Level Scenes/Level 1/Minigame/laptop_collectible.tscn

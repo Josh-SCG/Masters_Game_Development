@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://6nal0lfhafq7"]
+[gd_scene load_steps=52 format=3 uid="uid://6nal0lfhafq7"]
 
 [ext_resource type="Texture2D" uid="uid://c5x7o632agrg4" path="res://Assets/TileMaps/32x32 first tileset.png" id="1_jdltu"]
 [ext_resource type="PackedScene" uid="uid://dvxe7spanny28" path="res://Assets/Player/ui.tscn" id="1_jw833"]
@@ -34,8 +34,6 @@
 [ext_resource type="PackedScene" uid="uid://bfl2em23m05rn" path="res://Presets/Digibot.tscn" id="26_7rf6r"]
 [ext_resource type="Resource" uid="uid://b57nidq7ahvvv" path="res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Enter.dialogue" id="27_wsjj5"]
 [ext_resource type="Texture2D" uid="uid://d1aoxsuorjx5n" path="res://Assets/Misc Art/Bus.png" id="28_62kfp"]
-[ext_resource type="PackedScene" uid="uid://dsc2th5iryvwl" path="res://Presets/npc.tscn" id="31_fax0y"]
-[ext_resource type="Resource" uid="uid://pa2dqdag7e2j" path="res://Assets/Diologue/WorldTest.dialogue" id="32_m0qmq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys6je"]
 size = Vector2(29, 90.5)
@@ -2127,7 +2125,3 @@ layer_0/tile_data = PackedInt32Array(1048577, 3670018, 12, 393218, 196611, 0, 13
 [node name="Digibot" parent="." instance=ExtResource("26_7rf6r")]
 position = Vector2(1506, 379)
 NPC_Dialogue = ExtResource("27_wsjj5")
-
-[node name="NPC" parent="." instance=ExtResource("31_fax0y")]
-position = Vector2(1427, 446)
-NPC_Dialogue = ExtResource("32_m0qmq")

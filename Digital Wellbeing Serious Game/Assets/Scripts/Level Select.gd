@@ -7,7 +7,7 @@ func _ready():
 	$PhysicalLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete1)+".png")
 	$MentalLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete2)+".png")
 	$SecurityLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete3)+".png")
-	
+
 	$PhysicalLevelBox/HBoxContainer/Score1.texture =  load("res://Assets/UI/radiobutton_"+str(globalRef.level1Score1)+".png")
 	$PhysicalLevelBox/HBoxContainer/Score2.texture =  load("res://Assets/UI/radiobutton_"+str(globalRef.level1Score2)+".png")
 	$PhysicalLevelBox/HBoxContainer/Score3.texture =  load("res://Assets/UI/radiobutton_"+str(globalRef.level1Score3)+".png")
@@ -48,3 +48,15 @@ func _on_start_physical_button_pressed():
 	globalRef.currentLevel = 1
 	globalRef.achievementLevelStart = 0
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/level_1_a.tscn")
+
+
+func _on_start_mental_button_pressed():
+	globalRef.currentLevel = 2
+	globalRef.achievementLevelStart = 0
+	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/level_2_a.tscn")
+
+
+func _on_start_security_button_pressed():
+	globalRef.currentLevel = 3
+	globalRef.achievementLevelStart = 0
+	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/level_3_a.tscn")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://domi73dpq8uby"]
+
+[ext_resource type="Shader" path="res://Assets/Scripts/Shaders/endless_sprite.gdshader" id="1_6kaak"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y8x2g"]
+resource_local_to_scene = true
+shader = ExtResource("1_6kaak")
+shader_parameter/speed = 3.0
+
+[node name="EndlessSprite" type="TextureRect"]
+material = SubResource("ShaderMaterial_y8x2g")
+offset_right = 40.0
+offset_bottom = 40.0
+stretch_mode = 1

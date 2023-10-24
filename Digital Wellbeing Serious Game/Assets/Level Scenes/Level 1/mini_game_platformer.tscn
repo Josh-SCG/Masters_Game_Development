@@ -1,0 +1,170 @@
+[gd_scene load_steps=17 format=3 uid="uid://bqnmbmtwhayf8"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/mini_game_platformer.gd" id="1_5yp0d"]
+[ext_resource type="PackedScene" uid="uid://c7kjxsturbhvn" path="res://Presets/fade_in_out_colour_rect.tscn" id="1_xxxgj"]
+[ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="2_cpdr7"]
+[ext_resource type="FontFile" uid="uid://fbnptro0tkgx" path="res://Assets/Fonts/Kenney Rocket Square.ttf" id="3_rps77"]
+[ext_resource type="Texture2D" uid="uid://b21s8xrf42h76" path="res://Assets/Misc Art/sea_forest_bg.png" id="4_5a0qc"]
+[ext_resource type="PackedScene" uid="uid://dsjnms1j7dndr" path="res://Assets/Level Scenes/Level 1/Minigame/platform_player.tscn" id="4_u7mlq"]
+[ext_resource type="PackedScene" uid="uid://domi73dpq8uby" path="res://Assets/Level Scenes/Level 1/Minigame/endless_sprite.tscn" id="5_j3d61"]
+[ext_resource type="Shader" path="res://Assets/Scripts/Shaders/endless_sprite.gdshader" id="6_nquye"]
+[ext_resource type="Texture2D" uid="uid://c1nv3vx2ej0ku" path="res://Assets/TileMaps/platformerTiles.png" id="7_6ujyg"]
+[ext_resource type="PackedScene" uid="uid://cjebxc8hwt1ty" path="res://Assets/Menu Scenes/PausePopUp.tscn" id="9_msims"]
+[ext_resource type="Script" path="res://Assets/Scripts/SpawnerLvl1.gd" id="10_5vk20"]
+[ext_resource type="PackedScene" uid="uid://cv7uilhbkvyri" path="res://Assets/Level Scenes/Level 1/Minigame/laptop_collectible.tscn" id="11_tnmwf"]
+[ext_resource type="PackedScene" uid="uid://rmfe82dkkdko" path="res://Assets/Level Scenes/Level 1/Minigame/sign_obstacle.tscn" id="12_85fwa"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qdm0u"]
+resource_local_to_scene = true
+shader = ExtResource("6_nquye")
+shader_parameter/speed = 0.01
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pg8x6"]
+resource_local_to_scene = true
+shader = ExtResource("6_nquye")
+shader_parameter/speed = 1.33
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8k2i4"]
+size = Vector2(164.229, 44.375)
+
+[node name="MiniGamePlatformer" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_5yp0d")
+
+[node name="FadeInOutColourRect" parent="." instance=ExtResource("1_xxxgj")]
+offset_left = -90.0
+offset_top = -55.0
+offset_right = 1079.0
+offset_bottom = 627.0
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="EndlessSprite" parent="Background" instance=ExtResource("5_j3d61")]
+material = SubResource("ShaderMaterial_qdm0u")
+offset_left = -12.0
+offset_top = 1.0
+offset_right = 1012.0
+offset_bottom = 577.0
+texture = ExtResource("4_5a0qc")
+
+[node name="Score" type="Sprite2D" parent="."]
+position = Vector2(144, 48)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_cpdr7")
+
+[node name="ScoreText" type="RichTextLabel" parent="Score"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -44.0
+offset_right = -32.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("3_rps77")
+theme_override_font_sizes/normal_font_size = 16
+text = "Score: 0"
+fit_content = true
+
+[node name="PlatformPlayer" parent="." instance=ExtResource("4_u7mlq")]
+position = Vector2(184, 364)
+PausePopUp = ExtResource("9_msims")
+
+[node name="Floor" type="Node2D" parent="."]
+position = Vector2(-19, 490)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="EndlessSprite" parent="Floor" instance=ExtResource("5_j3d61")]
+material = SubResource("ShaderMaterial_pg8x6")
+offset_right = 615.0
+offset_bottom = 32.0
+texture = ExtResource("7_6ujyg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor"]
+position = Vector2(132.5, 8)
+scale = Vector2(3.76, 0.799999)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D"]
+position = Vector2(46.875, 12.1875)
+shape = SubResource("RectangleShape2D_8k2i4")
+
+[node name="Spawner" type="Node2D" parent="."]
+position = Vector2(1000, 490)
+script = ExtResource("10_5vk20")
+items = Array[PackedScene]([ExtResource("11_tnmwf"), ExtResource("12_85fwa")])
+
+[node name="Timer" type="Timer" parent="Spawner"]
+wait_time = 1.5
+autostart = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 340.0
+offset_top = 178.0
+offset_right = 620.0
+offset_bottom = 408.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="Start" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(140, 181)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_cpdr7")
+
+[node name="Start2" type="RichTextLabel" parent="VBoxContainer/Start"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -43.5
+offset_right = -7.0
+offset_bottom = -20.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("3_rps77")
+theme_override_font_sizes/normal_font_size = 16
+text = "Hit E to begin"
+fit_content = true
+
+[node name="HowTo" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(143, 50)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_cpdr7")
+
+[node name="HowTo2" type="RichTextLabel" parent="VBoxContainer/HowTo"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -43.5
+offset_right = -7.0
+offset_bottom = -20.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("3_rps77")
+theme_override_font_sizes/normal_font_size = 16
+text = "Spacebar to 
+         JUMP!"
+fit_content = true
+
+[connection signal="timeout" from="Spawner/Timer" to="Spawner" method="_on_timer_timeout"]

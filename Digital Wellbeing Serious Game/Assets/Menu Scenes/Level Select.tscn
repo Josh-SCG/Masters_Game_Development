@@ -353,6 +353,8 @@ stream = ExtResource("17_ii7iv")
 
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="PhysicalLevelBox/StartPhysicalButton" to="." method="_on_start_physical_button_pressed"]
+[connection signal="pressed" from="MentalLevelBox/StartMentalButton" to="." method="_on_start_mental_button_pressed"]
+[connection signal="pressed" from="SecurityLevelBox/StartSecurityButton" to="." method="_on_start_security_button_pressed"]
 [connection signal="mouse_entered" from="PhysicalExplination" to="." method="_on_physical_explination_mouse_entered"]
 [connection signal="mouse_exited" from="PhysicalExplination" to="." method="_on_physical_explination_mouse_exited"]
 [connection signal="mouse_entered" from="MenatlExplination" to="." method="_on_menatl_explination_mouse_entered"]

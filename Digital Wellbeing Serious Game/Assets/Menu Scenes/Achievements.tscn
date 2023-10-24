@@ -113,6 +113,7 @@ position = Vector2(31.077, 32.4615)
 texture = ExtResource("10_gek47")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/AchievementStartLevel"]
+layout_mode = 0
 offset_left = 70.0
 offset_top = 13.0
 offset_right = 175.0
@@ -131,6 +132,7 @@ position = Vector2(31.077, 32.4615)
 texture = ExtResource("10_gek47")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/AchievementFinishLevel"]
+layout_mode = 0
 offset_left = 70.0
 offset_top = 13.0
 offset_right = 175.0
@@ -149,6 +151,7 @@ position = Vector2(31.077, 32.4615)
 texture = ExtResource("10_gek47")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/AchievementLevel100"]
+layout_mode = 0
 offset_left = 70.0
 offset_top = 13.0
 offset_right = 175.0
@@ -192,12 +195,13 @@ position = Vector2(31.077, 32.4615)
 texture = ExtResource("10_gek47")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/AchievementMinigame"]
+layout_mode = 0
 offset_left = 70.0
 offset_top = 13.0
 offset_right = 175.0
 offset_bottom = 53.0
 theme_override_fonts/normal_font = ExtResource("9_7f2pr")
-text = "Beat a minigame"
+text = "Play a minigame"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_jt041")
