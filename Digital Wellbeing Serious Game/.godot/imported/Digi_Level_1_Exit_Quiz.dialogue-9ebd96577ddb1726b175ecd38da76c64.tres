@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_mhidv"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_pqe1j"]
 
 [resource]
-script = ExtResource("1_mhidv")
+script = ExtResource("1_pqe1j")
 titles = {
 "577489098/Q10a": "574",
 "577489098/Q10b": "583",
@@ -190,8 +190,8 @@ titles = {
 "PhysQ/questionSelection": "2",
 "PhysQ/somethingIsWrong": "246",
 "start": "1015",
-"testRetake": "1032",
-"testShowScore": "1037"
+"testRetake": "1031",
+"testShowScore": "1036"
 }
 character_names = PackedStringArray("Josh", "Digibot")
 first_title = "1015"
@@ -372,53 +372,39 @@ lines = {
 "type": "dialogue"
 },
 "1016": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "currentLevel"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 1
-}])
-},
-"next_id": "1017",
-"type": "mutation"
-},
-"1017": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1018",
+"next_id": "1017",
 "text": "Well, that was a fun outing but I think it's time to see if you remember what all those signs said, don't you?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well, that was a fun outing but I think it's time to see if you remember what all those signs said, don't you?",
 "type": "dialogue"
 },
-"1018": {
-"next_id": "1019",
-"next_id_after": "1025",
-"responses": PackedStringArray("1018", "1021"),
+"1017": {
+"next_id": "1018",
+"next_id_after": "1024",
+"responses": PackedStringArray("1017", "1020"),
 "text": "Yes",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes",
 "type": "response"
 },
-"1019": {
+"1018": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1020",
-"parent_id": "1018",
+"next_id": "1019",
+"parent_id": "1017",
 "text": "Great! Then I'll ask you a couple of questions about it.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Great! Then I'll ask you a couple of questions about it.",
 "type": "dialogue"
+},
+"1019": {
+"is_snippet": true,
+"next_id": "970",
+"next_id_after": "1024",
+"parent_id": "1017",
+"type": "goto"
 },
 "102": {
 "condition": {
@@ -445,41 +431,34 @@ lines = {
 "type": "condition"
 },
 "1020": {
-"is_snippet": true,
-"next_id": "970",
-"next_id_after": "1025",
-"parent_id": "1018",
-"type": "goto"
-},
-"1021": {
-"next_id": "1022",
-"next_id_after": "1025",
+"next_id": "1021",
+"next_id_after": "1024",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"1022": {
+"1021": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1023",
-"parent_id": "1021",
+"next_id": "1022",
+"parent_id": "1020",
 "text": "Well, you know what they say, illusion of choice and all...",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well, you know what they say, illusion of choice and all...",
 "type": "dialogue"
 },
-"1023": {
+"1022": {
 "is_snippet": true,
 "next_id": "970",
-"next_id_after": "1025",
-"parent_id": "1021",
+"next_id_after": "1024",
+"parent_id": "1020",
 "type": "goto"
 },
-"1025": {
+"1024": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1026",
+"next_id": "1025",
 "text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
@@ -496,33 +475,33 @@ lines = {
 "translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
 "type": "dialogue"
 },
-"1026": {
-"next_id": "1027",
-"next_id_after": "1032",
-"responses": PackedStringArray("1026", "1028"),
+"1025": {
+"next_id": "1026",
+"next_id_after": "1031",
+"responses": PackedStringArray("1025", "1027"),
 "text": "Try again",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Try again",
 "type": "response"
 },
-"1027": {
+"1026": {
 "is_snippet": false,
-"next_id": "1032",
-"parent_id": "1026",
+"next_id": "1031",
+"parent_id": "1025",
 "type": "goto"
 },
-"1028": {
-"next_id": "1029",
-"next_id_after": "1032",
+"1027": {
+"next_id": "1028",
+"next_id_after": "1031",
 "text": "We can part ways.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We can part ways.",
 "type": "response"
 },
-"1029": {
+"1028": {
 "is_snippet": false,
-"next_id": "1037",
-"parent_id": "1028",
+"next_id": "1036",
+"parent_id": "1027",
 "type": "goto"
 },
 "103": {
@@ -531,21 +510,21 @@ lines = {
 "parent_id": "102",
 "type": "goto"
 },
-"1031": {
-"next_id": "1032",
+"1030": {
+"next_id": "1031",
 "text": "testRetake",
 "type": "title"
 },
-"1032": {
+"1031": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1033",
+"next_id": "1032",
 "text": "Great, I'll start up a new test for you.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Great, I'll start up a new test for you.",
 "type": "dialogue"
 },
-"1033": {
+"1032": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -563,21 +542,21 @@ lines = {
 "value": 0
 }])
 },
-"next_id": "1034",
+"next_id": "1033",
 "type": "mutation"
 },
-"1034": {
+"1033": {
 "is_snippet": true,
 "next_id": "970",
-"next_id_after": "1037",
+"next_id_after": "1036",
 "type": "goto"
 },
-"1036": {
-"next_id": "1037",
+"1035": {
+"next_id": "1036",
 "text": "testShowScore",
 "type": "title"
 },
-"1037": {
+"1036": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -590,10 +569,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "1038",
+"next_id": "1037",
 "type": "mutation"
 },
-"1038": {
+"1037": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -611,14 +590,14 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1039",
+"next_id": "1038",
 "type": "mutation"
 },
-"1039": {
+"1038": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
-"value": "Globa"
+"value": "Global"
 }, {
 "type": "dot"
 }, {
@@ -632,8 +611,39 @@ lines = {
 "value": 0
 }])
 },
-"next_id": "1040",
+"next_id": "1039",
 "type": "mutation"
+},
+"1039": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1040",
+"text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to find {{Global.level1MiniScore}} partitions of my data. You did a great job!",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}]),
+"value_in_text": "{{Global.testScore}}"
+}, {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level1MiniScore"
+}]),
+"value_in_text": "{{Global.level1MiniScore}}"
+}]),
+"translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to find {{Global.level1MiniScore}} partitions of my data. You did a great job!",
+"type": "dialogue"
 },
 "104": {
 "condition": {
@@ -663,43 +673,12 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1041",
-"text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to find {{Global.level1MiniScore}} partitions of my data. You did a great job!",
-"text_replacements": Array[Dictionary]([{
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "testScore"
-}]),
-"value_in_text": "{{Global.testScore}}"
-}, {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "level1MiniScore"
-}]),
-"value_in_text": "{{Global.level1MiniScore}}"
-}]),
-"translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to find {{Global.level1MiniScore}} partitions of my data. You did a great job!",
-"type": "dialogue"
-},
-"1041": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "1042",
 "text": "Bye now!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Bye now!",
 "type": "dialogue"
 },
-"1042": {
+"1041": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -712,10 +691,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "1043",
+"next_id": "1042",
 "type": "mutation"
 },
-"1043": {
+"1042": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "get_tree",
@@ -732,10 +711,10 @@ lines = {
 }])])
 }])
 },
-"next_id": "1045",
+"next_id": "1044",
 "type": "mutation"
 },
-"1045": {
+"1044": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"

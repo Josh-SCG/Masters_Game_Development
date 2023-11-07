@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://ba412ph08davx"
+path="res://.godot/imported/Digi_Level_2a.dialogue-11ab382af2d9853bd1ce261de093a78a.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/Level 2/Digi_Level_2a.dialogue"
+dest_files=["res://.godot/imported/Digi_Level_2a.dialogue-11ab382af2d9853bd1ce261de093a78a.tres"]
+
+[params]
+

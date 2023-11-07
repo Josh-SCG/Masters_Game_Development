@@ -1,11 +1,29 @@
 Character Sprites generated from "https://retro-sprite-creator.nihey.org/character" by Nihey Takizawa
+
 UI Elements from "[LPC] Pennomi's UI Elements" by pennomi, Buch and cemkalyincu found at https://opengameart.org/content/lpc-pennomis-ui-elements by pennomi, Buch and cemkalyoncu
+
 Dialogue Manager plugin from the asset library or https://github.com/nathanhoad/godot_dialogue_manager by nathanhoad
+
 Grid background from https://opengameart.org/content/grid-background by joshshshsh
-isaiah658's Pixel Pack #1 from https://opengameart.org/content/isaiah658s-pixel-pack-1 by isaiah658
 
 [LPC] Signposts, graves, line cloths and scare crow from https://opengameart.org/content/lpc-signposts-graves-line-cloths-and-scare-crow by Reemax, daneeklu, Nemisys
 
 LPC: Interior Castle Tiles from https://opengameart.org/content/lpc-interior-castle-tiles by Lanea Zimmerman
 
 Gum Bot Sprites from https://opengameart.org/content/gum-bot-sprites by GrafxKid and additional frames by me
+
+Sea forest background from https://opengameart.org/content/sea-forest-background by Dave Newton
+
+[LPC Revised] The Office from https://opengameart.org/content/lpc-revised-the-office by Eliza Wyatt and Lanea Zimmerman
+
+32x32 Tileset from https://solaarnoble.itch.io/32x32-tileset by SolaarNoble
+
+Modern City Top-Down Tileset [16x16] from https://shatteredreality.itch.io/modern-city by ShatteredReality
+
+Reyoh Easy Tileset from https://reyoh.itch.io/reyoh-easy-tileset by Reyoh
+
+Basic Tileset and Asset Pack 32x32 Pixels from https://schwarnhild.itch.io/basic-tileset-and-asset-pack-32x32-pixels by schwarnhild
+
+Free Field of Green Assets from https://guttykreum.itch.io/field-of-green by GuttyKreum
+
+Top Down Pixel Art Horror from https://kamisama887.itch.io/lorenz-fries-school-horror by AnisAous

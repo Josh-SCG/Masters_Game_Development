@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bw0uh6iwllc67"]
+
+[ext_resource type="PackedScene" uid="uid://c7kjxsturbhvn" path="res://Presets/fade_in_out_colour_rect.tscn" id="1_ipxne"]
+[ext_resource type="PackedScene" uid="uid://dvxe7spanny28" path="res://Assets/Player/ui.tscn" id="2_esjm5"]
+[ext_resource type="PackedScene" uid="uid://ygwdpcrdma8n" path="res://Assets/Player/Player.tscn" id="3_xuepa"]
+[ext_resource type="PackedScene" uid="uid://cibo25gsy6dcd" path="res://Presets/DigibotA.tscn" id="5_65u1c"]
+
+[sub_resource type="TileSet" id="TileSet_qpi2n"]
+
+[node name="level3a" type="Node2D"]
+y_sort_enabled = true
+texture_filter = 1
+
+[node name="FadeInOutColourRect" parent="." instance=ExtResource("1_ipxne")]
+offset_left = -101.0
+offset_top = -70.0
+offset_right = 1677.0
+offset_bottom = 859.0
+
+[node name="UI" parent="." instance=ExtResource("2_esjm5")]
+position = Vector2(487, 320)
+
+[node name="Player" parent="." instance=ExtResource("3_xuepa")]
+position = Vector2(487, 320)
+
+[node name="Digibot" parent="." instance=ExtResource("5_65u1c")]
+position = Vector2(419, 328)
+
+[node name="Base" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_qpi2n")
+cell_quadrant_size = 32
+format = 2

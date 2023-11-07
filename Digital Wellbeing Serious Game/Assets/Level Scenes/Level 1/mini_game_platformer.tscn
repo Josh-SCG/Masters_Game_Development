@@ -14,12 +14,12 @@
 [ext_resource type="PackedScene" uid="uid://cv7uilhbkvyri" path="res://Assets/Level Scenes/Level 1/Minigame/laptop_collectible.tscn" id="11_tnmwf"]
 [ext_resource type="PackedScene" uid="uid://rmfe82dkkdko" path="res://Assets/Level Scenes/Level 1/Minigame/sign_obstacle.tscn" id="12_85fwa"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_qdm0u"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_84eaf"]
 resource_local_to_scene = true
 shader = ExtResource("6_nquye")
 shader_parameter/speed = 0.01
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_pg8x6"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1xesr"]
 resource_local_to_scene = true
 shader = ExtResource("6_nquye")
 shader_parameter/speed = 1.33
@@ -40,7 +40,7 @@ offset_bottom = 627.0
 [node name="Background" type="Node2D" parent="."]
 
 [node name="EndlessSprite" parent="Background" instance=ExtResource("5_j3d61")]
-material = SubResource("ShaderMaterial_qdm0u")
+material = SubResource("ShaderMaterial_84eaf")
 offset_left = -12.0
 offset_top = 1.0
 offset_right = 1012.0
@@ -81,7 +81,7 @@ scale = Vector2(2, 2)
 metadata/_edit_group_ = true
 
 [node name="EndlessSprite" parent="Floor" instance=ExtResource("5_j3d61")]
-material = SubResource("ShaderMaterial_pg8x6")
+material = SubResource("ShaderMaterial_1xesr")
 offset_right = 615.0
 offset_bottom = 32.0
 texture = ExtResource("7_6ujyg")

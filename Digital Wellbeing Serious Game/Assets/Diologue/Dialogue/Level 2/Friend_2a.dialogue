@@ -1,0 +1,29 @@
+~ start
+
+if Global.initLevelConvo == 0
+	=> init
+elif Global.initLevelConvo == 1
+	=> spoken
+
+~ init
+Friend: [[Hi|Hello|Howdy]]!
+Friend: Didn't expect to see you out here. How are you?
+- Good, yourself?
+- Alright, what about you?
+
+Friend: Fine, I guess. Just feeling a bit down after scrolling online a bit and seeing all the news going on at the moment. 
+
+Phone: ** ding **
+
+Friend: Oh, give me a sec.
+Friend: ...
+Friend: ...
+Friend: ...
+Friend: Sorry, just had to check what that was.
+Friend: What was I saying? Oh yea, I was just complaining to you. Make no mind of it.
+Friend: Anyway, I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!
+set Global.initLevelConvo = 1
+
+~ spoken
+
+=> END

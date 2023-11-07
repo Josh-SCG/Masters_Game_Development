@@ -1790,9 +1790,9 @@ y_sort_enabled = true
 texture_filter = 1
 
 [node name="FadeInOutColourRect" parent="." instance=ExtResource("2_cqs3v")]
-offset_left = -68.0
+offset_left = -182.0
 offset_top = -83.0
-offset_right = 1758.0
+offset_right = 1644.0
 offset_bottom = 908.0
 
 [node name="UI" parent="." instance=ExtResource("1_jw833")]

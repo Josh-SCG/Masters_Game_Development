@@ -210,6 +210,12 @@ sources/4 = SubResource("TileSetAtlasSource_k65k3")
 y_sort_enabled = true
 texture_filter = 1
 
+[node name="FadeInOutColourRect" parent="." instance=ExtResource("10_ba8td")]
+offset_left = -190.0
+offset_top = -143.0
+offset_right = 979.0
+offset_bottom = 539.0
+
 [node name="UI" parent="." instance=ExtResource("1_pjmef")]
 position = Vector2(202.13, 324.064)
 
@@ -239,9 +245,3 @@ texture = ExtResource("7_ej8lf")
 hframes = 4
 vframes = 4
 frame = 1
-
-[node name="FadeInOutColourRect" parent="." instance=ExtResource("10_ba8td")]
-offset_left = -190.0
-offset_top = -143.0
-offset_right = 979.0
-offset_bottom = 539.0

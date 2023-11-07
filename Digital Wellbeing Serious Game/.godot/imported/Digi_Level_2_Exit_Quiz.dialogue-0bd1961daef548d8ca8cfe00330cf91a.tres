@@ -1,0 +1,10665 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_wh8y7"]
+
+[resource]
+script = ExtResource("1_wh8y7")
+titles = {
+"2321638926/Q10a": "574",
+"2321638926/Q10b": "583",
+"2321638926/Q10c": "592",
+"2321638926/Q10d": "601",
+"2321638926/Q11a": "610",
+"2321638926/Q11b": "619",
+"2321638926/Q11c": "628",
+"2321638926/Q11d": "637",
+"2321638926/Q12a": "646",
+"2321638926/Q12b": "655",
+"2321638926/Q12c": "664",
+"2321638926/Q12d": "673",
+"2321638926/Q13a": "682",
+"2321638926/Q13b": "691",
+"2321638926/Q13c": "700",
+"2321638926/Q13d": "709",
+"2321638926/Q14a": "718",
+"2321638926/Q14b": "727",
+"2321638926/Q14c": "736",
+"2321638926/Q14d": "745",
+"2321638926/Q15a": "754",
+"2321638926/Q15b": "763",
+"2321638926/Q15c": "772",
+"2321638926/Q15d": "781",
+"2321638926/Q16a": "790",
+"2321638926/Q16b": "799",
+"2321638926/Q16c": "808",
+"2321638926/Q16d": "817",
+"2321638926/Q17a": "826",
+"2321638926/Q17b": "835",
+"2321638926/Q17c": "844",
+"2321638926/Q17d": "853",
+"2321638926/Q18a": "862",
+"2321638926/Q18b": "871",
+"2321638926/Q18c": "880",
+"2321638926/Q18d": "889",
+"2321638926/Q19a": "898",
+"2321638926/Q19b": "907",
+"2321638926/Q19c": "916",
+"2321638926/Q19d": "925",
+"2321638926/Q1a": "250",
+"2321638926/Q1b": "259",
+"2321638926/Q1c": "268",
+"2321638926/Q1d": "277",
+"2321638926/Q20a": "934",
+"2321638926/Q20b": "943",
+"2321638926/Q20c": "952",
+"2321638926/Q20d": "961",
+"2321638926/Q2a": "286",
+"2321638926/Q2b": "295",
+"2321638926/Q2c": "304",
+"2321638926/Q2d": "313",
+"2321638926/Q3a": "322",
+"2321638926/Q3b": "331",
+"2321638926/Q3c": "340",
+"2321638926/Q3d": "349",
+"2321638926/Q4a": "358",
+"2321638926/Q4b": "367",
+"2321638926/Q4c": "376",
+"2321638926/Q4d": "385",
+"2321638926/Q5a": "394",
+"2321638926/Q5b": "403",
+"2321638926/Q5c": "412",
+"2321638926/Q5d": "421",
+"2321638926/Q6a": "430",
+"2321638926/Q6b": "439",
+"2321638926/Q6c": "448",
+"2321638926/Q6d": "457",
+"2321638926/Q7a": "466",
+"2321638926/Q7b": "475",
+"2321638926/Q7c": "484",
+"2321638926/Q7d": "493",
+"2321638926/Q8a": "502",
+"2321638926/Q8b": "511",
+"2321638926/Q8c": "520",
+"2321638926/Q8d": "529",
+"2321638926/Q9a": "538",
+"2321638926/Q9b": "547",
+"2321638926/Q9c": "556",
+"2321638926/Q9d": "565",
+"2321638926/mentalQ1": "970",
+"2321638926/mentalQ10": "1007",
+"2321638926/mentalQ2": "975",
+"2321638926/mentalQ3": "979",
+"2321638926/mentalQ4": "983",
+"2321638926/mentalQ5": "987",
+"2321638926/mentalQ6": "991",
+"2321638926/mentalQ7": "995",
+"2321638926/mentalQ8": "999",
+"2321638926/mentalQ9": "1003",
+"2321638926/questionSelection": "2",
+"2321638926/somethingIsWrong": "246",
+"MentQ/Q10a": "574",
+"MentQ/Q10b": "583",
+"MentQ/Q10c": "592",
+"MentQ/Q10d": "601",
+"MentQ/Q11a": "610",
+"MentQ/Q11b": "619",
+"MentQ/Q11c": "628",
+"MentQ/Q11d": "637",
+"MentQ/Q12a": "646",
+"MentQ/Q12b": "655",
+"MentQ/Q12c": "664",
+"MentQ/Q12d": "673",
+"MentQ/Q13a": "682",
+"MentQ/Q13b": "691",
+"MentQ/Q13c": "700",
+"MentQ/Q13d": "709",
+"MentQ/Q14a": "718",
+"MentQ/Q14b": "727",
+"MentQ/Q14c": "736",
+"MentQ/Q14d": "745",
+"MentQ/Q15a": "754",
+"MentQ/Q15b": "763",
+"MentQ/Q15c": "772",
+"MentQ/Q15d": "781",
+"MentQ/Q16a": "790",
+"MentQ/Q16b": "799",
+"MentQ/Q16c": "808",
+"MentQ/Q16d": "817",
+"MentQ/Q17a": "826",
+"MentQ/Q17b": "835",
+"MentQ/Q17c": "844",
+"MentQ/Q17d": "853",
+"MentQ/Q18a": "862",
+"MentQ/Q18b": "871",
+"MentQ/Q18c": "880",
+"MentQ/Q18d": "889",
+"MentQ/Q19a": "898",
+"MentQ/Q19b": "907",
+"MentQ/Q19c": "916",
+"MentQ/Q19d": "925",
+"MentQ/Q1a": "250",
+"MentQ/Q1b": "259",
+"MentQ/Q1c": "268",
+"MentQ/Q1d": "277",
+"MentQ/Q20a": "934",
+"MentQ/Q20b": "943",
+"MentQ/Q20c": "952",
+"MentQ/Q20d": "961",
+"MentQ/Q2a": "286",
+"MentQ/Q2b": "295",
+"MentQ/Q2c": "304",
+"MentQ/Q2d": "313",
+"MentQ/Q3a": "322",
+"MentQ/Q3b": "331",
+"MentQ/Q3c": "340",
+"MentQ/Q3d": "349",
+"MentQ/Q4a": "358",
+"MentQ/Q4b": "367",
+"MentQ/Q4c": "376",
+"MentQ/Q4d": "385",
+"MentQ/Q5a": "394",
+"MentQ/Q5b": "403",
+"MentQ/Q5c": "412",
+"MentQ/Q5d": "421",
+"MentQ/Q6a": "430",
+"MentQ/Q6b": "439",
+"MentQ/Q6c": "448",
+"MentQ/Q6d": "457",
+"MentQ/Q7a": "466",
+"MentQ/Q7b": "475",
+"MentQ/Q7c": "484",
+"MentQ/Q7d": "493",
+"MentQ/Q8a": "502",
+"MentQ/Q8b": "511",
+"MentQ/Q8c": "520",
+"MentQ/Q8d": "529",
+"MentQ/Q9a": "538",
+"MentQ/Q9b": "547",
+"MentQ/Q9c": "556",
+"MentQ/Q9d": "565",
+"MentQ/mentalQ1": "970",
+"MentQ/mentalQ10": "1007",
+"MentQ/mentalQ2": "975",
+"MentQ/mentalQ3": "979",
+"MentQ/mentalQ4": "983",
+"MentQ/mentalQ5": "987",
+"MentQ/mentalQ6": "991",
+"MentQ/mentalQ7": "995",
+"MentQ/mentalQ8": "999",
+"MentQ/mentalQ9": "1003",
+"MentQ/questionSelection": "2",
+"MentQ/somethingIsWrong": "246",
+"start": "1015",
+"testRetake": "1032",
+"testShowScore": "1037"
+}
+character_names = PackedStringArray("Josh", "Digibot")
+first_title = "1015"
+lines = {
+"1": {
+"next_id": "2",
+"text": "2321638926/questionSelection",
+"type": "title"
+},
+"10": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "12",
+"next_id": "11",
+"next_id_after": "246",
+"parent_id": "2",
+"type": "condition"
+},
+"100": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "102",
+"next_id": "101",
+"next_id_after": "246",
+"parent_id": "98",
+"type": "condition"
+},
+"1000": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "1003",
+"type": "goto"
+},
+"1002": {
+"next_id": "1003",
+"text": "2321638926/mentalQ9",
+"type": "title"
+},
+"1003": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 9
+}])])
+}])
+},
+"next_id": "1004",
+"type": "mutation"
+},
+"1004": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "1007",
+"type": "goto"
+},
+"1006": {
+"next_id": "1007",
+"text": "2321638926/mentalQ10",
+"type": "title"
+},
+"1007": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 10
+}])])
+}])
+},
+"next_id": "1008",
+"type": "mutation"
+},
+"1008": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "1009",
+"type": "goto"
+},
+"1009": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"101": {
+"is_snippet": false,
+"next_id": "538",
+"parent_id": "100",
+"type": "goto"
+},
+"1012": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1015",
+"text": "import \"res://Assets/Diologue/Question Files/MentalQuestions.dialogue\" as MentQ",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "import \"res://Assets/Diologue/Question Files/MentalQuestions.dialogue\" as MentQ",
+"type": "dialogue"
+},
+"1014": {
+"next_id": "1015",
+"text": "start",
+"type": "title"
+},
+"1015": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1016",
+"text": "[[Hello|Hi|Howdy]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hello|Hi|Howdy]]!",
+"type": "dialogue"
+},
+"1016": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "currentLevel"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_id": "1017",
+"type": "mutation"
+},
+"1017": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1018",
+"text": "Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, don't you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, don't you?",
+"type": "dialogue"
+},
+"1018": {
+"next_id": "1019",
+"next_id_after": "1025",
+"responses": PackedStringArray("1018", "1021"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"1019": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1020",
+"parent_id": "1018",
+"text": "Great! Then I'll ask you a couple of questions about it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Great! Then I'll ask you a couple of questions about it.",
+"type": "dialogue"
+},
+"102": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "104",
+"next_id": "103",
+"next_id_after": "246",
+"parent_id": "98",
+"type": "condition"
+},
+"1020": {
+"is_snippet": true,
+"next_id": "970",
+"next_id_after": "1025",
+"parent_id": "1018",
+"type": "goto"
+},
+"1021": {
+"next_id": "1022",
+"next_id_after": "1025",
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": "response"
+},
+"1022": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1023",
+"parent_id": "1021",
+"text": "Well, you know what they say, illusion of choice and all...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Well, you know what they say, illusion of choice and all...",
+"type": "dialogue"
+},
+"1023": {
+"is_snippet": true,
+"next_id": "970",
+"next_id_after": "1025",
+"parent_id": "1021",
+"type": "goto"
+},
+"1025": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1026",
+"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}]),
+"value_in_text": "{{Global.testScore}}"
+}]),
+"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"type": "dialogue"
+},
+"1026": {
+"next_id": "1027",
+"next_id_after": "1032",
+"responses": PackedStringArray("1026", "1028"),
+"text": "Try again",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Try again",
+"type": "response"
+},
+"1027": {
+"is_snippet": false,
+"next_id": "1032",
+"parent_id": "1026",
+"type": "goto"
+},
+"1028": {
+"next_id": "1029",
+"next_id_after": "1032",
+"text": "We can part ways.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We can part ways.",
+"type": "response"
+},
+"1029": {
+"is_snippet": false,
+"next_id": "1037",
+"parent_id": "1028",
+"type": "goto"
+},
+"103": {
+"is_snippet": false,
+"next_id": "547",
+"parent_id": "102",
+"type": "goto"
+},
+"1031": {
+"next_id": "1032",
+"text": "testRetake",
+"type": "title"
+},
+"1032": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1033",
+"text": "Great, I'll start up a new test for you.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Great, I'll start up a new test for you.",
+"type": "dialogue"
+},
+"1033": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "1034",
+"type": "mutation"
+},
+"1034": {
+"is_snippet": true,
+"next_id": "970",
+"next_id_after": "1037",
+"type": "goto"
+},
+"1036": {
+"next_id": "1037",
+"text": "testShowScore",
+"type": "title"
+},
+"1037": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setScores",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "1038",
+"type": "mutation"
+},
+"1038": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "levelComplete2"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "1039",
+"type": "mutation"
+},
+"1039": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "achievementLevelFinish"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "1040",
+"type": "mutation"
+},
+"104": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "106",
+"next_id": "105",
+"next_id_after": "246",
+"parent_id": "98",
+"type": "condition"
+},
+"1040": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1041",
+"text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed {{Global.level2MiniScore}} GAME 2 SCORE. You did a great job!",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}]),
+"value_in_text": "{{Global.testScore}}"
+}, {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "level2MiniScore"
+}]),
+"value_in_text": "{{Global.level2MiniScore}}"
+}]),
+"translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed {{Global.level2MiniScore}} GAME 2 SCORE. You did a great job!",
+"type": "dialogue"
+},
+"1041": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1042",
+"text": "Bye now!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bye now!",
+"type": "dialogue"
+},
+"1042": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "resetLevelProgress",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "1043",
+"type": "mutation"
+},
+"1043": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "get_tree",
+"type": "function",
+"value": Array[Array]([])
+}, {
+"type": "dot"
+}, {
+"function": "change_scene_to_file",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "res://Assets/Menu Scenes/Main Menu.tscn"
+}])])
+}])
+},
+"next_id": "1045",
+"type": "mutation"
+},
+"1045": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"105": {
+"is_snippet": false,
+"next_id": "556",
+"parent_id": "104",
+"type": "goto"
+},
+"106": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "108",
+"next_id": "107",
+"next_id_after": "246",
+"parent_id": "98",
+"type": "condition"
+},
+"107": {
+"is_snippet": false,
+"next_id": "565",
+"parent_id": "106",
+"type": "goto"
+},
+"108": {
+"next_conditional_id": "246",
+"next_id": "109",
+"next_id_after": "246",
+"parent_id": "98",
+"type": "condition"
+},
+"109": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "108",
+"type": "goto"
+},
+"11": {
+"is_snippet": false,
+"next_id": "277",
+"parent_id": "10",
+"type": "goto"
+},
+"110": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 10
+}])
+},
+"next_conditional_id": "122",
+"next_id": "111",
+"next_id_after": "246",
+"type": "condition"
+},
+"111": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 10
+}])])
+}])
+},
+"next_id": "112",
+"parent_id": "110",
+"type": "mutation"
+},
+"112": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "114",
+"next_id": "113",
+"next_id_after": "246",
+"parent_id": "110",
+"type": "condition"
+},
+"113": {
+"is_snippet": false,
+"next_id": "574",
+"parent_id": "112",
+"type": "goto"
+},
+"114": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "116",
+"next_id": "115",
+"next_id_after": "246",
+"parent_id": "110",
+"type": "condition"
+},
+"115": {
+"is_snippet": false,
+"next_id": "583",
+"parent_id": "114",
+"type": "goto"
+},
+"116": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "118",
+"next_id": "117",
+"next_id_after": "246",
+"parent_id": "110",
+"type": "condition"
+},
+"117": {
+"is_snippet": false,
+"next_id": "592",
+"parent_id": "116",
+"type": "goto"
+},
+"118": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "120",
+"next_id": "119",
+"next_id_after": "246",
+"parent_id": "110",
+"type": "condition"
+},
+"119": {
+"is_snippet": false,
+"next_id": "601",
+"parent_id": "118",
+"type": "goto"
+},
+"12": {
+"next_conditional_id": "246",
+"next_id": "13",
+"next_id_after": "246",
+"parent_id": "2",
+"type": "condition"
+},
+"120": {
+"next_conditional_id": "246",
+"next_id": "121",
+"next_id_after": "246",
+"parent_id": "110",
+"type": "condition"
+},
+"121": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "120",
+"type": "goto"
+},
+"122": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 11
+}])
+},
+"next_conditional_id": "134",
+"next_id": "123",
+"next_id_after": "246",
+"type": "condition"
+},
+"123": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 11
+}])])
+}])
+},
+"next_id": "124",
+"parent_id": "122",
+"type": "mutation"
+},
+"124": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "126",
+"next_id": "125",
+"next_id_after": "246",
+"parent_id": "122",
+"type": "condition"
+},
+"125": {
+"is_snippet": false,
+"next_id": "610",
+"parent_id": "124",
+"type": "goto"
+},
+"126": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "128",
+"next_id": "127",
+"next_id_after": "246",
+"parent_id": "122",
+"type": "condition"
+},
+"127": {
+"is_snippet": false,
+"next_id": "619",
+"parent_id": "126",
+"type": "goto"
+},
+"128": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "130",
+"next_id": "129",
+"next_id_after": "246",
+"parent_id": "122",
+"type": "condition"
+},
+"129": {
+"is_snippet": false,
+"next_id": "628",
+"parent_id": "128",
+"type": "goto"
+},
+"13": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "12",
+"type": "goto"
+},
+"130": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "132",
+"next_id": "131",
+"next_id_after": "246",
+"parent_id": "122",
+"type": "condition"
+},
+"131": {
+"is_snippet": false,
+"next_id": "637",
+"parent_id": "130",
+"type": "goto"
+},
+"132": {
+"next_conditional_id": "246",
+"next_id": "133",
+"next_id_after": "246",
+"parent_id": "122",
+"type": "condition"
+},
+"133": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "132",
+"type": "goto"
+},
+"134": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 12
+}])
+},
+"next_conditional_id": "146",
+"next_id": "135",
+"next_id_after": "246",
+"type": "condition"
+},
+"135": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 12
+}])])
+}])
+},
+"next_id": "136",
+"parent_id": "134",
+"type": "mutation"
+},
+"136": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "138",
+"next_id": "137",
+"next_id_after": "246",
+"parent_id": "134",
+"type": "condition"
+},
+"137": {
+"is_snippet": false,
+"next_id": "646",
+"parent_id": "136",
+"type": "goto"
+},
+"138": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "140",
+"next_id": "139",
+"next_id_after": "246",
+"parent_id": "134",
+"type": "condition"
+},
+"139": {
+"is_snippet": false,
+"next_id": "655",
+"parent_id": "138",
+"type": "goto"
+},
+"14": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_conditional_id": "26",
+"next_id": "15",
+"next_id_after": "246",
+"type": "condition"
+},
+"140": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "142",
+"next_id": "141",
+"next_id_after": "246",
+"parent_id": "134",
+"type": "condition"
+},
+"141": {
+"is_snippet": false,
+"next_id": "664",
+"parent_id": "140",
+"type": "goto"
+},
+"142": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "144",
+"next_id": "143",
+"next_id_after": "246",
+"parent_id": "134",
+"type": "condition"
+},
+"143": {
+"is_snippet": false,
+"next_id": "673",
+"parent_id": "142",
+"type": "goto"
+},
+"144": {
+"next_conditional_id": "246",
+"next_id": "145",
+"next_id_after": "246",
+"parent_id": "134",
+"type": "condition"
+},
+"145": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "144",
+"type": "goto"
+},
+"146": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 13
+}])
+},
+"next_conditional_id": "158",
+"next_id": "147",
+"next_id_after": "246",
+"type": "condition"
+},
+"147": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 13
+}])])
+}])
+},
+"next_id": "148",
+"parent_id": "146",
+"type": "mutation"
+},
+"148": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "150",
+"next_id": "149",
+"next_id_after": "246",
+"parent_id": "146",
+"type": "condition"
+},
+"149": {
+"is_snippet": false,
+"next_id": "682",
+"parent_id": "148",
+"type": "goto"
+},
+"15": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "16",
+"parent_id": "14",
+"type": "mutation"
+},
+"150": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "152",
+"next_id": "151",
+"next_id_after": "246",
+"parent_id": "146",
+"type": "condition"
+},
+"151": {
+"is_snippet": false,
+"next_id": "691",
+"parent_id": "150",
+"type": "goto"
+},
+"152": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "154",
+"next_id": "153",
+"next_id_after": "246",
+"parent_id": "146",
+"type": "condition"
+},
+"153": {
+"is_snippet": false,
+"next_id": "700",
+"parent_id": "152",
+"type": "goto"
+},
+"154": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "156",
+"next_id": "155",
+"next_id_after": "246",
+"parent_id": "146",
+"type": "condition"
+},
+"155": {
+"is_snippet": false,
+"next_id": "709",
+"parent_id": "154",
+"type": "goto"
+},
+"156": {
+"next_conditional_id": "246",
+"next_id": "157",
+"next_id_after": "246",
+"parent_id": "146",
+"type": "condition"
+},
+"157": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "156",
+"type": "goto"
+},
+"158": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 14
+}])
+},
+"next_conditional_id": "170",
+"next_id": "159",
+"next_id_after": "246",
+"type": "condition"
+},
+"159": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 14
+}])])
+}])
+},
+"next_id": "160",
+"parent_id": "158",
+"type": "mutation"
+},
+"16": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "18",
+"next_id": "17",
+"next_id_after": "246",
+"parent_id": "14",
+"type": "condition"
+},
+"160": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "162",
+"next_id": "161",
+"next_id_after": "246",
+"parent_id": "158",
+"type": "condition"
+},
+"161": {
+"is_snippet": false,
+"next_id": "718",
+"parent_id": "160",
+"type": "goto"
+},
+"162": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "164",
+"next_id": "163",
+"next_id_after": "246",
+"parent_id": "158",
+"type": "condition"
+},
+"163": {
+"is_snippet": false,
+"next_id": "727",
+"parent_id": "162",
+"type": "goto"
+},
+"164": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "166",
+"next_id": "165",
+"next_id_after": "246",
+"parent_id": "158",
+"type": "condition"
+},
+"165": {
+"is_snippet": false,
+"next_id": "736",
+"parent_id": "164",
+"type": "goto"
+},
+"166": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "168",
+"next_id": "167",
+"next_id_after": "246",
+"parent_id": "158",
+"type": "condition"
+},
+"167": {
+"is_snippet": false,
+"next_id": "745",
+"parent_id": "166",
+"type": "goto"
+},
+"168": {
+"next_conditional_id": "246",
+"next_id": "169",
+"next_id_after": "246",
+"parent_id": "158",
+"type": "condition"
+},
+"169": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "168",
+"type": "goto"
+},
+"17": {
+"is_snippet": false,
+"next_id": "286",
+"parent_id": "16",
+"type": "goto"
+},
+"170": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 15
+}])
+},
+"next_conditional_id": "182",
+"next_id": "171",
+"next_id_after": "246",
+"type": "condition"
+},
+"171": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 15
+}])])
+}])
+},
+"next_id": "172",
+"parent_id": "170",
+"type": "mutation"
+},
+"172": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "174",
+"next_id": "173",
+"next_id_after": "246",
+"parent_id": "170",
+"type": "condition"
+},
+"173": {
+"is_snippet": false,
+"next_id": "754",
+"parent_id": "172",
+"type": "goto"
+},
+"174": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "176",
+"next_id": "175",
+"next_id_after": "246",
+"parent_id": "170",
+"type": "condition"
+},
+"175": {
+"is_snippet": false,
+"next_id": "763",
+"parent_id": "174",
+"type": "goto"
+},
+"176": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "178",
+"next_id": "177",
+"next_id_after": "246",
+"parent_id": "170",
+"type": "condition"
+},
+"177": {
+"is_snippet": false,
+"next_id": "772",
+"parent_id": "176",
+"type": "goto"
+},
+"178": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "180",
+"next_id": "179",
+"next_id_after": "246",
+"parent_id": "170",
+"type": "condition"
+},
+"179": {
+"is_snippet": false,
+"next_id": "781",
+"parent_id": "178",
+"type": "goto"
+},
+"18": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "20",
+"next_id": "19",
+"next_id_after": "246",
+"parent_id": "14",
+"type": "condition"
+},
+"180": {
+"next_conditional_id": "246",
+"next_id": "181",
+"next_id_after": "246",
+"parent_id": "170",
+"type": "condition"
+},
+"181": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "180",
+"type": "goto"
+},
+"182": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 16
+}])
+},
+"next_conditional_id": "194",
+"next_id": "183",
+"next_id_after": "246",
+"type": "condition"
+},
+"183": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 16
+}])])
+}])
+},
+"next_id": "184",
+"parent_id": "182",
+"type": "mutation"
+},
+"184": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "186",
+"next_id": "185",
+"next_id_after": "246",
+"parent_id": "182",
+"type": "condition"
+},
+"185": {
+"is_snippet": false,
+"next_id": "790",
+"parent_id": "184",
+"type": "goto"
+},
+"186": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "188",
+"next_id": "187",
+"next_id_after": "246",
+"parent_id": "182",
+"type": "condition"
+},
+"187": {
+"is_snippet": false,
+"next_id": "799",
+"parent_id": "186",
+"type": "goto"
+},
+"188": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "190",
+"next_id": "189",
+"next_id_after": "246",
+"parent_id": "182",
+"type": "condition"
+},
+"189": {
+"is_snippet": false,
+"next_id": "808",
+"parent_id": "188",
+"type": "goto"
+},
+"19": {
+"is_snippet": false,
+"next_id": "295",
+"parent_id": "18",
+"type": "goto"
+},
+"190": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "192",
+"next_id": "191",
+"next_id_after": "246",
+"parent_id": "182",
+"type": "condition"
+},
+"191": {
+"is_snippet": false,
+"next_id": "817",
+"parent_id": "190",
+"type": "goto"
+},
+"192": {
+"next_conditional_id": "246",
+"next_id": "193",
+"next_id_after": "246",
+"parent_id": "182",
+"type": "condition"
+},
+"193": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "192",
+"type": "goto"
+},
+"194": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 17
+}])
+},
+"next_conditional_id": "206",
+"next_id": "195",
+"next_id_after": "246",
+"type": "condition"
+},
+"195": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 17
+}])])
+}])
+},
+"next_id": "196",
+"parent_id": "194",
+"type": "mutation"
+},
+"196": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "198",
+"next_id": "197",
+"next_id_after": "246",
+"parent_id": "194",
+"type": "condition"
+},
+"197": {
+"is_snippet": false,
+"next_id": "826",
+"parent_id": "196",
+"type": "goto"
+},
+"198": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "200",
+"next_id": "199",
+"next_id_after": "246",
+"parent_id": "194",
+"type": "condition"
+},
+"199": {
+"is_snippet": false,
+"next_id": "835",
+"parent_id": "198",
+"type": "goto"
+},
+"2": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_conditional_id": "14",
+"next_id": "3",
+"next_id_after": "246",
+"type": "condition"
+},
+"20": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "22",
+"next_id": "21",
+"next_id_after": "246",
+"parent_id": "14",
+"type": "condition"
+},
+"200": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "202",
+"next_id": "201",
+"next_id_after": "246",
+"parent_id": "194",
+"type": "condition"
+},
+"201": {
+"is_snippet": false,
+"next_id": "844",
+"parent_id": "200",
+"type": "goto"
+},
+"202": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "204",
+"next_id": "203",
+"next_id_after": "246",
+"parent_id": "194",
+"type": "condition"
+},
+"203": {
+"is_snippet": false,
+"next_id": "853",
+"parent_id": "202",
+"type": "goto"
+},
+"204": {
+"next_conditional_id": "246",
+"next_id": "205",
+"next_id_after": "246",
+"parent_id": "194",
+"type": "condition"
+},
+"205": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "204",
+"type": "goto"
+},
+"206": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 18
+}])
+},
+"next_conditional_id": "218",
+"next_id": "207",
+"next_id_after": "246",
+"type": "condition"
+},
+"207": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 18
+}])])
+}])
+},
+"next_id": "208",
+"parent_id": "206",
+"type": "mutation"
+},
+"208": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "210",
+"next_id": "209",
+"next_id_after": "246",
+"parent_id": "206",
+"type": "condition"
+},
+"209": {
+"is_snippet": false,
+"next_id": "862",
+"parent_id": "208",
+"type": "goto"
+},
+"21": {
+"is_snippet": false,
+"next_id": "304",
+"parent_id": "20",
+"type": "goto"
+},
+"210": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "212",
+"next_id": "211",
+"next_id_after": "246",
+"parent_id": "206",
+"type": "condition"
+},
+"211": {
+"is_snippet": false,
+"next_id": "871",
+"parent_id": "210",
+"type": "goto"
+},
+"212": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "214",
+"next_id": "213",
+"next_id_after": "246",
+"parent_id": "206",
+"type": "condition"
+},
+"213": {
+"is_snippet": false,
+"next_id": "880",
+"parent_id": "212",
+"type": "goto"
+},
+"214": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "216",
+"next_id": "215",
+"next_id_after": "246",
+"parent_id": "206",
+"type": "condition"
+},
+"215": {
+"is_snippet": false,
+"next_id": "889",
+"parent_id": "214",
+"type": "goto"
+},
+"216": {
+"next_conditional_id": "246",
+"next_id": "217",
+"next_id_after": "246",
+"parent_id": "206",
+"type": "condition"
+},
+"217": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "216",
+"type": "goto"
+},
+"218": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 19
+}])
+},
+"next_conditional_id": "230",
+"next_id": "219",
+"next_id_after": "246",
+"type": "condition"
+},
+"219": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 19
+}])])
+}])
+},
+"next_id": "220",
+"parent_id": "218",
+"type": "mutation"
+},
+"22": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "24",
+"next_id": "23",
+"next_id_after": "246",
+"parent_id": "14",
+"type": "condition"
+},
+"220": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "222",
+"next_id": "221",
+"next_id_after": "246",
+"parent_id": "218",
+"type": "condition"
+},
+"221": {
+"is_snippet": false,
+"next_id": "898",
+"parent_id": "220",
+"type": "goto"
+},
+"222": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "224",
+"next_id": "223",
+"next_id_after": "246",
+"parent_id": "218",
+"type": "condition"
+},
+"223": {
+"is_snippet": false,
+"next_id": "907",
+"parent_id": "222",
+"type": "goto"
+},
+"224": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "226",
+"next_id": "225",
+"next_id_after": "246",
+"parent_id": "218",
+"type": "condition"
+},
+"225": {
+"is_snippet": false,
+"next_id": "916",
+"parent_id": "224",
+"type": "goto"
+},
+"226": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "228",
+"next_id": "227",
+"next_id_after": "246",
+"parent_id": "218",
+"type": "condition"
+},
+"227": {
+"is_snippet": false,
+"next_id": "925",
+"parent_id": "226",
+"type": "goto"
+},
+"228": {
+"next_conditional_id": "246",
+"next_id": "229",
+"next_id_after": "246",
+"parent_id": "218",
+"type": "condition"
+},
+"229": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "228",
+"type": "goto"
+},
+"23": {
+"is_snippet": false,
+"next_id": "313",
+"parent_id": "22",
+"type": "goto"
+},
+"230": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 20
+}])
+},
+"next_conditional_id": "242",
+"next_id": "231",
+"next_id_after": "246",
+"type": "condition"
+},
+"231": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 20
+}])])
+}])
+},
+"next_id": "232",
+"parent_id": "230",
+"type": "mutation"
+},
+"232": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "234",
+"next_id": "233",
+"next_id_after": "246",
+"parent_id": "230",
+"type": "condition"
+},
+"233": {
+"is_snippet": false,
+"next_id": "934",
+"parent_id": "232",
+"type": "goto"
+},
+"234": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "236",
+"next_id": "235",
+"next_id_after": "246",
+"parent_id": "230",
+"type": "condition"
+},
+"235": {
+"is_snippet": false,
+"next_id": "943",
+"parent_id": "234",
+"type": "goto"
+},
+"236": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "238",
+"next_id": "237",
+"next_id_after": "246",
+"parent_id": "230",
+"type": "condition"
+},
+"237": {
+"is_snippet": false,
+"next_id": "952",
+"parent_id": "236",
+"type": "goto"
+},
+"238": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "240",
+"next_id": "239",
+"next_id_after": "246",
+"parent_id": "230",
+"type": "condition"
+},
+"239": {
+"is_snippet": false,
+"next_id": "961",
+"parent_id": "238",
+"type": "goto"
+},
+"24": {
+"next_conditional_id": "246",
+"next_id": "25",
+"next_id_after": "246",
+"parent_id": "14",
+"type": "condition"
+},
+"240": {
+"next_conditional_id": "246",
+"next_id": "241",
+"next_id_after": "246",
+"parent_id": "230",
+"type": "condition"
+},
+"241": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "240",
+"type": "goto"
+},
+"242": {
+"next_conditional_id": "246",
+"next_id": "243",
+"next_id_after": "246",
+"type": "condition"
+},
+"243": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "242",
+"type": "goto"
+},
+"245": {
+"next_id": "246",
+"text": "2321638926/somethingIsWrong",
+"type": "title"
+},
+"246": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "247",
+"text": "Oops. Something is wrong. Please try again. If this persists, welp, contact the dev...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oops. Something is wrong. Please try again. If this persists, welp, contact the dev...",
+"type": "dialogue"
+},
+"247": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"249": {
+"next_id": "250",
+"text": "2321638926/Q1a",
+"type": "title"
+},
+"25": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "24",
+"type": "goto"
+},
+"250": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "251",
+"text": "Q1a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q1a",
+"type": "dialogue"
+},
+"251": {
+"next_id": "252",
+"next_id_after": "256",
+"responses": PackedStringArray("251", "253", "254", "255"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"252": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "256",
+"parent_id": "251",
+"type": "mutation"
+},
+"253": {
+"next_id": "256",
+"next_id_after": "256",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"254": {
+"next_id": "256",
+"next_id_after": "256",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"255": {
+"next_id": "256",
+"next_id_after": "256",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"256": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"258": {
+"next_id": "259",
+"text": "2321638926/Q1b",
+"type": "title"
+},
+"259": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "260",
+"text": "Q1b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q1b",
+"type": "dialogue"
+},
+"26": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 3
+}])
+},
+"next_conditional_id": "38",
+"next_id": "27",
+"next_id_after": "246",
+"type": "condition"
+},
+"260": {
+"next_id": "265",
+"next_id_after": "265",
+"responses": PackedStringArray("260", "261", "263", "264"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"261": {
+"next_id": "262",
+"next_id_after": "265",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"262": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "265",
+"parent_id": "261",
+"type": "mutation"
+},
+"263": {
+"next_id": "265",
+"next_id_after": "265",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"264": {
+"next_id": "265",
+"next_id_after": "265",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"265": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"267": {
+"next_id": "268",
+"text": "2321638926/Q1c",
+"type": "title"
+},
+"268": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "269",
+"text": "Q1c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q1c",
+"type": "dialogue"
+},
+"269": {
+"next_id": "274",
+"next_id_after": "274",
+"responses": PackedStringArray("269", "270", "271", "273"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"27": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "28",
+"parent_id": "26",
+"type": "mutation"
+},
+"270": {
+"next_id": "274",
+"next_id_after": "274",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"271": {
+"next_id": "272",
+"next_id_after": "274",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"272": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "274",
+"parent_id": "271",
+"type": "mutation"
+},
+"273": {
+"next_id": "274",
+"next_id_after": "274",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"274": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"276": {
+"next_id": "277",
+"text": "2321638926/Q1d",
+"type": "title"
+},
+"277": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "278",
+"text": "Q1d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q1d",
+"type": "dialogue"
+},
+"278": {
+"next_id": "283",
+"next_id_after": "283",
+"responses": PackedStringArray("278", "279", "280", "281"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"279": {
+"next_id": "283",
+"next_id_after": "283",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"28": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "30",
+"next_id": "29",
+"next_id_after": "246",
+"parent_id": "26",
+"type": "condition"
+},
+"280": {
+"next_id": "283",
+"next_id_after": "283",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"281": {
+"next_id": "282",
+"next_id_after": "283",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"282": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "283",
+"parent_id": "281",
+"type": "mutation"
+},
+"283": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"285": {
+"next_id": "286",
+"text": "2321638926/Q2a",
+"type": "title"
+},
+"286": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "287",
+"text": "Q2a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q2a",
+"type": "dialogue"
+},
+"287": {
+"next_id": "288",
+"next_id_after": "292",
+"responses": PackedStringArray("287", "289", "290", "291"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"288": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "292",
+"parent_id": "287",
+"type": "mutation"
+},
+"289": {
+"next_id": "292",
+"next_id_after": "292",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"29": {
+"is_snippet": false,
+"next_id": "322",
+"parent_id": "28",
+"type": "goto"
+},
+"290": {
+"next_id": "292",
+"next_id_after": "292",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"291": {
+"next_id": "292",
+"next_id_after": "292",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"292": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"294": {
+"next_id": "295",
+"text": "2321638926/Q2b",
+"type": "title"
+},
+"295": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "296",
+"text": "Q2b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q2b",
+"type": "dialogue"
+},
+"296": {
+"next_id": "301",
+"next_id_after": "301",
+"responses": PackedStringArray("296", "297", "299", "300"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"297": {
+"next_id": "298",
+"next_id_after": "301",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"298": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "301",
+"parent_id": "297",
+"type": "mutation"
+},
+"299": {
+"next_id": "301",
+"next_id_after": "301",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"3": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "4",
+"parent_id": "2",
+"type": "mutation"
+},
+"30": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "32",
+"next_id": "31",
+"next_id_after": "246",
+"parent_id": "26",
+"type": "condition"
+},
+"300": {
+"next_id": "301",
+"next_id_after": "301",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"301": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"303": {
+"next_id": "304",
+"text": "2321638926/Q2c",
+"type": "title"
+},
+"304": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "305",
+"text": "Q2c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q2c",
+"type": "dialogue"
+},
+"305": {
+"next_id": "310",
+"next_id_after": "310",
+"responses": PackedStringArray("305", "306", "307", "309"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"306": {
+"next_id": "310",
+"next_id_after": "310",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"307": {
+"next_id": "308",
+"next_id_after": "310",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"308": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "310",
+"parent_id": "307",
+"type": "mutation"
+},
+"309": {
+"next_id": "310",
+"next_id_after": "310",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"31": {
+"is_snippet": false,
+"next_id": "331",
+"parent_id": "30",
+"type": "goto"
+},
+"310": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"312": {
+"next_id": "313",
+"text": "2321638926/Q2d",
+"type": "title"
+},
+"313": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "314",
+"text": "Q2d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q2d",
+"type": "dialogue"
+},
+"314": {
+"next_id": "319",
+"next_id_after": "319",
+"responses": PackedStringArray("314", "315", "316", "317"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"315": {
+"next_id": "319",
+"next_id_after": "319",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"316": {
+"next_id": "319",
+"next_id_after": "319",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"317": {
+"next_id": "318",
+"next_id_after": "319",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"318": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "319",
+"parent_id": "317",
+"type": "mutation"
+},
+"319": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"32": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "34",
+"next_id": "33",
+"next_id_after": "246",
+"parent_id": "26",
+"type": "condition"
+},
+"321": {
+"next_id": "322",
+"text": "2321638926/Q3a",
+"type": "title"
+},
+"322": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "323",
+"text": "Q3a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q3a",
+"type": "dialogue"
+},
+"323": {
+"next_id": "324",
+"next_id_after": "328",
+"responses": PackedStringArray("323", "325", "326", "327"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"324": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "328",
+"parent_id": "323",
+"type": "mutation"
+},
+"325": {
+"next_id": "328",
+"next_id_after": "328",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"326": {
+"next_id": "328",
+"next_id_after": "328",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"327": {
+"next_id": "328",
+"next_id_after": "328",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"328": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"33": {
+"is_snippet": false,
+"next_id": "340",
+"parent_id": "32",
+"type": "goto"
+},
+"330": {
+"next_id": "331",
+"text": "2321638926/Q3b",
+"type": "title"
+},
+"331": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "332",
+"text": "Q3b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q3b",
+"type": "dialogue"
+},
+"332": {
+"next_id": "337",
+"next_id_after": "337",
+"responses": PackedStringArray("332", "333", "335", "336"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"333": {
+"next_id": "334",
+"next_id_after": "337",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"334": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "337",
+"parent_id": "333",
+"type": "mutation"
+},
+"335": {
+"next_id": "337",
+"next_id_after": "337",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"336": {
+"next_id": "337",
+"next_id_after": "337",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"337": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"339": {
+"next_id": "340",
+"text": "2321638926/Q3c",
+"type": "title"
+},
+"34": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "36",
+"next_id": "35",
+"next_id_after": "246",
+"parent_id": "26",
+"type": "condition"
+},
+"340": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "341",
+"text": "Q3c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q3c",
+"type": "dialogue"
+},
+"341": {
+"next_id": "346",
+"next_id_after": "346",
+"responses": PackedStringArray("341", "342", "343", "345"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"342": {
+"next_id": "346",
+"next_id_after": "346",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"343": {
+"next_id": "344",
+"next_id_after": "346",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"344": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "346",
+"parent_id": "343",
+"type": "mutation"
+},
+"345": {
+"next_id": "346",
+"next_id_after": "346",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"346": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"348": {
+"next_id": "349",
+"text": "2321638926/Q3d",
+"type": "title"
+},
+"349": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "350",
+"text": "Q3d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q3d",
+"type": "dialogue"
+},
+"35": {
+"is_snippet": false,
+"next_id": "349",
+"parent_id": "34",
+"type": "goto"
+},
+"350": {
+"next_id": "355",
+"next_id_after": "355",
+"responses": PackedStringArray("350", "351", "352", "353"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"351": {
+"next_id": "355",
+"next_id_after": "355",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"352": {
+"next_id": "355",
+"next_id_after": "355",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"353": {
+"next_id": "354",
+"next_id_after": "355",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"354": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "355",
+"parent_id": "353",
+"type": "mutation"
+},
+"355": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"357": {
+"next_id": "358",
+"text": "2321638926/Q4a",
+"type": "title"
+},
+"358": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "359",
+"text": "Q4a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q4a",
+"type": "dialogue"
+},
+"359": {
+"next_id": "360",
+"next_id_after": "364",
+"responses": PackedStringArray("359", "361", "362", "363"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"36": {
+"next_conditional_id": "246",
+"next_id": "37",
+"next_id_after": "246",
+"parent_id": "26",
+"type": "condition"
+},
+"360": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "364",
+"parent_id": "359",
+"type": "mutation"
+},
+"361": {
+"next_id": "364",
+"next_id_after": "364",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"362": {
+"next_id": "364",
+"next_id_after": "364",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"363": {
+"next_id": "364",
+"next_id_after": "364",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"364": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"366": {
+"next_id": "367",
+"text": "2321638926/Q4b",
+"type": "title"
+},
+"367": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "368",
+"text": "Q4b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q4b",
+"type": "dialogue"
+},
+"368": {
+"next_id": "373",
+"next_id_after": "373",
+"responses": PackedStringArray("368", "369", "371", "372"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"369": {
+"next_id": "370",
+"next_id_after": "373",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"37": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "36",
+"type": "goto"
+},
+"370": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "373",
+"parent_id": "369",
+"type": "mutation"
+},
+"371": {
+"next_id": "373",
+"next_id_after": "373",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"372": {
+"next_id": "373",
+"next_id_after": "373",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"373": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"375": {
+"next_id": "376",
+"text": "2321638926/Q4c",
+"type": "title"
+},
+"376": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "377",
+"text": "Q4c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q4c",
+"type": "dialogue"
+},
+"377": {
+"next_id": "382",
+"next_id_after": "382",
+"responses": PackedStringArray("377", "378", "379", "381"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"378": {
+"next_id": "382",
+"next_id_after": "382",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"379": {
+"next_id": "380",
+"next_id_after": "382",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"38": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 4
+}])
+},
+"next_conditional_id": "50",
+"next_id": "39",
+"next_id_after": "246",
+"type": "condition"
+},
+"380": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "382",
+"parent_id": "379",
+"type": "mutation"
+},
+"381": {
+"next_id": "382",
+"next_id_after": "382",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"382": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"384": {
+"next_id": "385",
+"text": "2321638926/Q4d",
+"type": "title"
+},
+"385": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "386",
+"text": "Q4d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q4d",
+"type": "dialogue"
+},
+"386": {
+"next_id": "391",
+"next_id_after": "391",
+"responses": PackedStringArray("386", "387", "388", "389"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"387": {
+"next_id": "391",
+"next_id_after": "391",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"388": {
+"next_id": "391",
+"next_id_after": "391",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"389": {
+"next_id": "390",
+"next_id_after": "391",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"39": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 4
+}])])
+}])
+},
+"next_id": "40",
+"parent_id": "38",
+"type": "mutation"
+},
+"390": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "391",
+"parent_id": "389",
+"type": "mutation"
+},
+"391": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"393": {
+"next_id": "394",
+"text": "2321638926/Q5a",
+"type": "title"
+},
+"394": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "395",
+"text": "Q5a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q5a",
+"type": "dialogue"
+},
+"395": {
+"next_id": "396",
+"next_id_after": "400",
+"responses": PackedStringArray("395", "397", "398", "399"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"396": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "400",
+"parent_id": "395",
+"type": "mutation"
+},
+"397": {
+"next_id": "400",
+"next_id_after": "400",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"398": {
+"next_id": "400",
+"next_id_after": "400",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"399": {
+"next_id": "400",
+"next_id_after": "400",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"4": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "6",
+"next_id": "5",
+"next_id_after": "246",
+"parent_id": "2",
+"type": "condition"
+},
+"40": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "42",
+"next_id": "41",
+"next_id_after": "246",
+"parent_id": "38",
+"type": "condition"
+},
+"400": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"402": {
+"next_id": "403",
+"text": "2321638926/Q5b",
+"type": "title"
+},
+"403": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "404",
+"text": "Q5b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q5b",
+"type": "dialogue"
+},
+"404": {
+"next_id": "409",
+"next_id_after": "409",
+"responses": PackedStringArray("404", "405", "407", "408"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"405": {
+"next_id": "406",
+"next_id_after": "409",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"406": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "409",
+"parent_id": "405",
+"type": "mutation"
+},
+"407": {
+"next_id": "409",
+"next_id_after": "409",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"408": {
+"next_id": "409",
+"next_id_after": "409",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"409": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"41": {
+"is_snippet": false,
+"next_id": "358",
+"parent_id": "40",
+"type": "goto"
+},
+"411": {
+"next_id": "412",
+"text": "2321638926/Q5c",
+"type": "title"
+},
+"412": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "413",
+"text": "Q5c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q5c",
+"type": "dialogue"
+},
+"413": {
+"next_id": "418",
+"next_id_after": "418",
+"responses": PackedStringArray("413", "414", "415", "417"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"414": {
+"next_id": "418",
+"next_id_after": "418",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"415": {
+"next_id": "416",
+"next_id_after": "418",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"416": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "418",
+"parent_id": "415",
+"type": "mutation"
+},
+"417": {
+"next_id": "418",
+"next_id_after": "418",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"418": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"42": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "44",
+"next_id": "43",
+"next_id_after": "246",
+"parent_id": "38",
+"type": "condition"
+},
+"420": {
+"next_id": "421",
+"text": "2321638926/Q5d",
+"type": "title"
+},
+"421": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "422",
+"text": "Q5d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q5d",
+"type": "dialogue"
+},
+"422": {
+"next_id": "427",
+"next_id_after": "427",
+"responses": PackedStringArray("422", "423", "424", "425"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"423": {
+"next_id": "427",
+"next_id_after": "427",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"424": {
+"next_id": "427",
+"next_id_after": "427",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"425": {
+"next_id": "426",
+"next_id_after": "427",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"426": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "427",
+"parent_id": "425",
+"type": "mutation"
+},
+"427": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"429": {
+"next_id": "430",
+"text": "2321638926/Q6a",
+"type": "title"
+},
+"43": {
+"is_snippet": false,
+"next_id": "367",
+"parent_id": "42",
+"type": "goto"
+},
+"430": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "431",
+"text": "Q6a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q6a",
+"type": "dialogue"
+},
+"431": {
+"next_id": "432",
+"next_id_after": "436",
+"responses": PackedStringArray("431", "433", "434", "435"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"432": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "436",
+"parent_id": "431",
+"type": "mutation"
+},
+"433": {
+"next_id": "436",
+"next_id_after": "436",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"434": {
+"next_id": "436",
+"next_id_after": "436",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"435": {
+"next_id": "436",
+"next_id_after": "436",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"436": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"438": {
+"next_id": "439",
+"text": "2321638926/Q6b",
+"type": "title"
+},
+"439": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "440",
+"text": "Q6b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q6b",
+"type": "dialogue"
+},
+"44": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "46",
+"next_id": "45",
+"next_id_after": "246",
+"parent_id": "38",
+"type": "condition"
+},
+"440": {
+"next_id": "445",
+"next_id_after": "445",
+"responses": PackedStringArray("440", "441", "443", "444"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"441": {
+"next_id": "442",
+"next_id_after": "445",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"442": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "445",
+"parent_id": "441",
+"type": "mutation"
+},
+"443": {
+"next_id": "445",
+"next_id_after": "445",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"444": {
+"next_id": "445",
+"next_id_after": "445",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"445": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"447": {
+"next_id": "448",
+"text": "2321638926/Q6c",
+"type": "title"
+},
+"448": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "449",
+"text": "Q6c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q6c",
+"type": "dialogue"
+},
+"449": {
+"next_id": "454",
+"next_id_after": "454",
+"responses": PackedStringArray("449", "450", "451", "453"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"45": {
+"is_snippet": false,
+"next_id": "376",
+"parent_id": "44",
+"type": "goto"
+},
+"450": {
+"next_id": "454",
+"next_id_after": "454",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"451": {
+"next_id": "452",
+"next_id_after": "454",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"452": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "454",
+"parent_id": "451",
+"type": "mutation"
+},
+"453": {
+"next_id": "454",
+"next_id_after": "454",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"454": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"456": {
+"next_id": "457",
+"text": "2321638926/Q6d",
+"type": "title"
+},
+"457": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "458",
+"text": "Q6d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q6d",
+"type": "dialogue"
+},
+"458": {
+"next_id": "463",
+"next_id_after": "463",
+"responses": PackedStringArray("458", "459", "460", "461"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"459": {
+"next_id": "463",
+"next_id_after": "463",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"46": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "48",
+"next_id": "47",
+"next_id_after": "246",
+"parent_id": "38",
+"type": "condition"
+},
+"460": {
+"next_id": "463",
+"next_id_after": "463",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"461": {
+"next_id": "462",
+"next_id_after": "463",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"462": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "463",
+"parent_id": "461",
+"type": "mutation"
+},
+"463": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"465": {
+"next_id": "466",
+"text": "2321638926/Q7a",
+"type": "title"
+},
+"466": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "467",
+"text": "Q7a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q7a",
+"type": "dialogue"
+},
+"467": {
+"next_id": "468",
+"next_id_after": "472",
+"responses": PackedStringArray("467", "469", "470", "471"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"468": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "472",
+"parent_id": "467",
+"type": "mutation"
+},
+"469": {
+"next_id": "472",
+"next_id_after": "472",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"47": {
+"is_snippet": false,
+"next_id": "385",
+"parent_id": "46",
+"type": "goto"
+},
+"470": {
+"next_id": "472",
+"next_id_after": "472",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"471": {
+"next_id": "472",
+"next_id_after": "472",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"472": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"474": {
+"next_id": "475",
+"text": "2321638926/Q7b",
+"type": "title"
+},
+"475": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "476",
+"text": "Q7b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q7b",
+"type": "dialogue"
+},
+"476": {
+"next_id": "481",
+"next_id_after": "481",
+"responses": PackedStringArray("476", "477", "479", "480"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"477": {
+"next_id": "478",
+"next_id_after": "481",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"478": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "481",
+"parent_id": "477",
+"type": "mutation"
+},
+"479": {
+"next_id": "481",
+"next_id_after": "481",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"48": {
+"next_conditional_id": "246",
+"next_id": "49",
+"next_id_after": "246",
+"parent_id": "38",
+"type": "condition"
+},
+"480": {
+"next_id": "481",
+"next_id_after": "481",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"481": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"483": {
+"next_id": "484",
+"text": "2321638926/Q7c",
+"type": "title"
+},
+"484": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "485",
+"text": "Q7c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q7c",
+"type": "dialogue"
+},
+"485": {
+"next_id": "490",
+"next_id_after": "490",
+"responses": PackedStringArray("485", "486", "487", "489"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"486": {
+"next_id": "490",
+"next_id_after": "490",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"487": {
+"next_id": "488",
+"next_id_after": "490",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"488": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "490",
+"parent_id": "487",
+"type": "mutation"
+},
+"489": {
+"next_id": "490",
+"next_id_after": "490",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"49": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "48",
+"type": "goto"
+},
+"490": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"492": {
+"next_id": "493",
+"text": "2321638926/Q7d",
+"type": "title"
+},
+"493": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "494",
+"text": "Q7d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q7d",
+"type": "dialogue"
+},
+"494": {
+"next_id": "499",
+"next_id_after": "499",
+"responses": PackedStringArray("494", "495", "496", "497"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"495": {
+"next_id": "499",
+"next_id_after": "499",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"496": {
+"next_id": "499",
+"next_id_after": "499",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"497": {
+"next_id": "498",
+"next_id_after": "499",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"498": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "499",
+"parent_id": "497",
+"type": "mutation"
+},
+"499": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"5": {
+"is_snippet": false,
+"next_id": "250",
+"parent_id": "4",
+"type": "goto"
+},
+"50": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 5
+}])
+},
+"next_conditional_id": "62",
+"next_id": "51",
+"next_id_after": "246",
+"type": "condition"
+},
+"501": {
+"next_id": "502",
+"text": "2321638926/Q8a",
+"type": "title"
+},
+"502": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "503",
+"text": "Q8a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q8a",
+"type": "dialogue"
+},
+"503": {
+"next_id": "504",
+"next_id_after": "508",
+"responses": PackedStringArray("503", "505", "506", "507"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"504": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "508",
+"parent_id": "503",
+"type": "mutation"
+},
+"505": {
+"next_id": "508",
+"next_id_after": "508",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"506": {
+"next_id": "508",
+"next_id_after": "508",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"507": {
+"next_id": "508",
+"next_id_after": "508",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"508": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"51": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 5
+}])])
+}])
+},
+"next_id": "52",
+"parent_id": "50",
+"type": "mutation"
+},
+"510": {
+"next_id": "511",
+"text": "2321638926/Q8b",
+"type": "title"
+},
+"511": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "512",
+"text": "Q8b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q8b",
+"type": "dialogue"
+},
+"512": {
+"next_id": "517",
+"next_id_after": "517",
+"responses": PackedStringArray("512", "513", "515", "516"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"513": {
+"next_id": "514",
+"next_id_after": "517",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"514": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "517",
+"parent_id": "513",
+"type": "mutation"
+},
+"515": {
+"next_id": "517",
+"next_id_after": "517",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"516": {
+"next_id": "517",
+"next_id_after": "517",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"517": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"519": {
+"next_id": "520",
+"text": "2321638926/Q8c",
+"type": "title"
+},
+"52": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "54",
+"next_id": "53",
+"next_id_after": "246",
+"parent_id": "50",
+"type": "condition"
+},
+"520": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "521",
+"text": "Q8c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q8c",
+"type": "dialogue"
+},
+"521": {
+"next_id": "526",
+"next_id_after": "526",
+"responses": PackedStringArray("521", "522", "523", "525"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"522": {
+"next_id": "526",
+"next_id_after": "526",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"523": {
+"next_id": "524",
+"next_id_after": "526",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"524": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "526",
+"parent_id": "523",
+"type": "mutation"
+},
+"525": {
+"next_id": "526",
+"next_id_after": "526",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"526": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"528": {
+"next_id": "529",
+"text": "2321638926/Q8d",
+"type": "title"
+},
+"529": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "530",
+"text": "Q8d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q8d",
+"type": "dialogue"
+},
+"53": {
+"is_snippet": false,
+"next_id": "394",
+"parent_id": "52",
+"type": "goto"
+},
+"530": {
+"next_id": "535",
+"next_id_after": "535",
+"responses": PackedStringArray("530", "531", "532", "533"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"531": {
+"next_id": "535",
+"next_id_after": "535",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"532": {
+"next_id": "535",
+"next_id_after": "535",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"533": {
+"next_id": "534",
+"next_id_after": "535",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"534": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "535",
+"parent_id": "533",
+"type": "mutation"
+},
+"535": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"537": {
+"next_id": "538",
+"text": "2321638926/Q9a",
+"type": "title"
+},
+"538": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "539",
+"text": "Q9a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q9a",
+"type": "dialogue"
+},
+"539": {
+"next_id": "540",
+"next_id_after": "544",
+"responses": PackedStringArray("539", "541", "542", "543"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"54": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "56",
+"next_id": "55",
+"next_id_after": "246",
+"parent_id": "50",
+"type": "condition"
+},
+"540": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "544",
+"parent_id": "539",
+"type": "mutation"
+},
+"541": {
+"next_id": "544",
+"next_id_after": "544",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"542": {
+"next_id": "544",
+"next_id_after": "544",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"543": {
+"next_id": "544",
+"next_id_after": "544",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"544": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"546": {
+"next_id": "547",
+"text": "2321638926/Q9b",
+"type": "title"
+},
+"547": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "548",
+"text": "Q9b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q9b",
+"type": "dialogue"
+},
+"548": {
+"next_id": "553",
+"next_id_after": "553",
+"responses": PackedStringArray("548", "549", "551", "552"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"549": {
+"next_id": "550",
+"next_id_after": "553",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"55": {
+"is_snippet": false,
+"next_id": "403",
+"parent_id": "54",
+"type": "goto"
+},
+"550": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "553",
+"parent_id": "549",
+"type": "mutation"
+},
+"551": {
+"next_id": "553",
+"next_id_after": "553",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"552": {
+"next_id": "553",
+"next_id_after": "553",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"553": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"555": {
+"next_id": "556",
+"text": "2321638926/Q9c",
+"type": "title"
+},
+"556": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "557",
+"text": "Q9c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q9c",
+"type": "dialogue"
+},
+"557": {
+"next_id": "562",
+"next_id_after": "562",
+"responses": PackedStringArray("557", "558", "559", "561"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"558": {
+"next_id": "562",
+"next_id_after": "562",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"559": {
+"next_id": "560",
+"next_id_after": "562",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"56": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "58",
+"next_id": "57",
+"next_id_after": "246",
+"parent_id": "50",
+"type": "condition"
+},
+"560": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "562",
+"parent_id": "559",
+"type": "mutation"
+},
+"561": {
+"next_id": "562",
+"next_id_after": "562",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"562": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"564": {
+"next_id": "565",
+"text": "2321638926/Q9d",
+"type": "title"
+},
+"565": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "566",
+"text": "Q9d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q9d",
+"type": "dialogue"
+},
+"566": {
+"next_id": "571",
+"next_id_after": "571",
+"responses": PackedStringArray("566", "567", "568", "569"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"567": {
+"next_id": "571",
+"next_id_after": "571",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"568": {
+"next_id": "571",
+"next_id_after": "571",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"569": {
+"next_id": "570",
+"next_id_after": "571",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"57": {
+"is_snippet": false,
+"next_id": "412",
+"parent_id": "56",
+"type": "goto"
+},
+"570": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "571",
+"parent_id": "569",
+"type": "mutation"
+},
+"571": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"573": {
+"next_id": "574",
+"text": "2321638926/Q10a",
+"type": "title"
+},
+"574": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "575",
+"text": "Q10a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q10a",
+"type": "dialogue"
+},
+"575": {
+"next_id": "576",
+"next_id_after": "580",
+"responses": PackedStringArray("575", "577", "578", "579"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"576": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "580",
+"parent_id": "575",
+"type": "mutation"
+},
+"577": {
+"next_id": "580",
+"next_id_after": "580",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"578": {
+"next_id": "580",
+"next_id_after": "580",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"579": {
+"next_id": "580",
+"next_id_after": "580",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"58": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "60",
+"next_id": "59",
+"next_id_after": "246",
+"parent_id": "50",
+"type": "condition"
+},
+"580": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"582": {
+"next_id": "583",
+"text": "2321638926/Q10b",
+"type": "title"
+},
+"583": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "584",
+"text": "Q10b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q10b",
+"type": "dialogue"
+},
+"584": {
+"next_id": "589",
+"next_id_after": "589",
+"responses": PackedStringArray("584", "585", "587", "588"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"585": {
+"next_id": "586",
+"next_id_after": "589",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"586": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "589",
+"parent_id": "585",
+"type": "mutation"
+},
+"587": {
+"next_id": "589",
+"next_id_after": "589",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"588": {
+"next_id": "589",
+"next_id_after": "589",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"589": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"59": {
+"is_snippet": false,
+"next_id": "421",
+"parent_id": "58",
+"type": "goto"
+},
+"591": {
+"next_id": "592",
+"text": "2321638926/Q10c",
+"type": "title"
+},
+"592": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "593",
+"text": "Q10c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q10c",
+"type": "dialogue"
+},
+"593": {
+"next_id": "598",
+"next_id_after": "598",
+"responses": PackedStringArray("593", "594", "595", "597"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"594": {
+"next_id": "598",
+"next_id_after": "598",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"595": {
+"next_id": "596",
+"next_id_after": "598",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"596": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "598",
+"parent_id": "595",
+"type": "mutation"
+},
+"597": {
+"next_id": "598",
+"next_id_after": "598",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"598": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"6": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "8",
+"next_id": "7",
+"next_id_after": "246",
+"parent_id": "2",
+"type": "condition"
+},
+"60": {
+"next_conditional_id": "246",
+"next_id": "61",
+"next_id_after": "246",
+"parent_id": "50",
+"type": "condition"
+},
+"600": {
+"next_id": "601",
+"text": "2321638926/Q10d",
+"type": "title"
+},
+"601": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "602",
+"text": "Q10d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q10d",
+"type": "dialogue"
+},
+"602": {
+"next_id": "607",
+"next_id_after": "607",
+"responses": PackedStringArray("602", "603", "604", "605"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"603": {
+"next_id": "607",
+"next_id_after": "607",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"604": {
+"next_id": "607",
+"next_id_after": "607",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"605": {
+"next_id": "606",
+"next_id_after": "607",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"606": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "607",
+"parent_id": "605",
+"type": "mutation"
+},
+"607": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"609": {
+"next_id": "610",
+"text": "2321638926/Q11a",
+"type": "title"
+},
+"61": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "60",
+"type": "goto"
+},
+"610": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "611",
+"text": "Q11a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q11a",
+"type": "dialogue"
+},
+"611": {
+"next_id": "612",
+"next_id_after": "616",
+"responses": PackedStringArray("611", "613", "614", "615"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"612": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "616",
+"parent_id": "611",
+"type": "mutation"
+},
+"613": {
+"next_id": "616",
+"next_id_after": "616",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"614": {
+"next_id": "616",
+"next_id_after": "616",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"615": {
+"next_id": "616",
+"next_id_after": "616",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"616": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"618": {
+"next_id": "619",
+"text": "2321638926/Q11b",
+"type": "title"
+},
+"619": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "620",
+"text": "Q11b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q11b",
+"type": "dialogue"
+},
+"62": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 6
+}])
+},
+"next_conditional_id": "74",
+"next_id": "63",
+"next_id_after": "246",
+"type": "condition"
+},
+"620": {
+"next_id": "625",
+"next_id_after": "625",
+"responses": PackedStringArray("620", "621", "623", "624"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"621": {
+"next_id": "622",
+"next_id_after": "625",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"622": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "625",
+"parent_id": "621",
+"type": "mutation"
+},
+"623": {
+"next_id": "625",
+"next_id_after": "625",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"624": {
+"next_id": "625",
+"next_id_after": "625",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"625": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"627": {
+"next_id": "628",
+"text": "2321638926/Q11c",
+"type": "title"
+},
+"628": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "629",
+"text": "Q11c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q11c",
+"type": "dialogue"
+},
+"629": {
+"next_id": "634",
+"next_id_after": "634",
+"responses": PackedStringArray("629", "630", "631", "633"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"63": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 6
+}])])
+}])
+},
+"next_id": "64",
+"parent_id": "62",
+"type": "mutation"
+},
+"630": {
+"next_id": "634",
+"next_id_after": "634",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"631": {
+"next_id": "632",
+"next_id_after": "634",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"632": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "634",
+"parent_id": "631",
+"type": "mutation"
+},
+"633": {
+"next_id": "634",
+"next_id_after": "634",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"634": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"636": {
+"next_id": "637",
+"text": "2321638926/Q11d",
+"type": "title"
+},
+"637": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "638",
+"text": "Q11d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q11d",
+"type": "dialogue"
+},
+"638": {
+"next_id": "643",
+"next_id_after": "643",
+"responses": PackedStringArray("638", "639", "640", "641"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"639": {
+"next_id": "643",
+"next_id_after": "643",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"64": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "66",
+"next_id": "65",
+"next_id_after": "246",
+"parent_id": "62",
+"type": "condition"
+},
+"640": {
+"next_id": "643",
+"next_id_after": "643",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"641": {
+"next_id": "642",
+"next_id_after": "643",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"642": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "643",
+"parent_id": "641",
+"type": "mutation"
+},
+"643": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"645": {
+"next_id": "646",
+"text": "2321638926/Q12a",
+"type": "title"
+},
+"646": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "647",
+"text": "Q12a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q12a",
+"type": "dialogue"
+},
+"647": {
+"next_id": "648",
+"next_id_after": "652",
+"responses": PackedStringArray("647", "649", "650", "651"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"648": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "652",
+"parent_id": "647",
+"type": "mutation"
+},
+"649": {
+"next_id": "652",
+"next_id_after": "652",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"65": {
+"is_snippet": false,
+"next_id": "430",
+"parent_id": "64",
+"type": "goto"
+},
+"650": {
+"next_id": "652",
+"next_id_after": "652",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"651": {
+"next_id": "652",
+"next_id_after": "652",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"652": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"654": {
+"next_id": "655",
+"text": "2321638926/Q12b",
+"type": "title"
+},
+"655": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "656",
+"text": "Q12b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q12b",
+"type": "dialogue"
+},
+"656": {
+"next_id": "661",
+"next_id_after": "661",
+"responses": PackedStringArray("656", "657", "659", "660"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"657": {
+"next_id": "658",
+"next_id_after": "661",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"658": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "661",
+"parent_id": "657",
+"type": "mutation"
+},
+"659": {
+"next_id": "661",
+"next_id_after": "661",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"66": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "68",
+"next_id": "67",
+"next_id_after": "246",
+"parent_id": "62",
+"type": "condition"
+},
+"660": {
+"next_id": "661",
+"next_id_after": "661",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"661": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"663": {
+"next_id": "664",
+"text": "2321638926/Q12c",
+"type": "title"
+},
+"664": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "665",
+"text": "Q12c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q12c",
+"type": "dialogue"
+},
+"665": {
+"next_id": "670",
+"next_id_after": "670",
+"responses": PackedStringArray("665", "666", "667", "669"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"666": {
+"next_id": "670",
+"next_id_after": "670",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"667": {
+"next_id": "668",
+"next_id_after": "670",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"668": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "670",
+"parent_id": "667",
+"type": "mutation"
+},
+"669": {
+"next_id": "670",
+"next_id_after": "670",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"67": {
+"is_snippet": false,
+"next_id": "439",
+"parent_id": "66",
+"type": "goto"
+},
+"670": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"672": {
+"next_id": "673",
+"text": "2321638926/Q12d",
+"type": "title"
+},
+"673": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "674",
+"text": "Q12d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q12d",
+"type": "dialogue"
+},
+"674": {
+"next_id": "679",
+"next_id_after": "679",
+"responses": PackedStringArray("674", "675", "676", "677"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"675": {
+"next_id": "679",
+"next_id_after": "679",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"676": {
+"next_id": "679",
+"next_id_after": "679",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"677": {
+"next_id": "678",
+"next_id_after": "679",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"678": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "679",
+"parent_id": "677",
+"type": "mutation"
+},
+"679": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"68": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "70",
+"next_id": "69",
+"next_id_after": "246",
+"parent_id": "62",
+"type": "condition"
+},
+"681": {
+"next_id": "682",
+"text": "2321638926/Q13a",
+"type": "title"
+},
+"682": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "683",
+"text": "Q13a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q13a",
+"type": "dialogue"
+},
+"683": {
+"next_id": "684",
+"next_id_after": "688",
+"responses": PackedStringArray("683", "685", "686", "687"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"684": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "688",
+"parent_id": "683",
+"type": "mutation"
+},
+"685": {
+"next_id": "688",
+"next_id_after": "688",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"686": {
+"next_id": "688",
+"next_id_after": "688",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"687": {
+"next_id": "688",
+"next_id_after": "688",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"688": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"69": {
+"is_snippet": false,
+"next_id": "448",
+"parent_id": "68",
+"type": "goto"
+},
+"690": {
+"next_id": "691",
+"text": "2321638926/Q13b",
+"type": "title"
+},
+"691": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "692",
+"text": "Q13b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q13b",
+"type": "dialogue"
+},
+"692": {
+"next_id": "697",
+"next_id_after": "697",
+"responses": PackedStringArray("692", "693", "695", "696"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"693": {
+"next_id": "694",
+"next_id_after": "697",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"694": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "697",
+"parent_id": "693",
+"type": "mutation"
+},
+"695": {
+"next_id": "697",
+"next_id_after": "697",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"696": {
+"next_id": "697",
+"next_id_after": "697",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"697": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"699": {
+"next_id": "700",
+"text": "2321638926/Q13c",
+"type": "title"
+},
+"7": {
+"is_snippet": false,
+"next_id": "259",
+"parent_id": "6",
+"type": "goto"
+},
+"70": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "72",
+"next_id": "71",
+"next_id_after": "246",
+"parent_id": "62",
+"type": "condition"
+},
+"700": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "701",
+"text": "Q13c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q13c",
+"type": "dialogue"
+},
+"701": {
+"next_id": "706",
+"next_id_after": "706",
+"responses": PackedStringArray("701", "702", "703", "705"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"702": {
+"next_id": "706",
+"next_id_after": "706",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"703": {
+"next_id": "704",
+"next_id_after": "706",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"704": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "706",
+"parent_id": "703",
+"type": "mutation"
+},
+"705": {
+"next_id": "706",
+"next_id_after": "706",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"706": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"708": {
+"next_id": "709",
+"text": "2321638926/Q13d",
+"type": "title"
+},
+"709": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "710",
+"text": "Q13d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q13d",
+"type": "dialogue"
+},
+"71": {
+"is_snippet": false,
+"next_id": "457",
+"parent_id": "70",
+"type": "goto"
+},
+"710": {
+"next_id": "715",
+"next_id_after": "715",
+"responses": PackedStringArray("710", "711", "712", "713"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"711": {
+"next_id": "715",
+"next_id_after": "715",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"712": {
+"next_id": "715",
+"next_id_after": "715",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"713": {
+"next_id": "714",
+"next_id_after": "715",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"714": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "715",
+"parent_id": "713",
+"type": "mutation"
+},
+"715": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"717": {
+"next_id": "718",
+"text": "2321638926/Q14a",
+"type": "title"
+},
+"718": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "719",
+"text": "Q14a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q14a",
+"type": "dialogue"
+},
+"719": {
+"next_id": "720",
+"next_id_after": "724",
+"responses": PackedStringArray("719", "721", "722", "723"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"72": {
+"next_conditional_id": "246",
+"next_id": "73",
+"next_id_after": "246",
+"parent_id": "62",
+"type": "condition"
+},
+"720": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "724",
+"parent_id": "719",
+"type": "mutation"
+},
+"721": {
+"next_id": "724",
+"next_id_after": "724",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"722": {
+"next_id": "724",
+"next_id_after": "724",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"723": {
+"next_id": "724",
+"next_id_after": "724",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"724": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"726": {
+"next_id": "727",
+"text": "2321638926/Q14b",
+"type": "title"
+},
+"727": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "728",
+"text": "Q14b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q14b",
+"type": "dialogue"
+},
+"728": {
+"next_id": "733",
+"next_id_after": "733",
+"responses": PackedStringArray("728", "729", "731", "732"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"729": {
+"next_id": "730",
+"next_id_after": "733",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"73": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "72",
+"type": "goto"
+},
+"730": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "733",
+"parent_id": "729",
+"type": "mutation"
+},
+"731": {
+"next_id": "733",
+"next_id_after": "733",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"732": {
+"next_id": "733",
+"next_id_after": "733",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"733": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"735": {
+"next_id": "736",
+"text": "2321638926/Q14c",
+"type": "title"
+},
+"736": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "737",
+"text": "Q14c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q14c",
+"type": "dialogue"
+},
+"737": {
+"next_id": "742",
+"next_id_after": "742",
+"responses": PackedStringArray("737", "738", "739", "741"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"738": {
+"next_id": "742",
+"next_id_after": "742",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"739": {
+"next_id": "740",
+"next_id_after": "742",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"74": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 7
+}])
+},
+"next_conditional_id": "86",
+"next_id": "75",
+"next_id_after": "246",
+"type": "condition"
+},
+"740": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "742",
+"parent_id": "739",
+"type": "mutation"
+},
+"741": {
+"next_id": "742",
+"next_id_after": "742",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"742": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"744": {
+"next_id": "745",
+"text": "2321638926/Q14d",
+"type": "title"
+},
+"745": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "746",
+"text": "Q14d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q14d",
+"type": "dialogue"
+},
+"746": {
+"next_id": "751",
+"next_id_after": "751",
+"responses": PackedStringArray("746", "747", "748", "749"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"747": {
+"next_id": "751",
+"next_id_after": "751",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"748": {
+"next_id": "751",
+"next_id_after": "751",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"749": {
+"next_id": "750",
+"next_id_after": "751",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"75": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 7
+}])])
+}])
+},
+"next_id": "76",
+"parent_id": "74",
+"type": "mutation"
+},
+"750": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "751",
+"parent_id": "749",
+"type": "mutation"
+},
+"751": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"753": {
+"next_id": "754",
+"text": "2321638926/Q15a",
+"type": "title"
+},
+"754": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "755",
+"text": "Q15a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q15a",
+"type": "dialogue"
+},
+"755": {
+"next_id": "756",
+"next_id_after": "760",
+"responses": PackedStringArray("755", "757", "758", "759"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"756": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "760",
+"parent_id": "755",
+"type": "mutation"
+},
+"757": {
+"next_id": "760",
+"next_id_after": "760",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"758": {
+"next_id": "760",
+"next_id_after": "760",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"759": {
+"next_id": "760",
+"next_id_after": "760",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"76": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "78",
+"next_id": "77",
+"next_id_after": "246",
+"parent_id": "74",
+"type": "condition"
+},
+"760": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"762": {
+"next_id": "763",
+"text": "2321638926/Q15b",
+"type": "title"
+},
+"763": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "764",
+"text": "Q15b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q15b",
+"type": "dialogue"
+},
+"764": {
+"next_id": "769",
+"next_id_after": "769",
+"responses": PackedStringArray("764", "765", "767", "768"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"765": {
+"next_id": "766",
+"next_id_after": "769",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"766": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "769",
+"parent_id": "765",
+"type": "mutation"
+},
+"767": {
+"next_id": "769",
+"next_id_after": "769",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"768": {
+"next_id": "769",
+"next_id_after": "769",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"769": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"77": {
+"is_snippet": false,
+"next_id": "466",
+"parent_id": "76",
+"type": "goto"
+},
+"771": {
+"next_id": "772",
+"text": "2321638926/Q15c",
+"type": "title"
+},
+"772": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "773",
+"text": "Q15c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q15c",
+"type": "dialogue"
+},
+"773": {
+"next_id": "778",
+"next_id_after": "778",
+"responses": PackedStringArray("773", "774", "775", "777"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"774": {
+"next_id": "778",
+"next_id_after": "778",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"775": {
+"next_id": "776",
+"next_id_after": "778",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"776": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "778",
+"parent_id": "775",
+"type": "mutation"
+},
+"777": {
+"next_id": "778",
+"next_id_after": "778",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"778": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"78": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "80",
+"next_id": "79",
+"next_id_after": "246",
+"parent_id": "74",
+"type": "condition"
+},
+"780": {
+"next_id": "781",
+"text": "2321638926/Q15d",
+"type": "title"
+},
+"781": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "782",
+"text": "Q15d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q15d",
+"type": "dialogue"
+},
+"782": {
+"next_id": "787",
+"next_id_after": "787",
+"responses": PackedStringArray("782", "783", "784", "785"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"783": {
+"next_id": "787",
+"next_id_after": "787",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"784": {
+"next_id": "787",
+"next_id_after": "787",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"785": {
+"next_id": "786",
+"next_id_after": "787",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"786": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "787",
+"parent_id": "785",
+"type": "mutation"
+},
+"787": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"789": {
+"next_id": "790",
+"text": "2321638926/Q16a",
+"type": "title"
+},
+"79": {
+"is_snippet": false,
+"next_id": "475",
+"parent_id": "78",
+"type": "goto"
+},
+"790": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "791",
+"text": "Q16a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q16a",
+"type": "dialogue"
+},
+"791": {
+"next_id": "792",
+"next_id_after": "796",
+"responses": PackedStringArray("791", "793", "794", "795"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"792": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "796",
+"parent_id": "791",
+"type": "mutation"
+},
+"793": {
+"next_id": "796",
+"next_id_after": "796",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"794": {
+"next_id": "796",
+"next_id_after": "796",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"795": {
+"next_id": "796",
+"next_id_after": "796",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"796": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"798": {
+"next_id": "799",
+"text": "2321638926/Q16b",
+"type": "title"
+},
+"799": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "800",
+"text": "Q16b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q16b",
+"type": "dialogue"
+},
+"8": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "10",
+"next_id": "9",
+"next_id_after": "246",
+"parent_id": "2",
+"type": "condition"
+},
+"80": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "82",
+"next_id": "81",
+"next_id_after": "246",
+"parent_id": "74",
+"type": "condition"
+},
+"800": {
+"next_id": "805",
+"next_id_after": "805",
+"responses": PackedStringArray("800", "801", "803", "804"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"801": {
+"next_id": "802",
+"next_id_after": "805",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"802": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "805",
+"parent_id": "801",
+"type": "mutation"
+},
+"803": {
+"next_id": "805",
+"next_id_after": "805",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"804": {
+"next_id": "805",
+"next_id_after": "805",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"805": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"807": {
+"next_id": "808",
+"text": "2321638926/Q16c",
+"type": "title"
+},
+"808": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "809",
+"text": "Q16c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q16c",
+"type": "dialogue"
+},
+"809": {
+"next_id": "814",
+"next_id_after": "814",
+"responses": PackedStringArray("809", "810", "811", "813"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"81": {
+"is_snippet": false,
+"next_id": "484",
+"parent_id": "80",
+"type": "goto"
+},
+"810": {
+"next_id": "814",
+"next_id_after": "814",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"811": {
+"next_id": "812",
+"next_id_after": "814",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"812": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "814",
+"parent_id": "811",
+"type": "mutation"
+},
+"813": {
+"next_id": "814",
+"next_id_after": "814",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"814": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"816": {
+"next_id": "817",
+"text": "2321638926/Q16d",
+"type": "title"
+},
+"817": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "818",
+"text": "Q16d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q16d",
+"type": "dialogue"
+},
+"818": {
+"next_id": "823",
+"next_id_after": "823",
+"responses": PackedStringArray("818", "819", "820", "821"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"819": {
+"next_id": "823",
+"next_id_after": "823",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"82": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "84",
+"next_id": "83",
+"next_id_after": "246",
+"parent_id": "74",
+"type": "condition"
+},
+"820": {
+"next_id": "823",
+"next_id_after": "823",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"821": {
+"next_id": "822",
+"next_id_after": "823",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"822": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "823",
+"parent_id": "821",
+"type": "mutation"
+},
+"823": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"825": {
+"next_id": "826",
+"text": "2321638926/Q17a",
+"type": "title"
+},
+"826": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "827",
+"text": "Q17a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q17a",
+"type": "dialogue"
+},
+"827": {
+"next_id": "828",
+"next_id_after": "832",
+"responses": PackedStringArray("827", "829", "830", "831"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"828": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "832",
+"parent_id": "827",
+"type": "mutation"
+},
+"829": {
+"next_id": "832",
+"next_id_after": "832",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"83": {
+"is_snippet": false,
+"next_id": "493",
+"parent_id": "82",
+"type": "goto"
+},
+"830": {
+"next_id": "832",
+"next_id_after": "832",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"831": {
+"next_id": "832",
+"next_id_after": "832",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"832": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"834": {
+"next_id": "835",
+"text": "2321638926/Q17b",
+"type": "title"
+},
+"835": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "836",
+"text": "Q17b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q17b",
+"type": "dialogue"
+},
+"836": {
+"next_id": "841",
+"next_id_after": "841",
+"responses": PackedStringArray("836", "837", "839", "840"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"837": {
+"next_id": "838",
+"next_id_after": "841",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"838": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "841",
+"parent_id": "837",
+"type": "mutation"
+},
+"839": {
+"next_id": "841",
+"next_id_after": "841",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"84": {
+"next_conditional_id": "246",
+"next_id": "85",
+"next_id_after": "246",
+"parent_id": "74",
+"type": "condition"
+},
+"840": {
+"next_id": "841",
+"next_id_after": "841",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"841": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"843": {
+"next_id": "844",
+"text": "2321638926/Q17c",
+"type": "title"
+},
+"844": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "845",
+"text": "Q17c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q17c",
+"type": "dialogue"
+},
+"845": {
+"next_id": "850",
+"next_id_after": "850",
+"responses": PackedStringArray("845", "846", "847", "849"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"846": {
+"next_id": "850",
+"next_id_after": "850",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"847": {
+"next_id": "848",
+"next_id_after": "850",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"848": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "850",
+"parent_id": "847",
+"type": "mutation"
+},
+"849": {
+"next_id": "850",
+"next_id_after": "850",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"85": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "84",
+"type": "goto"
+},
+"850": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"852": {
+"next_id": "853",
+"text": "2321638926/Q17d",
+"type": "title"
+},
+"853": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "854",
+"text": "Q17d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q17d",
+"type": "dialogue"
+},
+"854": {
+"next_id": "859",
+"next_id_after": "859",
+"responses": PackedStringArray("854", "855", "856", "857"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"855": {
+"next_id": "859",
+"next_id_after": "859",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"856": {
+"next_id": "859",
+"next_id_after": "859",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"857": {
+"next_id": "858",
+"next_id_after": "859",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"858": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "859",
+"parent_id": "857",
+"type": "mutation"
+},
+"859": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"86": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 8
+}])
+},
+"next_conditional_id": "98",
+"next_id": "87",
+"next_id_after": "246",
+"type": "condition"
+},
+"861": {
+"next_id": "862",
+"text": "2321638926/Q18a",
+"type": "title"
+},
+"862": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "863",
+"text": "Q18a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q18a",
+"type": "dialogue"
+},
+"863": {
+"next_id": "864",
+"next_id_after": "868",
+"responses": PackedStringArray("863", "865", "866", "867"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"864": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "868",
+"parent_id": "863",
+"type": "mutation"
+},
+"865": {
+"next_id": "868",
+"next_id_after": "868",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"866": {
+"next_id": "868",
+"next_id_after": "868",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"867": {
+"next_id": "868",
+"next_id_after": "868",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"868": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"87": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 8
+}])])
+}])
+},
+"next_id": "88",
+"parent_id": "86",
+"type": "mutation"
+},
+"870": {
+"next_id": "871",
+"text": "2321638926/Q18b",
+"type": "title"
+},
+"871": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "872",
+"text": "Q18b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q18b",
+"type": "dialogue"
+},
+"872": {
+"next_id": "877",
+"next_id_after": "877",
+"responses": PackedStringArray("872", "873", "875", "876"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"873": {
+"next_id": "874",
+"next_id_after": "877",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"874": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "877",
+"parent_id": "873",
+"type": "mutation"
+},
+"875": {
+"next_id": "877",
+"next_id_after": "877",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"876": {
+"next_id": "877",
+"next_id_after": "877",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"877": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"879": {
+"next_id": "880",
+"text": "2321638926/Q18c",
+"type": "title"
+},
+"88": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "a"
+}])
+},
+"next_conditional_id": "90",
+"next_id": "89",
+"next_id_after": "246",
+"parent_id": "86",
+"type": "condition"
+},
+"880": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "881",
+"text": "Q18c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q18c",
+"type": "dialogue"
+},
+"881": {
+"next_id": "886",
+"next_id_after": "886",
+"responses": PackedStringArray("881", "882", "883", "885"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"882": {
+"next_id": "886",
+"next_id_after": "886",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"883": {
+"next_id": "884",
+"next_id_after": "886",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"884": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "886",
+"parent_id": "883",
+"type": "mutation"
+},
+"885": {
+"next_id": "886",
+"next_id_after": "886",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"886": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"888": {
+"next_id": "889",
+"text": "2321638926/Q18d",
+"type": "title"
+},
+"889": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "890",
+"text": "Q18d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q18d",
+"type": "dialogue"
+},
+"89": {
+"is_snippet": false,
+"next_id": "502",
+"parent_id": "88",
+"type": "goto"
+},
+"890": {
+"next_id": "895",
+"next_id_after": "895",
+"responses": PackedStringArray("890", "891", "892", "893"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"891": {
+"next_id": "895",
+"next_id_after": "895",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"892": {
+"next_id": "895",
+"next_id_after": "895",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"893": {
+"next_id": "894",
+"next_id_after": "895",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"894": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "895",
+"parent_id": "893",
+"type": "mutation"
+},
+"895": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"897": {
+"next_id": "898",
+"text": "2321638926/Q19a",
+"type": "title"
+},
+"898": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "899",
+"text": "Q19a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q19a",
+"type": "dialogue"
+},
+"899": {
+"next_id": "900",
+"next_id_after": "904",
+"responses": PackedStringArray("899", "901", "902", "903"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"9": {
+"is_snippet": false,
+"next_id": "268",
+"parent_id": "8",
+"type": "goto"
+},
+"90": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "b"
+}])
+},
+"next_conditional_id": "92",
+"next_id": "91",
+"next_id_after": "246",
+"parent_id": "86",
+"type": "condition"
+},
+"900": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "904",
+"parent_id": "899",
+"type": "mutation"
+},
+"901": {
+"next_id": "904",
+"next_id_after": "904",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"902": {
+"next_id": "904",
+"next_id_after": "904",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"903": {
+"next_id": "904",
+"next_id_after": "904",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"904": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"906": {
+"next_id": "907",
+"text": "2321638926/Q19b",
+"type": "title"
+},
+"907": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "908",
+"text": "Q19b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q19b",
+"type": "dialogue"
+},
+"908": {
+"next_id": "913",
+"next_id_after": "913",
+"responses": PackedStringArray("908", "909", "911", "912"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"909": {
+"next_id": "910",
+"next_id_after": "913",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"91": {
+"is_snippet": false,
+"next_id": "511",
+"parent_id": "90",
+"type": "goto"
+},
+"910": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "913",
+"parent_id": "909",
+"type": "mutation"
+},
+"911": {
+"next_id": "913",
+"next_id_after": "913",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"912": {
+"next_id": "913",
+"next_id_after": "913",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"913": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"915": {
+"next_id": "916",
+"text": "2321638926/Q19c",
+"type": "title"
+},
+"916": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "917",
+"text": "Q19c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q19c",
+"type": "dialogue"
+},
+"917": {
+"next_id": "922",
+"next_id_after": "922",
+"responses": PackedStringArray("917", "918", "919", "921"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"918": {
+"next_id": "922",
+"next_id_after": "922",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"919": {
+"next_id": "920",
+"next_id_after": "922",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"92": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "c"
+}])
+},
+"next_conditional_id": "94",
+"next_id": "93",
+"next_id_after": "246",
+"parent_id": "86",
+"type": "condition"
+},
+"920": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "922",
+"parent_id": "919",
+"type": "mutation"
+},
+"921": {
+"next_id": "922",
+"next_id_after": "922",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"922": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"924": {
+"next_id": "925",
+"text": "2321638926/Q19d",
+"type": "title"
+},
+"925": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "926",
+"text": "Q19d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q19d",
+"type": "dialogue"
+},
+"926": {
+"next_id": "931",
+"next_id_after": "931",
+"responses": PackedStringArray("926", "927", "928", "929"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"927": {
+"next_id": "931",
+"next_id_after": "931",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"928": {
+"next_id": "931",
+"next_id_after": "931",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"929": {
+"next_id": "930",
+"next_id_after": "931",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"93": {
+"is_snippet": false,
+"next_id": "520",
+"parent_id": "92",
+"type": "goto"
+},
+"930": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "931",
+"parent_id": "929",
+"type": "mutation"
+},
+"931": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"933": {
+"next_id": "934",
+"text": "2321638926/Q20a",
+"type": "title"
+},
+"934": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "935",
+"text": "Q20a",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q20a",
+"type": "dialogue"
+},
+"935": {
+"next_id": "936",
+"next_id_after": "940",
+"responses": PackedStringArray("935", "937", "938", "939"),
+"text": "Option A Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A Corect",
+"type": "response"
+},
+"936": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "940",
+"parent_id": "935",
+"type": "mutation"
+},
+"937": {
+"next_id": "940",
+"next_id_after": "940",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"938": {
+"next_id": "940",
+"next_id_after": "940",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"939": {
+"next_id": "940",
+"next_id_after": "940",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"94": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "d"
+}])
+},
+"next_conditional_id": "96",
+"next_id": "95",
+"next_id_after": "246",
+"parent_id": "86",
+"type": "condition"
+},
+"940": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"942": {
+"next_id": "943",
+"text": "2321638926/Q20b",
+"type": "title"
+},
+"943": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "944",
+"text": "Q20b",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q20b",
+"type": "dialogue"
+},
+"944": {
+"next_id": "949",
+"next_id_after": "949",
+"responses": PackedStringArray("944", "945", "947", "948"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"945": {
+"next_id": "946",
+"next_id_after": "949",
+"text": "Option B Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B Corect",
+"type": "response"
+},
+"946": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "949",
+"parent_id": "945",
+"type": "mutation"
+},
+"947": {
+"next_id": "949",
+"next_id_after": "949",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"948": {
+"next_id": "949",
+"next_id_after": "949",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"949": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"95": {
+"is_snippet": false,
+"next_id": "529",
+"parent_id": "94",
+"type": "goto"
+},
+"951": {
+"next_id": "952",
+"text": "2321638926/Q20c",
+"type": "title"
+},
+"952": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "953",
+"text": "Q20c",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q20c",
+"type": "dialogue"
+},
+"953": {
+"next_id": "958",
+"next_id_after": "958",
+"responses": PackedStringArray("953", "954", "955", "957"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"954": {
+"next_id": "958",
+"next_id_after": "958",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"955": {
+"next_id": "956",
+"next_id_after": "958",
+"text": "Option C Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C Corect",
+"type": "response"
+},
+"956": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "958",
+"parent_id": "955",
+"type": "mutation"
+},
+"957": {
+"next_id": "958",
+"next_id_after": "958",
+"text": "Option D",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D",
+"type": "response"
+},
+"958": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"96": {
+"next_conditional_id": "246",
+"next_id": "97",
+"next_id_after": "246",
+"parent_id": "86",
+"type": "condition"
+},
+"960": {
+"next_id": "961",
+"text": "2321638926/Q20d",
+"type": "title"
+},
+"961": {
+"character": "Josh",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "962",
+"text": "Q20d",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Q20d",
+"type": "dialogue"
+},
+"962": {
+"next_id": "967",
+"next_id_after": "967",
+"responses": PackedStringArray("962", "963", "964", "965"),
+"text": "Option A",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option A",
+"type": "response"
+},
+"963": {
+"next_id": "967",
+"next_id_after": "967",
+"text": "Option B",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option B",
+"type": "response"
+},
+"964": {
+"next_id": "967",
+"next_id_after": "967",
+"text": "Option C",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option C",
+"type": "response"
+},
+"965": {
+"next_id": "966",
+"next_id_after": "967",
+"text": "Option D Corect",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Option D Corect",
+"type": "response"
+},
+"966": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "967",
+"parent_id": "965",
+"type": "mutation"
+},
+"967": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"969": {
+"next_id": "970",
+"text": "2321638926/mentalQ1",
+"type": "title"
+},
+"97": {
+"is_snippet": false,
+"next_id": "246",
+"parent_id": "96",
+"type": "goto"
+},
+"970": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "chooseQuestions",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "971",
+"type": "mutation"
+},
+"971": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "972",
+"type": "mutation"
+},
+"972": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "975",
+"type": "goto"
+},
+"974": {
+"next_id": "975",
+"text": "2321638926/mentalQ2",
+"type": "title"
+},
+"975": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "976",
+"type": "mutation"
+},
+"976": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "979",
+"type": "goto"
+},
+"978": {
+"next_id": "979",
+"text": "2321638926/mentalQ3",
+"type": "title"
+},
+"979": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "980",
+"type": "mutation"
+},
+"98": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 9
+}])
+},
+"next_conditional_id": "110",
+"next_id": "99",
+"next_id_after": "246",
+"type": "condition"
+},
+"980": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "983",
+"type": "goto"
+},
+"982": {
+"next_id": "983",
+"text": "2321638926/mentalQ4",
+"type": "title"
+},
+"983": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 4
+}])])
+}])
+},
+"next_id": "984",
+"type": "mutation"
+},
+"984": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "987",
+"type": "goto"
+},
+"986": {
+"next_id": "987",
+"text": "2321638926/mentalQ5",
+"type": "title"
+},
+"987": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 5
+}])])
+}])
+},
+"next_id": "988",
+"type": "mutation"
+},
+"988": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "991",
+"type": "goto"
+},
+"99": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qAns"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setAnswer",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 9
+}])])
+}])
+},
+"next_id": "100",
+"parent_id": "98",
+"type": "mutation"
+},
+"990": {
+"next_id": "991",
+"text": "2321638926/mentalQ6",
+"type": "title"
+},
+"991": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 6
+}])])
+}])
+},
+"next_id": "992",
+"type": "mutation"
+},
+"992": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "995",
+"type": "goto"
+},
+"994": {
+"next_id": "995",
+"text": "2321638926/mentalQ7",
+"type": "title"
+},
+"995": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 7
+}])])
+}])
+},
+"next_id": "996",
+"type": "mutation"
+},
+"996": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "999",
+"type": "goto"
+},
+"998": {
+"next_id": "999",
+"text": "2321638926/mentalQ8",
+"type": "title"
+},
+"999": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "qNum"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"function": "setQuestion",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 8
+}])])
+}])
+},
+"next_id": "1000",
+"type": "mutation"
+}
+}
+metadata/dialogue_manager_version = "2.11.3"

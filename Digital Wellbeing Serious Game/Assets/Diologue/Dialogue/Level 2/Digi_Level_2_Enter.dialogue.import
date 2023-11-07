@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://bv7vmleqex2lu"
+path="res://.godot/imported/Digi_Level_2_Enter.dialogue-85fe09a29347f508c78703eeb493dcec.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/Level 2/Digi_Level_2_Enter.dialogue"
+dest_files=["res://.godot/imported/Digi_Level_2_Enter.dialogue-85fe09a29347f508c78703eeb493dcec.tres"]
+
+[params]
+

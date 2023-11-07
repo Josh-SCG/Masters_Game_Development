@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cibo25gsy6dcd"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/NPC.gd" id="1_0gj4k"]
+[ext_resource type="Script" path="res://Assets/Scripts/DigibotA.gd" id="1_pn42h"]
 [ext_resource type="Texture2D" uid="uid://purfy2fb5jmg" path="res://Assets/Misc Art/E+A+Usable - Gum Bot sprites.png" id="2_odg13"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_11wna"]
@@ -36,7 +36,7 @@ texture_filter = 1
 collision_layer = 2
 collision_mask = 2
 monitoring = false
-script = ExtResource("1_0gj4k")
+script = ExtResource("1_pn42h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

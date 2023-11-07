@@ -1,0 +1,27 @@
+~ start
+
+
+if Global.initLevelConvo == 0
+	=> hidden
+elif Global.initLevelConvo == 1
+	=> notHidden
+
+~ hidden
+Digibot: Uhm.....
+Digibot: You're not supposed to see me yet. How about you go speak to your friend over there first.
+=> END!
+
+~ notHidden
+Digibot: [[Hello|Hi|Howdy]]!
+Digibot: So I heard your friend there is not doing so well with social media and the news articles they are seeing. Managing that type of stuff in regards to technology is just as important as managing it otherwise.
+Digibot: A friend of mine recently got hold of some paintings that explore this type of stuff. Are you ready to go?
+- Yes
+	Digibot: Great! Then we're off!
+	set Global.initLevelConvo = 0
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/level_2.tscn")
+- No
+	Digibot: Alright. Admire the park here a bit more then and speak to me when you're ready to leave. I'll go into power saving in the meantime and clean some RAM.
+	=> END!
+
+=> END!
+

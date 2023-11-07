@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://dfw8wegewsggl"
+path="res://.godot/imported/Sign5.dialogue-f1ee737ca9bc5ad4de0467da21683d13.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/Level 2/Signs/Sign5.dialogue"
+dest_files=["res://.godot/imported/Sign5.dialogue-f1ee737ca9bc5ad4de0467da21683d13.tres"]
+
+[params]
+

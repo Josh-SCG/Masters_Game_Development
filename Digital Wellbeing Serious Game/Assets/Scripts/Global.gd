@@ -172,7 +172,6 @@ func signRemoval(levelArray, signNum) -> bool:
 	var i = levelArray.find(signNum)
 	if i != -1:
 		levelArray.remove_at(i)
-		print(level1Signs, signNum)
 		return true
 	return false
 

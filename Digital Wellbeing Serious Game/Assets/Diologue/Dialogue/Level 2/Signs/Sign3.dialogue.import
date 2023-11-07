@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://c1ma5qfb1xgfw"
+path="res://.godot/imported/Sign3.dialogue-c9b888f4e793074a59a5280208ed31f5.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/Level 2/Signs/Sign3.dialogue"
+dest_files=["res://.godot/imported/Sign3.dialogue-c9b888f4e793074a59a5280208ed31f5.tres"]
+
+[params]
+

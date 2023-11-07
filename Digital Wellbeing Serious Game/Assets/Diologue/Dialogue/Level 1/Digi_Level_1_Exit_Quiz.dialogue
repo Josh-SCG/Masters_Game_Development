@@ -2,7 +2,6 @@ import "res://Assets/Diologue/Question Files/PhysicalQuestions.dialogue" as Phys
 
 ~ start
 Digibot: [[Hello|Hi|Howdy]]!
-set Global.currentLevel = 1
 Digibot: Well, that was a fun outing but I think it's time to see if you remember what all those signs said, don't you?
 - Yes
 	Digibot: Great! Then I'll ask you a couple of questions about it. 
@@ -25,7 +24,7 @@ set Global.testScore = 0
 ~ testShowScore
 do Global.setScores()
 set Global.levelComplete1 = 1
-set Globa.achievementLevelFinish = 0
+set Global.achievementLevelFinish = 0
 Digibot: Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to find {{Global.level1MiniScore}} partitions of my data. You did a great job!
 Digibot: Bye now!
 do Global.resetLevelProgress()

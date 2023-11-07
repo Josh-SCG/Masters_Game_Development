@@ -1,0 +1,68 @@
+~ start
+Digibot: [[Hello|Hi|Howdy]]!
+
+if Global.initLevelConvo == 0
+	=> init
+elif Global.initLevelConvo == 1
+	=> inProgress
+elif Global.initLevelConvo == 2
+	=> leave
+
+~ init
+Digibot: We've made it to the house. 
+Digibot: This is where you'll learn about the mental aspects of digital wellbeing. 
+Digibot: Are you ready to start learning? 
+- Yes
+	Digibot: Great! There are a bunch of paintings around the area. You should go and read what each of them show you.
+	Digibot: They should have some information relating to the mental parts of digital wellbeing. 
+	Digibot: Come find me when you're done with them all.
+	Digibot: Good luck and have fun! 
+	do Global.initLevelConvo = 1
+	=> END!
+- No
+	Digibot: Alright. Don't wander off before you speak to me about this place.
+	=> END!
+
+~ inProgress
+Digibot: Remember, you're looking for paintings around the house with information about digital wellbeing on them.
+Digibot: There should be a few more signs around here. You've seen {{Global.level2SignsSeen}}.
+
+do Global.randHint = Global.randomHint(Global.level2Signs)
+if Global.randHint == 1
+	Digibot: There should be one dead ahead.
+
+elif Global.randHint == 2
+	Digibot: I know there is one in the bedroom, hope whoever stays here doesn't mind you going in.
+
+elif Global.randHint == 3
+	Digibot: I hear there's a room that's supposed to be a maze of barrels.
+
+elif Global.randHint == 4
+	Digibot: There should be one just outside the bedroom too.
+
+elif Global.randHint == 5
+	Digibot: Did you see the one to the left in that empty area?
+
+else
+	Digibot: I appear to be glitching and cannot give you a hint at this time. 
+
+=> END!
+
+~ leave
+Digibot: It looks like you've seen all the painting here in the house.
+Digibot: Hopefully you found them insightful.
+Digibot: If you're done here, we can head back.
+- We can head back now
+	Digibot: Great! Let's go!
+	Digibot: ... 
+	Digibot: ...
+	Digibot: Actually, why don't we play a little game first.
+	Digibot: GAME TEXT! GAME TEXT! GAME TEXT! GAME TEXT! GAME TEXT!
+	Digibot: GAME COMPLETE STATE!
+	set Global.initLevelConvo = 0
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn")
+- I still want to look around for a bit.
+	Digibot: Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!
+	=> END!
+
+=> END!

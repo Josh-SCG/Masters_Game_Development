@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://c7gs8buixd6r2"
+path="res://.godot/imported/Digi_Level_2_Exit_Quiz.dialogue-0bd1961daef548d8ca8cfe00330cf91a.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/Level 2/Digi_Level_2_Exit_Quiz.dialogue"
+dest_files=["res://.godot/imported/Digi_Level_2_Exit_Quiz.dialogue-0bd1961daef548d8ca8cfe00330cf91a.tres"]
+
+[params]
+

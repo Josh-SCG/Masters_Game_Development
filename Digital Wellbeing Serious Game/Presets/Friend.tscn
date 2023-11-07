@@ -1,0 +1,68 @@
+[gd_scene load_steps=9 format=3 uid="uid://dw1rh6k6u4uu2"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/NPC.gd" id="1_vgtc5"]
+[ext_resource type="Texture2D" uid="uid://bn7u565fi2ouk" path="res://Assets/Player/Player Sprites/MBCBL.png" id="2_rm8yx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3iv6h"]
+atlas = ExtResource("2_rm8yx")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5o2ft"]
+atlas = ExtResource("2_rm8yx")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d405f"]
+atlas = ExtResource("2_rm8yx")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_do77o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3iv6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5o2ft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d405f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5o2ft")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah282"]
+size = Vector2(40, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmuel"]
+size = Vector2(20, 12)
+
+[node name="NPC" type="Area2D"]
+texture_filter = 1
+collision_layer = 2
+collision_mask = 2
+monitoring = false
+script = ExtResource("1_vgtc5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_do77o")
+autoplay = "default"
+frame_progress = 0.0543674
+offset = Vector2(0, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10.5)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_ah282")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(0, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_lmuel")

@@ -13,6 +13,8 @@ config_version=5
 config/name="Digital Wellbeing Serious Game"
 run/main_scene="res://Assets/Menu Scenes/Main Menu.tscn"
 config/features=PackedStringArray("4.1")
+run/max_fps=144
+run/delta_smoothing=false
 boot_splash/bg_color=Color(0.0705882, 0.215686, 0.239216, 1)
 boot_splash/image="res://splash.png"
 boot_splash/fullsize=false
@@ -34,12 +36,17 @@ general/wrap_lines=true
 
 window/size/viewport_width=960
 window/size/viewport_height=540
+window/size/always_on_top=true
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://Assets/UI/mouse_pointer.png"
 window/size/width=320
 window/size/height=180
 window/size/test_width=960
 window/size/test_height=540
+
+[editor]
+
+movie_writer/fps=144
 
 [editor_plugins]
 
@@ -99,7 +106,7 @@ Jump={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/WorldTest.dialogue", "res://Assets/Diologue/WorldTest.dialogue", "res://Assets/Diologue/Dialogue/test2.dialogue", "res://Assets/Diologue/Dialogue/WorldTest.dialogue", "res://Assets/Diologue/questionTest.dialogue", "res://Assets/Diologue/Question Files/PhysicalQuestions.dialogue", "res://Assets/Diologue/Question Files/MentalQuestions.dialogue", "res://Assets/Diologue/Question Files/SecurityQuestions.dialogue", "res://Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign1.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Exit.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1a.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign2.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign3.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign4.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign5.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Exit_Quiz.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/WorldTest.dialogue", "res://Assets/Diologue/WorldTest.dialogue", "res://Assets/Diologue/Dialogue/test2.dialogue", "res://Assets/Diologue/Dialogue/WorldTest.dialogue", "res://Assets/Diologue/questionTest.dialogue", "res://Assets/Diologue/Question Files/PhysicalQuestions.dialogue", "res://Assets/Diologue/Question Files/MentalQuestions.dialogue", "res://Assets/Diologue/Question Files/SecurityQuestions.dialogue", "res://Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Enter.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign1.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Exit.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1a.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign2.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign3.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign4.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Signs/Sign5.dialogue", "res://Assets/Diologue/Dialogue/Level 1/Digi_Level_1_Exit_Quiz.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Signs/Sign1.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Signs/Sign2.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Signs/Sign3.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Signs/Sign4.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Signs/Sign5.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Digi_Level_2_Enter.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Digi_Level_2_Exit_Quiz.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Digi_Level_2a.dialogue", "res://Assets/Diologue/Dialogue/Level 2/Friend_2a.dialogue")
 
 [physics]
 
@@ -107,4 +114,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
+textures/decals/filter=2
+textures/light_projectors/filter=2
 environment/default_environment="res://default_env.tres"

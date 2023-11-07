@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6ykaihr2oq0v"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/NPC.gd" id="1_5ly2p"]
+[ext_resource type="Texture2D" uid="uid://de3hrg3wj6bag" path="res://Assets/Misc Art/painting.png" id="2_4tep5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah282"]
+size = Vector2(75, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmuel"]
+size = Vector2(99.5, 23.5)
+
+[node name="Sign" type="Area2D"]
+z_index = 1
+texture_filter = 1
+collision_layer = 2
+collision_mask = 2
+monitoring = false
+script = ExtResource("1_5ly2p")
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 10)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("2_4tep5")
+offset = Vector2(0, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(1.267e-05, 12.5)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_ah282")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(0, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0.25, 6.75)
+shape = SubResource("RectangleShape2D_lmuel")
