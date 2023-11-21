@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://8tydo1s87sri"]
+[gd_scene load_steps=21 format=3 uid="uid://8tydo1s87sri"]
 
 [ext_resource type="Script" path="res://Assets/Level Scenes/Level 3/Minigame/bug.gd" id="1_kq54c"]
 [ext_resource type="Texture2D" uid="uid://o6oejqd5otpk" path="res://Assets/Level Scenes/Level 3/Minigame/minebug.png" id="2_hvgoe"]
@@ -120,8 +120,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 24.0
+"speed": 30.0
 }]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lw66f"]
+radius = 11.5
 
 [node name="Bug" type="Node2D"]
 z_index = 1
@@ -132,3 +135,13 @@ script = ExtResource("1_kq54c")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o6unl")
 autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="."]
+y_sort_enabled = true
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_lw66f")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://d4a2wmjpslg0s"]
+
+[ext_resource type="Script" path="res://Assets/Level Scenes/Level 3/Minigame/Node.gd" id="1_0k6o1"]
+[ext_resource type="Texture2D" uid="uid://coma06gxjx42e" path="res://Assets/Level Scenes/Level 3/Minigame/wall1.png" id="2_1bv8j"]
+[ext_resource type="Texture2D" uid="uid://b6swabjk2qgci" path="res://Assets/Level Scenes/Level 3/Minigame/wall0.png" id="2_mg8tp"]
+[ext_resource type="Texture2D" uid="uid://dws466qnv1sjb" path="res://Assets/Level Scenes/Level 3/Minigame/wall3.png" id="2_s5f0u"]
+[ext_resource type="Texture2D" uid="uid://bsauitw1kkiwn" path="res://Assets/Level Scenes/Level 3/Minigame/wall2.png" id="3_qm78d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hokcx"]
+size = Vector2(24, 24)
+
+[node name="Node" type="StaticBody2D"]
+position = Vector2(480, 210)
+scale = Vector2(2, 2)
+script = ExtResource("1_0k6o1")
+
+[node name="0" type="Sprite2D" parent="."]
+texture = ExtResource("2_mg8tp")
+
+[node name="1" type="Sprite2D" parent="."]
+texture = ExtResource("2_1bv8j")
+
+[node name="2" type="Sprite2D" parent="."]
+texture = ExtResource("3_qm78d")
+
+[node name="3" type="Sprite2D" parent="."]
+texture = ExtResource("2_s5f0u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_hokcx")

@@ -65,6 +65,8 @@ var level1SessionScore = 0
 var level2SessionScore = 0
 var level3SessionScore = 0
 
+var level3FailState = 0
+
 func setScores():
 	if currentLevel == 1:
 		level1SessionScore = testScore

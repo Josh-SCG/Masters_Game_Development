@@ -1,13 +1,14 @@
+TextureButton
+StaticBody2D
+CollisionShape2D
+Area2D
 AnimatedSprite2D
 Timer
 Sprite2D
 ColorRect
-CollisionShape2D
-Area2D
 Node2D
 Camera2D
 Node
-StaticBody2D
 TileMap
 VBoxContainer
 ParallaxBackground
@@ -20,7 +21,6 @@ HBoxContainer
 MarginContainer
 AudioStreamPlayer2D
 CanvasLayer
-TextureButton
 GridContainer
 NinePatchRect
 Button

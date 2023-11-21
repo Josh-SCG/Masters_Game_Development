@@ -1,18 +1,18 @@
-[gd_scene load_steps=21 format=3 uid="uid://br6hydl45pyts"]
+[gd_scene load_steps=23 format=3 uid="uid://br6hydl45pyts"]
 
+[ext_resource type="Script" path="res://Assets/Level Scenes/Level 3/Minigame/mini_game_shooter.gd" id="1_6w4hp"]
 [ext_resource type="PackedScene" uid="uid://c7kjxsturbhvn" path="res://Presets/fade_in_out_colour_rect.tscn" id="1_8sk07"]
 [ext_resource type="PackedScene" uid="uid://56m8bhay0r0h" path="res://Presets/mini_game_pauser.tscn" id="2_qq714"]
 [ext_resource type="Script" path="res://Assets/Level Scenes/Level 3/Minigame/Spawners.gd" id="3_mbtg0"]
-[ext_resource type="Texture2D" uid="uid://dws466qnv1sjb" path="res://Assets/Level Scenes/Level 3/Minigame/wall3.png" id="4_uua3w"]
 [ext_resource type="PackedScene" uid="uid://8tydo1s87sri" path="res://Assets/Level Scenes/Level 3/Minigame/bug.tscn" id="5_kpdsw"]
+[ext_resource type="PackedScene" uid="uid://d4a2wmjpslg0s" path="res://Assets/Level Scenes/Level 3/Minigame/node.tscn" id="5_ly0c2"]
 [ext_resource type="Texture2D" uid="uid://43878ln436o4" path="res://Assets/Level Scenes/Level 3/Minigame/superpowers-rocks-4-tiling.png" id="6_1fq1s"]
 [ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="7_cc0km"]
-[ext_resource type="Script" path="res://Assets/Level Scenes/Level 3/Minigame/Node.gd" id="8_remh5"]
 [ext_resource type="FontFile" uid="uid://fbnptro0tkgx" path="res://Assets/Fonts/Kenney Rocket Square.ttf" id="8_yrf8l"]
 [ext_resource type="Texture2D" uid="uid://c5lvls1jvh7ji" path="res://Assets/Misc Art/output.png" id="10_b0i4c"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hokcx"]
-size = Vector2(24, 24)
+[ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="11_cbvj3"]
+[ext_resource type="Texture2D" uid="uid://bhhglwkngwtfl" path="res://Assets/UI/button_default_pressed.png" id="12_4ies1"]
+[ext_resource type="Texture2D" uid="uid://caj61jfrfikuk" path="res://Assets/UI/button_default_hover.png" id="13_jjrr4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ol32n"]
 atlas = ExtResource("10_b0i4c")
@@ -80,12 +80,14 @@ animations = [{
 
 [node name="MiniGameShooter" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_6w4hp")
 
 [node name="FadeInOutColourRect" parent="." instance=ExtResource("1_8sk07")]
-offset_left = -125.0
+offset_left = -106.0
 offset_top = -85.0
-offset_right = 1044.0
+offset_right = 1063.0
 offset_bottom = 597.0
+mouse_filter = 1
 
 [node name="Pauser" parent="." instance=ExtResource("2_qq714")]
 
@@ -96,63 +98,17 @@ position = Vector2(480, 270)
 scale = Vector2(3.33, 3.33)
 texture = ExtResource("6_1fq1s")
 
-[node name="ShooterPlayer" type="Node" parent="."]
+[node name="Node" parent="." instance=ExtResource("5_ly0c2")]
+position = Vector2(480, 200)
 
-[node name="Camera2D" type="Camera2D" parent="ShooterPlayer"]
-position = Vector2(480, 270)
+[node name="Node2" parent="." instance=ExtResource("5_ly0c2")]
+position = Vector2(550, 270)
 
-[node name="NodeN" type="Node2D" parent="."]
-position = Vector2(480, 210)
-scale = Vector2(2, 2)
-script = ExtResource("8_remh5")
-metadata/_edit_group_ = true
+[node name="Node3" parent="." instance=ExtResource("5_ly0c2")]
+position = Vector2(480, 340)
 
-[node name="Sprite2D" type="Sprite2D" parent="NodeN"]
-texture = ExtResource("4_uua3w")
-
-[node name="Area2D" type="Area2D" parent="NodeN"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NodeN/Area2D"]
-shape = SubResource("RectangleShape2D_hokcx")
-
-[node name="NodeE" type="Node2D" parent="."]
-position = Vector2(540, 270)
-scale = Vector2(2, 2)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="NodeE"]
-texture = ExtResource("4_uua3w")
-
-[node name="Area2D" type="Area2D" parent="NodeE"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NodeE/Area2D"]
-shape = SubResource("RectangleShape2D_hokcx")
-
-[node name="NodeS" type="Node2D" parent="."]
-position = Vector2(480, 330)
-scale = Vector2(2, 2)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="NodeS"]
-texture = ExtResource("4_uua3w")
-
-[node name="Area2D" type="Area2D" parent="NodeS"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NodeS/Area2D"]
-shape = SubResource("RectangleShape2D_hokcx")
-
-[node name="NodeW" type="Node2D" parent="."]
-position = Vector2(420, 270)
-scale = Vector2(2, 2)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="NodeW"]
-texture = ExtResource("4_uua3w")
-
-[node name="Area2D" type="Area2D" parent="NodeW"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NodeW/Area2D"]
-shape = SubResource("RectangleShape2D_hokcx")
+[node name="Node4" parent="." instance=ExtResource("5_ly0c2")]
+position = Vector2(410, 270)
 
 [node name="screenSquareMaker1" type="ColorRect" parent="."]
 z_index = 2
@@ -177,6 +133,7 @@ texture = ExtResource("7_cc0km")
 metadata/_edit_group_ = true
 
 [node name="ScoreText" type="RichTextLabel" parent="Score"]
+z_index = 1
 texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -195,6 +152,12 @@ theme_override_font_sizes/normal_font_size = 16
 text = "Score: 0"
 fit_content = true
 
+[node name="digiDigibot" type="AnimatedSprite2D" parent="."]
+position = Vector2(480, 270)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_72fp8")
+autoplay = "default"
+
 [node name="Spawner#1" type="Node2D" parent="."]
 position = Vector2(480, 270)
 script = ExtResource("3_mbtg0")
@@ -204,10 +167,74 @@ bug = ExtResource("5_kpdsw")
 wait_time = 3.0
 autostart = true
 
-[node name="digiDigibot" type="AnimatedSprite2D" parent="."]
-position = Vector2(480, 270)
+[node name="Start" type="Sprite2D" parent="."]
+position = Vector2(480, 460)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_cc0km")
+metadata/_edit_group_ = true
+
+[node name="Start2" type="RichTextLabel" parent="Start"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -43.5
+offset_right = -7.0
+offset_bottom = -20.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("8_yrf8l")
+theme_override_font_sizes/normal_font_size = 16
+text = "Hit E to begin"
+fit_content = true
+
+[node name="HowTo" type="Sprite2D" parent="."]
+position = Vector2(480, 90)
 scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_72fp8")
-autoplay = "default"
+texture = ExtResource("7_cc0km")
+metadata/_edit_group_ = true
+
+[node name="HowTo2" type="RichTextLabel" parent="HowTo"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.0
+offset_top = -54.5
+offset_right = 19.0
+offset_bottom = 5.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("8_yrf8l")
+theme_override_font_sizes/normal_font_size = 16
+text = "Click on the 
+     incoming 
+virus bombs"
+fit_content = true
+
+[node name="endLevelButton" type="TextureButton" parent="."]
+z_index = 3
+y_sort_enabled = true
+offset_left = 900.0
+offset_top = 40.0
+offset_right = 1050.0
+offset_bottom = 70.0
+rotation = 1.5708
+scale = Vector2(3, 3)
+texture_normal = ExtResource("11_cbvj3")
+texture_pressed = ExtResource("12_4ies1")
+texture_hover = ExtResource("13_jjrr4")
+stretch_mode = 0
 
 [connection signal="timeout" from="Spawner#1/Timer" to="Spawner#1" method="_on_timer_timeout"]
+[connection signal="pressed" from="endLevelButton" to="." method="_on_end_level_button_pressed"]
