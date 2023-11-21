@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_7"
+type="Resource"
+uid="uid://sxjnlgjp2qrk"
+path="res://.godot/imported/assignment.dialogue-bd85b8a87a2b878e7753b07185dd1da0.tres"
+
+[deps]
+
+source_file="res://Assets/Diologue/Dialogue/Level 3/assignment.dialogue"
+dest_files=["res://.godot/imported/assignment.dialogue-bd85b8a87a2b878e7753b07185dd1da0.tres"]
+
+[params]
+

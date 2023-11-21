@@ -32,14 +32,14 @@ metadata/_edit_group_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Header"]
 layout_mode = 0
-offset_left = 247.0
+offset_left = 212.0
 offset_top = 34.0
-offset_right = 592.0
+offset_right = 424.0
 offset_bottom = 64.0
 theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
 theme_override_fonts/normal_font = ExtResource("3_d537w")
 theme_override_font_sizes/normal_font_size = 24
-text = "Credits"
+text = "Assets Used"
 scroll_active = false
 
 [node name="Dev" type="TextureRect" parent="."]
@@ -474,11 +474,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d5" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
+[node name="topDownHorror" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/d5"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/topDownHorror"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -488,7 +488,7 @@ theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
 text = "Top Down Pixel Art Horror: AnisAous"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/d5"]
+[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/topDownHorror"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -500,11 +500,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d6" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
+[node name="spaceWarMan" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/d6"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/spaceWarMan"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -512,8 +512,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "Space War Man:
+Emcee Flesher"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/d6"]
+[node name="spaceWarLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/spaceWarMan"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -525,11 +527,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d7" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
+[node name="undergroundSidescroller" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/d7"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/undergroundSidescroller"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -537,8 +539,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "Underground sidescroller background:
+Emcee Flesher"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/d7"]
+[node name="USBGLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/undergroundSidescroller"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -899,4 +903,6 @@ stream = ExtResource("11_2ksha")
 [connection signal="pressed" from="HBoxContainer/ArtAssets2/32Tileset/32TilesetLink" to="." method="_on_tileset_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets3/modernCity/modernCityLink" to="." method="_on_modern_city_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets3/reyoh/reyohLink" to="." method="_on_reyoh_link_pressed"]
-[connection signal="pressed" from="HBoxContainer/ArtAssets3/d5/dLink" to="." method="_on_d_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets3/topDownHorror/dLink" to="." method="_on_d_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets3/spaceWarMan/spaceWarLink" to="." method="_on_space_war_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets3/undergroundSidescroller/USBGLink" to="." method="_on_usbg_link_pressed"]

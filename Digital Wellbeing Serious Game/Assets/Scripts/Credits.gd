@@ -52,3 +52,10 @@ func _on_reyoh_link_pressed():
 
 func _on_d_link_pressed():
 	OS.shell_open("https://kamisama887.itch.io/lorenz-fries-school-horror")
+
+func _on_space_war_link_pressed():
+	OS.shell_open("https://opengameart.org/content/space-war-man-new-laser-and-enemies")
+
+
+func _on_usbg_link_pressed():
+	OS.shell_open("https://opengameart.org/content/underground-sidescroller-background")

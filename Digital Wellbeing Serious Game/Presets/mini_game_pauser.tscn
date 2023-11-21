@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://56m8bhay0r0h"]
+
+[ext_resource type="Script" path="res://Assets/Level Scenes/Level 2/Minigame/Pauser.gd" id="1_xt8nt"]
+[ext_resource type="PackedScene" uid="uid://cjebxc8hwt1ty" path="res://Assets/Menu Scenes/PausePopUp.tscn" id="2_kluea"]
+
+[node name="Pauser" type="Node"]
+script = ExtResource("1_xt8nt")
+PausePopUp = ExtResource("2_kluea")

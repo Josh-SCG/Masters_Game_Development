@@ -21,4 +21,5 @@ func start():
 	$VBoxContainer/HowTo.visible = false
 	$Score.visible = true
 	globalRef.achievementMiniGame = 0
+	globalRef.level1MiniStart = true
 	$PlatformPlayer.startFunc() 

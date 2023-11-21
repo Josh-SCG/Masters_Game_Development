@@ -57,6 +57,10 @@ var level1MiniScore = 0
 var level2MiniScore = 0
 var level3MiniScore = 0
 
+var level1MiniStart = false
+var level2MiniStart = false
+var level3MiniStart = false
+
 var level1SessionScore = 0
 var level2SessionScore = 0
 var level3SessionScore = 0

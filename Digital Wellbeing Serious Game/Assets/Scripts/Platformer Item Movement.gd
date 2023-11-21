@@ -15,4 +15,5 @@ func _on_laptop_body_entered(_body):
 
 
 func _on_sign_body_entered(_body):
+	globalRef.level1MiniStart = false
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/level_1_c.tscn")

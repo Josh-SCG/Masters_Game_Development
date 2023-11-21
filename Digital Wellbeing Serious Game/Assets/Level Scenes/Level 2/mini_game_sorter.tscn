@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8nqd468jnbjt"]
+[gd_scene load_steps=3 format=3 uid="uid://c8nqd468jnbjt"]
 
 [ext_resource type="PackedScene" uid="uid://c7kjxsturbhvn" path="res://Presets/fade_in_out_colour_rect.tscn" id="1_dhasn"]
-[ext_resource type="Script" path="res://Assets/Level Scenes/Level 2/Minigame/Pauser.gd" id="2_c7p48"]
-[ext_resource type="PackedScene" uid="uid://cjebxc8hwt1ty" path="res://Assets/Menu Scenes/PausePopUp.tscn" id="3_kcgbl"]
+[ext_resource type="PackedScene" uid="uid://56m8bhay0r0h" path="res://Presets/mini_game_pauser.tscn" id="2_j6hui"]
 
 [node name="MiniGameSorter" type="Node2D"]
 
@@ -12,6 +11,4 @@ offset_top = -58.0
 offset_right = 1084.0
 offset_bottom = 624.0
 
-[node name="Pauser" type="Node" parent="."]
-script = ExtResource("2_c7p48")
-PausePopUp = ExtResource("3_kcgbl")
+[node name="Pauser" parent="." instance=ExtResource("2_j6hui")]

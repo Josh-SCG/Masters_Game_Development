@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://em5tgxe6cwmp"]
+[gd_scene load_steps=7 format=3 uid="uid://em5tgxe6cwmp"]
 
 [ext_resource type="PackedScene" uid="uid://c7kjxsturbhvn" path="res://Presets/fade_in_out_colour_rect.tscn" id="1_whjaa"]
 [ext_resource type="PackedScene" uid="uid://bfl2em23m05rn" path="res://Presets/Digibot.tscn" id="2_hc8l7"]
 [ext_resource type="PackedScene" uid="uid://ygwdpcrdma8n" path="res://Assets/Player/Player.tscn" id="3_2v5n4"]
 [ext_resource type="PackedScene" uid="uid://dvxe7spanny28" path="res://Assets/Player/ui.tscn" id="4_s36go"]
 [ext_resource type="PackedScene" uid="uid://bionn6d76dcom" path="res://Presets/Sign3.tscn" id="5_fqpyi"]
+
+[sub_resource type="TileSet" id="TileSet_mb1dq"]
 
 [node name="Level3" type="Node2D"]
 y_sort_enabled = true
@@ -25,6 +27,8 @@ position = Vector2(1231, 613)
 position = Vector2(881.718, 601.398)
 
 [node name="Base" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_mb1dq")
+cell_quadrant_size = 32
 format = 2
 
 [node name="Sign" parent="." instance=ExtResource("5_fqpyi")]
