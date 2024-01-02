@@ -1,3 +1,4 @@
+RichTextLabel
 TextureButton
 StaticBody2D
 CollisionShape2D
@@ -12,17 +13,3 @@ Node
 TileMap
 VBoxContainer
 ParallaxBackground
-TextureRect
-CharacterBody2D
-AnimationPlayer
-RichTextLabel
-AnimationTree
-HBoxContainer
-MarginContainer
-AudioStreamPlayer2D
-CanvasLayer
-GridContainer
-NinePatchRect
-Button
-DialogueLabel
-Control
