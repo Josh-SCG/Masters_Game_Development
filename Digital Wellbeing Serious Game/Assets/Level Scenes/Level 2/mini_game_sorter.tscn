@@ -1,9 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8nqd468jnbjt"]
+[gd_scene load_steps=14 format=3 uid="uid://c8nqd468jnbjt"]
 
+[ext_resource type="Script" path="res://Assets/Level Scenes/Level 2/Minigame/mini_game_sorter.gd" id="1_a5myq"]
 [ext_resource type="PackedScene" uid="uid://c7kjxsturbhvn" path="res://Presets/fade_in_out_colour_rect.tscn" id="1_dhasn"]
 [ext_resource type="PackedScene" uid="uid://56m8bhay0r0h" path="res://Presets/mini_game_pauser.tscn" id="2_j6hui"]
+[ext_resource type="Texture2D" uid="uid://b7wxtd2g3jc82" path="res://Assets/Level Scenes/Level 2/Minigame/LandscapeEvening.png" id="3_g0jds"]
+[ext_resource type="Texture2D" uid="uid://df5kamaduab0q" path="res://Assets/UI/confirm_bg.png" id="4_ancex"]
+[ext_resource type="FontFile" uid="uid://fbnptro0tkgx" path="res://Assets/Fonts/Kenney Rocket Square.ttf" id="5_uo41o"]
+[ext_resource type="Texture2D" uid="uid://hlvs1qnixage" path="res://Assets/UI/button_default_inactive.png" id="7_kgm2m"]
+[ext_resource type="Texture2D" uid="uid://bhhglwkngwtfl" path="res://Assets/UI/button_default_pressed.png" id="8_r2560"]
+[ext_resource type="Texture2D" uid="uid://caj61jfrfikuk" path="res://Assets/UI/button_default_hover.png" id="9_7rcjm"]
+[ext_resource type="PackedScene" uid="uid://buarwy6grbsbl" path="res://Assets/Level Scenes/Level 2/Minigame/flower.tscn" id="10_6fluh"]
+[ext_resource type="Script" path="res://Assets/Level Scenes/Level 2/Minigame/Spawner.gd" id="11_xp17t"]
+[ext_resource type="PackedScene" uid="uid://ccxidfwk5xl7w" path="res://Assets/Level Scenes/Level 2/Minigame/water.tscn" id="12_ss1rx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kvvg"]
+size = Vector2(1858, 31)
 
 [node name="MiniGameSorter" type="Node2D"]
+script = ExtResource("1_a5myq")
 
 [node name="FadeInOutColourRect" parent="." instance=ExtResource("1_dhasn")]
 offset_left = -85.0
@@ -12,3 +26,176 @@ offset_right = 1084.0
 offset_bottom = 624.0
 
 [node name="Pauser" parent="." instance=ExtResource("2_j6hui")]
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(480, 270)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_g0jds")
+
+[node name="Score" type="Sprite2D" parent="."]
+z_index = 3
+y_sort_enabled = true
+position = Vector2(109, 48)
+texture = ExtResource("4_ancex")
+metadata/_edit_group_ = true
+
+[node name="ScoreText" type="RichTextLabel" parent="Score"]
+z_index = 1
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -44.0
+offset_right = -32.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("5_uo41o")
+theme_override_font_sizes/normal_font_size = 16
+text = "Score: 0"
+fit_content = true
+
+[node name="Start" type="Sprite2D" parent="."]
+position = Vector2(490, 295)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_ancex")
+metadata/_edit_group_ = true
+
+[node name="Start2" type="RichTextLabel" parent="Start"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -43.5
+offset_right = -7.0
+offset_bottom = -20.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("5_uo41o")
+theme_override_font_sizes/normal_font_size = 16
+text = "Hit E to begin"
+fit_content = true
+
+[node name="HowTo" type="Sprite2D" parent="."]
+position = Vector2(490, 140)
+scale = Vector2(2, 2)
+texture = ExtResource("4_ancex")
+metadata/_edit_group_ = true
+
+[node name="HowTo2" type="RichTextLabel" parent="HowTo"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.0
+offset_top = -54.0
+offset_right = 50.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("5_uo41o")
+theme_override_font_sizes/normal_font_size = 16
+text = "Sort the water
+       with the
+  right flower"
+fit_content = true
+
+[node name="endLevelButton" type="TextureButton" parent="."]
+z_index = 3
+y_sort_enabled = true
+texture_filter = 1
+offset_left = -13.0
+offset_top = 88.0
+offset_right = 145.0
+offset_bottom = 118.0
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("7_kgm2m")
+texture_pressed = ExtResource("8_r2560")
+texture_hover = ExtResource("9_7rcjm")
+stretch_mode = 0
+metadata/_edit_group_ = true
+
+[node name="contText" type="RichTextLabel" parent="endLevelButton"]
+z_index = 1
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.6666
+offset_top = -10.6667
+offset_right = 68.3333
+offset_bottom = 13.3333
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("5_uo41o")
+theme_override_font_sizes/normal_font_size = 16
+text = "Continue"
+fit_content = true
+
+[node name="dismissLine" type="ColorRect" parent="."]
+offset_left = -5.0
+offset_top = 625.0
+offset_right = 955.0
+offset_bottom = 655.0
+color = Color(0, 0.415686, 0.498039, 0.513726)
+metadata/_edit_group_ = true
+
+[node name="dismissArea" type="Area2D" parent="dismissLine"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dismissLine/dismissArea"]
+position = Vector2(500, 16)
+scale = Vector2(20, 1)
+shape = SubResource("RectangleShape2D_4kvvg")
+
+[node name="flower-B" parent="." instance=ExtResource("10_6fluh")]
+position = Vector2(170, 490)
+flower = 1
+
+[node name="flower-G" parent="." instance=ExtResource("10_6fluh")]
+position = Vector2(460, 490)
+flower = 2
+
+[node name="flower-Y" parent="." instance=ExtResource("10_6fluh")]
+position = Vector2(740, 490)
+
+[node name="Spawner" type="Node2D" parent="."]
+position = Vector2(890, -40)
+script = ExtResource("11_xp17t")
+water = ExtResource("12_ss1rx")
+
+[node name="Timer" type="Timer" parent="Spawner"]
+wait_time = 1.25
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_left = 840.0
+offset_top = -20.0
+offset_right = 940.0
+offset_bottom = 560.0
+mouse_filter = 2
+color = Color(0.282353, 0.576471, 0.52549, 0.345098)
+
+[connection signal="pressed" from="endLevelButton" to="." method="_on_end_level_button_pressed"]
+[connection signal="area_entered" from="dismissLine/dismissArea" to="." method="_on_dismiss_area_area_entered"]
+[connection signal="timeout" from="Spawner/Timer" to="Spawner" method="_on_timer_timeout"]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://ccxidfwk5xl7w"]
+
+[ext_resource type="Script" path="res://Assets/Level Scenes/Level 2/Minigame/waterB.gd" id="1_i218l"]
+[ext_resource type="Texture2D" uid="uid://e5qsa0s7dq6r" path="res://Assets/Level Scenes/Level 2/Minigame/manaBlue.png" id="2_61vyc"]
+[ext_resource type="Texture2D" uid="uid://d21hgouidmu6" path="res://Assets/Level Scenes/Level 2/Minigame/manaGreen.png" id="3_i3yew"]
+[ext_resource type="Texture2D" uid="uid://ixk8rptn4qkx" path="res://Assets/Level Scenes/Level 2/Minigame/manaYellow.png" id="4_bjjtt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_csr7a"]
+radius = 35.1141
+
+[node name="water" type="Area2D"]
+script = ExtResource("1_i218l")
+metadata/_edit_group_ = true
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -38.0
+offset_top = -37.0
+offset_right = 37.0
+offset_bottom = 38.0
+
+[node name="waterB" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_61vyc")
+
+[node name="waterG" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_i3yew")
+
+[node name="waterY" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_bjjtt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_csr7a")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

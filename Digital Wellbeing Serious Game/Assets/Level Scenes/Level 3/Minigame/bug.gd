@@ -10,8 +10,8 @@ func _physics_process(_delta):
 		move()
 
 func move():
-	position.x -= dir.x
-	position.y -= dir.y
+	position.x -= 1.5*dir.x
+	position.y -= 1.5*dir.y
 
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton && event.button_index == MOUSE_BUTTON_LEFT && event.pressed:

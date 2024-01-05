@@ -21,6 +21,5 @@ func _on_external_link_button_pressed():
 	var path = ProjectSettings.globalize_path("res://Assets/Files/Final.pdf")
 	OS.shell_open(path)
 
-
 func _on_achievements_button_pressed():
 	get_tree().change_scene_to_file("res://Assets/Menu Scenes/Achievements.tscn")

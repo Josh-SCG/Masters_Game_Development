@@ -554,11 +554,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d8" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
+[node name="cyberpunkInt" type="TextureRect" parent="HBoxContainer/ArtAssets3"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/d8"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets3/cyberpunkInt"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -566,8 +566,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "Pixel Cyberpunk Interior:
+DyLESTorm"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/d8"]
+[node name="cyberpunkIntLink" type="TextureButton" parent="HBoxContainer/ArtAssets3/cyberpunkInt"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -582,11 +584,11 @@ texture_hover = ExtResource("6_sics3")
 [node name="ArtAssets4" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
 
-[node name="d5" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
+[node name="pixelPlatChars" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/d5"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/pixelPlatChars"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -594,8 +596,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "Free Pixel Art Platformer Characters:
+JIK-A-4"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/d5"]
+[node name="pixelPlatCharsLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/pixelPlatChars"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -607,11 +611,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d6" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
+[node name="pixelFlowers" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/d6"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/pixelFlowers"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -619,8 +623,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "Pixel Flower Icons:
+sicklyseraph"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/d6"]
+[node name="pixelFlowersLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/pixelFlowers"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -632,11 +638,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d7" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
+[node name="manaPotion" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/d7"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/manaPotion"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -644,8 +650,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "Health and Mana Potions:
+bevouliin.com"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/d7"]
+[node name="manaPotionLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/manaPotion"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -657,11 +665,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d8" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
+[node name="2dGameBG" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/d8"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/2dGameBG"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -669,8 +677,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "2D Game Backgrounds:
+Adeel Dev"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/d8"]
+[node name="2dGameBGLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/2dGameBG"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -906,3 +916,8 @@ stream = ExtResource("11_2ksha")
 [connection signal="pressed" from="HBoxContainer/ArtAssets3/topDownHorror/dLink" to="." method="_on_d_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets3/spaceWarMan/spaceWarLink" to="." method="_on_space_war_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets3/undergroundSidescroller/USBGLink" to="." method="_on_usbg_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets3/cyberpunkInt/cyberpunkIntLink" to="." method="_on_cyberpunk_int_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets4/pixelPlatChars/pixelPlatCharsLink" to="." method="_on_pixel_plat_chars_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets4/pixelFlowers/pixelFlowersLink" to="." method="_on_pixel_flowers_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets4/manaPotion/manaPotionLink" to="." method="_on_mana_potion_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets4/2dGameBG/2dGameBGLink" to="." method="_on_d_game_bg_link_pressed"]

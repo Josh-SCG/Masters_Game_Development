@@ -16,6 +16,7 @@ func _physics_process(_delta):
 		start()
 	if globalRef.level3MiniScore > 9:
 		$endLevelButton.visible = true
+		$CalcText.text = "Calculated!"
 	if globalRef.level3FailState == 4:
 		globalRef.level3MiniStart = false
 		globalRef.level3FailState = 0

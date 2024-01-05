@@ -1,0 +1,19 @@
+~ start
+You: [[It's one of those boards|A board!|INFORMATION!]]!
+
+~ sign
+Sign: Security Digital Wellbeing Information #5:
+
+set Global.achievementSign = 0
+You: Do you want to re-read the sign?
+- Yes
+	=> sign
+- No
+	do Global.signCheck = Global.signRemoval(Global.level3Signs, 5)
+	if Global.signCheck
+		do Global.level3SignsSeen += 1
+	if Global.level3SignsSeen == 5
+		set Global.initLevelConvo = 2
+	=> END!
+
+=> END!

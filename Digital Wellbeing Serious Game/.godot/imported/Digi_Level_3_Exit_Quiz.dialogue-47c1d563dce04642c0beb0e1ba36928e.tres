@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vd0c0"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_oj74p"]
 
 [resource]
-script = ExtResource("1_vd0c0")
+script = ExtResource("1_oj74p")
 titles = {
 "2218922117/Q10a": "574",
 "2218922117/Q10b": "583",
@@ -663,7 +663,7 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1041",
-"text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed {{Global.level3MiniScore}} GAME 3 SCORE. You did a great job!",
+"text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to identify {{Global.level3MiniScore}} of the threats. You did a great job!",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -687,7 +687,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.level3MiniScore}}"
 }]),
-"translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed {{Global.level3MiniScore}} GAME 3 SCORE. You did a great job!",
+"translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to identify {{Global.level3MiniScore}} of the threats. You did a great job!",
 "type": "dialogue"
 },
 "1041": {

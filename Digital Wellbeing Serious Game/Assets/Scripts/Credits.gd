@@ -56,6 +56,20 @@ func _on_d_link_pressed():
 func _on_space_war_link_pressed():
 	OS.shell_open("https://opengameart.org/content/space-war-man-new-laser-and-enemies")
 
-
 func _on_usbg_link_pressed():
 	OS.shell_open("https://opengameart.org/content/underground-sidescroller-background")
+
+func _on_cyberpunk_int_link_pressed():
+	OS.shell_open("https://livingtheindie.itch.io/pixel-cyberpunk-interior")
+
+func _on_pixel_plat_chars_link_pressed():
+	OS.shell_open("https://jik-a-4.itch.io/free-pixel-art-platformer-characters")
+
+func _on_pixel_flowers_link_pressed():
+	OS.shell_open("https://opengameart.org/content/pixel-flower-icons")
+
+func _on_mana_potion_link_pressed():
+	OS.shell_open("https://opengameart.org/content/free-health-and-mana-potions")
+
+func _on_d_game_bg_link_pressed():
+	OS.shell_open("https://opengameart.org/content/2d-game-backgrounds")

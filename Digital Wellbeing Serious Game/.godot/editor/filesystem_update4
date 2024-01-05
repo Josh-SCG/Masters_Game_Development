@@ -1,3 +1,7 @@
+res://Assets/Menu Scenes/Main Menu.tscn
 res://Assets/Scripts/Shaders/static.gdshader
 res://Assets/Scripts/Shaders/endless_sprite.gdshader
 res://Assets/Menu Scenes/Credits.tscn
+res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn
+res://Assets/Level Scenes/Level 3/mini_game_shooter.tscn
+res://Assets/Level Scenes/Level 2/Minigame/water.tscn

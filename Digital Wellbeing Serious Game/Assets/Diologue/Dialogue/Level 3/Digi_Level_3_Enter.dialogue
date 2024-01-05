@@ -1,0 +1,70 @@
+~ start
+Digibot: [[Hello|Hi|Howdy]]!
+
+if Global.initLevelConvo == 0
+	=> init
+elif Global.initLevelConvo == 1
+	=> inProgress
+elif Global.initLevelConvo == 2
+	=> leave
+
+~ init
+Digibot: We've made it to the VR environment. 
+Digibot: This is where you'll learn about the security aspects of digital wellbeing. 
+Digibot: Are you ready to start learning? 
+- Yes
+	Digibot: Great! There are a bunch of conspiracy boards around the area. 
+	Digibot: You know the corkboards with pictures and red string, those ones, hard to miss. They do stand out a bit compared to the rest of my place. 
+	Digibot: They should have some information relating to the security parts of digital wellbeing. 
+	Digibot: Come find me when you're done with them all.
+	Digibot: Good luck and have fun! 
+	do Global.initLevelConvo = 1
+	=> END!
+- No
+	Digibot: Alright. Don't wander off before you speak to me about this place.
+	=> END!
+
+~ inProgress
+Digibot: Remember, you're looking for conspiracy boards around here with information about digital wellbeing on them.
+Digibot: There should be a few more boards around here. You've seen {{Global.level3SignsSeen}}.
+
+do Global.randHint = Global.randomHint(Global.level3Signs)
+if Global.randHint == 1
+	Digibot: There should be one in what looks like an office. Look for a reception area for it!
+
+elif Global.randHint == 2
+	Digibot: I know one should be in storage surrounded by some tables and chairs.
+
+elif Global.randHint == 3
+	Digibot: The kitchen or break area should have one too.
+
+elif Global.randHint == 4
+	Digibot: Another should be around a cooling system maintaince screen at the top.
+
+elif Global.randHint == 5
+	Digibot: Have you checked the area below the room that appears like a classroom?
+
+else
+	Digibot: I appear to be glitching and cannot give you a hint at this time. 
+
+=> END!
+
+~ leave
+Digibot: It looks like you've seen all the boards here.
+Digibot: Hopefully you found them insightful.
+Digibot: If you're done here, we can head back.
+- We can head back now
+	Digibot: Alright! Let us go!
+	Digibot: ... 
+	Digibot: ...
+	Digibot: Oh no..
+	Digibot: Looks like there is an attack on my systems. I am going to need some help first.
+	Digibot: I am going to need you to identify the threats and I will disable them. Simply, click on them and I will take it from there.
+	Digibot: Once enough have been found I should be able to predict them and automatically guard against them! You are welcome to continue after I present the way out if you would like.
+	set Global.initLevelConvo = 0
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/mini_game_shooter.tscn")
+- I still want to look around for a bit.
+	Digibot: Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!
+	=> END!
+
+=> END!

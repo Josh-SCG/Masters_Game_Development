@@ -152,9 +152,30 @@ theme_override_font_sizes/normal_font_size = 16
 text = "Score: 0"
 fit_content = true
 
+[node name="CalcText" type="RichTextLabel" parent="."]
+z_index = 2
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 13.0
+offset_top = 172.0
+offset_right = 202.0
+offset_bottom = 212.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("8_yrf8l")
+theme_override_font_sizes/normal_font_size = 16
+text = "Calculating..."
+fit_content = true
+
 [node name="digiDigibot" type="AnimatedSprite2D" parent="."]
-position = Vector2(480, 270)
-scale = Vector2(2, 2)
+z_index = 2
+position = Vector2(100, 225)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_72fp8")
 autoplay = "default"
 
@@ -164,7 +185,7 @@ script = ExtResource("3_mbtg0")
 bug = ExtResource("5_kpdsw")
 
 [node name="Timer" type="Timer" parent="Spawner#1"]
-wait_time = 3.0
+wait_time = 2.0
 autostart = true
 
 [node name="Start" type="Sprite2D" parent="."]

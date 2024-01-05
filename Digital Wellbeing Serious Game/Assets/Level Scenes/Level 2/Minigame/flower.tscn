@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://buarwy6grbsbl"]
+
+[ext_resource type="Texture2D" uid="uid://bvla0fekrq6p0" path="res://Assets/Level Scenes/Level 2/Minigame/stem.png" id="1_1fkgo"]
+[ext_resource type="Script" path="res://Assets/Level Scenes/Level 2/Minigame/flower.gd" id="2_mmquq"]
+[ext_resource type="Texture2D" uid="uid://m2ldflxpm827" path="res://Assets/Level Scenes/Level 2/Minigame/flowers.png" id="3_rylbd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4bqkn"]
+radius = 15.6985
+
+[node name="flower" type="Sprite2D"]
+position = Vector2(480, 490)
+scale = Vector2(3, 3)
+texture = ExtResource("1_1fkgo")
+script = ExtResource("2_mmquq")
+flower = 3
+
+[node name="flowerColour" type="Sprite2D" parent="."]
+position = Vector2(1, -25)
+texture = ExtResource("3_rylbd")
+hframes = 14
+vframes = 6
+
+[node name="flowerArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flowerArea"]
+position = Vector2(0.333334, -25.3333)
+shape = SubResource("CircleShape2D_4bqkn")
+
+[connection signal="area_entered" from="flowerArea" to="." method="_on_flower_area_area_entered"]
