@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_xhc5k"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4a41g"]
 
 [resource]
-script = ExtResource("1_xhc5k")
+script = ExtResource("1_4a41g")
 titles = {
 "inProgress": "27",
 "init": "12",
@@ -478,8 +478,8 @@ lines = {
 },
 "55": {
 "next_id": "56",
-"next_id_after": "68",
-"responses": PackedStringArray("55", "64"),
+"next_id_after": "69",
+"responses": PackedStringArray("55", "65"),
 "text": "We can head back now",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We can head back now",
@@ -593,6 +593,23 @@ lines = {
 "63": {
 "mutation": {
 "expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Music"
+}, {
+"type": "dot"
+}, {
+"function": "play_song_1mg",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "64",
+"parent_id": "55",
+"type": "mutation"
+},
+"64": {
+"mutation": {
+"expression": Array[Dictionary]([{
 "function": "get_tree",
 "type": "function",
 "value": Array[Array]([])
@@ -607,35 +624,35 @@ lines = {
 }])])
 }])
 },
-"next_id": "68",
+"next_id": "69",
 "parent_id": "55",
 "type": "mutation"
 },
-"64": {
-"next_id": "65",
-"next_id_after": "68",
+"65": {
+"next_id": "66",
+"next_id_after": "69",
 "text": "I still want to look around for a bit.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I still want to look around for a bit.",
 "type": "response"
 },
-"65": {
+"66": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "66",
-"parent_id": "64",
+"next_id": "67",
+"parent_id": "65",
 "text": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!",
 "type": "dialogue"
 },
-"66": {
+"67": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "64",
+"parent_id": "65",
 "type": "goto"
 },
-"68": {
+"69": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"

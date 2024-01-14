@@ -60,6 +60,7 @@ Digibot: If you're done here, we can head back.
 	Digibot: GAME TEXT! GAME TEXT! GAME TEXT! GAME TEXT! GAME TEXT!
 	Digibot: GAME COMPLETE STATE!
 	set Global.initLevelConvo = 0
+	do Music.play_song_2mg()
 	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn")
 - I still want to look around for a bit.
 	Digibot: Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!

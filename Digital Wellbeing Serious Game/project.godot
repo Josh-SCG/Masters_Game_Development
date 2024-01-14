@@ -26,6 +26,7 @@ boot_splash/minimum_display_time=2000
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Global="*res://Assets/Scripts/Global.gd"
+Music="*res://Assets/Music/music.tscn"
 
 [dialogue_manager]
 

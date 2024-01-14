@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var globalRef = get_node("/root/Global")
-
+@onready var musicRef = get_node("/root/Music")
 #Set the display of level completion
 func _ready():
 	$PhysicalLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete1)+".png")
@@ -47,16 +47,19 @@ func _on_security_explination_mouse_exited():
 func _on_start_physical_button_pressed():
 	globalRef.currentLevel = 1
 	globalRef.achievementLevelStart = 0
+	musicRef.play_song_1s()
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/level_1_a.tscn")
 
 
 func _on_start_mental_button_pressed():
 	globalRef.currentLevel = 2
 	globalRef.achievementLevelStart = 0
+	musicRef.play_song_2s()
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/level_2_a.tscn")
 
 
 func _on_start_security_button_pressed():
 	globalRef.currentLevel = 3
 	globalRef.achievementLevelStart = 0
+	musicRef.play_song_3s()
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/level_3_a.tscn")

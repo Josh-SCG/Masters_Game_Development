@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Party Sector.mp3-16a39336025f4ee988c2d912e121
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

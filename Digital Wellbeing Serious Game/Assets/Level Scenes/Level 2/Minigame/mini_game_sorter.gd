@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var globalRef = get_node("/root/Global")
+@onready var musicRef = get_node("/root/Music")
 
 func _ready():
 	$Score/ScoreText.text = "Score: "+str(globalRef.level2MiniScore)
@@ -30,6 +31,7 @@ func start():
 func _on_end_level_button_pressed():
 	globalRef.level2MiniStart = false
 	globalRef.level2MinigameDoneFlag = 0
+	musicRef.play_song_quiz()
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/level_2_c.tscn")
 
 func _on_dismiss_area_area_entered(area):
