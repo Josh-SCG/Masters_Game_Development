@@ -272,6 +272,7 @@ offset_right = 1661.0
 offset_bottom = 839.0
 
 [node name="Digibot" parent="." instance=ExtResource("2_hc8l7")]
+z_index = 2
 position = Vector2(880, 375)
 NPC_Dialogue = ExtResource("3_ichb4")
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bn20f7mq60o72"]
+[gd_scene load_steps=10 format=3 uid="uid://dframg0tsfxwg"]
 
 [ext_resource type="Script" path="res://Assets/Diologue/portraits_balloon/balloon.gd" id="1_2553q"]
 [ext_resource type="AudioStream" uid="uid://cng7ex3hvatxl" path="res://Assets/Diologue/portraits_balloon/talk.wav" id="2_6sd4o"]

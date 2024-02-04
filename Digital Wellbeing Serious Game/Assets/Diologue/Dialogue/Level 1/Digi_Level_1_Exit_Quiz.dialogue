@@ -28,6 +28,7 @@ set Global.achievementLevelFinish = 0
 Digibot: Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to find {{Global.level1MiniScore}} partitions of my data. You did a great job!
 Digibot: Bye now!
 do Global.resetLevelProgress()
+do Music.play_song_menu()
 do get_tree().change_scene_to_file("res://Assets/Menu Scenes/Main Menu.tscn")
 
 => END

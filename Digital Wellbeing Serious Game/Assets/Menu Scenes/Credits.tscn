@@ -22,10 +22,10 @@ scale = Vector2(1.2275, 0.933333)
 texture = ExtResource("2_yhv6v")
 
 [node name="Header" type="TextureRect" parent="."]
-offset_left = 202.0
-offset_top = 11.0
-offset_right = 842.0
-offset_bottom = 107.0
+offset_left = 240.0
+offset_top = 10.0
+offset_right = 880.0
+offset_bottom = 106.0
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("2_pq2oe")
 metadata/_edit_group_ = true
@@ -43,6 +43,7 @@ text = "Assets Used"
 scroll_active = false
 
 [node name="Dev" type="TextureRect" parent="."]
+visible = false
 offset_left = 684.0
 offset_top = 12.0
 offset_right = 876.0
@@ -85,9 +86,11 @@ text = "Menu"
 scroll_active = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_top = 104.0
-offset_right = 960.0
-offset_bottom = 508.0
+offset_left = 57.6
+offset_top = 86.0
+offset_right = 825.6
+offset_bottom = 490.0
+scale = Vector2(1.1, 1.1)
 theme_override_constants/separation = 0
 metadata/_edit_group_ = true
 
@@ -719,11 +722,11 @@ texture_normal = ExtResource("4_d8ikn")
 texture_pressed = ExtResource("5_ubbbx")
 texture_hover = ExtResource("6_sics3")
 
-[node name="d10" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
+[node name="dev" type="TextureRect" parent="HBoxContainer/ArtAssets4"]
 layout_mode = 2
 texture = ExtResource("8_asv2j")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/d10"]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets4/dev"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 11.0
@@ -731,161 +734,10 @@ offset_right = 142.0
 offset_bottom = 55.0
 theme_override_fonts/normal_font = ExtResource("9_xw6b5")
 theme_override_font_sizes/normal_font_size = 12
+text = "Developed by:
+Josh-SCG with the NWU"
 
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/d10"]
-layout_mode = 0
-offset_left = 183.0
-offset_top = 5.0
-offset_right = 254.0
-offset_bottom = 47.0
-rotation = 1.5708
-scale = Vector2(0.75, 0.75)
-texture_normal = ExtResource("4_d8ikn")
-texture_pressed = ExtResource("5_ubbbx")
-texture_hover = ExtResource("6_sics3")
-
-[node name="ArtAssets5" type="VBoxContainer" parent="HBoxContainer"]
-layout_mode = 2
-
-[node name="d5" type="TextureRect" parent="HBoxContainer/ArtAssets5"]
-layout_mode = 2
-texture = ExtResource("8_asv2j")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets5/d5"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 11.0
-offset_right = 142.0
-offset_bottom = 55.0
-theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 12
-
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets5/d5"]
-layout_mode = 0
-offset_left = 183.0
-offset_top = 5.0
-offset_right = 254.0
-offset_bottom = 47.0
-rotation = 1.5708
-scale = Vector2(0.75, 0.75)
-texture_normal = ExtResource("4_d8ikn")
-texture_pressed = ExtResource("5_ubbbx")
-texture_hover = ExtResource("6_sics3")
-
-[node name="d6" type="TextureRect" parent="HBoxContainer/ArtAssets5"]
-layout_mode = 2
-texture = ExtResource("8_asv2j")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets5/d6"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 11.0
-offset_right = 142.0
-offset_bottom = 55.0
-theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 12
-
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets5/d6"]
-layout_mode = 0
-offset_left = 183.0
-offset_top = 5.0
-offset_right = 254.0
-offset_bottom = 47.0
-rotation = 1.5708
-scale = Vector2(0.75, 0.75)
-texture_normal = ExtResource("4_d8ikn")
-texture_pressed = ExtResource("5_ubbbx")
-texture_hover = ExtResource("6_sics3")
-
-[node name="d7" type="TextureRect" parent="HBoxContainer/ArtAssets5"]
-layout_mode = 2
-texture = ExtResource("8_asv2j")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets5/d7"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 11.0
-offset_right = 142.0
-offset_bottom = 55.0
-theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 12
-
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets5/d7"]
-layout_mode = 0
-offset_left = 183.0
-offset_top = 5.0
-offset_right = 254.0
-offset_bottom = 47.0
-rotation = 1.5708
-scale = Vector2(0.75, 0.75)
-texture_normal = ExtResource("4_d8ikn")
-texture_pressed = ExtResource("5_ubbbx")
-texture_hover = ExtResource("6_sics3")
-
-[node name="d8" type="TextureRect" parent="HBoxContainer/ArtAssets5"]
-layout_mode = 2
-texture = ExtResource("8_asv2j")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets5/d8"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 11.0
-offset_right = 142.0
-offset_bottom = 55.0
-theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 12
-
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets5/d8"]
-layout_mode = 0
-offset_left = 183.0
-offset_top = 5.0
-offset_right = 254.0
-offset_bottom = 47.0
-rotation = 1.5708
-scale = Vector2(0.75, 0.75)
-texture_normal = ExtResource("4_d8ikn")
-texture_pressed = ExtResource("5_ubbbx")
-texture_hover = ExtResource("6_sics3")
-
-[node name="d9" type="TextureRect" parent="HBoxContainer/ArtAssets5"]
-layout_mode = 2
-texture = ExtResource("8_asv2j")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets5/d9"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 11.0
-offset_right = 142.0
-offset_bottom = 55.0
-theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 12
-
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets5/d9"]
-layout_mode = 0
-offset_left = 183.0
-offset_top = 5.0
-offset_right = 254.0
-offset_bottom = 47.0
-rotation = 1.5708
-scale = Vector2(0.75, 0.75)
-texture_normal = ExtResource("4_d8ikn")
-texture_pressed = ExtResource("5_ubbbx")
-texture_hover = ExtResource("6_sics3")
-
-[node name="d10" type="TextureRect" parent="HBoxContainer/ArtAssets5"]
-layout_mode = 2
-texture = ExtResource("8_asv2j")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/ArtAssets5/d10"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 11.0
-offset_right = 142.0
-offset_bottom = 55.0
-theme_override_fonts/normal_font = ExtResource("9_xw6b5")
-theme_override_font_sizes/normal_font_size = 12
-
-[node name="dLink" type="TextureButton" parent="HBoxContainer/ArtAssets5/d10"]
+[node name="devLink" type="TextureButton" parent="HBoxContainer/ArtAssets4/dev"]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 5.0
@@ -924,3 +776,4 @@ stream = ExtResource("11_2ksha")
 [connection signal="pressed" from="HBoxContainer/ArtAssets4/manaPotion/manaPotionLink" to="." method="_on_mana_potion_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets4/2dGameBG/2dGameBGLink" to="." method="_on_d_game_bg_link_pressed"]
 [connection signal="pressed" from="HBoxContainer/ArtAssets4/music/musicLink" to="." method="_on_music_link_pressed"]
+[connection signal="pressed" from="HBoxContainer/ArtAssets4/dev/devLink" to="." method="_on_dev_link_pressed"]

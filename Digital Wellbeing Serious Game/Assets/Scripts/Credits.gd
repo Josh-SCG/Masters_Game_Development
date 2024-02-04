@@ -76,3 +76,7 @@ func _on_d_game_bg_link_pressed():
 
 func _on_music_link_pressed():
 	OS.shell_open("https://opengameart.org/users/joth")
+
+
+func _on_dev_link_pressed():
+	OS.shell_open("https://josh-scg.itch.io")

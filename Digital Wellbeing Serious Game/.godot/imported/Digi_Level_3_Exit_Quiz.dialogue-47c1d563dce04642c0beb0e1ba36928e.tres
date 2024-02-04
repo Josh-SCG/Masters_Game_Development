@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_oj74p"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1f0xb"]
 
 [resource]
-script = ExtResource("1_oj74p")
+script = ExtResource("1_1f0xb")
 titles = {
 "2218922117/Q10a": "574",
 "2218922117/Q10b": "583",
@@ -718,6 +718,22 @@ lines = {
 "1043": {
 "mutation": {
 "expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Music"
+}, {
+"type": "dot"
+}, {
+"function": "play_song_menu",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "1044",
+"type": "mutation"
+},
+"1044": {
+"mutation": {
+"expression": Array[Dictionary]([{
 "function": "get_tree",
 "type": "function",
 "value": Array[Array]([])
@@ -732,10 +748,10 @@ lines = {
 }])])
 }])
 },
-"next_id": "1045",
+"next_id": "1046",
 "type": "mutation"
 },
-"1045": {
+"1046": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
