@@ -1,7 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6ykaihr2oq0v"]
+[gd_scene load_steps=9 format=3 uid="uid://b6ykaihr2oq0v"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/NPC.gd" id="1_5ly2p"]
+[ext_resource type="Script" path="res://Assets/Scripts/Signs.gd" id="1_eb83w"]
 [ext_resource type="Texture2D" uid="uid://de3hrg3wj6bag" path="res://Assets/Misc Art/painting.png" id="2_4tep5"]
+[ext_resource type="Texture2D" uid="uid://bno5nfyxyxyuv" path="res://Assets/Misc Art/paintingAnim.png" id="2_tw0vh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rphm7"]
+atlas = ExtResource("2_tw0vh")
+region = Rect2(0, 0, 81, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vue1b"]
+atlas = ExtResource("2_tw0vh")
+region = Rect2(81, 0, 81, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fmhp8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rphm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rphm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vue1b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ah282"]
 size = Vector2(75, 105)
@@ -15,9 +41,18 @@ texture_filter = 1
 collision_layer = 2
 collision_mask = 2
 monitoring = false
-script = ExtResource("1_5ly2p")
+script = ExtResource("1_eb83w")
 
-[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 10)
+scale = Vector2(1.3, 1.3)
+sprite_frames = SubResource("SpriteFrames_fmhp8")
+autoplay = "default"
+frame_progress = 0.510771
+offset = Vector2(0, -16)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(0, 10)
 scale = Vector2(1.3, 1.3)

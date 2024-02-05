@@ -1,8 +1,9 @@
+Sprite2D
+AnimatedSprite2D
 RichTextLabel
 ColorRect
 TextureButton
 Button
-Sprite2D
 Node2D
 AudioStreamPlayer
 CollisionShape2D
@@ -11,4 +12,3 @@ Timer
 RigidBody2D
 CharacterBody2D
 HBoxContainer
-TextureRect

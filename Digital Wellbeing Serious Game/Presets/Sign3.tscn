@@ -1,7 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://bionn6d76dcom"]
+[gd_scene load_steps=9 format=3 uid="uid://bionn6d76dcom"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/NPC.gd" id="1_igb78"]
+[ext_resource type="Script" path="res://Assets/Scripts/Signs.gd" id="1_ybdkg"]
 [ext_resource type="Texture2D" uid="uid://cblxtp7v2ffc6" path="res://Assets/Misc Art/board.png" id="2_62sp8"]
+[ext_resource type="Texture2D" uid="uid://c3uloliywoj8" path="res://Assets/Misc Art/boardAnim.png" id="2_voxhu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxr7b"]
+atlas = ExtResource("2_voxhu")
+region = Rect2(0, 0, 64, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt3me"]
+atlas = ExtResource("2_voxhu")
+region = Rect2(64, 0, 64, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nltdf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxr7b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxr7b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bt3me")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ah282"]
 size = Vector2(69, 73)
@@ -14,11 +40,19 @@ texture_filter = 1
 collision_layer = 2
 collision_mask = 2
 monitoring = false
-script = ExtResource("1_igb78")
+script = ExtResource("1_ybdkg")
 
-[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(0, 10)
+scale = Vector2(1.3, 1.3)
+sprite_frames = SubResource("SpriteFrames_nltdf")
+autoplay = "default"
+offset = Vector2(0, -16)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.75, 10)
 scale = Vector2(1.3, 1.3)
 texture = ExtResource("2_62sp8")
 offset = Vector2(0, -16)

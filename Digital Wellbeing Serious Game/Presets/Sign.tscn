@@ -1,7 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://f3ptakqo4cwc"]
+[gd_scene load_steps=9 format=3 uid="uid://f3ptakqo4cwc"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/NPC.gd" id="1_cxeq6"]
-[ext_resource type="Texture2D" uid="uid://cdjteur4ix35n" path="res://Assets/Misc Art/signpost0.png" id="2_4b0st"]
+[ext_resource type="Script" path="res://Assets/Scripts/Signs.gd" id="1_ik81n"]
+[ext_resource type="Texture2D" uid="uid://bs0ty7cf852ra" path="res://Assets/Misc Art/signpostAnim.png" id="2_rwck8"]
+[ext_resource type="Texture2D" uid="uid://crr7pkfdohdqd" path="res://Assets/Misc Art/signpost1.png" id="3_ww1jf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asjpc"]
+atlas = ExtResource("2_rwck8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31bmg"]
+atlas = ExtResource("2_rwck8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tow5m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asjpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asjpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31bmg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ah282"]
 size = Vector2(51.9998, 56.0002)
@@ -14,13 +40,21 @@ texture_filter = 1
 collision_layer = 2
 collision_mask = 2
 monitoring = false
-script = ExtResource("1_cxeq6")
+script = ExtResource("1_ik81n")
 
-[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(0, 10)
 scale = Vector2(1.3, 1.3)
-texture = ExtResource("2_4b0st")
+sprite_frames = SubResource("SpriteFrames_tow5m")
+autoplay = "default"
+offset = Vector2(0, -16)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 10)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("3_ww1jf")
 offset = Vector2(0, -16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
