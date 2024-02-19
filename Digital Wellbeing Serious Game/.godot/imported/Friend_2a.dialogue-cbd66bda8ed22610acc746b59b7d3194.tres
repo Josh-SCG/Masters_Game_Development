@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_exxu5"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_g03pg"]
 
 [resource]
-script = ExtResource("1_exxu5")
+script = ExtResource("1_g03pg")
 titles = {
 "init": "9",
-"spoken": "29",
+"spoken": "27",
 "start": "3"
 }
 character_names = PackedStringArray("Friend", "Phone")
@@ -110,21 +110,12 @@ lines = {
 "character": "Friend",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "24",
-"text": "What was I saying? Oh yea, I was just complaining to you. Make no mind of it.",
+"text": "What was I saying? Oh yeah, I was just complaining to you. Make no mind of it.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "What was I saying? Oh yea, I was just complaining to you. Make no mind of it.",
+"translation_key": "What was I saying? Oh yeah, I was just complaining to you. Make no mind of it.",
 "type": "dialogue"
 },
 "24": {
-"character": "Friend",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "25",
-"text": "Anyway, I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Anyway, I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!",
-"type": "dialogue"
-},
-"25": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -142,13 +133,22 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "29",
+"next_id": "27",
 "type": "mutation"
 },
-"27": {
-"next_id": "29",
+"26": {
+"next_id": "27",
 "text": "spoken",
 "type": "title"
+},
+"27": {
+"character": "Friend",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "29",
+"text": "I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!",
+"type": "dialogue"
 },
 "29": {
 "is_snippet": false,
@@ -209,7 +209,7 @@ lines = {
 },
 "6": {
 "is_snippet": false,
-"next_id": "29",
+"next_id": "27",
 "parent_id": "5",
 "type": "goto"
 },

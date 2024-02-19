@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_23uja"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_gqcao"]
 
 [resource]
-script = ExtResource("1_23uja")
+script = ExtResource("1_gqcao")
 titles = {
 "2321638926/Q10a": "574",
 "2321638926/Q10b": "583",
@@ -396,9 +396,9 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1018",
-"text": "Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, don't you?",
+"text": "Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, right?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, don't you?",
+"translation_key": "Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, right?",
 "type": "dialogue"
 },
 "1018": {
@@ -480,7 +480,7 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1026",
-"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -493,7 +493,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.testScore}}"
 }]),
-"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
 "type": "dialogue"
 },
 "1026": {
@@ -540,9 +540,9 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1033",
-"text": "Great, I'll start up a new test for you.",
+"text": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Great, I'll start up a new test for you.",
+"translation_key": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "type": "dialogue"
 },
 "1033": {
@@ -663,7 +663,7 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1041",
-"text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed {{Global.level2MiniScore}} GAME 2 SCORE. You did a great job!",
+"text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to correctly water the flowers {{Global.level2MiniScore}} times. You did a great job!",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -687,7 +687,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.level2MiniScore}}"
 }]),
-"translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed {{Global.level2MiniScore}} GAME 2 SCORE. You did a great job!",
+"translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to correctly water the flowers {{Global.level2MiniScore}} times. You did a great job!",
 "type": "dialogue"
 },
 "1041": {

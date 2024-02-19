@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4a41g"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vplk2"]
 
 [resource]
-script = ExtResource("1_4a41g")
+script = ExtResource("1_vplk2")
 titles = {
 "inProgress": "27",
 "init": "12",
@@ -149,9 +149,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "24",
 "parent_id": "22",
-"text": "Alright. Don't wander off before you speak to me about this place.",
+"text": "Alright. I would advise against wandering off before you speak to me about this place.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Alright. Don't wander off before you speak to me about this place.",
+"translation_key": "Alright. I would advise against wandering off before you speak to me about this place.",
 "type": "dialogue"
 },
 "24": {
@@ -490,9 +490,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "57",
 "parent_id": "55",
-"text": "Great! Let's go!",
+"text": "Great! Let us go!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Great! Let's go!",
+"translation_key": "Great! Let us go!",
 "type": "dialogue"
 },
 "57": {
@@ -520,9 +520,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "60",
 "parent_id": "55",
-"text": "Actually, why don't we play a little game first.",
+"text": "Actually, why do we not play a little game first.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Actually, why don't we play a little game first.",
+"translation_key": "Actually, why do we not play a little game first.",
 "type": "dialogue"
 },
 "6": {

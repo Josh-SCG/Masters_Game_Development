@@ -1,8 +1,2 @@
-res://Assets/Level Scenes/Level 1/level_1.tscn
 res://Assets/Scripts/Shaders/static.gdshader
 res://Assets/Scripts/Shaders/endless_sprite.gdshader
-res://Presets/Sign2.tscn
-res://Presets/Sign3.tscn
-res://Assets/Level Scenes/Level 2/level_2.tscn
-res://Assets/Level Scenes/Level 3/level_3.tscn
-res://Presets/Sign.tscn

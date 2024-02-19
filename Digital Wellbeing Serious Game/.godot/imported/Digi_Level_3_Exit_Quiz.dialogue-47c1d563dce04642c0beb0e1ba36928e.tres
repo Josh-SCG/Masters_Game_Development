@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1f0xb"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_hhvse"]
 
 [resource]
-script = ExtResource("1_1f0xb")
+script = ExtResource("1_hhvse")
 titles = {
 "2218922117/Q10a": "574",
 "2218922117/Q10b": "583",
@@ -480,7 +480,7 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1026",
-"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -493,7 +493,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.testScore}}"
 }]),
-"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
 "type": "dialogue"
 },
 "1026": {
@@ -540,9 +540,9 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1033",
-"text": "Great, I'll start up a new test for you.",
+"text": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Great, I'll start up a new test for you.",
+"translation_key": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "type": "dialogue"
 },
 "1033": {

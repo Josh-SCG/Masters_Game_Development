@@ -14,7 +14,7 @@ Digibot: I heard you have some assignment, you better go see what it is on the b
 ~ notHidden
 Digibot: [[Hello|Hi|Howdy]]!
 Digibot: So the assignment is about a couple comman security issues or important information? And you've decided on a few?
-Digibot: It's a good thing you know a robot then since my immune system is basically only security code and algorithms!
+Digibot: It is a good thing you know a robot then since my immune system is basically only security code and algorithms!
 Digibot: I can probably set up a VR environment for you to learn about some topics if you like?
 - Yes
 	Digibot: Great! I will set it up quickly and take you there.
@@ -29,7 +29,7 @@ Digibot: I can probably set up a VR environment for you to learn about some topi
 	set Global.initLevelConvo = 0
 	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/level_3.tscn")
 - No
-	Digibot: Alright. Maybe just read over the assignment again to make sure you understand it. I can really help you with it.. I'll go into power saving in the meantime and clean some RAM.
+	Digibot: Alright. Maybe just read over the assignment again to make sure you understand it. I can really help you with it.. I will go into power saving in the meantime and clean some RAM.
 	=> END!
 
 => END!

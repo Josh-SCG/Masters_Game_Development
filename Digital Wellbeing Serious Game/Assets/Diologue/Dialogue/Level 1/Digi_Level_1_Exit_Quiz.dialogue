@@ -2,7 +2,7 @@ import "res://Assets/Diologue/Question Files/PhysicalQuestions.dialogue" as Phys
 
 ~ start
 Digibot: [[Hello|Hi|Howdy]]!
-Digibot: Well, that was a fun outing but I think it's time to see if you remember what all those signs said, don't you?
+Digibot: Well, that was a fun outing but I think it's time to see if you remember what all those signs said, right?
 - Yes
 	Digibot: Great! Then I'll ask you a couple of questions about it. 
 	=>< PhysQ/physicalQ1
@@ -10,14 +10,14 @@ Digibot: Well, that was a fun outing but I think it's time to see if you remembe
 	Digibot: Well, you know what they say, illusion of choice and all...
 	=>< PhysQ/physicalQ1
 
-Digibot: Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.
+Digibot: Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.
 - Try again
 	=> testRetake
 - We can part ways.
 	=> testShowScore
 
 ~ testRetake
-Digibot: Great, I'll start up a new test for you.
+Digibot: Great, I'll start up a new test for you. Remember, this is the last chane so do your best!
 set Global.testScore = 0
 =>< PhysQ/physicalQ1
 

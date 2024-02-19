@@ -20,12 +20,12 @@ Digibot: Are you ready to start learning?
 	do Global.initLevelConvo = 1
 	=> END!
 - No
-	Digibot: Alright. Don't wander off before you speak to me about this place.
+	Digibot: Alright. I would advise against wandering off before you speak to me about this place.
 	=> END!
 
 ~ inProgress
 Digibot: Remember, you're looking for paintings around the house with information about digital wellbeing on them.
-Digibot: There should be a few more signs around here. You've seen {{Global.level2SignsSeen}}.
+Digibot: There should be a few more signs around here. You have seen {{Global.level2SignsSeen}}.
 
 do Global.randHint = Global.randomHint(Global.level2Signs)
 if Global.randHint == 1
@@ -49,16 +49,16 @@ else
 => END!
 
 ~ leave
-Digibot: It looks like you've seen all the painting here in the house.
+Digibot: It looks like you have seen all the painting here in the house.
 Digibot: Hopefully you found them insightful.
 Digibot: If you're done here, we can head back.
 - We can head back now
-	Digibot: Great! Let's go!
+	Digibot: Great! Let us go!
 	Digibot: ... 
 	Digibot: ...
-	Digibot: Actually, why don't we play a little game first.
-	Digibot: GAME TEXT! GAME TEXT! GAME TEXT! GAME TEXT! GAME TEXT!
-	Digibot: GAME COMPLETE STATE!
+	Digibot: Actually, why do we not play a little game first.
+	Digibot: There is a little garden outside and the flowers need some watering. Just be aware that each flower needs a specific type of water filled with nutrients specific to that flower. 
+	Digibot: All you have to do is give each flower the right type until all of them bloom fully. Just do not use the wrong water for a flower as it will wilt a bit if you do. Once you get all flowers bloomed we can go!
 	set Global.initLevelConvo = 0
 	do Music.play_song_2mg()
 	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn")

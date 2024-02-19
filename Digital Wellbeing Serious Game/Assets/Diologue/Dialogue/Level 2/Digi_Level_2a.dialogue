@@ -1,6 +1,5 @@
 ~ start
 
-
 if Global.initLevelConvo == 0
 	=> hidden
 elif Global.initLevelConvo == 1
@@ -20,7 +19,7 @@ Digibot: A friend of mine recently got hold of some paintings that explore this 
 	set Global.initLevelConvo = 0
 	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/level_2.tscn")
 - No
-	Digibot: Alright. Admire the park here a bit more then and speak to me when you're ready to leave. I'll go into power saving in the meantime and clean some RAM.
+	Digibot: Alright. Admire the park here a bit more then and speak to me when you are ready to leave. I will go into power saving in the meantime and clean some RAM.
 	=> END!
 
 => END!

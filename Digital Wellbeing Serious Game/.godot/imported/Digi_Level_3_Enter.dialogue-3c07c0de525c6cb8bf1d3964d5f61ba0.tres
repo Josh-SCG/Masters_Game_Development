@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fb85b"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_lk4sg"]
 
 [resource]
-script = ExtResource("1_fb85b")
+script = ExtResource("1_lk4sg")
 titles = {
 "inProgress": "28",
 "init": "12",
@@ -27,18 +27,18 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "13",
-"text": "We've made it to the VR environment.",
+"text": "We have made it to the VR environment.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "We've made it to the VR environment.",
+"translation_key": "We have made it to the VR environment.",
 "type": "dialogue"
 },
 "13": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "14",
-"text": "This is where you'll learn about the security aspects of digital wellbeing.",
+"text": "This is where you will learn about the security aspects of digital wellbeing.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "This is where you'll learn about the security aspects of digital wellbeing.",
+"translation_key": "This is where you will learn about the security aspects of digital wellbeing.",
 "type": "dialogue"
 },
 "14": {
@@ -159,9 +159,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "25",
 "parent_id": "23",
-"text": "Alright. Don't wander off before you speak to me about this place.",
+"text": "Alright. I would advise against wandering off before you speak to me about this place.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Alright. Don't wander off before you speak to me about this place.",
+"translation_key": "Alright. I would advise against wandering off before you speak to me about this place.",
 "type": "dialogue"
 },
 "25": {
@@ -179,9 +179,9 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "29",
-"text": "Remember, you're looking for conspiracy boards around here with information about digital wellbeing on them.",
+"text": "Remember, you are looking for conspiracy boards around here with information about digital wellbeing on them.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Remember, you're looking for conspiracy boards around here with information about digital wellbeing on them.",
+"translation_key": "Remember, you are looking for conspiracy boards around here with information about digital wellbeing on them.",
 "type": "dialogue"
 },
 "29": {

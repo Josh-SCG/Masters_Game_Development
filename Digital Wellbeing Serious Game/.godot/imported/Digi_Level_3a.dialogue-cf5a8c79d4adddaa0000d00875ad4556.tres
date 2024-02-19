@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_xuw8t"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_tcmne"]
 
 [resource]
-script = ExtResource("1_xuw8t")
+script = ExtResource("1_tcmne")
 titles = {
 "gottaRead": "9",
 "notHidden": "15",
@@ -67,9 +67,9 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "18",
-"text": "It's a good thing you know a robot then since my immune system is basically only security code and algorithms!",
+"text": "It is a good thing you know a robot then since my immune system is basically only security code and algorithms!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "It's a good thing you know a robot then since my immune system is basically only security code and algorithms!",
+"translation_key": "It is a good thing you know a robot then since my immune system is basically only security code and algorithms!",
 "type": "dialogue"
 },
 "18": {
@@ -259,9 +259,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "33",
 "parent_id": "31",
-"text": "Alright. Maybe just read over the assignment again to make sure you understand it. I can really help you with it.. I'll go into power saving in the meantime and clean some RAM.",
+"text": "Alright. Maybe just read over the assignment again to make sure you understand it. I can really help you with it.. I will go into power saving in the meantime and clean some RAM.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Alright. Maybe just read over the assignment again to make sure you understand it. I can really help you with it.. I'll go into power saving in the meantime and clean some RAM.",
+"translation_key": "Alright. Maybe just read over the assignment again to make sure you understand it. I can really help you with it.. I will go into power saving in the meantime and clean some RAM.",
 "type": "dialogue"
 },
 "33": {

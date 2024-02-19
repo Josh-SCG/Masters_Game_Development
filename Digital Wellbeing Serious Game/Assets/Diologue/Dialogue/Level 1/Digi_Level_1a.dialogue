@@ -1,10 +1,9 @@
 ~ start
 Digibot: [[Hello|Hi|Howdy]]!
 Digibot: I was alerted to your discomfort.
-You: Yes, I've been sitting at my desk for a few hours now and my back and eyes hurt a bit.
+Digibot: You have been sitting at your desk for a few hours now and your back and eyes hurt a bit.
 Digibot: You should move around a bit while sitting at the computer for a long time you know. 
 Digibot: Anyway, we should go and let you learn more about your physical wellbeing while using technology.
-You: And where would we go for that?
 Digibot: I know just the place. Are you ready to go?
 - Yes
 	Digibot: Great! Then we're off!

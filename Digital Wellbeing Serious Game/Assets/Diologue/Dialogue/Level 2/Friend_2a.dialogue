@@ -20,10 +20,10 @@ Friend: ...
 Friend: ...
 Friend: ...
 Friend: Sorry, just had to check what that was.
-Friend: What was I saying? Oh yea, I was just complaining to you. Make no mind of it.
-Friend: Anyway, I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!
+Friend: What was I saying? Oh yeah, I was just complaining to you. Make no mind of it.
 set Global.initLevelConvo = 1
 
 ~ spoken
+Friend: I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!
 
 => END

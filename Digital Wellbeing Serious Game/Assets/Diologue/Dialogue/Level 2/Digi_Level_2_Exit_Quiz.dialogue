@@ -3,7 +3,7 @@ import "res://Assets/Diologue/Question Files/MentalQuestions.dialogue" as MentQ
 ~ start
 Digibot: [[Hello|Hi|Howdy]]!
 set Global.currentLevel = 2
-Digibot: Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, don't you?
+Digibot: Well, that was a fun outing but I think it's time to see if you remember what all those paintings said, right?
 - Yes
 	Digibot: Great! Then I'll ask you a couple of questions about it. 
 	=>< MentQ/mentalQ1
@@ -11,14 +11,14 @@ Digibot: Well, that was a fun outing but I think it's time to see if you remembe
 	Digibot: Well, you know what they say, illusion of choice and all...
 	=>< MentQ/mentalQ1
 
-Digibot: Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.
+Digibot: Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.
 - Try again
 	=> testRetake
 - We can part ways.
 	=> testShowScore
 
 ~ testRetake
-Digibot: Great, I'll start up a new test for you.
+Digibot: Great, I'll start up a new test for you. Remember, this is the last chane so do your best!
 set Global.testScore = 0
 =>< MentQ/mentalQ1
 
@@ -26,7 +26,7 @@ set Global.testScore = 0
 do Global.setScores()
 set Global.levelComplete2 = 1
 set Global.achievementLevelFinish = 0
-Digibot: Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed {{Global.level2MiniScore}} GAME 2 SCORE. You did a great job!
+Digibot: Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to correctly water the flowers {{Global.level2MiniScore}} times. You did a great job!
 Digibot: Bye now!
 do Global.resetLevelProgress()
 do Music.play_song_menu()

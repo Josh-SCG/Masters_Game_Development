@@ -20,7 +20,7 @@ Digibot: Are you ready to start learning?
 	do Global.initLevelConvo = 1
 	=> END!
 - No
-	Digibot: Alright. Don't wander off before you speak to me about this place.
+	Digibot: Alright. I would advise against wandering off before you speak to me about this place.
 	=> END!
 
 ~ inProgress
@@ -53,10 +53,10 @@ Digibot: It looks like you've seen all the signs here on the farm.
 Digibot: Hopefully you found them insightful.
 Digibot: If you're done here, we can head back.
 - We can head back now
-	Digibot: Great! Let's go!
+	Digibot: Great! Let us go!
 	Digibot: ... 
 	Digibot: ...
-	Digibot: Actually, why don't we play a little game first.
+	Digibot: Actually, why do we not play a little game first.
 	Digibot: It's simple, you just need to run around and collect some of my data that leaked out on the way here. It should look like laptops to you. You also just need to be careful not to trip over any signs as you do this.
 	Digibot: If you do trip on a sign I'll just take us back to your room.
 	set Global.initLevelConvo = 0

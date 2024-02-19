@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fbaer"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_du181"]
 
 [resource]
-script = ExtResource("1_fbaer")
+script = ExtResource("1_du181")
 titles = {
 "start": "2"
 }
-character_names = PackedStringArray("Digibot", "You")
+character_names = PackedStringArray("Digibot")
 first_title = "2"
 lines = {
 "1": {
@@ -16,16 +16,6 @@ lines = {
 "type": "title"
 },
 "10": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "11",
-"parent_id": "9",
-"text": "Great! Then we're off!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Great! Then we're off!",
-"type": "dialogue"
-},
-"11": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "get_tree",
@@ -42,35 +32,35 @@ lines = {
 }])])
 }])
 },
-"next_id": "16",
-"parent_id": "9",
+"next_id": "15",
+"parent_id": "8",
 "type": "mutation"
 },
-"12": {
-"next_id": "13",
-"next_id_after": "16",
+"11": {
+"next_id": "12",
+"next_id_after": "15",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"13": {
+"12": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "14",
-"parent_id": "12",
+"next_id": "13",
+"parent_id": "11",
 "text": "Alright. Admire the room a bit more then and speak to me when you're ready to leave. I'll go into power saving in the meantime and clean some RAM.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Alright. Admire the room a bit more then and speak to me when you're ready to leave. I'll go into power saving in the meantime and clean some RAM.",
 "type": "dialogue"
 },
-"14": {
+"13": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "12",
+"parent_id": "11",
 "type": "goto"
 },
-"16": {
+"15": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
@@ -94,12 +84,12 @@ lines = {
 "type": "dialogue"
 },
 "4": {
-"character": "You",
+"character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "5",
-"text": "Yes, I've been sitting at my desk for a few hours now and my back and eyes hurt a bit.",
+"text": "You have been sitting at your desk for a few hours now and your back and eyes hurt a bit.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yes, I've been sitting at my desk for a few hours now and my back and eyes hurt a bit.",
+"translation_key": "You have been sitting at your desk for a few hours now and your back and eyes hurt a bit.",
 "type": "dialogue"
 },
 "5": {
@@ -121,31 +111,32 @@ lines = {
 "type": "dialogue"
 },
 "7": {
-"character": "You",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "8",
-"text": "And where would we go for that?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "And where would we go for that?",
-"type": "dialogue"
-},
-"8": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "9",
+"next_id": "8",
 "text": "I know just the place. Are you ready to go?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I know just the place. Are you ready to go?",
 "type": "dialogue"
 },
-"9": {
-"next_id": "10",
-"next_id_after": "16",
-"responses": PackedStringArray("9", "12"),
+"8": {
+"next_id": "9",
+"next_id_after": "15",
+"responses": PackedStringArray("8", "11"),
 "text": "Yes",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes",
 "type": "response"
+},
+"9": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "10",
+"parent_id": "8",
+"text": "Great! Then we're off!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Great! Then we're off!",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

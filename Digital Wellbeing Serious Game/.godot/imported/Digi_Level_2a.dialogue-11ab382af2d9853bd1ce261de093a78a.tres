@@ -1,19 +1,19 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_emrpg"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_auwkn"]
 
 [resource]
-script = ExtResource("1_emrpg")
+script = ExtResource("1_auwkn")
 titles = {
-"hidden": "10",
-"notHidden": "15",
-"start": "4"
+"hidden": "9",
+"notHidden": "14",
+"start": "3"
 }
 character_names = PackedStringArray("Digibot")
-first_title = "4"
+first_title = "3"
 lines = {
 "1": {
-"next_id": "4",
+"next_id": "3",
 "text": "start",
 "type": "title"
 },
@@ -21,77 +21,68 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "11",
-"text": "Uhm.....",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Uhm.....",
-"type": "dialogue"
-},
-"11": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "12",
 "text": "You're not supposed to see me yet. How about you go speak to your friend over there first.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You're not supposed to see me yet. How about you go speak to your friend over there first.",
 "type": "dialogue"
 },
-"12": {
+"11": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
 },
-"14": {
-"next_id": "15",
+"13": {
+"next_id": "14",
 "text": "notHidden",
 "type": "title"
+},
+"14": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "15",
+"text": "[[Hello|Hi|Howdy]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hello|Hi|Howdy]]!",
+"type": "dialogue"
 },
 "15": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "16",
-"text": "[[Hello|Hi|Howdy]]!",
+"text": "So I heard your friend there is not doing so well with social media and the news articles they are seeing. Managing that type of stuff in regards to technology is just as important as managing it otherwise.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hello|Hi|Howdy]]!",
+"translation_key": "So I heard your friend there is not doing so well with social media and the news articles they are seeing. Managing that type of stuff in regards to technology is just as important as managing it otherwise.",
 "type": "dialogue"
 },
 "16": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "17",
-"text": "So I heard your friend there is not doing so well with social media and the news articles they are seeing. Managing that type of stuff in regards to technology is just as important as managing it otherwise.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "So I heard your friend there is not doing so well with social media and the news articles they are seeing. Managing that type of stuff in regards to technology is just as important as managing it otherwise.",
-"type": "dialogue"
-},
-"17": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "18",
 "text": "A friend of mine recently got hold of some paintings that explore this type of stuff. Are you ready to go?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "A friend of mine recently got hold of some paintings that explore this type of stuff. Are you ready to go?",
 "type": "dialogue"
 },
-"18": {
-"next_id": "19",
-"next_id_after": "26",
-"responses": PackedStringArray("18", "22"),
+"17": {
+"next_id": "18",
+"next_id_after": "25",
+"responses": PackedStringArray("17", "21"),
 "text": "Yes",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes",
 "type": "response"
 },
-"19": {
+"18": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "20",
-"parent_id": "18",
+"next_id": "19",
+"parent_id": "17",
 "text": "Great! Then we're off!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Great! Then we're off!",
 "type": "dialogue"
 },
-"20": {
+"19": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -109,11 +100,11 @@ lines = {
 "value": 0
 }])
 },
-"next_id": "21",
-"parent_id": "18",
+"next_id": "20",
+"parent_id": "17",
 "type": "mutation"
 },
-"21": {
+"20": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "get_tree",
@@ -130,40 +121,40 @@ lines = {
 }])])
 }])
 },
-"next_id": "26",
-"parent_id": "18",
+"next_id": "25",
+"parent_id": "17",
 "type": "mutation"
 },
-"22": {
-"next_id": "23",
-"next_id_after": "26",
+"21": {
+"next_id": "22",
+"next_id_after": "25",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"23": {
+"22": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "24",
-"parent_id": "22",
-"text": "Alright. Admire the park here a bit more then and speak to me when you're ready to leave. I'll go into power saving in the meantime and clean some RAM.",
+"next_id": "23",
+"parent_id": "21",
+"text": "Alright. Admire the park here a bit more then and speak to me when you are ready to leave. I will go into power saving in the meantime and clean some RAM.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Alright. Admire the park here a bit more then and speak to me when you're ready to leave. I'll go into power saving in the meantime and clean some RAM.",
+"translation_key": "Alright. Admire the park here a bit more then and speak to me when you are ready to leave. I will go into power saving in the meantime and clean some RAM.",
 "type": "dialogue"
 },
-"24": {
+"23": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "22",
+"parent_id": "21",
 "type": "goto"
 },
-"26": {
+"25": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
 },
-"4": {
+"3": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -181,18 +172,18 @@ lines = {
 "value": 0
 }])
 },
-"next_conditional_id": "6",
-"next_id": "5",
-"next_id_after": "10",
+"next_conditional_id": "5",
+"next_id": "4",
+"next_id_after": "9",
 "type": "condition"
 },
-"5": {
+"4": {
 "is_snippet": false,
-"next_id": "10",
-"parent_id": "4",
+"next_id": "9",
+"parent_id": "3",
 "type": "goto"
 },
-"6": {
+"5": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -210,21 +201,30 @@ lines = {
 "value": 1
 }])
 },
-"next_conditional_id": "10",
-"next_id": "7",
-"next_id_after": "10",
+"next_conditional_id": "9",
+"next_id": "6",
+"next_id_after": "9",
 "type": "condition"
 },
-"7": {
+"6": {
 "is_snippet": false,
-"next_id": "15",
-"parent_id": "6",
+"next_id": "14",
+"parent_id": "5",
 "type": "goto"
 },
-"9": {
-"next_id": "10",
+"8": {
+"next_id": "9",
 "text": "hidden",
 "type": "title"
+},
+"9": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "10",
+"text": "Uhm.....",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Uhm.....",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

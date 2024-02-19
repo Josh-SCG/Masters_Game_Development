@@ -9,8 +9,8 @@ elif Global.initLevelConvo == 2
 	=> leave
 
 ~ init
-Digibot: We've made it to the VR environment. 
-Digibot: This is where you'll learn about the security aspects of digital wellbeing. 
+Digibot: We have made it to the VR environment. 
+Digibot: This is where you will learn about the security aspects of digital wellbeing. 
 Digibot: Are you ready to start learning? 
 - Yes
 	Digibot: Great! There are a bunch of conspiracy boards around the area. 
@@ -21,11 +21,11 @@ Digibot: Are you ready to start learning?
 	do Global.initLevelConvo = 1
 	=> END!
 - No
-	Digibot: Alright. Don't wander off before you speak to me about this place.
+	Digibot: Alright. I would advise against wandering off before you speak to me about this place.
 	=> END!
 
 ~ inProgress
-Digibot: Remember, you're looking for conspiracy boards around here with information about digital wellbeing on them.
+Digibot: Remember, you are looking for conspiracy boards around here with information about digital wellbeing on them.
 Digibot: There should be a few more boards around here. You've seen {{Global.level3SignsSeen}}.
 
 do Global.randHint = Global.randomHint(Global.level3Signs)

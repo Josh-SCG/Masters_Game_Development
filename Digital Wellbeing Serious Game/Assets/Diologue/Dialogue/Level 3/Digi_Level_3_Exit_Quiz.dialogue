@@ -11,14 +11,14 @@ Digibot: Well, that was a fun activity but I think it's time to see if you remem
 	Digibot: Well, you know what they say, illusion of choice and all...
 	=>< SecQ/securityQ1
 
-Digibot: Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.
+Digibot: Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.
 - Try again
 	=> testRetake
 - We can part ways.
 	=> testShowScore
 
 ~ testRetake
-Digibot: Great, I'll start up a new test for you.
+Digibot: Great, I'll start up a new test for you. Remember, this is the last chane so do your best!
 set Global.testScore = 0
 =>< SecQ/securityQ1
 

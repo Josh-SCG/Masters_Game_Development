@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jd8cx"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_j0hbm"]
 
 [resource]
-script = ExtResource("1_jd8cx")
+script = ExtResource("1_j0hbm")
 titles = {
 "577489098/Q10a": "574",
 "577489098/Q10b": "583",
@@ -375,9 +375,9 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1017",
-"text": "Well, that was a fun outing but I think it's time to see if you remember what all those signs said, don't you?",
+"text": "Well, that was a fun outing but I think it's time to see if you remember what all those signs said, right?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Well, that was a fun outing but I think it's time to see if you remember what all those signs said, don't you?",
+"translation_key": "Well, that was a fun outing but I think it's time to see if you remember what all those signs said, right?",
 "type": "dialogue"
 },
 "1017": {
@@ -459,7 +459,7 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1025",
-"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -472,7 +472,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.testScore}}"
 }]),
-"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again if you like.",
+"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
 "type": "dialogue"
 },
 "1025": {
@@ -519,9 +519,9 @@ lines = {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "1032",
-"text": "Great, I'll start up a new test for you.",
+"text": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Great, I'll start up a new test for you.",
+"translation_key": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "type": "dialogue"
 },
 "1032": {
