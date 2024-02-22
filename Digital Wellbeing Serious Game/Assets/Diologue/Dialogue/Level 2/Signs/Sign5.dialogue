@@ -1,11 +1,17 @@
 ~ start
-You: [[It's one of those signs|A sign!|INFORMATION!]]!
+You: [[It's one of those paintings|A painting!|INFORMATION!]]!
+You: There's a note explaining how the painter came up with it.
 
 ~ sign
-Sign: Mental Digital Wellbeing Information #5:
+Note: Mental Digital Wellbeing Information #4b:
+Note: This is the second half of a larger painting. It is meant to help people understand the importance of disconnecting.
+Note: Leaving a social media platform or not using your phone for some period of time is actually beneficial.
+Note: You won’t be bombarded by constant news or information and will feel less overwhelmed letting you rest easier and have a better peace of mind.
+Note: You will have more time for your hobbies, will be able to focus on your tasks and work better and be able to avoid distractions.
+Note: Everyone is different and you must be aware that leaving technology and the internet alone for a while might not bring you these benefits and as such you should find what works for you.
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the note?
 - Yes
 	=> sign
 - No

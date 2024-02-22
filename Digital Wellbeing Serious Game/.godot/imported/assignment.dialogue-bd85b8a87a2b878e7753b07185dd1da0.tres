@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_2uh07"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_yjvep"]
 
 [resource]
-script = ExtResource("1_2uh07")
+script = ExtResource("1_yjvep")
 titles = {
 "start": "3"
 }
@@ -113,9 +113,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "9",
 "parent_id": "4",
-"text": "You'll try look into social engineering, password security and phishing.",
+"text": "You'll try look into malware, password security and phishing.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "You'll try look into social engineering, password security and phishing.",
+"translation_key": "You'll try look into malware, password security and phishing.",
 "type": "dialogue"
 },
 "9": {

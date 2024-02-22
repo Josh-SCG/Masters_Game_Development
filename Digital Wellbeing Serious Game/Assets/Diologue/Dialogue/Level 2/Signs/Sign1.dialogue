@@ -1,11 +1,19 @@
 ~ start
-You: [[It's one of those signs|A sign!|INFORMATION!]]!
+You: [[It's one of those paintings|A painting!|INFORMATION!]]!
+You: There's a note explaining how the painter came up with it.
 
 ~ sign
-Sign: Mental Digital Wellbeing Information #1:
+Note: Mental Digital Wellbeing Information #1:
+Note: People can overuse the internet in a very negative way. Sometimes it turns into an addiction.
+Note: This painting shows a few abstractions of ways you can identify such an addiction but for clarity this note will explain some of them.
+Note: 1. As with most addictions, the person may have withdrawal symptoms when not using the internet.
+Note: 2. Loss of self-control and an urge to use the internet.
+Note: 3. A loss of interest in other hobbies.
+Note: 4. Using the internet as a means of escape as to act as a relief for a negative mood.
+Note: While this list, and painting is not exhaustive of the criteria, it is important to know that the severity of this can also vary.
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the note?
 - Yes
 	=> sign
 - No

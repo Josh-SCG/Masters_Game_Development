@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7bxd2"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0cqlq"]
 
 [resource]
-script = ExtResource("1_7bxd2")
+script = ExtResource("1_0cqlq")
 titles = {
 "sign": "5",
 "start": "2"
@@ -16,21 +16,60 @@ lines = {
 "text": "start",
 "type": "title"
 },
-"10": {
+"12": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "achievementSign"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "13",
+"type": "mutation"
+},
+"13": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "14",
+"text": "Do you want to re-read the sign?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you want to re-read the sign?",
+"type": "dialogue"
+},
+"14": {
+"next_id": "15",
+"next_id_after": "24",
+"responses": PackedStringArray("14", "16"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"15": {
 "is_snippet": false,
 "next_id": "5",
-"parent_id": "9",
+"parent_id": "14",
 "type": "goto"
 },
-"11": {
-"next_id": "12",
-"next_id_after": "19",
+"16": {
+"next_id": "17",
+"next_id_after": "24",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"12": {
+"17": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -65,11 +104,11 @@ lines = {
 }])])
 }])
 },
-"next_id": "13",
-"parent_id": "11",
+"next_id": "18",
+"parent_id": "16",
 "type": "mutation"
 },
-"13": {
+"18": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -81,13 +120,13 @@ lines = {
 "value": "signCheck"
 }])
 },
-"next_conditional_id": "15",
-"next_id": "14",
-"next_id_after": "15",
-"parent_id": "11",
+"next_conditional_id": "20",
+"next_id": "19",
+"next_id_after": "20",
+"parent_id": "16",
 "type": "condition"
 },
-"14": {
+"19": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -105,11 +144,20 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "15",
-"parent_id": "13",
+"next_id": "20",
+"parent_id": "18",
 "type": "mutation"
 },
-"15": {
+"2": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "5",
+"text": "[[It's one of those signs|A sign!|INFORMATION!]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[It's one of those signs|A sign!|INFORMATION!]]!",
+"type": "dialogue"
+},
+"20": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -127,13 +175,13 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "17",
-"next_id": "16",
-"next_id_after": "17",
-"parent_id": "11",
+"next_conditional_id": "22",
+"next_id": "21",
+"next_id_after": "22",
+"parent_id": "16",
 "type": "condition"
 },
-"16": {
+"21": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -151,29 +199,20 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "17",
-"parent_id": "15",
+"next_id": "22",
+"parent_id": "20",
 "type": "mutation"
 },
-"17": {
+"22": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "11",
+"parent_id": "16",
 "type": "goto"
 },
-"19": {
+"24": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
-},
-"2": {
-"character": "You",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "5",
-"text": "[[It's one of those signs|A sign!|INFORMATION!]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[It's one of those signs|A sign!|INFORMATION!]]!",
-"type": "dialogue"
 },
 "4": {
 "next_id": "5",
@@ -183,50 +222,47 @@ lines = {
 "5": {
 "character": "Sign",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "7",
+"next_id": "6",
 "text": "Physical Digital Wellbeing Information #4:",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Physical Digital Wellbeing Information #4:",
 "type": "dialogue"
 },
-"7": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "achievementSign"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 0
-}])
+"6": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"text": "While using a computer or smartphone may not be that physically taxing, it can still take a toll on your body. This is usually a result of bad posture or habits while using these devices.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "While using a computer or smartphone may not be that physically taxing, it can still take a toll on your body. This is usually a result of bad posture or habits while using these devices.",
+"type": "dialogue"
 },
+"7": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "8",
-"type": "mutation"
+"text": "The most common pain arises in the form neck, shoulder, back and wrist pain.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The most common pain arises in the form neck, shoulder, back and wrist pain.",
+"type": "dialogue"
 },
 "8": {
-"character": "You",
+"character": "Sign",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "9",
-"text": "Do you want to re-read the sign?",
+"text": "These types of pain can come about for many reasons such as hunching over while at a desk, prolonged typing on a phone, bad placement of screens, prolonged looking down at a phone.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Do you want to re-read the sign?",
+"translation_key": "These types of pain can come about for many reasons such as hunching over while at a desk, prolonged typing on a phone, bad placement of screens, prolonged looking down at a phone.",
 "type": "dialogue"
 },
 "9": {
-"next_id": "10",
-"next_id_after": "19",
-"responses": PackedStringArray("9", "11"),
-"text": "Yes",
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "12",
+"text": "The type of pain usually manifests as muscle tenderness or a dull pain in the respective areas.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yes",
-"type": "response"
+"translation_key": "The type of pain usually manifests as muscle tenderness or a dull pain in the respective areas.",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

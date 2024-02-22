@@ -2,10 +2,13 @@
 You: [[It's one of those boards|A board!|INFORMATION!]]!
 
 ~ sign
-Sign: Security Digital Wellbeing Information #2:
+Board: Security Digital Wellbeing Information #2:
+Board: Phishing is an attack that targets people as they can give crucial information away that would be more difficult to get from hacking a system.
+Board: These attacks can come in the form of emails, SMSs, social media messages or even websites so be vigilant!
+Board: Typically, they want to get a hold of your account information or banking details but can also get you to download malware.
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the board?
 - Yes
 	=> sign
 - No

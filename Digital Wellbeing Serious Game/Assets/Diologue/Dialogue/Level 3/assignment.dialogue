@@ -5,7 +5,7 @@ Board: The board has the details of your newest assignment written down on it. W
 	Board: Research Assignmnet #3: Common Security Issues.
 	Board: Submit a report on the most common types of security threats that most people either face or information they should be aware of.
 	You: You can't recall specifics of what you'll need but have a vague idea of the topics to cover.
-	You: You'll try look into social engineering, password security and phishing.
+	You: You'll try look into malware, password security and phishing.
 	do Global.initLevelConvo = 1
 	=> END!
 - No

@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1oqrw"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_25i0o"]
 
 [resource]
-script = ExtResource("1_1oqrw")
+script = ExtResource("1_25i0o")
 titles = {
-"sign": "5",
+"sign": "6",
 "start": "2"
 }
-character_names = PackedStringArray("You", "Sign")
+character_names = PackedStringArray("You", "Note")
 first_title = "2"
 lines = {
 "1": {
@@ -17,20 +17,77 @@ lines = {
 "type": "title"
 },
 "10": {
-"is_snippet": false,
-"next_id": "5",
-"parent_id": "9",
-"type": "goto"
+"character": "Note",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"text": "You will have more time for your hobbies, will be able to focus on your tasks and work better and be able to avoid distractions.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You will have more time for your hobbies, will be able to focus on your tasks and work better and be able to avoid distractions.",
+"type": "dialogue"
 },
 "11": {
-"next_id": "12",
-"next_id_after": "19",
+"character": "Note",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "13",
+"text": "Everyone is different and you must be aware that leaving technology and the internet alone for a while might not bring you these benefits and as such you should find what works for you.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Everyone is different and you must be aware that leaving technology and the internet alone for a while might not bring you these benefits and as such you should find what works for you.",
+"type": "dialogue"
+},
+"13": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "achievementSign"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "14",
+"type": "mutation"
+},
+"14": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "15",
+"text": "Do you want to re-read the note?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you want to re-read the note?",
+"type": "dialogue"
+},
+"15": {
+"next_id": "16",
+"next_id_after": "25",
+"responses": PackedStringArray("15", "17"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"16": {
+"is_snippet": false,
+"next_id": "6",
+"parent_id": "15",
+"type": "goto"
+},
+"17": {
+"next_id": "18",
+"next_id_after": "25",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"12": {
+"18": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -65,11 +122,11 @@ lines = {
 }])])
 }])
 },
-"next_id": "13",
-"parent_id": "11",
+"next_id": "19",
+"parent_id": "17",
 "type": "mutation"
 },
-"13": {
+"19": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -81,13 +138,22 @@ lines = {
 "value": "signCheck"
 }])
 },
-"next_conditional_id": "15",
-"next_id": "14",
-"next_id_after": "15",
-"parent_id": "11",
+"next_conditional_id": "21",
+"next_id": "20",
+"next_id_after": "21",
+"parent_id": "17",
 "type": "condition"
 },
-"14": {
+"2": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "3",
+"text": "[[It's one of those paintings|A painting!|INFORMATION!]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[It's one of those paintings|A painting!|INFORMATION!]]!",
+"type": "dialogue"
+},
+"20": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -105,11 +171,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "15",
-"parent_id": "13",
+"next_id": "21",
+"parent_id": "19",
 "type": "mutation"
 },
-"15": {
+"21": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -127,13 +193,13 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "17",
-"next_id": "16",
-"next_id_after": "17",
-"parent_id": "11",
+"next_conditional_id": "23",
+"next_id": "22",
+"next_id_after": "23",
+"parent_id": "17",
 "type": "condition"
 },
-"16": {
+"22": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -151,82 +217,70 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "17",
-"parent_id": "15",
+"next_id": "23",
+"parent_id": "21",
 "type": "mutation"
 },
-"17": {
+"23": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "11",
+"parent_id": "17",
 "type": "goto"
 },
-"19": {
+"25": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
 },
-"2": {
+"3": {
 "character": "You",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "5",
-"text": "[[It's one of those signs|A sign!|INFORMATION!]]!",
+"next_id": "6",
+"text": "There's a note explaining how the painter came up with it.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "[[It's one of those signs|A sign!|INFORMATION!]]!",
+"translation_key": "There's a note explaining how the painter came up with it.",
 "type": "dialogue"
 },
-"4": {
-"next_id": "5",
+"5": {
+"next_id": "6",
 "text": "sign",
 "type": "title"
 },
-"5": {
-"character": "Sign",
+"6": {
+"character": "Note",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "7",
-"text": "Mental Digital Wellbeing Information #5:",
+"text": "Mental Digital Wellbeing Information #4b:",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Mental Digital Wellbeing Information #5:",
+"translation_key": "Mental Digital Wellbeing Information #4b:",
 "type": "dialogue"
 },
 "7": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "achievementSign"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 0
-}])
-},
+"character": "Note",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "8",
-"type": "mutation"
+"text": "This is the second half of a larger painting. It is meant to help people understand the importance of disconnecting.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This is the second half of a larger painting. It is meant to help people understand the importance of disconnecting.",
+"type": "dialogue"
 },
 "8": {
-"character": "You",
+"character": "Note",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "9",
-"text": "Do you want to re-read the sign?",
+"text": "Leaving a social media platform or not using your phone for some period of time is actually beneficial.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Do you want to re-read the sign?",
+"translation_key": "Leaving a social media platform or not using your phone for some period of time is actually beneficial.",
 "type": "dialogue"
 },
 "9": {
+"character": "Note",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "10",
-"next_id_after": "19",
-"responses": PackedStringArray("9", "11"),
-"text": "Yes",
+"text": "You won’t be bombarded by constant news or information and will feel less overwhelmed letting you rest easier and have a better peace of mind.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yes",
-"type": "response"
+"translation_key": "You won’t be bombarded by constant news or information and will feel less overwhelmed letting you rest easier and have a better peace of mind.",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

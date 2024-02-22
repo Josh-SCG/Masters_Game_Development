@@ -2,10 +2,14 @@
 You: [[It's one of those boards|A board!|INFORMATION!]]!
 
 ~ sign
-Sign: Security Digital Wellbeing Information #3:
+Board: Security Digital Wellbeing Information #3:
+Board: Phishing, while varied, can be identified by you! It is also important to know how to do this as the automated systems in place to catch these sometimes miss a few.
+Board: The first thing to look out for is that they are trying to get you to rush to do something. They may claim to be your bank and say that your account is suspended so click on this link to fix it.
+Board: While they try to impersonate legitimate businesses or people, they do not have the proper accounts. This means the account, be it email or social media, they will be using will likely be misspelled, contain extra letters or very sneakily switch some letters. 
+Board: For example, if someone were to impersonate Digibot, they would try an account like Diigibot or Digib0t or Digib6t. All of those, at a glance might fool you but once you take a second, it is clearly a fake.
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the board?
 - Yes
 	=> sign
 - No

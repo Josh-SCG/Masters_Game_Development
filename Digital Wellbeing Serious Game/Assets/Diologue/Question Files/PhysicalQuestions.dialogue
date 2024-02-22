@@ -179,66 +179,6 @@ elif Global.qNum == 15
 		=> Q15d
 	else
 		=> somethingIsWrong
-elif Global.qNum == 16
-	do Global.qAns = Global.setAnswer(16)
-	if Global.qAns == "a"
-		=> Q16a
-	elif Global.qAns == "b"
-		=> Q16b
-	elif Global.qAns == "c"
-		=> Q16c
-	elif Global.qAns == "d"
-		=> Q16d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 17
-	do Global.qAns = Global.setAnswer(17)
-	if Global.qAns == "a"
-		=> Q17a
-	elif Global.qAns == "b"
-		=> Q17b
-	elif Global.qAns == "c"
-		=> Q17c
-	elif Global.qAns == "d"
-		=> Q17d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 18
-	do Global.qAns = Global.setAnswer(18)
-	if Global.qAns == "a"
-		=> Q18a
-	elif Global.qAns == "b"
-		=> Q18b
-	elif Global.qAns == "c"
-		=> Q18c
-	elif Global.qAns == "d"
-		=> Q18d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 19
-	do Global.qAns = Global.setAnswer(19)
-	if Global.qAns == "a"
-		=> Q19a
-	elif Global.qAns == "b"
-		=> Q19b
-	elif Global.qAns == "c"
-		=> Q19c
-	elif Global.qAns == "d"
-		=> Q19d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 20
-	do Global.qAns = Global.setAnswer(20)
-	if Global.qAns == "a"
-		=> Q20a
-	elif Global.qAns == "b"
-		=> Q20b
-	elif Global.qAns == "c"
-		=> Q20c
-	elif Global.qAns == "d"
-		=> Q20d
-	else
-		=> somethingIsWrong
 else
 	=> somethingIsWrong
 
@@ -246,724 +186,857 @@ else
 Josh: Oops. Something is wrong. Please try again. If this persists, welp, contact the dev...
 => END
 
+~ E1
+Digibot: Digital Eye Strain is also referred to as computer vision syndrome (CVS)
+=> END
+
 ~ Q1a
-Josh: Q1a
-- Option A Corect
+Digibot: What is another name for digital eye strain (DES)?
+-  Computer Vision Syndrome (CVS)
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Electronic Visual Fatigue (EVF)
+	 =>< E1
+-  Optic Nerve Exhaustion (ONE)
+	 =>< E1
+-  Screen Fatigue Syndrome (SFS)
+	 =>< E1
 => END
 
 ~ Q1b
-Josh: Q1b
-- Option A
-- Option B Corect
+Digibot: What is another name for digital eye strain (DES)?
+-  Electronic Visual Fatigue (EVF)
+	 =>< E1
+-  Computer Vision Syndrome (CVS)
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Optic Nerve Exhaustion (ONE)
+	 =>< E1
+-  Screen Fatigue Syndrome (SFS)
+	 =>< E1
 => END
 
 ~ Q1c
-Josh: Q1c
-- Option A
-- Option B
-- Option C Corect
+Digibot: What is another name for digital eye strain (DES)?
+-  Electronic Visual Fatigue (EVF)
+	 =>< E1
+-  Optic Nerve Exhaustion (ONE)
+	 =>< E1
+-  Computer Vision Syndrome (CVS)
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Screen Fatigue Syndrome (SFS)
+	 =>< E1
 => END
 
 ~ Q1d
-Josh: Q1d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: What is another name for digital eye strain (DES)?
+-  Electronic Visual Fatigue (EVF)
+	 =>< E1
+-  Optic Nerve Exhaustion (ONE)
+	 =>< E1
+-  Screen Fatigue Syndrome (SFS)
+	 =>< E1
+-  Computer Vision Syndrome (CVS)
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E2
+Digibot: The screen would cause digital eye strain while the other options may result in regular eye strain. And carrots help your eyes as they say, with the vitamin A and all.
 => END
 
 ~ Q2a
-Josh: Q2a
-- Option A Corect
+Digibot: How could you get digital eye strain?
+-  Staring at a screen for too long
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Not wearing sunglasses outdoors
+	 =>< E2
+-  Reading a book for too long
+	 =>< E2
+-  Eating carrots excessively
+	 =>< E2
 => END
 
 ~ Q2b
-Josh: Q2b
-- Option A
-- Option B Corect
+Digibot: How could you get digital eye strain?
+-  Not wearing sunglasses outdoors
+	 =>< E2
+-  Staring at a screen for too long
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Reading a book for too long
+	 =>< E2
+-  Eating carrots excessively
+	 =>< E2
 => END
 
 ~ Q2c
-Josh: Q2c
-- Option A
-- Option B
-- Option C Corect
+Digibot: How could you get digital eye strain?
+-  Not wearing sunglasses outdoors
+	 =>< E2
+-  Reading a book for too long
+	 =>< E2
+-  Staring at a screen for too long
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Eating carrots excessively
+	 =>< E2
 => END
 
 ~ Q2d
-Josh: Q2d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: How could you get digital eye strain?
+-  Not wearing sunglasses outdoors
+	 =>< E2
+-  Reading a book for too long
+	 =>< E2
+-  Eating carrots excessively
+	 =>< E2
+-  Staring at a screen for too long
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E3
+Digibot: Symptoms can include tired, burning or dry eyes, tearing, light sensitivity, blurred or double vision and trouble focusing at objects in the distance.
 => END
 
 ~ Q3a
-Josh: Q3a
-- Option A Corect
+Digibot: Which of the following is NOT a symptom of digital eye strain?
+-  Muscle pains
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Blurred vision
+	 =>< E3
+-  Light Sensitivity
+	 =>< E3
+-  Teary eyes 
+	 =>< E3
 => END
 
 ~ Q3b
-Josh: Q3b
-- Option A
-- Option B Corect
+Digibot: Which of the following is NOT a symptom of digital eye strain?
+-  Blurred vision
+	 =>< E3
+-  Muscle pains
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Light Sensitivity
+	 =>< E3
+-  Teary eyes 
+	 =>< E3
 => END
 
 ~ Q3c
-Josh: Q3c
-- Option A
-- Option B
-- Option C Corect
+Digibot: Which of the following is NOT a symptom of digital eye strain?
+-  Blurred vision
+	 =>< E3
+-  Light Sensitivity
+	 =>< E3
+-  Muscle pains
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Teary eyes 
+	 =>< E3
 => END
 
 ~ Q3d
-Josh: Q3d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: Which of the following is NOT a symptom of digital eye strain?
+-  Blurred vision
+	 =>< E3
+-  Light Sensitivity
+	 =>< E3
+-  Teary eyes 
+	 =>< E3
+-  Muscle pains
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E4
+Digibot: Remember, digital eyestrain is caused by screens, and a programmer needs to always use a screen while the others only do occasionally.
 => END
 
 ~ Q4a
-Josh: Q4a
-- Option A Corect
+Digibot: Who is more likely to be at risk of digital eye strain?
+-  A programmer
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  A doctor
+	 =>< E4
+-  A chef
+	 =>< E4
+-  A musician
+	 =>< E4
 => END
 
 ~ Q4b
-Josh: Q4b
-- Option A
-- Option B Corect
+Digibot: Who is more likely to be at risk of digital eye strain?
+-  A doctor
+	 =>< E4
+-  A programmer
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  A chef
+	 =>< E4
+-  A musician
+	 =>< E4
 => END
 
 ~ Q4c
-Josh: Q4c
-- Option A
-- Option B
-- Option C Corect
+Digibot: Who is more likely to be at risk of digital eye strain?
+-  A doctor
+	 =>< E4
+-  A chef
+	 =>< E4
+-  A programmer
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  A musician
+	 =>< E4
 => END
 
 ~ Q4d
-Josh: Q4d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: Who is more likely to be at risk of digital eye strain?
+-  A doctor
+	 =>< E4
+-  A chef
+	 =>< E4
+-  A musician
+	 =>< E4
+-  A programmer
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E5
+Digibot: To treat digital eye strain means you already have it and should look at how to help with the symptoms while eliminating blue light will help ‘prevent’ it.
 => END
 
 ~ Q5a
-Josh: Q5a
-- Option A Corect
+Digibot: How would you treat digital eye strain?
+-  Using eye drops for dry eyes
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Eliminate blue light
+	 =>< E5
+-  Applying heat packs to the eyes
+	 =>< E5
+-  Rubbing the eyes vigorously
+	 =>< E5
 => END
 
 ~ Q5b
-Josh: Q5b
-- Option A
-- Option B Corect
+Digibot: How would you treat digital eye strain?
+-  Eliminate blue light
+	 =>< E5
+-  Using eye drops for dry eyes
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Applying heat packs to the eyes
+	 =>< E5
+-  Rubbing the eyes vigorously
+	 =>< E5
 => END
 
 ~ Q5c
-Josh: Q5c
-- Option A
-- Option B
-- Option C Corect
+Digibot: How would you treat digital eye strain?
+-  Eliminate blue light
+	 =>< E5
+-  Applying heat packs to the eyes
+	 =>< E5
+-  Using eye drops for dry eyes
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Rubbing the eyes vigorously
+	 =>< E5
 => END
 
 ~ Q5d
-Josh: Q5d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: How would you treat digital eye strain?
+-  Eliminate blue light
+	 =>< E5
+-  Applying heat packs to the eyes
+	 =>< E5
+-  Rubbing the eyes vigorously
+	 =>< E5
+-  Using eye drops for dry eyes
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E6
+Digibot: Your lighting should be adequate, dim lighting may cause you to need to squint causing eye strain and bright lights may too.
 => END
 
 ~ Q6a
-Josh: Q6a
-- Option A Corect
+Digibot: How should your environment be like to avoid digital eye strain?
+-  Screen and room brightness should be equal
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Dim lighting conditions
+	 =>< E6
+-  Harsh overhead lighting
+	 =>< E6
+-  Using a bright desk lamp
+	 =>< E6
 => END
 
 ~ Q6b
-Josh: Q6b
-- Option A
-- Option B Corect
+Digibot: How should your environment be like to avoid digital eye strain?
+-  Dim lighting conditions
+	 =>< E6
+-  Screen and room brightness should be equal
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Harsh overhead lighting
+	 =>< E6
+-  Using a bright desk lamp
+	 =>< E6
 => END
 
 ~ Q6c
-Josh: Q6c
-- Option A
-- Option B
-- Option C Corect
+Digibot: How should your environment be like to avoid digital eye strain?
+-  Dim lighting conditions
+	 =>< E6
+-  Harsh overhead lighting
+	 =>< E6
+-  Screen and room brightness should be equal
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Using a bright desk lamp
+	 =>< E6
 => END
 
 ~ Q6d
-Josh: Q6d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: How should your environment be like to avoid digital eye strain?
+-  Dim lighting conditions
+	 =>< E6
+-  Harsh overhead lighting
+	 =>< E6
+-  Using a bright desk lamp
+	 =>< E6
+-  Screen and room brightness should be equal
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E7
+Digibot: Remember, it is the 20/20/20 rule!
 => END
 
 ~ Q7a
-Josh: Q7a
-- Option A Corect
+Digibot: You should look at an object __ away for __ every __.
+-  20ft, 20 seconds, 20 minutes
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  1m, 1 seconds, 1 minutes
+	 =>< E7
+-  20ft, 10 seconds, 5 minutes
+	 =>< E7
+-  far, a bit, so often
+	 =>< E7
 => END
 
 ~ Q7b
-Josh: Q7b
-- Option A
-- Option B Corect
+Digibot: You should look at an object __ away for __ every __.
+-  1m, 1 seconds, 1 minutes
+	 =>< E7
+-  20ft, 20 seconds, 20 minutes
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  20ft, 10 seconds, 5 minutes
+	 =>< E7
+-  far, a bit, so often
+	 =>< E7
 => END
 
 ~ Q7c
-Josh: Q7c
-- Option A
-- Option B
-- Option C Corect
+Digibot: You should look at an object __ away for __ every __.
+-  1m, 1 seconds, 1 minutes
+	 =>< E7
+-  20ft, 10 seconds, 5 minutes
+	 =>< E7
+-  20ft, 20 seconds, 20 minutes
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  far, a bit, so often
+	 =>< E7
 => END
 
 ~ Q7d
-Josh: Q7d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: You should look at an object __ away for __ every __.
+-  1m, 1 seconds, 1 minutes
+	 =>< E7
+-  20ft, 10 seconds, 5 minutes
+	 =>< E7
+-  far, a bit, so often
+	 =>< E7
+-  20ft, 20 seconds, 20 minutes
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E8
+Digibot: The brightness, size and resolution may lead to digital eye strain but it is the blue light that affects sleep.
 => END
 
 ~ Q8a
-Josh: Q8a
-- Option A Corect
+Digibot: What about screens affects your sleep schedule?
+-  Blue light being emitted
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Screen resolution
+	 =>< E8
+-  Screen size
+	 =>< E8
+-  Screen brightness
+	 =>< E8
 => END
 
 ~ Q8b
-Josh: Q8b
-- Option A
-- Option B Corect
+Digibot: What about screens affects your sleep schedule?
+-  Screen resolution
+	 =>< E8
+-  Blue light being emitted
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Screen size
+	 =>< E8
+-  Screen brightness
+	 =>< E8
 => END
 
 ~ Q8c
-Josh: Q8c
-- Option A
-- Option B
-- Option C Corect
+Digibot: What about screens affects your sleep schedule?
+-  Screen resolution
+	 =>< E8
+-  Screen size
+	 =>< E8
+-  Blue light being emitted
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Screen brightness
+	 =>< E8
 => END
 
 ~ Q8d
-Josh: Q8d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: What about screens affects your sleep schedule?
+-  Screen resolution
+	 =>< E8
+-  Screen size
+	 =>< E8
+-  Screen brightness
+	 =>< E8
+-  Blue light being emitted
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E9
+Digibot: Since blue light affects sleep, reducing exposure near when you do is best.
 => END
 
 ~ Q9a
-Josh: Q9a
-- Option A Corect
+Digibot: When should you limit your exposure to blue light?
+-  In the evening
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  In the morning
+	 =>< E9
+-  The whole day
+	 =>< E9
+-  Around midday
+	 =>< E9
 => END
 
 ~ Q9b
-Josh: Q9b
-- Option A
-- Option B Corect
+Digibot: When should you limit your exposure to blue light?
+-  In the morning
+	 =>< E9
+-  In the evening
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  The whole day
+	 =>< E9
+-  Around midday
+	 =>< E9
 => END
 
 ~ Q9c
-Josh: Q9c
-- Option A
-- Option B
-- Option C Corect
+Digibot: When should you limit your exposure to blue light?
+-  In the morning
+	 =>< E9
+-  The whole day
+	 =>< E9
+-  In the evening
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Around midday
+	 =>< E9
 => END
 
 ~ Q9d
-Josh: Q9d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: When should you limit your exposure to blue light?
+-  In the morning
+	 =>< E9
+-  The whole day
+	 =>< E9
+-  Around midday
+	 =>< E9
+-  In the evening
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E10
+Digibot: There is special software that will reduce it and red-tint likely won’t help unless it’s specifically designed to reduce blue light.
 => END
 
 ~ Q10a
-Josh: Q10a
-- Option A Corect
+Digibot: How can you lessen the effects of blue light?
+-  Specialised software
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Turning up screen brightness
+	 =>< E10
+-  Staring at screens for longer periods
+	 =>< E10
+-  Wearing red-tinted glasses
+	 =>< E10
 => END
 
 ~ Q10b
-Josh: Q10b
-- Option A
-- Option B Corect
+Digibot: How can you lessen the effects of blue light?
+-  Turning up screen brightness
+	 =>< E10
+-  Specialised software
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Staring at screens for longer periods
+	 =>< E10
+-  Wearing red-tinted glasses
+	 =>< E10
 => END
 
 ~ Q10c
-Josh: Q10c
-- Option A
-- Option B
-- Option C Corect
+Digibot: How can you lessen the effects of blue light?
+-  Turning up screen brightness
+	 =>< E10
+-  Staring at screens for longer periods
+	 =>< E10
+-  Specialised software
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Wearing red-tinted glasses
+	 =>< E10
 => END
 
 ~ Q10d
-Josh: Q10d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: How can you lessen the effects of blue light?
+-  Turning up screen brightness
+	 =>< E10
+-  Staring at screens for longer periods
+	 =>< E10
+-  Wearing red-tinted glasses
+	 =>< E10
+-  Specialised software
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E11
+Digibot: Keeping your phone around eye level is best and the other options will all impose some strain to the neck.
 => END
 
 ~ Q11a
-Josh: Q11a
-- Option A Corect
+Digibot: How can you NOT develop physical pain from using technology?
+-  Holding your phone level with your face
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Holding your phone above your head
+	 =>< E11
+-  Hunching over at the desk
+	 =>< E11
+-  Having a screen at 90 degrees
+	 =>< E11
 => END
 
 ~ Q11b
-Josh: Q11b
-- Option A
-- Option B Corect
+Digibot: How can you NOT develop physical pain from using technology?
+-  Holding your phone above your head
+	 =>< E11
+-  Holding your phone level with your face
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Hunching over at the desk
+	 =>< E11
+-  Having a screen at 90 degrees
+	 =>< E11
 => END
 
 ~ Q11c
-Josh: Q11c
-- Option A
-- Option B
-- Option C Corect
+Digibot: How can you NOT develop physical pain from using technology?
+-  Holding your phone above your head
+	 =>< E11
+-  Hunching over at the desk
+	 =>< E11
+-  Holding your phone level with your face
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Having a screen at 90 degrees
+	 =>< E11
 => END
 
 ~ Q11d
-Josh: Q11d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: How can you NOT develop physical pain from using technology?
+-  Holding your phone above your head
+	 =>< E11
+-  Hunching over at the desk
+	 =>< E11
+-  Having a screen at 90 degrees
+	 =>< E11
+-  Holding your phone level with your face
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E12
+Digibot: The pain comes from not sitting properly or for too long.
 => END
 
 ~ Q12a
-Josh: Q12a
-- Option A Corect
+Digibot: What causes the physical pain while working at a desk?
+-  Likely bad posture
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Ergonomic furniture
+	 =>< E12
+-  Standing too frequently
+	 =>< E12
+-  Having elbows on the desk
+	 =>< E12
 => END
 
 ~ Q12b
-Josh: Q12b
-- Option A
-- Option B Corect
+Digibot: What causes the physical pain while working at a desk?
+-  Ergonomic furniture
+	 =>< E12
+-  Likely bad posture
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Standing too frequently
+	 =>< E12
+-  Having elbows on the desk
+	 =>< E12
 => END
 
 ~ Q12c
-Josh: Q12c
-- Option A
-- Option B
-- Option C Corect
+Digibot: What causes the physical pain while working at a desk?
+-  Ergonomic furniture
+	 =>< E12
+-  Standing too frequently
+	 =>< E12
+-  Likely bad posture
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Having elbows on the desk
+	 =>< E12
 => END
 
 ~ Q12d
-Josh: Q12d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: What causes the physical pain while working at a desk?
+-  Ergonomic furniture
+	 =>< E12
+-  Standing too frequently
+	 =>< E12
+-  Having elbows on the desk
+	 =>< E12
+-  Likely bad posture
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E13
+Digibot: Stretching often while standing up helps to reduce the pain and risk of pain.
 => END
 
 ~ Q13a
-Josh: Q13a
-- Option A Corect
+Digibot: How can you reduce the risk of muscle pain from technology use?
+-  Stretching often
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Taking breaks at your desk
+	 =>< E13
+-  Using uncomfortable chairs
+	 =>< E13
+-  Ensure adequate lighting
+	 =>< E13
 => END
 
 ~ Q13b
-Josh: Q13b
-- Option A
-- Option B Corect
+Digibot: How can you reduce the risk of muscle pain from technology use?
+-  Taking breaks at your desk
+	 =>< E13
+-  Stretching often
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Using uncomfortable chairs
+	 =>< E13
+-  Ensure adequate lighting
+	 =>< E13
 => END
 
 ~ Q13c
-Josh: Q13c
-- Option A
-- Option B
-- Option C Corect
+Digibot: How can you reduce the risk of muscle pain from technology use?
+-  Taking breaks at your desk
+	 =>< E13
+-  Using uncomfortable chairs
+	 =>< E13
+-  Stretching often
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Ensure adequate lighting
+	 =>< E13
 => END
 
 ~ Q13d
-Josh: Q13d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: How can you reduce the risk of muscle pain from technology use?
+-  Taking breaks at your desk
+	 =>< E13
+-  Using uncomfortable chairs
+	 =>< E13
+-  Ensure adequate lighting
+	 =>< E13
+-  Stretching often
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
+=> END
+
+
+~ E14
+Digibot: It’s  best to stand up every 30 minutes and not sitting longer than 1 hour at a time without break.
 => END
 
 ~ Q14a
-Josh: Q14a
-- Option A Corect
+Digibot: How often should you stand up from your desk?
+-  Every 30 minutes
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Every 2 hours
+	 =>< E14
+-  Every 4 hours
+	 =>< E14
+-  Only when necessary
+	 =>< E14
 => END
 
 ~ Q14b
-Josh: Q14b
-- Option A
-- Option B Corect
+Digibot: How often should you stand up from your desk?
+-  Every 2 hours
+	 =>< E14
+-  Every 30 minutes
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Every 4 hours
+	 =>< E14
+-  Only when necessary
+	 =>< E14
 => END
 
 ~ Q14c
-Josh: Q14c
-- Option A
-- Option B
-- Option C Corect
+Digibot: How often should you stand up from your desk?
+-  Every 2 hours
+	 =>< E14
+-  Every 4 hours
+	 =>< E14
+-  Every 30 minutes
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  Only when necessary
+	 =>< E14
 => END
 
 ~ Q14d
-Josh: Q14d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: How often should you stand up from your desk?
+-  Every 2 hours
+	 =>< E14
+-  Every 4 hours
+	 =>< E14
+-  Only when necessary
+	 =>< E14
+-  Every 30 minutes
 	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
 => END
 
+
+~ E15
+Digibot: The screen being on other side of your main one does not matter so long as it is within eye level and you are not turning your neck too much to look at it.=> END
+
 ~ Q15a
-Josh: Q15a
-- Option A Corect
+Digibot: If you are using a second screen, what is the best placement of it?
+-  Level with your eyeline
 	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  To the left of your other screen
+	 =>< E15
+-  To the right of your other screen
+	 =>< E15
+-  In a completely different room
+	 =>< E15
 => END
 
 ~ Q15b
-Josh: Q15b
-- Option A
-- Option B Corect
+Digibot: If you are using a second screen, what is the best placement of it?
+-  To the left of your other screen
+	 =>< E15
+-  Level with your eyeline
 	do Global.testScore +=1
-- Option C
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  To the right of your other screen
+	 =>< E15
+-  In a completely different room
+	 =>< E15
 => END
 
 ~ Q15c
-Josh: Q15c
-- Option A
-- Option B
-- Option C Corect
+Digibot: If you are using a second screen, what is the best placement of it?
+-  To the left of your other screen
+	 =>< E15
+-  To the right of your other screen
+	 =>< E15
+-  Level with your eyeline
 	do Global.testScore +=1
-- Option D
+	Digibot: [[Correct|That is right|Well done]]!
+-  In a completely different room
+	 =>< E15
 => END
 
 ~ Q15d
-Josh: Q15d
-- Option A
-- Option B
-- Option C
-- Option D Corect
+Digibot: If you are using a second screen, what is the best placement of it?
+-  To the left of your other screen
+	 =>< E15
+-  To the right of your other screen
+	 =>< E15
+-  In a completely different room
+	 =>< E15
+-  Level with your eyeline
 	do Global.testScore +=1
-=> END
-
-~ Q16a
-Josh: Q16a
-- Option A Corect
-	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
-=> END
-
-~ Q16b
-Josh: Q16b
-- Option A
-- Option B Corect
-	do Global.testScore +=1
-- Option C
-- Option D
-=> END
-
-~ Q16c
-Josh: Q16c
-- Option A
-- Option B
-- Option C Corect
-	do Global.testScore +=1
-- Option D
-=> END
-
-~ Q16d
-Josh: Q16d
-- Option A
-- Option B
-- Option C
-- Option D Corect
-	do Global.testScore +=1
-=> END
-
-~ Q17a
-Josh: Q17a
-- Option A Corect
-	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
-=> END
-
-~ Q17b
-Josh: Q17b
-- Option A
-- Option B Corect
-	do Global.testScore +=1
-- Option C
-- Option D
-=> END
-
-~ Q17c
-Josh: Q17c
-- Option A
-- Option B
-- Option C Corect
-	do Global.testScore +=1
-- Option D
-=> END
-
-~ Q17d
-Josh: Q17d
-- Option A
-- Option B
-- Option C
-- Option D Corect
-	do Global.testScore +=1
-=> END
-
-~ Q18a
-Josh: Q18a
-- Option A Corect
-	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
-=> END
-
-~ Q18b
-Josh: Q18b
-- Option A
-- Option B Corect
-	do Global.testScore +=1
-- Option C
-- Option D
-=> END
-
-~ Q18c
-Josh: Q18c
-- Option A
-- Option B
-- Option C Corect
-	do Global.testScore +=1
-- Option D
-=> END
-
-~ Q18d
-Josh: Q18d
-- Option A
-- Option B
-- Option C
-- Option D Corect
-	do Global.testScore +=1
-=> END
-
-~ Q19a
-Josh: Q19a
-- Option A Corect
-	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
-=> END
-
-~ Q19b
-Josh: Q19b
-- Option A
-- Option B Corect
-	do Global.testScore +=1
-- Option C
-- Option D
-=> END
-
-~ Q19c
-Josh: Q19c
-- Option A
-- Option B
-- Option C Corect
-	do Global.testScore +=1
-- Option D
-=> END
-
-~ Q19d
-Josh: Q19d
-- Option A
-- Option B
-- Option C
-- Option D Corect
-	do Global.testScore +=1
-=> END
-
-~ Q20a
-Josh: Q20a
-- Option A Corect
-	do Global.testScore +=1
-- Option B
-- Option C
-- Option D
-=> END
-
-~ Q20b
-Josh: Q20b
-- Option A
-- Option B Corect
-	do Global.testScore +=1
-- Option C
-- Option D
-=> END
-
-~ Q20c
-Josh: Q20c
-- Option A
-- Option B
-- Option C Corect
-	do Global.testScore +=1
-- Option D
-=> END
-
-~ Q20d
-Josh: Q20d
-- Option A
-- Option B
-- Option C
-- Option D Corect
-	do Global.testScore +=1
+	Digibot: [[Correct|That is right|Well done]]!
 => END
 
 ~ physicalQ1

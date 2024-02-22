@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_l2sra"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_hpcr6"]
 
 [resource]
-script = ExtResource("1_l2sra")
+script = ExtResource("1_hpcr6")
 titles = {
 "sign": "5",
 "start": "2"
 }
-character_names = PackedStringArray("You", "Sign")
+character_names = PackedStringArray("You", "Board")
 first_title = "2"
 lines = {
 "1": {
@@ -16,21 +16,60 @@ lines = {
 "text": "start",
 "type": "title"
 },
-"10": {
+"11": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "achievementSign"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "12",
+"type": "mutation"
+},
+"12": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "13",
+"text": "Do you want to re-read the board?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you want to re-read the board?",
+"type": "dialogue"
+},
+"13": {
+"next_id": "14",
+"next_id_after": "23",
+"responses": PackedStringArray("13", "15"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"14": {
 "is_snippet": false,
 "next_id": "5",
-"parent_id": "9",
+"parent_id": "13",
 "type": "goto"
 },
-"11": {
-"next_id": "12",
-"next_id_after": "19",
+"15": {
+"next_id": "16",
+"next_id_after": "23",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"12": {
+"16": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -65,11 +104,11 @@ lines = {
 }])])
 }])
 },
-"next_id": "13",
-"parent_id": "11",
+"next_id": "17",
+"parent_id": "15",
 "type": "mutation"
 },
-"13": {
+"17": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -81,13 +120,13 @@ lines = {
 "value": "signCheck"
 }])
 },
-"next_conditional_id": "15",
-"next_id": "14",
-"next_id_after": "15",
-"parent_id": "11",
+"next_conditional_id": "19",
+"next_id": "18",
+"next_id_after": "19",
+"parent_id": "15",
 "type": "condition"
 },
-"14": {
+"18": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -105,11 +144,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "15",
-"parent_id": "13",
+"next_id": "19",
+"parent_id": "17",
 "type": "mutation"
 },
-"15": {
+"19": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -127,13 +166,22 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "17",
-"next_id": "16",
-"next_id_after": "17",
-"parent_id": "11",
+"next_conditional_id": "21",
+"next_id": "20",
+"next_id_after": "21",
+"parent_id": "15",
 "type": "condition"
 },
-"16": {
+"2": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "5",
+"text": "[[It's one of those boards|A board!|INFORMATION!]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[It's one of those boards|A board!|INFORMATION!]]!",
+"type": "dialogue"
+},
+"20": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -151,29 +199,20 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "17",
-"parent_id": "15",
+"next_id": "21",
+"parent_id": "19",
 "type": "mutation"
 },
-"17": {
+"21": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "11",
+"parent_id": "15",
 "type": "goto"
 },
-"19": {
+"23": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
-},
-"2": {
-"character": "You",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "5",
-"text": "[[It's one of those boards|A board!|INFORMATION!]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[It's one of those boards|A board!|INFORMATION!]]!",
-"type": "dialogue"
 },
 "4": {
 "next_id": "5",
@@ -181,52 +220,49 @@ lines = {
 "type": "title"
 },
 "5": {
-"character": "Sign",
+"character": "Board",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "7",
+"next_id": "6",
 "text": "Security Digital Wellbeing Information #1:",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Security Digital Wellbeing Information #1:",
 "type": "dialogue"
 },
-"7": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "achievementSign"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 0
-}])
+"6": {
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"text": "If you have an account on the internet, you are using a password. This is what makes sure only you can use that account. You should also make your passwords \"strong\" as attackers can try to guess them with dictionaries of common words.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you have an account on the internet, you are using a password. This is what makes sure only you can use that account. You should also make your passwords \"strong\" as attackers can try to guess them with dictionaries of common words.",
+"type": "dialogue"
 },
+"7": {
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "8",
-"type": "mutation"
+"text": "One way to make a strong password is to take a phrase you will easily remember and turn it into the password by taking the first letter of each word and include the punctuation. You should avoid song lyrics though. You could take \"My friend, Digibot, is so SO COOL!\" and make it \"Mf,D,isSC!\"",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "One way to make a strong password is to take a phrase you will easily remember and turn it into the password by taking the first letter of each word and include the punctuation. You should avoid song lyrics though. You could take \"My friend, Digibot, is so SO COOL!\" and make it \"Mf,D,isSC!\"",
+"type": "dialogue"
 },
 "8": {
-"character": "You",
+"character": "Board",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "9",
-"text": "Do you want to re-read the sign?",
+"text": "Also, making your passwords longer is a good idea, and including both uppercase and lowercase letters with punctuation is good to!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Do you want to re-read the sign?",
+"translation_key": "Also, making your passwords longer is a good idea, and including both uppercase and lowercase letters with punctuation is good to!",
 "type": "dialogue"
 },
 "9": {
-"next_id": "10",
-"next_id_after": "19",
-"responses": PackedStringArray("9", "11"),
-"text": "Yes",
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"text": "So stop using \"password\" and start using something like \"72Gye,!yeY?B73\"",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yes",
-"type": "response"
+"translation_key": "So stop using \"password\" and start using something like \"72Gye,!yeY?B73\"",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

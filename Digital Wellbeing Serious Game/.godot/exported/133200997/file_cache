@@ -11,34 +11,34 @@ res://addons/dialogue_manager/views/main_view.tscn::28586858de563ecbc4b2242d8b01
 res://addons/dialogue_manager/views/settings_view.tscn::48eaae64bf089f7d62b3d46ae50e3d30::1681908640::res://.godot/exported/133200997/export-e616ee8b42797cb31c0c61fda637fec0-settings_view.scn
 res://addons/dialogue_manager/dialogue_label.tscn::0250fa841c8b4e5ce21dc4be5987f31e::1681908640::res://.godot/exported/133200997/export-e41b7d5321416240678013b406b79557-dialogue_label.scn
 res://addons/dialogue_manager/test_scene.tscn::e57d3e62ae187a550f12075b8e5d66d4::1681910070::res://.godot/exported/133200997/export-74a175fe1e216df3bdf79c5c27a2ac2c-test_scene.scn
-res://Assets/Diologue/portraits_balloon/balloon.tscn::1d3587dc4471c8219218c037ee9cdf75::1707022804::res://.godot/exported/133200997/export-2e49dad93e0c82b68c65958c7b1586d0-balloon.scn
-res://Assets/Diologue/dialogue_window.tscn::1f52e415ed5aa91bd026c1e5941a64fc::1678696624::res://.godot/exported/133200997/export-c96c04ee2af887c046d69c218db37d95-dialogue_window.scn
+res://Assets/Diologue/portraits_balloon/balloon.tscn::f4576bd1c1cbbb51b32f110be7216ac7::1708627973::res://.godot/exported/133200997/export-2e49dad93e0c82b68c65958c7b1586d0-balloon.scn
+res://Assets/Diologue/dialogue_window.tscn::1f52e415ed5aa91bd026c1e5941a64fc::1708627973::res://.godot/exported/133200997/export-c96c04ee2af887c046d69c218db37d95-dialogue_window.scn
 res://Assets/Level Scenes/Level 1/Minigame/endless_sprite.tscn::58856ee02ef4f55e261686572d3763ee::1698127559::res://.godot/exported/133200997/export-c2f59ec7ee36095d47100a9904c0ee56-endless_sprite.scn
 res://Assets/Level Scenes/Level 1/Minigame/laptop_collectible.tscn::c241dc073dd8756326246793573f7f4b::1698149283::res://.godot/exported/133200997/export-eba5e9e4251bf3fdec14e1dd4d5fa274-laptop_collectible.scn
 res://Assets/Level Scenes/Level 1/Minigame/platform_player.tscn::c2eaac3e2da1998078fa5a1974271e26::1698127559::res://.godot/exported/133200997/export-7545abcedd637d2e6997fe28f98f6994-platform_player.scn
 res://Assets/Level Scenes/Level 1/Minigame/sign_obstacle.tscn::81a23e4db9937f33fe58dfffb487a769::1705213490::res://.godot/exported/133200997/export-84894bd304713a04bcd47e1defd43c31-sign_obstacle.scn
-res://Assets/Level Scenes/Level 1/level_1.tscn::c012c26827c347e718de2ba3a82813ed::1699377897::res://.godot/exported/133200997/export-5809c6616026992e7818add4ed4219ba-level_1.scn
+res://Assets/Level Scenes/Level 1/level_1.tscn::c012c26827c347e718de2ba3a82813ed::1707172051::res://.godot/exported/133200997/export-5809c6616026992e7818add4ed4219ba-level_1.scn
 res://Assets/Level Scenes/Level 1/level_1_a.tscn::c7d7cad1833c4e75695a252b6df63c7e::1699377828::res://.godot/exported/133200997/export-52af81ef5636125939d4c7bc0ae6d20c-level_1_a.scn
-res://Assets/Level Scenes/Level 1/level_1_c.tscn::e3ab5c6d381416a255a0b525c5477c98::1699379107::res://.godot/exported/133200997/export-4355c76f2c76560dd29ab5de9d7de1a7-level_1_c.scn
-res://Assets/Level Scenes/Level 1/mini_game_platformer.tscn::d410a91baeb78ebe35c0edb013d08670::1705213521::res://.godot/exported/133200997/export-2651d378b6bedc0e32c454c737e1f8d3-mini_game_platformer.scn
+res://Assets/Level Scenes/Level 1/level_1_c.tscn::e3ab5c6d381416a255a0b525c5477c98::1708627270::res://.godot/exported/133200997/export-4355c76f2c76560dd29ab5de9d7de1a7-level_1_c.scn
+res://Assets/Level Scenes/Level 1/mini_game_platformer.tscn::d410a91baeb78ebe35c0edb013d08670::1708543718::res://.godot/exported/133200997/export-2651d378b6bedc0e32c454c737e1f8d3-mini_game_platformer.scn
 res://Assets/Level Scenes/Level 2/Minigame/flower.tscn::5c6079f623283f3afb33c39360fb1101::1704419961::res://.godot/exported/133200997/export-1ee90d4b1982ca75ba19f30a9b30ee56-flower.scn
 res://Assets/Level Scenes/Level 2/Minigame/water.tscn::171d2164e48afa569ea7fcfad451e3b3::1704422452::res://.godot/exported/133200997/export-8fc815c4fc150bda1cf60da3928facb7-water.scn
-res://Assets/Level Scenes/Level 2/level_2.tscn::dadc837dca03c0da35e780d3c5315f57::1700010552::res://.godot/exported/133200997/export-34554ae07a891ce19fcc55ccb698e7a4-level_2.scn
+res://Assets/Level Scenes/Level 2/level_2.tscn::dadc837dca03c0da35e780d3c5315f57::1708520131::res://.godot/exported/133200997/export-34554ae07a891ce19fcc55ccb698e7a4-level_2.scn
 res://Assets/Level Scenes/Level 2/level_2_a.tscn::65ff264e605e75d0994576f416857636::1700010552::res://.godot/exported/133200997/export-3b389407b5c0d523d7e78686d36644f2-level_2_a.scn
 res://Assets/Level Scenes/Level 2/level_2_c.tscn::e87cc7f123aa196aa13c37d6fa3c7712::1700010552::res://.godot/exported/133200997/export-3dc84841b072ccf5c5f7901e76dfcf29-level_2_c.scn
-res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn::6c4bc90b63b645cf606b8ad6ff9349b9::1704422839::res://.godot/exported/133200997/export-2e4fb37ce09f966ff76f5af6409faf45-mini_game_sorter.scn
+res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn::6c4bc90b63b645cf606b8ad6ff9349b9::1708543718::res://.godot/exported/133200997/export-2e4fb37ce09f966ff76f5af6409faf45-mini_game_sorter.scn
 res://Assets/Level Scenes/Level 3/Minigame/bug.tscn::211456ce4e832f590b3f1aed8ffffaa7::1704422839::res://.godot/exported/133200997/export-37075499ec1cd7d09c62071720b128ac-bug.scn
 res://Assets/Level Scenes/Level 3/Minigame/node.tscn::7e56117b19a19f5c009ddf0290560ab3::1700609493::res://.godot/exported/133200997/export-fc7e42c86f52b6a1d0970c2c8c3a2e67-node.scn
-res://Assets/Level Scenes/Level 3/level_3.tscn::46519fe7bacfbab54db53bcc0990547e::1707020688::res://.godot/exported/133200997/export-bce4b6ddb364ddbcbcc9109193b3486f-level_3.scn
+res://Assets/Level Scenes/Level 3/level_3.tscn::46519fe7bacfbab54db53bcc0990547e::1707171848::res://.godot/exported/133200997/export-bce4b6ddb364ddbcbcc9109193b3486f-level_3.scn
 res://Assets/Level Scenes/Level 3/level_3_a.tscn::fe248b329d71c618ab01e2604518e332::1700010552::res://.godot/exported/133200997/export-5390e7b57583f24543cedafd845526b7-level_3_a.scn
 res://Assets/Level Scenes/Level 3/level_3_c.tscn::1abf6e44ef17afffce1315dc0c6ddec9::1700010553::res://.godot/exported/133200997/export-744927f56de9fcff243ecada8376fc8c-level_3_c.scn
-res://Assets/Level Scenes/Level 3/mini_game_shooter.tscn::a82158a7d76a6731f98c8a25534b9fd7::1705213537::res://.godot/exported/133200997/export-877238743505ea974476fa807f4f1fc9-mini_game_shooter.scn
+res://Assets/Level Scenes/Level 3/mini_game_shooter.tscn::a82158a7d76a6731f98c8a25534b9fd7::1708543718::res://.godot/exported/133200997/export-877238743505ea974476fa807f4f1fc9-mini_game_shooter.scn
 res://Assets/Menu Scenes/Achievements.tscn::4a1805e6fbacca703a846ae6b51454ae::1700010670::res://.godot/exported/133200997/export-4bd9c87568fc7816a0374a5749426ced-Achievements.scn
 res://Assets/Menu Scenes/Character Select.tscn::da92f4e4e945649d0b1dca404a423dfb::1698079131::res://.godot/exported/133200997/export-e4d0c9c0bc851f85df402ae5f54491dd-Character Select.scn
 res://Assets/Menu Scenes/Credits.tscn::ca532d35973fba0b8316f9c58e8ba303::1707020218::res://.godot/exported/133200997/export-4d143f6a54496fb358775a0ec212d12f-Credits.scn
-res://Assets/Menu Scenes/How To.tscn::f9f81ef80d682eeb1d6f4de6ed0383a4::1707023598::res://.godot/exported/133200997/export-ad3147564c90e7c0474404c473c7aa97-How To.scn
+res://Assets/Menu Scenes/How To.tscn::f9f81ef80d682eeb1d6f4de6ed0383a4::1707172080::res://.godot/exported/133200997/export-ad3147564c90e7c0474404c473c7aa97-How To.scn
 res://Assets/Menu Scenes/Level Select.tscn::f58c3cd328990d2d2ae93708884051ff::1705211982::res://.godot/exported/133200997/export-c455bd79e941edc1b82c7dad2c741a73-Level Select.scn
-res://Assets/Menu Scenes/Main Menu.tscn::a696277974d872e99cff8cc9784ba145::1707023597::res://.godot/exported/133200997/export-c9274558a8f5e837462117f00bdcca33-Main Menu.scn
+res://Assets/Menu Scenes/Main Menu.tscn::ab65cf5f2c586f41a6f0d558de904ba4::1708628449::res://.godot/exported/133200997/export-c9274558a8f5e837462117f00bdcca33-Main Menu.scn
 res://Assets/Menu Scenes/PausePopUp.tscn::c73e733de152d5b884c37c8ffd6eeeae::1695855727::res://.godot/exported/133200997/export-e99deef38c4f0024cd4359a02a23e113-PausePopUp.scn
 res://Assets/Player/Player.tscn::5c2d087c63c55e241e6de8740588035d::1704401799::res://.godot/exported/133200997/export-44f7ed648c6198cdc9dccc4d540018c9-Player.scn
 res://Assets/Player/ui.tscn::06531e1e78ea2e8801003af2ceae8ea3::1697537211::res://.godot/exported/133200997/export-948d3e3183d756490dcc16045f5542be-ui.scn
@@ -49,10 +49,10 @@ res://Presets/fade_in_out_colour_rect.tscn::89a247b9b4ad3fe0207024d1372967d2::16
 res://Presets/Friend.tscn::cd3363148120bdd9e6c9072a22c503b8::1699362134::res://.godot/exported/133200997/export-b8fd503ae02e433fc29e5324790bb811-Friend.scn
 res://Presets/mini_game_pauser.tscn::89dad4d4ce4c969503137f9e9665f607::1699904335::res://.godot/exported/133200997/export-e24d4f48f21ef4f88f99776ea33db139-mini_game_pauser.scn
 res://Presets/npc.tscn::782f81da3816c892c784545146ccf4a5::1697537189::res://.godot/exported/133200997/export-fc07475225245e1e0ac92798e36afc9a-npc.scn
-res://Presets/Sign2.tscn::bb8dc657046a79e67487283b50df1e4e::1698942913::res://.godot/exported/133200997/export-c3df30037e5b1640f191d228d7c7ab86-Sign2.scn
-res://Presets/Sign3.tscn::c9817f109f5cc4376d14b56355bc47bc::1699399319::res://.godot/exported/133200997/export-a4324d2c6d701302aa079a0fdd3399db-Sign3.scn
-res://Presets/Sign.tscn::46ee86aa506a5864f118a21e32a75399::1697537304::res://.godot/exported/133200997/export-a009c3a771f55e546188da7c0e08aae5-Sign.scn
+res://Presets/Sign2.tscn::b6f213cb062b56db73957e80120bc66a::1707171952::res://.godot/exported/133200997/export-c3df30037e5b1640f191d228d7c7ab86-Sign2.scn
+res://Presets/Sign3.tscn::a53e71a9a46e7e440c68ab949a1e2dcc::1707171848::res://.godot/exported/133200997/export-a4324d2c6d701302aa079a0fdd3399db-Sign3.scn
+res://Presets/Sign.tscn::67380ac5b6e141a12c9f4d1065fff2b9::1707172051::res://.godot/exported/133200997/export-a009c3a771f55e546188da7c0e08aae5-Sign.scn
 res://anim_test.tscn::5f3453ccd4d8f7396454d03aaf7a4ea2::1695855728::res://.godot/exported/133200997/export-8150164f2cc810641c33562220659974-anim_test.scn
 res://default_env.tres::756de160834ef7cc033c2a79cd80f338::1678186778::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
 res://Assets/Music/music.tscn::3c877fd8738e0664dbc8547ef3bab2ba::1705213536::res://.godot/exported/133200997/export-03341b20fc00333845eba508809c594e-music.scn
-res://Assets/Diologue/portraits_balloon/small_balloon.tscn::16e2cb48920c297269e69604ef43d26f::1707022485::res://.godot/exported/133200997/export-901a3931d911827005abde876485801c-small_balloon.scn
+res://Assets/Diologue/portraits_balloon/small_balloon.tscn::f9487f2aefd479e93b913e6032e180f0::1708627973::res://.godot/exported/133200997/export-901a3931d911827005abde876485801c-small_balloon.scn

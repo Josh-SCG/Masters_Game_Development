@@ -1,11 +1,18 @@
 ~ start
-You: [[It's one of those signs|A sign!|INFORMATION!]]!
+You: [[It's one of those paintings|A painting!|INFORMATION!]]!
+You: There's a note explaining how the painter came up with it.
 
 ~ sign
-Sign: Mental Digital Wellbeing Information #4:
+Note: Mental Digital Wellbeing Information #4a:
+Note: This is the first half of a larger painting. It is meant to help people understand the how to disconnect.
+Note: There is a concept called "digital detoxing" which entails disconnecting yourself from technology and the internet.
+Note: This is often done by disconnecting from devices, or from specific applications or from certain features or feeds.
+Note: It can also be for a short while or during specific times of strife, but it is important to know that an all-out approach may not be an option to some as they require technology or the internet for their jobs. 
+Note: It is important to know that whatever combination of severity and length will be different for everybody.
+
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the note?
 - Yes
 	=> sign
 - No

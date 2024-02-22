@@ -2,10 +2,15 @@
 You: [[It's one of those boards|A board!|INFORMATION!]]!
 
 ~ sign
-Sign: Security Digital Wellbeing Information #4:
+Board: Security Digital Wellbeing Information #4:
+Board: Malware is software that aims to cause havoc on a computer and the files on it.
+Board: These programmes can do it in many ways, such as making a computer unusable, stealing your data or just deleting random files.
+Board: Ransomware is the one that makes you pay to use your computer again.
+Board: Spyware is on your computer stealing your data, information and can even see what you are typing in some cases.
+Board: While those are just two types, there are still many many more.
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the board?
 - Yes
 	=> sign
 - No

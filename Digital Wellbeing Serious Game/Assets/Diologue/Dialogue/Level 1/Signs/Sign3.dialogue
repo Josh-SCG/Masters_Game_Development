@@ -3,6 +3,9 @@ You: [[It's one of those signs|A sign!|INFORMATION!]]!
 
 ~ sign
 Sign: Physical Digital Wellbeing Information #3:
+Sign: Sleep is an important aspect to your physical health. It is important to get enough each night for your respective age range. The use of technology could potentially hinder getting adequate sleep.
+Sign: Screens emit blue light which may disrupt your sleeping schedule. Your exposure to it should be limited towards the end of a day. This can be accomplished by using blue light filtering glasses or downloading applications on your phone or computer that can lower the amount of blue light.
+Sign: However, blue light may not have an effect on everyone and you could be fine without avoiding or lessening it, but it is advised to try nonetheless.
 
 set Global.achievementSign = 0
 You: Do you want to re-read the sign?

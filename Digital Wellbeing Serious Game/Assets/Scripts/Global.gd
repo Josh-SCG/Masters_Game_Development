@@ -141,7 +141,7 @@ var signCheck = false
 #i.e.  (if questionSelected == "phys5a": =>phys5a) 
 
 var numPoolTest = [1,2,3]#,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-var numPool = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+var numPool = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 var answerPool = ["a","b","c","d"]
 var questionDict = {}
 var qNum = 0

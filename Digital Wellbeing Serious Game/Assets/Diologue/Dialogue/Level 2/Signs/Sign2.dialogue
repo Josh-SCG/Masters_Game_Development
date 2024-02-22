@@ -1,11 +1,16 @@
 ~ start
-You: [[It's one of those signs|A sign!|INFORMATION!]]!
+You: [[It's one of those paintings|A painting!|INFORMATION!]]!
+You: There's a note explaining how the painter came up with it.
 
 ~ sign
-Sign: Mental Digital Wellbeing Information #2:
+Note: Mental Digital Wellbeing Information #2:
+Note: This painting is a combination of multiple lines on each side with some crossing over from one side to the next to symbolise the importance of creating boundaries.
+Note: The world we live in allows for communication with anyone in an instant. This is a good thing for most but does have a downside.
+Note: Since we can communicate like this it is difficult for some to fully separate from work and continue working at home.
+Note: This can cause issues in our personal and professional lives due to the stress it causes. As such it is important that we set up clear boundaries as they help separate the two and reduce stress.
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the note?
 - Yes
 	=> sign
 - No

@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jmv6h"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_cs8ej"]
 
 [resource]
-script = ExtResource("1_jmv6h")
+script = ExtResource("1_cs8ej")
 titles = {
 "sign": "5",
 "start": "2"
 }
-character_names = PackedStringArray("You", "Sign")
+character_names = PackedStringArray("You", "Board")
 first_title = "2"
 lines = {
 "1": {
@@ -17,20 +17,59 @@ lines = {
 "type": "title"
 },
 "10": {
-"is_snippet": false,
-"next_id": "5",
-"parent_id": "9",
-"type": "goto"
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "achievementSign"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "11",
+"type": "mutation"
 },
 "11": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "12",
-"next_id_after": "19",
+"text": "Do you want to re-read the board?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you want to re-read the board?",
+"type": "dialogue"
+},
+"12": {
+"next_id": "13",
+"next_id_after": "22",
+"responses": PackedStringArray("12", "14"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"13": {
+"is_snippet": false,
+"next_id": "5",
+"parent_id": "12",
+"type": "goto"
+},
+"14": {
+"next_id": "15",
+"next_id_after": "22",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"12": {
+"15": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -65,11 +104,11 @@ lines = {
 }])])
 }])
 },
-"next_id": "13",
-"parent_id": "11",
+"next_id": "16",
+"parent_id": "14",
 "type": "mutation"
 },
-"13": {
+"16": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -81,13 +120,13 @@ lines = {
 "value": "signCheck"
 }])
 },
-"next_conditional_id": "15",
-"next_id": "14",
-"next_id_after": "15",
-"parent_id": "11",
+"next_conditional_id": "18",
+"next_id": "17",
+"next_id_after": "18",
+"parent_id": "14",
 "type": "condition"
 },
-"14": {
+"17": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -105,11 +144,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "15",
-"parent_id": "13",
+"next_id": "18",
+"parent_id": "16",
 "type": "mutation"
 },
-"15": {
+"18": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -127,13 +166,13 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "17",
-"next_id": "16",
-"next_id_after": "17",
-"parent_id": "11",
+"next_conditional_id": "20",
+"next_id": "19",
+"next_id_after": "20",
+"parent_id": "14",
 "type": "condition"
 },
-"16": {
+"19": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -151,20 +190,9 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "17",
-"parent_id": "15",
+"next_id": "20",
+"parent_id": "18",
 "type": "mutation"
-},
-"17": {
-"is_snippet": false,
-"next_id": "end!",
-"parent_id": "11",
-"type": "goto"
-},
-"19": {
-"is_snippet": false,
-"next_id": "end!",
-"type": "goto"
 },
 "2": {
 "character": "You",
@@ -175,58 +203,57 @@ lines = {
 "translation_key": "[[It's one of those boards|A board!|INFORMATION!]]!",
 "type": "dialogue"
 },
+"20": {
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "14",
+"type": "goto"
+},
+"22": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
+},
 "4": {
 "next_id": "5",
 "text": "sign",
 "type": "title"
 },
 "5": {
-"character": "Sign",
+"character": "Board",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "7",
+"next_id": "6",
 "text": "Security Digital Wellbeing Information #2:",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Security Digital Wellbeing Information #2:",
 "type": "dialogue"
 },
-"7": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "achievementSign"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 0
-}])
-},
-"next_id": "8",
-"type": "mutation"
-},
-"8": {
-"character": "You",
+"6": {
+"character": "Board",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "9",
-"text": "Do you want to re-read the sign?",
+"next_id": "7",
+"text": "Phishing is an attack that targets people as they can give crucial information away that would be more difficult to get from hacking a system.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Do you want to re-read the sign?",
+"translation_key": "Phishing is an attack that targets people as they can give crucial information away that would be more difficult to get from hacking a system.",
 "type": "dialogue"
 },
-"9": {
-"next_id": "10",
-"next_id_after": "19",
-"responses": PackedStringArray("9", "11"),
-"text": "Yes",
+"7": {
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "8",
+"text": "These attacks can come in the form of emails, SMSs, social media messages or even websites so be vigilant!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yes",
-"type": "response"
+"translation_key": "These attacks can come in the form of emails, SMSs, social media messages or even websites so be vigilant!",
+"type": "dialogue"
+},
+"8": {
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "10",
+"text": "Typically, they want to get a hold of your account information or banking details but can also get you to download malware.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Typically, they want to get a hold of your account information or banking details but can also get you to download malware.",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vqqyu"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fqs8d"]
 
 [resource]
-script = ExtResource("1_vqqyu")
+script = ExtResource("1_fqs8d")
 titles = {
 "sign": "5",
 "start": "2"
 }
-character_names = PackedStringArray("You", "Sign")
+character_names = PackedStringArray("You", "Board")
 first_title = "2"
 lines = {
 "1": {
@@ -16,21 +16,60 @@ lines = {
 "text": "start",
 "type": "title"
 },
-"10": {
+"11": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "achievementSign"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"next_id": "12",
+"type": "mutation"
+},
+"12": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "13",
+"text": "Do you want to re-read the board?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you want to re-read the board?",
+"type": "dialogue"
+},
+"13": {
+"next_id": "14",
+"next_id_after": "23",
+"responses": PackedStringArray("13", "15"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"14": {
 "is_snippet": false,
 "next_id": "5",
-"parent_id": "9",
+"parent_id": "13",
 "type": "goto"
 },
-"11": {
-"next_id": "12",
-"next_id_after": "19",
+"15": {
+"next_id": "16",
+"next_id_after": "23",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"12": {
+"16": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -65,11 +104,11 @@ lines = {
 }])])
 }])
 },
-"next_id": "13",
-"parent_id": "11",
+"next_id": "17",
+"parent_id": "15",
 "type": "mutation"
 },
-"13": {
+"17": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -81,13 +120,13 @@ lines = {
 "value": "signCheck"
 }])
 },
-"next_conditional_id": "15",
-"next_id": "14",
-"next_id_after": "15",
-"parent_id": "11",
+"next_conditional_id": "19",
+"next_id": "18",
+"next_id_after": "19",
+"parent_id": "15",
 "type": "condition"
 },
-"14": {
+"18": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -105,11 +144,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "15",
-"parent_id": "13",
+"next_id": "19",
+"parent_id": "17",
 "type": "mutation"
 },
-"15": {
+"19": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -127,13 +166,22 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "17",
-"next_id": "16",
-"next_id_after": "17",
-"parent_id": "11",
+"next_conditional_id": "21",
+"next_id": "20",
+"next_id_after": "21",
+"parent_id": "15",
 "type": "condition"
 },
-"16": {
+"2": {
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "5",
+"text": "[[It's one of those boards|A board!|INFORMATION!]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[It's one of those boards|A board!|INFORMATION!]]!",
+"type": "dialogue"
+},
+"20": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -151,29 +199,20 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "17",
-"parent_id": "15",
+"next_id": "21",
+"parent_id": "19",
 "type": "mutation"
 },
-"17": {
+"21": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "11",
+"parent_id": "15",
 "type": "goto"
 },
-"19": {
+"23": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
-},
-"2": {
-"character": "You",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "5",
-"text": "[[It's one of those boards|A board!|INFORMATION!]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[It's one of those boards|A board!|INFORMATION!]]!",
-"type": "dialogue"
 },
 "4": {
 "next_id": "5",
@@ -181,52 +220,49 @@ lines = {
 "type": "title"
 },
 "5": {
-"character": "Sign",
+"character": "Board",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "7",
+"next_id": "6",
 "text": "Security Digital Wellbeing Information #3:",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Security Digital Wellbeing Information #3:",
 "type": "dialogue"
 },
-"7": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "achievementSign"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 0
-}])
+"6": {
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"text": "Phishing, while varied, can be identified by you! It is also important to know how to do this as the automated systems in place to catch these sometimes miss a few.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Phishing, while varied, can be identified by you! It is also important to know how to do this as the automated systems in place to catch these sometimes miss a few.",
+"type": "dialogue"
 },
+"7": {
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "8",
-"type": "mutation"
+"text": "The first thing to look out for is that they are trying to get you to rush to do something. They may claim to be your bank and say that your account is suspended so click on this link to fix it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The first thing to look out for is that they are trying to get you to rush to do something. They may claim to be your bank and say that your account is suspended so click on this link to fix it.",
+"type": "dialogue"
 },
 "8": {
-"character": "You",
+"character": "Board",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "9",
-"text": "Do you want to re-read the sign?",
+"text": "While they try to impersonate legitimate businesses or people, they do not have the proper accounts. This means the account, be it email or social media, they will be using will likely be misspelled, contain extra letters or very sneakily switch some letters.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Do you want to re-read the sign?",
+"translation_key": "While they try to impersonate legitimate businesses or people, they do not have the proper accounts. This means the account, be it email or social media, they will be using will likely be misspelled, contain extra letters or very sneakily switch some letters.",
 "type": "dialogue"
 },
 "9": {
-"next_id": "10",
-"next_id_after": "19",
-"responses": PackedStringArray("9", "11"),
-"text": "Yes",
+"character": "Board",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"text": "For example, if someone were to impersonate Digibot, they would try an account like Diigibot or Digib0t or Digib6t. All of those, at a glance might fool you but once you take a second, it is clearly a fake.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yes",
-"type": "response"
+"translation_key": "For example, if someone were to impersonate Digibot, they would try an account like Diigibot or Digib0t or Digib6t. All of those, at a glance might fool you but once you take a second, it is clearly a fake.",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

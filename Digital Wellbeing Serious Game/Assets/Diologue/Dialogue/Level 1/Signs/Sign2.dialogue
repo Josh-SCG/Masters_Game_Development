@@ -3,6 +3,10 @@ You: [[It's one of those signs|A sign!|INFORMATION!]]!
 
 ~ sign
 Sign: Physical Digital Wellbeing Information #2:
+Sign: Digital Eye Strain (DES) can be 'treated' in a few ways.
+Sign: The first is to treat the symptoms which could involve making use of eye drops to lessen the discomfort caused by dry eyes.
+Sign: You can also try to prevent it entirely by attempting the following. Ensure that when using a screen that the room you are in is adequately lit to match the brightness of the screen. 
+Sign: Additionally, you can follow the 20/20/20 rule which states to look at an object 20ft (or around 6m) away for 20 seconds every twenty minutes while using a screen.
 
 set Global.achievementSign = 0
 You: Do you want to re-read the sign?

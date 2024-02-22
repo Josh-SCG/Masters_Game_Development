@@ -2,10 +2,14 @@
 You: [[It's one of those boards|A board!|INFORMATION!]]!
 
 ~ sign
-Sign: Security Digital Wellbeing Information #5:
+Board: Security Digital Wellbeing Information #5:
+Board: Malware is all over the internet but luckily you can protect yourself against it.
+Board: The best way to do so if you are not too tech savvy is to use an anti-virus program which will scan your computer or phone and let you know if you have any malware and even get rid of it for you.
+Board: Also, you should know what malware looks like. Since these are programmes, they are likely to be files that end with ".exe" but not all files that end like that are malware. The difference is where you get it from. You should never use a file like that if it comes from somebody you do not know. 
+Board: Also, if you are downloading one from a website, always check that the website is correct and it is not slightly different. Look for the link having extra numbers or letters that should not be there or not being the right domain, like ".com".
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the board?
 - Yes
 	=> sign
 - No

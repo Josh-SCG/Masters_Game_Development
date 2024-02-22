@@ -3,6 +3,11 @@ You: [[It's one of those signs|A sign!|INFORMATION!]]!
 
 ~ sign
 Sign: Physical Digital Wellbeing Information #4:
+Sign: While using a computer or smartphone may not be that physically taxing, it can still take a toll on your body. This is usually a result of bad posture or habits while using these devices.
+Sign: The most common pain arises in the form neck, shoulder, back and wrist pain. 
+Sign: These types of pain can come about for many reasons such as hunching over while at a desk, prolonged typing on a phone, bad placement of screens, prolonged looking down at a phone.
+Sign: The type of pain usually manifests as muscle tenderness or a dull pain in the respective areas.
+
 
 set Global.achievementSign = 0
 You: Do you want to re-read the sign?

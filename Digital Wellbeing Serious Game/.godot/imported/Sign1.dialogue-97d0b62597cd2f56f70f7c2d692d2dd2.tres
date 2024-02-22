@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_2iiij"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ujj5e"]
 
 [resource]
-script = ExtResource("1_2iiij")
+script = ExtResource("1_ujj5e")
 titles = {
 "sign": "5",
 "start": "2"
@@ -17,20 +17,38 @@ lines = {
 "type": "title"
 },
 "10": {
-"is_snippet": false,
-"next_id": "5",
-"parent_id": "9",
-"type": "goto"
+"character": "You",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"text": "Do you want to re-read the sign?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you want to re-read the sign?",
+"type": "dialogue"
 },
 "11": {
 "next_id": "12",
-"next_id_after": "19",
+"next_id_after": "21",
+"responses": PackedStringArray("11", "13"),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"12": {
+"is_snippet": false,
+"next_id": "5",
+"parent_id": "11",
+"type": "goto"
+},
+"13": {
+"next_id": "14",
+"next_id_after": "21",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"12": {
+"14": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -65,11 +83,11 @@ lines = {
 }])])
 }])
 },
-"next_id": "13",
-"parent_id": "11",
+"next_id": "15",
+"parent_id": "13",
 "type": "mutation"
 },
-"13": {
+"15": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -81,13 +99,13 @@ lines = {
 "value": "signCheck"
 }])
 },
-"next_conditional_id": "15",
-"next_id": "14",
-"next_id_after": "15",
-"parent_id": "11",
+"next_conditional_id": "17",
+"next_id": "16",
+"next_id_after": "17",
+"parent_id": "13",
 "type": "condition"
 },
-"14": {
+"16": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -105,11 +123,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "15",
-"parent_id": "13",
+"next_id": "17",
+"parent_id": "15",
 "type": "mutation"
 },
-"15": {
+"17": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -127,13 +145,13 @@ lines = {
 "value": 5
 }])
 },
-"next_conditional_id": "17",
-"next_id": "16",
-"next_id_after": "17",
-"parent_id": "11",
+"next_conditional_id": "19",
+"next_id": "18",
+"next_id_after": "19",
+"parent_id": "13",
 "type": "condition"
 },
-"16": {
+"18": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -151,19 +169,14 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "17",
-"parent_id": "15",
+"next_id": "19",
+"parent_id": "17",
 "type": "mutation"
-},
-"17": {
-"is_snippet": false,
-"next_id": "end!",
-"parent_id": "11",
-"type": "goto"
 },
 "19": {
 "is_snippet": false,
 "next_id": "end!",
+"parent_id": "13",
 "type": "goto"
 },
 "2": {
@@ -175,6 +188,11 @@ lines = {
 "translation_key": "[[It's one of those signs|A sign!|INFORMATION!]]!",
 "type": "dialogue"
 },
+"21": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
+},
 "4": {
 "next_id": "5",
 "text": "sign",
@@ -183,13 +201,31 @@ lines = {
 "5": {
 "character": "Sign",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "7",
+"next_id": "6",
 "text": "Physical Digital Wellbeing Information #1:",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Physical Digital Wellbeing Information #1:",
 "type": "dialogue"
 },
+"6": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"text": "Digital Eye Strain (DES), also referred to as Computer Vision Syndrome (CVS), occurs when you look at a screen for prolonged periods. People who work jobs that require a lot of screen usage, such as a programmer, data entry clerk or administrators, are at a higher risk of feeling the ill effects of DES.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Digital Eye Strain (DES), also referred to as Computer Vision Syndrome (CVS), occurs when you look at a screen for prolonged periods. People who work jobs that require a lot of screen usage, such as a programmer, data entry clerk or administrators, are at a higher risk of feeling the ill effects of DES.",
+"type": "dialogue"
+},
 "7": {
+"character": "Sign",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "9",
+"text": "Symptoms can include tired, burning or dry eyes, tearing, light sensitivity, blurred or double vision and trouble focusing at objects in the distance.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Symptoms can include tired, burning or dry eyes, tearing, light sensitivity, blurred or double vision and trouble focusing at objects in the distance.",
+"type": "dialogue"
+},
+"9": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -207,26 +243,8 @@ lines = {
 "value": 0
 }])
 },
-"next_id": "8",
-"type": "mutation"
-},
-"8": {
-"character": "You",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "9",
-"text": "Do you want to re-read the sign?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Do you want to re-read the sign?",
-"type": "dialogue"
-},
-"9": {
 "next_id": "10",
-"next_id_after": "19",
-"responses": PackedStringArray("9", "11"),
-"text": "Yes",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Yes",
-"type": "response"
+"type": "mutation"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

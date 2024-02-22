@@ -3,6 +3,10 @@ You: [[It's one of those signs|A sign!|INFORMATION!]]!
 
 ~ sign
 Sign: Physical Digital Wellbeing Information #5:
+Sign: It is important to take measures to reduce the chance of requiring a medical diagnosis for any kinds of physical pain resulting from technology use. A good first practice to begin is to take regular stretching, or similar physical activity, breaks while sitting at a desk. These should be taken around every 30 minutes and you should not sit longer than 60 minutes. 
+Sign: It is also important to ensure your work environment is set up so that you do not need to strain yourself to use any item be it screen, keyboard or mouse. 
+Sign: This means having your screens at an appropriate level so you are not looking up or down at at them or making use of your chair's armrests or using another type of forearm support. Also, ensure your keyboard is not too much higher than your elbows.
+Sign: Research into this has resulted in some very specific angles to keep in mind. Keep you elbow above 121°, your shoulder below 35° and your hand less than 20°. 
 
 set Global.achievementSign = 0
 You: Do you want to re-read the sign?

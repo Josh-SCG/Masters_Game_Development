@@ -1,11 +1,16 @@
 ~ start
-You: [[It's one of those signs|A sign!|INFORMATION!]]!
+You: [[It's one of those paintings|A painting!|INFORMATION!]]!
+You: There's a note explaining how the painter came up with it.
 
 ~ sign
-Sign: Mental Digital Wellbeing Information #3:
+Note: Mental Digital Wellbeing Information #3:
+Note: Technology has allowed for information about current events to reach us in almost real-time as depicted by the trail left by the focus of this painting.
+Note: One issue this causes is that people will begin to "Doom-scroll" in an attempt to gather as much information possible on negative events to forever know what is happening and how they can protect themselves.
+Note: This can often lead to feelings of depression, anxiety, stress and just generally lower your wellbeing which it is important to avoid this.
+Note: You can avoid the news online, which is known as news avoidance; you will likely be kept in the loop by those around you.
 
 set Global.achievementSign = 0
-You: Do you want to re-read the sign?
+You: Do you want to re-read the note?
 - Yes
 	=> sign
 - No
