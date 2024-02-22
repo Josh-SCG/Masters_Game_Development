@@ -14,19 +14,11 @@ With this definition in mind, this game will focus on the education of a person'
  # Design principles and philosophies 
  As mentioned, this game is developed along side some research. For the specific principles followed, the first few can be found in an article written for CELDA 2022 [here](https://www.researchgate.net/publication/365301760_Linking_gamification_ludology_and_pedagogy_Principles_to_design_a_serious_game). Additional principles are also being reserched and as such will be found in the accomanying [research repository](https://github.com/Josh-SCG/Masters_Research_Project).
  
- Currently included are:
- * Reflection
- * Feedback
- * Stroy
- * Structuring of content
- * Tailoring
- 
- 
  # Design and Development checklist:
  - [x] Decide on a game engine to make use of
  - [x] Concuct research into what type of game to make (i.e. 2D vs 3D, PC vs Mobile, etc.)
  - [x] Decide what aspects of digital wellbeing will be taught
  - [x] Construct a "skeleton" of basic features
- - [ ] Develop a prototype level
- - [ ] Design and develop the "fun" aspects of the game
- - [ ] Finalise the game with all the required levels
+ - [x] Develop a prototype level
+ - [x] Design and develop the "fun" aspects of the game
+ - [x] Finalise the game with all the required levels
