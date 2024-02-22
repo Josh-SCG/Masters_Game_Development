@@ -22,3 +22,10 @@ With this definition in mind, this game will focus on the education of a person'
  - [x] Develop a prototype level
  - [x] Design and develop the "fun" aspects of the game
  - [x] Finalise the game with all the required levels
+
+# Automation of the quiz
+For the quiz sections of the game, I decided it would be a good thing to have the answers change locations so that each playthrough still requires focus. However, the dialgue manager does not have an option for this, or at least the version I was using did not since at time of writting I'm behind like 3 major versions and likely dozens of updates.
+
+Anyway, once I finished writting the questions and answers, I did not want to spend hours manually changing 135 answer locations (3 quizzes with 15 questions and 4 answers each minus the origional 15 in each quiz) so I wrote a script to take in the questions and then both format and create the variations I needed.
+
+This is a very specific script and I doubt it will be needed by any but maybe it will one day. [Here](https://github.com/Josh-SCG/Masters_Game_Development/blob/main/Question%20Variation%20Automation/variate_the_questions.py) it is if you need it.
