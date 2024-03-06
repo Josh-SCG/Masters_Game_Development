@@ -44,6 +44,8 @@ var level3Score3 = 0
 var level3Signs = [1,2,3,4,5]
 var level3SignsSeen = 0
 
+var isDialogueSkipped = false
+
 ###############
 #Level  Scores#
 ###############

@@ -1,6 +1,4 @@
-res://Assets/Level Scenes/Level 3/Minigame/Spawners.gd
-res://Assets/Scripts/NPC.gd
-res://Assets/Scripts/SpawnerLvl1.gd
-res://Assets/Scripts/UI.gd
+res://Assets/Menu Scenes/Main Menu.tscn
 res://Assets/Scripts/Shaders/static.gdshader
 res://Assets/Scripts/Shaders/endless_sprite.gdshader
+res://Assets/Menu Scenes/Level Select.tscn

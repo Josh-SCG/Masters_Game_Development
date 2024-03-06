@@ -314,17 +314,18 @@ texture = ExtResource("8_n8wag")
 [node name="extraInformation" type="TextureRect" parent="."]
 offset_left = 15.0
 offset_top = 391.0
-offset_right = 970.0
+offset_right = 655.0
 offset_bottom = 529.0
 texture = ExtResource("14_dooxb")
 
 [node name="informationLabel" type="RichTextLabel" parent="extraInformation"]
 layout_mode = 0
-offset_left = 68.0
+offset_left = 58.0
 offset_top = 21.0
-offset_right = 885.0
+offset_right = 589.0
 offset_bottom = 116.0
 theme_override_fonts/normal_font = ExtResource("15_bfsrm")
+theme_override_font_sizes/normal_font_size = 20
 text = "Hover over a level's mini description to see more."
 
 [node name="PhysicalExplination" type="Area2D" parent="."]
@@ -351,6 +352,52 @@ shape = SubResource("RectangleShape2D_q64of")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_ii7iv")
 
+[node name="skipInformation" type="TextureRect" parent="."]
+offset_left = 622.0
+offset_top = 390.0
+offset_right = 1304.0
+offset_bottom = 592.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_dooxb")
+
+[node name="skipDialogueButton" type="TextureButton" parent="skipInformation"]
+offset_left = 72.0
+offset_top = 202.0
+offset_right = 214.0
+offset_bottom = 230.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("5_eimgj")
+texture_pressed = ExtResource("6_qd6nr")
+texture_hover = ExtResource("7_uvanr")
+
+[node name="informationLabel2" type="RichTextLabel" parent="skipInformation/skipDialogueButton"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 5.99998
+offset_right = 195.0
+offset_bottom = 62.0
+scale = Vector2(0.33, 0.33)
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.156863, 0.52549, 0.541176, 1)
+theme_override_fonts/normal_font = ExtResource("15_bfsrm")
+theme_override_font_sizes/normal_font_size = 42
+text = "Skip"
+
+[node name="informationLabel" type="RichTextLabel" parent="skipInformation"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 21.0
+offset_right = 589.0
+offset_bottom = 188.0
+theme_override_fonts/normal_font = ExtResource("15_bfsrm")
+theme_override_font_sizes/normal_font_size = 38
+text = "Click this button to skip most of the dialogue if replaying"
+
+[node name="checkbox" type="Sprite2D" parent="skipInformation"]
+position = Vector2(542, 236)
+scale = Vector2(3, 3)
+texture = ExtResource("7_fxhi4")
+
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="PhysicalLevelBox/StartPhysicalButton" to="." method="_on_start_physical_button_pressed"]
 [connection signal="pressed" from="MentalLevelBox/StartMentalButton" to="." method="_on_start_mental_button_pressed"]
@@ -361,3 +408,4 @@ stream = ExtResource("17_ii7iv")
 [connection signal="mouse_exited" from="MenatlExplination" to="." method="_on_menatl_explination_mouse_exited"]
 [connection signal="mouse_entered" from="SecurityExplination" to="." method="_on_security_explination_mouse_entered"]
 [connection signal="mouse_exited" from="SecurityExplination" to="." method="_on_security_explination_mouse_exited"]
+[connection signal="pressed" from="skipInformation/skipDialogueButton" to="." method="_on_skip_dialogue_button_pressed"]

@@ -1,5 +1,5 @@
 a351e940ae262d4f723fbde0f5c22d34
-::res://::1708629044
+::res://::1709669390
 anim_test.gd::GDScript::-1::1682515652::0::1::::<>Node2D<>::
 anim_test.tscn::PackedScene::1216303556852912415::1695855728::0::1::::<><>::uid://b16y84sdntos8
 default_env.tres::Environment::-1::1678186778::0::1::::<><>::
@@ -68,8 +68,8 @@ WorldTest.dialogue::Resource::1054478215774191823::1681923378::1693930293::1::::
 DiologueWorld.json::JSON::-1::1678622880::0::1::::<><>::
 test2.dialogue::Resource::5102384075760125279::1678714854::1693930292::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 WorldTest.dialogue::Resource::3368104418787955630::1678697712::1693930293::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-::res://Assets/Diologue/Dialogue/Level 1/::1708341347
-Digi_Level_1a.dialogue::Resource::7024204637865153310::1708341347::1708341347::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+::res://Assets/Diologue/Dialogue/Level 1/::1709709543
+Digi_Level_1a.dialogue::Resource::7024204637865153310::1709709543::1709709543::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 Digi_Level_1_Enter.dialogue::Resource::4558949871962343403::1708341347::1708341347::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 Digi_Level_1_Exit_Quiz.dialogue::Resource::2742499337971839458::1708341347::1708341347::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 Exit.dialogue::Resource::105576099691483126::1697535379::1697535380::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
@@ -161,7 +161,7 @@ level_3.tscn::PackedScene::307383698361908799::1707171848::0::1::::<><>::uid://c
 level_3_a.tscn::PackedScene::3983413169590976014::1700010552::0::1::::<><>::uid://c7kjxsturbhvn
 level_3_c.tscn::PackedScene::4408480617521791517::1700010553::0::1::::<><>::uid://c7kjxsturbhvn
 mini_game_shooter.tscn::PackedScene::3644094789839821744::1708543718::0::1::::<><>::res://Assets/Level Scenes/Level 3/Minigame/mini_game_shooter.gd<>uid://c7kjxsturbhvn::::res://Presets/fade_in_out_colour_rect.tscn<>uid://56m8bhay0r0h::::res://Presets/mini_game_pauser.tscn<>res://Assets/Level Scenes/Level 3/Minigame/Spawners.gd<>uid://8tydo1s87sri::::res://Assets/Level Scenes/Level 3/Minigame/bug.tscn<>uid://d4a2wmjpslg0s::::res://Assets/Level Scenes/Level 3/Minigame/node.tscn<>uid://43878ln436o4::::res://Assets/Level Scenes/Level 3/Minigame/superpowers-rocks-4-tiling.png<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://fbnptro0tkgx::::res://Assets/Fonts/Kenney Rocket Square.ttf<>uid://c5lvls1jvh7ji::::res://Assets/Misc Art/output.png<>uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png
-::res://Assets/Level Scenes/Level 3/Minigame/::1708629011
+::res://Assets/Level Scenes/Level 3/Minigame/::1709707078
 bug.gd::GDScript::-1::1704422541::0::1::::<>Node2D<>::
 bug.tscn::PackedScene::2356918358945346914::1704422839::0::1::::<><>::res://Assets/Level Scenes/Level 3/Minigame/bug.gd<>uid://o6oejqd5otpk::::res://Assets/Level Scenes/Level 3/Minigame/minebug.png
 minebug.png::CompressedTexture2D::1047497199986647556::1700590563::1700590589::1::::<><>::
@@ -169,7 +169,7 @@ mini_game_shooter.gd::GDScript::-1::1705213490::0::1::::<>Node2D<>::
 Node.gd::GDScript::-1::1700609439::0::1::::<>Node2D<>::
 node.tscn::PackedScene::9196417807742311572::1700609493::0::1::::<><>::res://Assets/Level Scenes/Level 3/Minigame/Node.gd<>uid://coma06gxjx42e
 robobat.png::CompressedTexture2D::7672922729674888318::1700590585::1700590589::1::::<><>::
-Spawners.gd::GDScript::-1::1708629011::0::1::::<>Node2D<>::
+Spawners.gd::GDScript::-1::1709707078::0::1::::<>Node2D<>::
 superpowers-rocks-1a-tiling.png::CompressedTexture2D::1100886767179866112::1700584773::1700584824::1::::<><>::
 superpowers-rocks-2a-tiling.png::CompressedTexture2D::857887333082881591::1700584777::1700584824::1::::<><>::
 superpowers-rocks-3-tiling.png::CompressedTexture2D::6213536380378531021::1700584788::1700584824::1::::<><>::
@@ -178,13 +178,13 @@ wall0.png::CompressedTexture2D::4600769476803704212::1700583473::1700583524::1::
 wall1.png::CompressedTexture2D::5780303994765656374::1700582893::1700583524::1::::<><>::
 wall2.png::CompressedTexture2D::3651049528508689737::1700583191::1700583524::1::::<><>::
 wall3.png::CompressedTexture2D::8742393216650862523::1700582916::1700583524::1::::<><>::
-::res://Assets/Menu Scenes/::1708629012
+::res://Assets/Menu Scenes/::1709709544
 Achievements.tscn::PackedScene::7692797219120628946::1700010670::0::1::::<><>::uid://dhp28i6vj1wh1
 Character Select.tscn::PackedScene::7310416555340524152::1698079131::0::1::::<><>::res://Assets/Scripts/Character Select.gd<>uid://hlvs1qnixage
 Credits.tscn::PackedScene::1172749683444205586::1707020218::0::1::::<><>::res://Assets/Scripts/Credits.gd<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
 How To.tscn::PackedScene::2627374670730309479::1707172080::0::1::::<><>::res://Assets/Scripts/How To.gd<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
-Level Select.tscn::PackedScene::8516522389087671457::1705211982::0::1::::<><>::res://Assets/Scripts/Level Select.gd<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://c5bq3xhb31qnn::::res://Assets/UI/portrait.png<>uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://fa0kbm8kxlrt::::res://Assets/UI/checkbox_0.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://dvib2yrg4n08h::::res://Assets/UI/radiobutton_0.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
-Main Menu.tscn::PackedScene::8971859430109403801::1708629012::0::1::::<><>::uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://baep36n7gkbpu::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>res://Assets/Scripts/Main Menu.gd<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://dtsfn4fnb3cef::::res://Assets/UI/button_x_inactive.png<>uid://diip3wlrkbhur::::res://Assets/UI/button_x_pressed.png<>uid://pa1lbsj12tk5::::res://Assets/UI/button_x_hover.png
+Level Select.tscn::PackedScene::8516522389087671457::1709709544::0::1::::<><>::res://Assets/Scripts/Level Select.gd<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://c5bq3xhb31qnn::::res://Assets/UI/portrait.png<>uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://hvhsr86weewy::::res://Assets/Fonts/Kenney Pixel Square.ttf<>uid://fa0kbm8kxlrt::::res://Assets/UI/checkbox_0.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://dvib2yrg4n08h::::res://Assets/UI/radiobutton_0.png<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://d3bepa3o613mp::::res://Assets/Music/Party Sector.mp3
+Main Menu.tscn::PackedScene::8971859430109403801::1709709543::0::1::::<><>::uid://hlvs1qnixage::::res://Assets/UI/button_default_inactive.png<>uid://bhhglwkngwtfl::::res://Assets/UI/button_default_pressed.png<>uid://dhp28i6vj1wh1::::res://Assets/Misc Art/grid_bg.png<>uid://caj61jfrfikuk::::res://Assets/UI/button_default_hover.png<>uid://sb78a4kb11fd::::res://Assets/UI/button_small_hover.png<>uid://baep36n7gkbpu::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://dhn8ao1ar8nmb::::res://Assets/UI/button_small_inactive.png<>res://Assets/Scripts/Main Menu.gd<>uid://dy6p51wpct7l8::::res://Assets/UI/button_small_pressed.png<>uid://d080xym6qs6u::::res://Assets/UI/dialog_box.png<>uid://be5or0ipenrtn::::res://Assets/Fonts/Kenney Future Narrow.ttf<>uid://b1st861nsc7ve::::res://Assets/Fonts/Kenney Future.ttf<>uid://df5kamaduab0q::::res://Assets/UI/confirm_bg.png<>uid://dtsfn4fnb3cef::::res://Assets/UI/button_x_inactive.png<>uid://diip3wlrkbhur::::res://Assets/UI/button_x_pressed.png<>uid://pa1lbsj12tk5::::res://Assets/UI/button_x_hover.png
 PausePopUp.tscn::PackedScene::5412900417770782622::1695855727::0::1::::<><>::res://Assets/Scripts/PausePopUp.gd<>res://Assets/Scripts/Shaders/static.gdshader<>uid://hlvs1qnixage
 ::res://Assets/Misc Art/::1707171247
 board.png::CompressedTexture2D::4867169625511134575::1699399435::1699399471::1::::<><>::
@@ -220,7 +220,7 @@ flower32x32transparentanimated11.png::CompressedTexture2D::2080457661547330407::
 flower32x32transparentanimated12.png::CompressedTexture2D::5119711908420921882::1614146134::1697511880::1::::<><>::
 flower32x32transparentanimated13.png::CompressedTexture2D::5854826202672473387::1614146134::1697511880::1::::<><>::
 flower32x32transparentanimated14.png::CompressedTexture2D::701611215641219371::1614146134::1697511880::1::::<><>::
-::res://Assets/Music/::1705213536
+::res://Assets/Music/::1709709543
 1mg.mp3::AudioStreamMP3::6580883599947502856::1705205884::1705212154::1::::<><>::
 1s.mp3::AudioStreamMP3::3908660377239230178::1705205914::1705212154::1::::<><>::
 2mg.mp3::AudioStreamMP3::1538780941399316773::1705205887::1705212154::1::::<><>::
@@ -230,7 +230,7 @@ flower32x32transparentanimated14.png::CompressedTexture2D::701611215641219371::1
 default.mp3::AudioStreamMP3::8759948610460759789::1705205890::1705212154::1::::<><>::
 menu.mp3::AudioStreamMP3::6251854094061803432::1705205890::1705212154::1::::<><>::
 Music.gd::GDScript::-1::1705212571::0::1::::<>AudioStreamPlayer<>::
-music.tscn::PackedScene::2339583667396333827::1705213536::0::1::::<><>::uid://cvcpeg150fbue::::res://Assets/Music/menu.mp3<>res://Assets/Music/Music.gd
+music.tscn::PackedScene::2339583667396333827::1709709543::0::1::::<><>::uid://cvcpeg150fbue::::res://Assets/Music/menu.mp3<>res://Assets/Music/Music.gd
 Party Sector.mp3::AudioStreamMP3::9126883749511009687::1705211973::1705212154::1::::<><>::
 quiz.mp3::AudioStreamMP3::5775452828929623396::1705205885::1705212154::1::::<><>::
 ::res://Assets/Player/::1704401799
@@ -288,29 +288,29 @@ MWFLD.png::CompressedTexture2D::4055668933219283110::1672568816::1693930293::1::
 MWFLL.png::CompressedTexture2D::8738132107529317402::1672568820::1693930293::1::::<><>::
 MWFSD.png::CompressedTexture2D::5080758891369955528::1672568810::1693930293::1::::<><>::
 MWFSL.png::CompressedTexture2D::7214413670184832419::1672568812::1693930293::1::::<><>::
-::res://Assets/Scripts/::1708629011
+::res://Assets/Scripts/::1709709360
 Achievements.gd::GDScript::-1::1698077588::0::1::::<>Node2D<>::
 Character Select.gd::GDScript::-1::1681996432::0::1::::<>Node2D<>::
 Credits.gd::GDScript::-1::1707019905::0::1::::<>Node2D<>::
 Dialogue.gd::GDScript::-1::1678658628::0::1::::<>CanvasLayer<>::
 DigibotA.gd::GDScript::-1::1699379084::0::1::::<>Area2D<>::
 Diologue Box.gd::GDScript::-1::1678622880::0::1::::<>TextureRect<>::
-Global.gd::GDScript::-1::1708616794::0::1::::<>Node<>::
+Global.gd::GDScript::-1::1709707953::0::1::::<>Node<>::
 How To.gd::GDScript::-1::1707023596::0::1::::<>Node<>::
-Level Select.gd::GDScript::-1::1705212810::0::1::::<>Node2D<>::
+Level Select.gd::GDScript::-1::1709709360::0::1::::<>Node2D<>::
 Main Menu.gd::GDScript::-1::1705214562::0::1::::<>Node2D<>::
 mini_game_platformer.gd::GDScript::-1::1705213490::0::1::::<>Node2D<>::
-NPC.gd::GDScript::-1::1708629011::0::1::::<>Area2D<>::
+NPC.gd::GDScript::-1::1709707078::0::1::::<>Area2D<>::
 PausePopUp.gd::GDScript::-1::1705212866::0::1::::<>CanvasLayer<>::
 Platformer Item Movement.gd::GDScript::-1::1705213490::0::1::::<>Node2D<>::
 PlatformPlayer.gd::GDScript::-1::1698129793::0::1::::<>CharacterBody2D<>::
 Robot.gd::GDScript::-1::1704325603::0::1::::<>CharacterBody2D<>::
 Signs.gd::GDScript::-1::1707171842::0::1::::<>Area2D<>::
-SpawnerLvl1.gd::GDScript::-1::1708629011::0::1::::<>Node2D<>::
-UI.gd::GDScript::-1::1708629011::0::1::::<>Node2D<>::
-::res://Assets/Scripts/Shaders/::1708629019
-endless_sprite.gdshader::Shader::-1::1708629019::0::1::::<><>::
-static.gdshader::Shader::-1::1708629019::0::1::::<><>::
+SpawnerLvl1.gd::GDScript::-1::1709707078::0::1::::<>Node2D<>::
+UI.gd::GDScript::-1::1709707078::0::1::::<>Node2D<>::
+::res://Assets/Scripts/Shaders/::1709709544
+endless_sprite.gdshader::Shader::-1::1709709544::0::1::::<><>::
+static.gdshader::Shader::-1::1709709544::0::1::::<><>::
 ::res://Assets/TestAssets/::1698942744
 Area2D.gd::GDScript::-1::1698942744::0::1::::<>Area2D<>::
 ColorRect.gd::GDScript::-1::1698942744::0::1::::<>RefCounted<>::

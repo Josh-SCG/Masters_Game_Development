@@ -1,8 +1,8 @@
 Sprite2D
+TextureButton
 AnimatedSprite2D
 RichTextLabel
 ColorRect
-TextureButton
 Button
 Node2D
 AudioStreamPlayer

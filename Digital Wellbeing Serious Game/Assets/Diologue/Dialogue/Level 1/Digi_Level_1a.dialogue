@@ -1,4 +1,11 @@
 ~ start
+
+if Global.isDialogueSkipped == false
+	=> noSkip
+elif Global.isDialogueSkipped 
+	=> skipped
+
+~ noSkip
 Digibot: [[Hello|Hi|Howdy]]!
 Digibot: I was alerted to your discomfort.
 Digibot: You have been sitting at your desk for a few hours now and your back and eyes hurt a bit.
@@ -12,5 +19,16 @@ Digibot: I know just the place. Are you ready to go?
 	Digibot: Alright. Admire the room a bit more then and speak to me when you're ready to leave. I'll go into power saving in the meantime and clean some RAM.
 	=> END!
 
+
+~ skipped
+Digibot: [[Hello|Hi|Howdy]]!
+Digibot: Are you ready to go?
+- Yes
+	Digibot: Great! Then we're off!
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 1/level_1.tscn")
+- No
+	Digibot: Alright. 
+	=> END!
+	
 => END!
 

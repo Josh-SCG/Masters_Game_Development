@@ -63,3 +63,12 @@ func _on_start_security_button_pressed():
 	globalRef.achievementLevelStart = 0
 	musicRef.play_song_3s()
 	get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/level_3_a.tscn")
+
+
+func _on_skip_dialogue_button_pressed():
+	if globalRef.isDialogueSkipped:
+		globalRef.isDialogueSkipped = false
+		$skipInformation/checkbox.texture = load("res://Assets/UI/checkbox_0.png")
+	elif globalRef.isDialogueSkipped == false:
+		globalRef.isDialogueSkipped = true
+		$skipInformation/checkbox.texture = load("res://Assets/UI/checkbox_1.png")
