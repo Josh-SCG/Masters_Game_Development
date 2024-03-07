@@ -326,7 +326,7 @@ offset_right = 589.0
 offset_bottom = 116.0
 theme_override_fonts/normal_font = ExtResource("15_bfsrm")
 theme_override_font_sizes/normal_font_size = 20
-text = "Hover over a level's mini description to see more."
+text = "Hover over a level's mini description to see more. Click on the level Word at the top of the box to select a level."
 
 [node name="PhysicalExplination" type="Area2D" parent="."]
 position = Vector2(69, 185)

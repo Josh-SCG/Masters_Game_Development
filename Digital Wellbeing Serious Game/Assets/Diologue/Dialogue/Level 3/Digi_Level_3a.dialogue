@@ -1,9 +1,12 @@
 ~ start
 
-if Global.initLevelConvo == 0
-	=> gottaRead
-elif Global.initLevelConvo == 1
-	=> notHidden
+if Global.isDialogueSkipped == false
+	if Global.initLevelConvo == 0
+		=> gottaRead
+	elif Global.initLevelConvo == 1
+		=> notHidden
+elif Global.isDialogueSkipped 
+	=> notHidden2
 
 ~ gottaRead
 Digibot: [[Hello|Hi|Howdy]]!
@@ -30,6 +33,17 @@ Digibot: I can probably set up a VR environment for you to learn about some topi
 	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/level_3.tscn")
 - No
 	Digibot: Alright. Maybe just read over the assignment again to make sure you understand it. I can really help you with it.. I will go into power saving in the meantime and clean some RAM.
+	=> END!
+
+~ notHidden2
+Digibot: [[Hello|Hi|Howdy]]!
+Digibot: I can probably set up a VR environment for you to learn about some topics if you like?
+- Yes
+	Digibot: Great! I will set it up quickly and take you there.
+	set Global.initLevelConvo = 0
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/level_3.tscn")
+- No
+	Digibot: Alright. 
 	=> END!
 
 => END!

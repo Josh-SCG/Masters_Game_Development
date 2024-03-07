@@ -2,11 +2,21 @@
 Digibot: [[Hello|Hi|Howdy]]!
 
 if Global.initLevelConvo == 0
-	=> init
+	if Global.isDialogueSkipped
+		do Global.initLevelConvo = 1
+		=> searchSkip
+	else
+		=> init
 elif Global.initLevelConvo == 1
-	=> inProgress
+	if Global.isDialogueSkipped
+		=> searchSkip
+	else
+		=> inProgress
 elif Global.initLevelConvo == 2
-	=> leave
+	if Global.isDialogueSkipped
+		=> leaveSkip
+	else
+		=> leave
 
 ~ init
 Digibot: We have made it to the VR environment. 
@@ -49,6 +59,19 @@ else
 
 => END!
 
+~ searchSkip
+Digibot: Would you like to skip the search for the boards as you have indicated to skip dialogue?
+- Yes
+	=> leaveSkip
+- No
+	Digibot: Would you like a hint then?
+	- Yes 
+		=> inProgress
+	- No
+		Digibot: Alright.
+		=> END!
+=> END!
+
 ~ leave
 Digibot: It looks like you've seen all the boards here.
 Digibot: Hopefully you found them insightful.
@@ -61,6 +84,17 @@ Digibot: If you're done here, we can head back.
 	Digibot: Looks like there is an attack on my systems. I am going to need some help first.
 	Digibot: I am going to need you to identify the threats and I will disable them. Simply, click on them and I will take it from there.
 	Digibot: Once enough have been found I should be able to predict them and automatically guard against them! You are welcome to continue after I present the way out if you would like.
+	set Global.initLevelConvo = 0
+	do Music.play_song_3mg()
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/mini_game_shooter.tscn")
+- I still want to look around for a bit.
+	Digibot: Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!
+	=> END!
+
+~ leaveSkip
+Digibot: It looks like you are done here. We can head back.
+- We can head back now
+	Digibot: Great! Let us go!
 	set Global.initLevelConvo = 0
 	do Music.play_song_3mg()
 	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 3/mini_game_shooter.tscn")

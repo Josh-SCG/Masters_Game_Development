@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d080xym6qs6u" path="res://Assets/UI/dialog_box.png" id="3_tk1ed"]
 [ext_resource type="FontFile" uid="uid://b1st861nsc7ve" path="res://Assets/Fonts/Kenney Future.ttf" id="4_42geh"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="4_m3ccg"]
-[ext_resource type="FontFile" uid="uid://be5or0ipenrtn" path="res://Assets/Fonts/Kenney Future Narrow.ttf" id="6_5yr6r"]
+[ext_resource type="FontFile" uid="uid://r7pt54bjmcnd" path="res://Assets/Fonts/Kenney Pixel.ttf" id="6_llcvw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5d24i"]
 content_margin_left = 40.0
@@ -31,7 +31,7 @@ stream = ExtResource("2_bikd5")
 volume_db = -15.0
 
 [node name="Balloon" type="NinePatchRect" parent="."]
-texture_filter = 2
+texture_filter = 1
 offset_right = 957.0
 offset_bottom = 158.0
 size_flags_horizontal = 3
@@ -70,7 +70,8 @@ scroll_active = false
 
 [node name="DialogueLabel" parent="Balloon/Margin/VBox" instance=ExtResource("4_m3ccg")]
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("6_5yr6r")
+theme_override_fonts/normal_font = ExtResource("6_llcvw")
+theme_override_font_sizes/normal_font_size = 26
 text = "Dialogue"
 
 [node name="Responses" type="GridContainer" parent="Balloon/Margin/VBox"]
@@ -79,7 +80,8 @@ layout_mode = 2
 
 [node name="ResponseTemplate" type="RichTextLabel" parent="Balloon/Margin/VBox"]
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("6_5yr6r")
+theme_override_fonts/normal_font = ExtResource("6_llcvw")
+theme_override_font_sizes/normal_font_size = 26
 theme_override_styles/focus = SubResource("StyleBoxFlat_5d24i")
 theme_override_styles/normal = SubResource("StyleBoxFlat_oj3c8")
 bbcode_enabled = true

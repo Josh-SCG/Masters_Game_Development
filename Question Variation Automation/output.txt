@@ -1,200 +1,13 @@
-~ questionSelection
-if Global.qNum == 1
-	do Global.qAns = Global.setAnswer(1)
-	if Global.qAns == "a"
-		=> Q1a
-	elif Global.qAns == "b"
-		=> Q1b
-	elif Global.qAns == "c"
-		=> Q1c
-	elif Global.qAns == "d"
-		=> Q1d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 2
- 	do Global.qAns = Global.setAnswer(2)
-	if Global.qAns == "a"
-		=> Q2a
-	elif Global.qAns == "b"
-		=> Q2b
-	elif Global.qAns == "c"
-		=> Q2c
-	elif Global.qAns == "d"
-		=> Q2d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 3
-	do Global.qAns = Global.setAnswer(3)
-	if Global.qAns == "a"
-		=> Q3a
-	elif Global.qAns == "b"
-		=> Q3b
-	elif Global.qAns == "c"
-		=> Q3c
-	elif Global.qAns == "d"
-		=> Q3d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 4
-	do Global.qAns = Global.setAnswer(4)
-	if Global.qAns == "a"
-		=> Q4a
-	elif Global.qAns == "b"
-		=> Q4b
-	elif Global.qAns == "c"
-		=> Q4c
-	elif Global.qAns == "d"
-		=> Q4d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 5
-	do Global.qAns = Global.setAnswer(5)
-	if Global.qAns == "a"
-		=> Q5a
-	elif Global.qAns == "b"
-		=> Q5b
-	elif Global.qAns == "c"
-		=> Q5c
-	elif Global.qAns == "d"
-		=> Q5d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 6
-	do Global.qAns = Global.setAnswer(6)
-	if Global.qAns == "a"
-		=> Q6a
-	elif Global.qAns == "b"
-		=> Q6b
-	elif Global.qAns == "c"
-		=> Q6c
-	elif Global.qAns == "d"
-		=> Q6d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 7
-	do Global.qAns = Global.setAnswer(7)
-	if Global.qAns == "a"
-		=> Q7a
-	elif Global.qAns == "b"
-		=> Q7b
-	elif Global.qAns == "c"
-		=> Q7c
-	elif Global.qAns == "d"
-		=> Q7d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 8
-	do Global.qAns = Global.setAnswer(8)
-	if Global.qAns == "a"
-		=> Q8a
-	elif Global.qAns == "b"
-		=> Q8b
-	elif Global.qAns == "c"
-		=> Q8c
-	elif Global.qAns == "d"
-		=> Q8d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 9
-	do Global.qAns = Global.setAnswer(9)
-	if Global.qAns == "a"
-		=> Q9a
-	elif Global.qAns == "b"
-		=> Q9b
-	elif Global.qAns == "c"
-		=> Q9c
-	elif Global.qAns == "d"
-		=> Q9d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 10
-	do Global.qAns = Global.setAnswer(10)
-	if Global.qAns == "a"
-		=> Q10a
-	elif Global.qAns == "b"
-		=> Q10b
-	elif Global.qAns == "c"
-		=> Q10c
-	elif Global.qAns == "d"
-		=> Q10d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 11
-	do Global.qAns = Global.setAnswer(11)
-	if Global.qAns == "a"
-		=> Q11a
-	elif Global.qAns == "b"
-		=> Q11b
-	elif Global.qAns == "c"
-		=> Q11c
-	elif Global.qAns == "d"
-		=> Q11d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 12
-	do Global.qAns = Global.setAnswer(12)
-	if Global.qAns == "a"
-		=> Q12a
-	elif Global.qAns == "b"
-		=> Q12b
-	elif Global.qAns == "c"
-		=> Q12c
-	elif Global.qAns == "d"
-		=> Q12d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 13
-	do Global.qAns = Global.setAnswer(13)
-	if Global.qAns == "a"
-		=> Q13a
-	elif Global.qAns == "b"
-		=> Q13b
-	elif Global.qAns == "c"
-		=> Q13c
-	elif Global.qAns == "d"
-		=> Q13d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 14
-	do Global.qAns = Global.setAnswer(14)
-	if Global.qAns == "a"
-		=> Q14a
-	elif Global.qAns == "b"
-		=> Q14b
-	elif Global.qAns == "c"
-		=> Q14c
-	elif Global.qAns == "d"
-		=> Q14d
-	else
-		=> somethingIsWrong
-elif Global.qNum == 15
-	do Global.qAns = Global.setAnswer(15)
-	if Global.qAns == "a"
-		=> Q15a
-	elif Global.qAns == "b"
-		=> Q15b
-	elif Global.qAns == "c"
-		=> Q15c
-	elif Global.qAns == "d"
-		=> Q15d
-	else
-		=> somethingIsWrong
-else
-	=> somethingIsWrong
-
-~ somethingIsWrong
-Josh: Oops. Something is wrong. Please try again. If this persists, welp, contact the dev...
-=> END
-
 ~ E1
 Digibot: Using information that people maybe able to find out about you is not a good idea.
 => END
 
 ~ Q1a
 Digibot: Which of these is NOT a way to make a strong password?
--  Using your birthday and name
+-  Using your birthday and name (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Turning a sentence into a password
 	 =>< E1
 -  Add punctuation to a password
@@ -207,9 +20,10 @@ Digibot: Which of these is NOT a way to make a strong password?
 Digibot: Which of these is NOT a way to make a strong password?
 -  Turning a sentence into a password
 	 =>< E1
--  Using your birthday and name
+-  Using your birthday and name (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Add punctuation to a password
 	 =>< E1
 -  Make a long password
@@ -222,9 +36,10 @@ Digibot: Which of these is NOT a way to make a strong password?
 	 =>< E1
 -  Add punctuation to a password
 	 =>< E1
--  Using your birthday and name
+-  Using your birthday and name (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Make a long password
 	 =>< E1
 => END
@@ -237,9 +52,10 @@ Digibot: Which of these is NOT a way to make a strong password?
 	 =>< E1
 -  Make a long password
 	 =>< E1
--  Using your birthday and name
+-  Using your birthday and name (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -249,9 +65,10 @@ Digibot: While all the options can be uncovered by an attacker, P@5sW0rD is the 
 
 ~ Q2a
 Digibot: Which of the following is the stronger password?
--  P@5sW0rD
+-  P@5sW0rD (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  password
 	 =>< E2
 -  1234password
@@ -264,9 +81,10 @@ Digibot: Which of the following is the stronger password?
 Digibot: Which of the following is the stronger password?
 -  password
 	 =>< E2
--  P@5sW0rD
+-  P@5sW0rD (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  1234password
 	 =>< E2
 -  23password!
@@ -279,9 +97,10 @@ Digibot: Which of the following is the stronger password?
 	 =>< E2
 -  1234password
 	 =>< E2
--  P@5sW0rD
+-  P@5sW0rD (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  23password!
 	 =>< E2
 => END
@@ -294,9 +113,10 @@ Digibot: Which of the following is the stronger password?
 	 =>< E2
 -  23password!
 	 =>< E2
--  P@5sW0rD
+-  P@5sW0rD (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -306,9 +126,10 @@ Digibot: Using a sentence as a password means including all of the capitalisatio
 
 ~ Q3a
 Digibot: What would "Whispers of twilight linger, shadows dance beneath the Moon!" look like as a password?
--  Wotl,sdbtM!
+-  Wotl,sdbtM! (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  wotlsdbtm
 	 =>< E3
 -  whistwillingshaddanbenmoon
@@ -321,9 +142,10 @@ Digibot: What would "Whispers of twilight linger, shadows dance beneath the Moon
 Digibot: What would "Whispers of twilight linger, shadows dance beneath the Moon!" look like as a password?
 -  wotlsdbtm
 	 =>< E3
--  Wotl,sdbtM!
+-  Wotl,sdbtM! (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  whistwillingshaddanbenmoon
 	 =>< E3
 -  wotlsdbtm!
@@ -336,9 +158,10 @@ Digibot: What would "Whispers of twilight linger, shadows dance beneath the Moon
 	 =>< E3
 -  whistwillingshaddanbenmoon
 	 =>< E3
--  Wotl,sdbtM!
+-  Wotl,sdbtM! (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  wotlsdbtm!
 	 =>< E3
 => END
@@ -351,9 +174,10 @@ Digibot: What would "Whispers of twilight linger, shadows dance beneath the Moon
 	 =>< E3
 -  wotlsdbtm!
 	 =>< E3
--  Wotl,sdbtM!
+-  Wotl,sdbtM! (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -363,9 +187,10 @@ Digibot: Using a sentence to set up a password is a good way to make a password 
 
 ~ Q4a
 Digibot: What should you try when setting up a password?
--  Utilizing the first letter of each word in sentence
+-  Utilizing the first letter of each word in sentence (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Using common song lyrics as password phrases
 	 =>< E4
 -  Including only lowercase letters and numbers in the password
@@ -378,9 +203,10 @@ Digibot: What should you try when setting up a password?
 Digibot: What should you try when setting up a password?
 -  Using common song lyrics as password phrases
 	 =>< E4
--  Utilizing the first letter of each word in sentence
+-  Utilizing the first letter of each word in sentence (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Including only lowercase letters and numbers in the password
 	 =>< E4
 -  Keep it short to make them easier to remember
@@ -393,9 +219,10 @@ Digibot: What should you try when setting up a password?
 	 =>< E4
 -  Including only lowercase letters and numbers in the password
 	 =>< E4
--  Utilizing the first letter of each word in sentence
+-  Utilizing the first letter of each word in sentence (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Keep it short to make them easier to remember
 	 =>< E4
 => END
@@ -408,9 +235,10 @@ Digibot: What should you try when setting up a password?
 	 =>< E4
 -  Keep it short to make them easier to remember
 	 =>< E4
--  Utilizing the first letter of each word in sentence
+-  Utilizing the first letter of each word in sentence (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -420,9 +248,10 @@ Digibot: The choice of sentence for a password should be memorable like these, b
 
 ~ Q5a
 Digibot: Which of the following would make a good sentence for a password?
--  "I can do anything? Even shuffle all the cards!"
+-  "I can do anything? Even shuffle all the cards!" (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  "May the force be with you."
 	 =>< E5
 -  "You’re a wizard, Harry!"
@@ -435,9 +264,10 @@ Digibot: Which of the following would make a good sentence for a password?
 Digibot: Which of the following would make a good sentence for a password?
 -  "May the force be with you."
 	 =>< E5
--  "I can do anything? Even shuffle all the cards!"
+-  "I can do anything? Even shuffle all the cards!" (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  "You’re a wizard, Harry!"
 	 =>< E5
 -  "Somebody once told me, the world is gonna roll me."
@@ -450,9 +280,10 @@ Digibot: Which of the following would make a good sentence for a password?
 	 =>< E5
 -  "You’re a wizard, Harry!"
 	 =>< E5
--  "I can do anything? Even shuffle all the cards!"
+-  "I can do anything? Even shuffle all the cards!" (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  "Somebody once told me, the world is gonna roll me."
 	 =>< E5
 => END
@@ -465,9 +296,10 @@ Digibot: Which of the following would make a good sentence for a password?
 	 =>< E5
 -  "Somebody once told me, the world is gonna roll me."
 	 =>< E5
--  "I can do anything? Even shuffle all the cards!"
+-  "I can do anything? Even shuffle all the cards!" (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -477,9 +309,10 @@ Digibot: Phishing attacks target people and are done through a wide array of pla
 
 ~ Q6a
 Digibot: Which of the following is a characteristic of phishing attacks?
--  Targeting individuals to obtain sensitive information
+-  Targeting individuals to obtain sensitive information (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Targeting only computer systems
 	 =>< E6
 -  Typically involving physical intrusion
@@ -492,9 +325,10 @@ Digibot: Which of the following is a characteristic of phishing attacks?
 Digibot: Which of the following is a characteristic of phishing attacks?
 -  Targeting only computer systems
 	 =>< E6
--  Targeting individuals to obtain sensitive information
+-  Targeting individuals to obtain sensitive information (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Typically involving physical intrusion
 	 =>< E6
 -  Exclusively conducted through social media platforms
@@ -507,9 +341,10 @@ Digibot: Which of the following is a characteristic of phishing attacks?
 	 =>< E6
 -  Typically involving physical intrusion
 	 =>< E6
--  Targeting individuals to obtain sensitive information
+-  Targeting individuals to obtain sensitive information (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Exclusively conducted through social media platforms
 	 =>< E6
 => END
@@ -522,9 +357,10 @@ Digibot: Which of the following is a characteristic of phishing attacks?
 	 =>< E6
 -  Exclusively conducted through social media platforms
 	 =>< E6
--  Targeting individuals to obtain sensitive information
+-  Targeting individuals to obtain sensitive information (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -534,9 +370,10 @@ Digibot: Due the how quickly, and how automated, phishing attacks can be done, s
 
 ~ Q7a
 Digibot: Which is not a common way through which phishing attacks may occur?
--  Physical letters
+-  Physical letters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Email
 	 =>< E7
 -  SMSs
@@ -549,9 +386,10 @@ Digibot: Which is not a common way through which phishing attacks may occur?
 Digibot: Which is not a common way through which phishing attacks may occur?
 -  Email
 	 =>< E7
--  Physical letters
+-  Physical letters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  SMSs
 	 =>< E7
 -  Web pages
@@ -564,9 +402,10 @@ Digibot: Which is not a common way through which phishing attacks may occur?
 	 =>< E7
 -  SMSs
 	 =>< E7
--  Physical letters
+-  Physical letters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Web pages
 	 =>< E7
 => END
@@ -579,9 +418,10 @@ Digibot: Which is not a common way through which phishing attacks may occur?
 	 =>< E7
 -  Web pages
 	 =>< E7
--  Physical letters
+-  Physical letters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -591,9 +431,10 @@ Digibot: Spelling mistakes, extra letters and switched or swapped characters are
 
 ~ Q8a
 Digibot: What is NOT a way to spot a phishing link or account?
--  Looking for a business you know
+-  Looking for a business you know (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Misspelling in the account name.
 	 =>< E8
 -  Extra letters where there shouldn’t be
@@ -606,9 +447,10 @@ Digibot: What is NOT a way to spot a phishing link or account?
 Digibot: What is NOT a way to spot a phishing link or account?
 -  Misspelling in the account name.
 	 =>< E8
--  Looking for a business you know
+-  Looking for a business you know (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Extra letters where there shouldn’t be
 	 =>< E8
 -  Switching letters for other letters or numbers
@@ -621,9 +463,10 @@ Digibot: What is NOT a way to spot a phishing link or account?
 	 =>< E8
 -  Extra letters where there shouldn’t be
 	 =>< E8
--  Looking for a business you know
+-  Looking for a business you know (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Switching letters for other letters or numbers
 	 =>< E8
 => END
@@ -636,9 +479,10 @@ Digibot: What is NOT a way to spot a phishing link or account?
 	 =>< E8
 -  Switching letters for other letters or numbers
 	 =>< E8
--  Looking for a business you know
+-  Looking for a business you know (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -648,9 +492,10 @@ Digibot: Remember, automated systems may miss some phishing attempts and attacke
 
 ~ Q9a
 Digibot: How can phishing attempts often be identified?
--  They may exhibit signs of rushing the recipient
+-  They may exhibit signs of rushing the recipient (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  They always come from a businesses
 	 =>< E9
 -  They are impossible to detect
@@ -663,9 +508,10 @@ Digibot: How can phishing attempts often be identified?
 Digibot: How can phishing attempts often be identified?
 -  They always come from a businesses
 	 =>< E9
--  They may exhibit signs of rushing the recipient
+-  They may exhibit signs of rushing the recipient (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  They are impossible to detect
 	 =>< E9
 -  They are exclusively caught by automated systems
@@ -678,9 +524,10 @@ Digibot: How can phishing attempts often be identified?
 	 =>< E9
 -  They are impossible to detect
 	 =>< E9
--  They may exhibit signs of rushing the recipient
+-  They may exhibit signs of rushing the recipient (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  They are exclusively caught by automated systems
 	 =>< E9
 => END
@@ -693,9 +540,10 @@ Digibot: How can phishing attempts often be identified?
 	 =>< E9
 -  They are exclusively caught by automated systems
 	 =>< E9
--  They may exhibit signs of rushing the recipient
+-  They may exhibit signs of rushing the recipient (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -705,9 +553,10 @@ Digibot: Phishing attempts aim to get your information, account and password or 
 
 ~ Q10a
 Digibot: Which of the following is NOT an aim of phishing?
--  To provide you with free software
+-  To provide you with free software (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  To get you personal information
 	 =>< E10
 -  To gain access to one of your accounts
@@ -720,9 +569,10 @@ Digibot: Which of the following is NOT an aim of phishing?
 Digibot: Which of the following is NOT an aim of phishing?
 -  To get you personal information
 	 =>< E10
--  To provide you with free software
+-  To provide you with free software (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  To gain access to one of your accounts
 	 =>< E10
 -  To get you to download malware
@@ -735,9 +585,10 @@ Digibot: Which of the following is NOT an aim of phishing?
 	 =>< E10
 -  To gain access to one of your accounts
 	 =>< E10
--  To provide you with free software
+-  To provide you with free software (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  To get you to download malware
 	 =>< E10
 => END
@@ -750,9 +601,10 @@ Digibot: Which of the following is NOT an aim of phishing?
 	 =>< E10
 -  To get you to download malware
 	 =>< E10
--  To provide you with free software
+-  To provide you with free software (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -762,9 +614,10 @@ Digibot: Always be vigilant for accounts adding extra letters, "Digiboot", using
 
 ~ Q11a
 Digibot: You get an email from your friend, Digibot, through your school emails. Which of the following emails would you trust?
--  Digibot@school.edu
+-  Digibot@school.edu (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Digibot@schoo1.edu
 	 =>< E11
 -  Digiboot@school.edu
@@ -777,9 +630,10 @@ Digibot: You get an email from your friend, Digibot, through your school emails.
 Digibot: You get an email from your friend, Digibot, through your school emails. Which of the following emails would you trust?
 -  Digibot@schoo1.edu
 	 =>< E11
--  Digibot@school.edu
+-  Digibot@school.edu (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Digiboot@school.edu
 	 =>< E11
 -  Digibot@school.com
@@ -792,9 +646,10 @@ Digibot: You get an email from your friend, Digibot, through your school emails.
 	 =>< E11
 -  Digiboot@school.edu
 	 =>< E11
--  Digibot@school.edu
+-  Digibot@school.edu (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Digibot@school.com
 	 =>< E11
 => END
@@ -807,9 +662,10 @@ Digibot: You get an email from your friend, Digibot, through your school emails.
 	 =>< E11
 -  Digibot@school.com
 	 =>< E11
--  Digibot@school.edu
+-  Digibot@school.edu (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -819,9 +675,10 @@ Digibot: While ransomware does make a computer unusable, the main goal of it is 
 
 ~ Q12a
 Digibot: What is the primary purpose of ransomware?
--  To demand payment for regaining access to the computer
+-  To demand payment for regaining access to the computer (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  To render a computer unusable
 	 =>< E12
 -  To delete random files
@@ -834,9 +691,10 @@ Digibot: What is the primary purpose of ransomware?
 Digibot: What is the primary purpose of ransomware?
 -  To render a computer unusable
 	 =>< E12
--  To demand payment for regaining access to the computer
+-  To demand payment for regaining access to the computer (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  To delete random files
 	 =>< E12
 -  To steal sensitive data
@@ -849,9 +707,10 @@ Digibot: What is the primary purpose of ransomware?
 	 =>< E12
 -  To delete random files
 	 =>< E12
--  To demand payment for regaining access to the computer
+-  To demand payment for regaining access to the computer (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  To steal sensitive data
 	 =>< E12
 => END
@@ -864,9 +723,10 @@ Digibot: What is the primary purpose of ransomware?
 	 =>< E12
 -  To steal sensitive data
 	 =>< E12
--  To demand payment for regaining access to the computer
+-  To demand payment for regaining access to the computer (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -876,9 +736,10 @@ Digibot: Spyware is made to spy on you, see what you are doing and access inform
 
 ~ Q13a
 Digibot: What is a common function of spyware?
--  Stealing data and monitoring user activity
+-  Stealing data and monitoring user activity (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Making a computer unusable
 	 =>< E13
 -  Deleting random files
@@ -891,9 +752,10 @@ Digibot: What is a common function of spyware?
 Digibot: What is a common function of spyware?
 -  Making a computer unusable
 	 =>< E13
--  Stealing data and monitoring user activity
+-  Stealing data and monitoring user activity (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Deleting random files
 	 =>< E13
 -  Encrypting files and demanding ransom
@@ -906,9 +768,10 @@ Digibot: What is a common function of spyware?
 	 =>< E13
 -  Deleting random files
 	 =>< E13
--  Stealing data and monitoring user activity
+-  Stealing data and monitoring user activity (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Encrypting files and demanding ransom
 	 =>< E13
 => END
@@ -921,9 +784,10 @@ Digibot: What is a common function of spyware?
 	 =>< E13
 -  Encrypting files and demanding ransom
 	 =>< E13
--  Stealing data and monitoring user activity
+-  Stealing data and monitoring user activity (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
@@ -933,9 +797,10 @@ Digibot: Files downloaded online should only come from a known and trusted sourc
 
 ~ Q14a
 Digibot: What caution should individuals exercise when downloading files from the internet?
--  Only download files from known and trusted sources
+-  Only download files from known and trusted sources (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Ignore the source of the file if it looks legitimate
 	 =>< E14
 -  Avoid files with extensions like ".exe" altogether
@@ -948,9 +813,10 @@ Digibot: What caution should individuals exercise when downloading files from th
 Digibot: What caution should individuals exercise when downloading files from the internet?
 -  Ignore the source of the file if it looks legitimate
 	 =>< E14
--  Only download files from known and trusted sources
+-  Only download files from known and trusted sources (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Avoid files with extensions like ".exe" altogether
 	 =>< E14
 -  Always share downloaded files with others for verification
@@ -963,9 +829,10 @@ Digibot: What caution should individuals exercise when downloading files from th
 	 =>< E14
 -  Avoid files with extensions like ".exe" altogether
 	 =>< E14
--  Only download files from known and trusted sources
+-  Only download files from known and trusted sources (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Always share downloaded files with others for verification
 	 =>< E14
 => END
@@ -978,21 +845,22 @@ Digibot: What caution should individuals exercise when downloading files from th
 	 =>< E14
 -  Always share downloaded files with others for verification
 	 =>< E14
--  Only download files from known and trusted sources
+-  Only download files from known and trusted sources (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
 
 ~ E15
-Digibot: A file being an exe file is not enough to call it malware, where it comes from is an important factor to consider.
-=> END
+Digibot: A file being an exe file is not enough to call it malware, where it comes from is an important factor to consider.=> END
 
 ~ Q15a
 Digibot: Why is it advised to be cautious when downloading files with the ".exe" extension?
--  Because the source of the file matters
+-  Because the source of the file matters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Because all files with ".exe" extension are malware
 	 =>< E15
 -  Because ".exe" files are harmless and should be freely downloaded
@@ -1005,9 +873,10 @@ Digibot: Why is it advised to be cautious when downloading files with the ".exe"
 Digibot: Why is it advised to be cautious when downloading files with the ".exe" extension?
 -  Because all files with ".exe" extension are malware
 	 =>< E15
--  Because the source of the file matters
+-  Because the source of the file matters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Because ".exe" files are harmless and should be freely downloaded
 	 =>< E15
 -  Because ".exe" files are exclusive to malicious websites
@@ -1020,9 +889,10 @@ Digibot: Why is it advised to be cautious when downloading files with the ".exe"
 	 =>< E15
 -  Because ".exe" files are harmless and should be freely downloaded
 	 =>< E15
--  Because the source of the file matters
+-  Because the source of the file matters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 -  Because ".exe" files are exclusive to malicious websites
 	 =>< E15
 => END
@@ -1035,48 +905,10 @@ Digibot: Why is it advised to be cautious when downloading files with the ".exe"
 	 =>< E15
 -  Because ".exe" files are exclusive to malicious websites
 	 =>< E15
--  Because the source of the file matters
+-  Because the source of the file matters (Correct)
 	do Global.testScore +=1
 	Digibot: [[Correct|That is right|Well done]]!
+	=> END
 => END
 
-~ securityQ1
-do Global.chooseQuestions()
-do Global.qNum = Global.setQuestion(1)
-=>< questionSelection
 
-~ securityQ2
-do Global.qNum = Global.setQuestion(2)
-=>< questionSelection
-
-~ securityQ3
-do Global.qNum = Global.setQuestion(3)
-=>< questionSelection
-
-~ securityQ4
-do Global.qNum = Global.setQuestion(4)
-=>< questionSelection
-
-~ securityQ5
-do Global.qNum = Global.setQuestion(5)
-=>< questionSelection
-
-~ securityQ6
-do Global.qNum = Global.setQuestion(6)
-=>< questionSelection
-
-~ securityQ7
-do Global.qNum = Global.setQuestion(7)
-=>< questionSelection
-
-~ securityQ8
-do Global.qNum = Global.setQuestion(8)
-=>< questionSelection
-
-~ securityQ9
-do Global.qNum = Global.setQuestion(9)
-=>< questionSelection
-
-~ securityQ10
-do Global.qNum = Global.setQuestion(10)
-=>< questionSelection

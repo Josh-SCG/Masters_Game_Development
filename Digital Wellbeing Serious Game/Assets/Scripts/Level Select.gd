@@ -4,6 +4,11 @@ extends Node2D
 @onready var musicRef = get_node("/root/Music")
 #Set the display of level completion
 func _ready():
+	if globalRef.isDialogueSkipped:
+		$skipInformation/checkbox.texture = load("res://Assets/UI/checkbox_1.png")
+	elif globalRef.isDialogueSkipped == false:
+		$skipInformation/checkbox.texture = load("res://Assets/UI/checkbox_0.png")
+	
 	$PhysicalLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete1)+".png")
 	$MentalLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete2)+".png")
 	$SecurityLevelBox/Complete.texture =  load("res://Assets/UI/checkbox_"+str(globalRef.levelComplete3)+".png")
@@ -29,10 +34,10 @@ func _on_physical_explination_mouse_entered():
 	$extraInformation/informationLabel.text = "This level deals with the ideas of physical health in relation to technology. This includes eye strain, back pain, etc."
 
 func _on_menatl_explination_mouse_entered():
-	$extraInformation/informationLabel.text = "This level deals with mental health and technology use. This includes concepts such as doomscrolling, FOMO, etc. and how they affect mental health."
+	$extraInformation/informationLabel.text = "This level deals with mental health and technology use. This includes concepts, such as doomscrolling, and how they affect mental health."
 
 func _on_security_explination_mouse_entered():
-	$extraInformation/informationLabel.text = "This level deals with devices security. This includes passwords, social engineering concepts and general security practices to follow."
+	$extraInformation/informationLabel.text = "This level deals with devices security. This includes passwords, phishing and malware."
 
 func _on_physical_explination_mouse_exited():
 	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."

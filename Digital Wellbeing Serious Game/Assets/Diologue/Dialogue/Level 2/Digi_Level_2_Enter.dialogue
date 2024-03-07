@@ -2,11 +2,21 @@
 Digibot: [[Hello|Hi|Howdy]]!
 
 if Global.initLevelConvo == 0
-	=> init
+	if Global.isDialogueSkipped
+		do Global.initLevelConvo = 1
+		=> searchSkip
+	else
+		=> init
 elif Global.initLevelConvo == 1
-	=> inProgress
+	if Global.isDialogueSkipped
+		=> searchSkip
+	else
+		=> inProgress
 elif Global.initLevelConvo == 2
-	=> leave
+	if Global.isDialogueSkipped
+		=> leaveSkip
+	else
+		=> leave
 
 ~ init
 Digibot: We've made it to the house. 
@@ -48,6 +58,19 @@ else
 
 => END!
 
+~ searchSkip
+Digibot: Would you like to skip the search for the paintings as you have indicated to skip dialogue?
+- Yes
+	=> leaveSkip
+- No
+	Digibot: Would you like a hint then?
+	- Yes 
+		=> inProgress
+	- No
+		Digibot: Alright.
+		=> END!
+=> END!
+
 ~ leave
 Digibot: It looks like you have seen all the painting here in the house.
 Digibot: Hopefully you found them insightful.
@@ -59,6 +82,17 @@ Digibot: If you're done here, we can head back.
 	Digibot: Actually, why do we not play a little game first.
 	Digibot: There is a little garden outside and the flowers need some watering. Just be aware that each flower needs a specific type of water filled with nutrients specific to that flower. 
 	Digibot: All you have to do is give each flower the right type until all of them bloom fully. Just do not use the wrong water for a flower as it will wilt a bit if you do. Once you get all flowers bloomed we can go!
+	set Global.initLevelConvo = 0
+	do Music.play_song_2mg()
+	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn")
+- I still want to look around for a bit.
+	Digibot: Alright. Just make sure you remember what you've read so far and take a break or stretch as needed!
+	=> END!
+	
+~ leaveSkip
+Digibot: It looks like you are done here in the house. We can head back.
+- We can head back now
+	Digibot: Great! Let us go!
 	set Global.initLevelConvo = 0
 	do Music.play_song_2mg()
 	do get_tree().change_scene_to_file("res://Assets/Level Scenes/Level 2/mini_game_sorter.tscn")

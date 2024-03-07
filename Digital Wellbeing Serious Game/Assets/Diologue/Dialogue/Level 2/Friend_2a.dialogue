@@ -1,8 +1,11 @@
 ~ start
 
-if Global.initLevelConvo == 0
-	=> init
-elif Global.initLevelConvo == 1
+if Global.isDialogueSkipped == false
+	if Global.initLevelConvo == 0
+		=> init
+	elif Global.initLevelConvo == 1
+		=> spoken
+elif Global.isDialogueSkipped 
 	=> spoken
 
 ~ init

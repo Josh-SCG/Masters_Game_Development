@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_psynm"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0tnqg"]
 
 [resource]
-script = ExtResource("1_psynm")
+script = ExtResource("1_0tnqg")
 titles = {
 "2218922117/E1": "190",
 "2218922117/E10": "703",
@@ -40,10 +40,10 @@ titles = {
 "2218922117/Q14b": "948",
 "2218922117/Q14c": "961",
 "2218922117/Q14d": "974",
-"2218922117/Q15a": "991",
-"2218922117/Q15b": "1004",
-"2218922117/Q15c": "1017",
-"2218922117/Q15d": "1030",
+"2218922117/Q15a": "992",
+"2218922117/Q15b": "1005",
+"2218922117/Q15c": "1018",
+"2218922117/Q15d": "1031",
 "2218922117/Q1a": "194",
 "2218922117/Q1b": "207",
 "2218922117/Q1c": "220",
@@ -81,16 +81,16 @@ titles = {
 "2218922117/Q9c": "676",
 "2218922117/Q9d": "689",
 "2218922117/questionSelection": "2",
-"2218922117/securityQ1": "1043",
-"2218922117/securityQ10": "1080",
-"2218922117/securityQ2": "1048",
-"2218922117/securityQ3": "1052",
-"2218922117/securityQ4": "1056",
-"2218922117/securityQ5": "1060",
-"2218922117/securityQ6": "1064",
-"2218922117/securityQ7": "1068",
-"2218922117/securityQ8": "1072",
-"2218922117/securityQ9": "1076",
+"2218922117/securityQ1": "1044",
+"2218922117/securityQ10": "1081",
+"2218922117/securityQ2": "1049",
+"2218922117/securityQ3": "1053",
+"2218922117/securityQ4": "1057",
+"2218922117/securityQ5": "1061",
+"2218922117/securityQ6": "1065",
+"2218922117/securityQ7": "1069",
+"2218922117/securityQ8": "1073",
+"2218922117/securityQ9": "1077",
 "2218922117/somethingIsWrong": "186",
 "SecQ/E1": "190",
 "SecQ/E10": "703",
@@ -127,10 +127,10 @@ titles = {
 "SecQ/Q14b": "948",
 "SecQ/Q14c": "961",
 "SecQ/Q14d": "974",
-"SecQ/Q15a": "991",
-"SecQ/Q15b": "1004",
-"SecQ/Q15c": "1017",
-"SecQ/Q15d": "1030",
+"SecQ/Q15a": "992",
+"SecQ/Q15b": "1005",
+"SecQ/Q15c": "1018",
+"SecQ/Q15d": "1031",
 "SecQ/Q1a": "194",
 "SecQ/Q1b": "207",
 "SecQ/Q1c": "220",
@@ -168,23 +168,23 @@ titles = {
 "SecQ/Q9c": "676",
 "SecQ/Q9d": "689",
 "SecQ/questionSelection": "2",
-"SecQ/securityQ1": "1043",
-"SecQ/securityQ10": "1080",
-"SecQ/securityQ2": "1048",
-"SecQ/securityQ3": "1052",
-"SecQ/securityQ4": "1056",
-"SecQ/securityQ5": "1060",
-"SecQ/securityQ6": "1064",
-"SecQ/securityQ7": "1068",
-"SecQ/securityQ8": "1072",
-"SecQ/securityQ9": "1076",
+"SecQ/securityQ1": "1044",
+"SecQ/securityQ10": "1081",
+"SecQ/securityQ2": "1049",
+"SecQ/securityQ3": "1053",
+"SecQ/securityQ4": "1057",
+"SecQ/securityQ5": "1061",
+"SecQ/securityQ6": "1065",
+"SecQ/securityQ7": "1069",
+"SecQ/securityQ8": "1073",
+"SecQ/securityQ9": "1077",
 "SecQ/somethingIsWrong": "186",
-"start": "1089",
-"testRetake": "1106",
-"testShowScore": "1111"
+"start": "1090",
+"testRetake": "1107",
+"testShowScore": "1112"
 }
 character_names = PackedStringArray("Josh", "Digibot")
-first_title = "1089"
+first_title = "1090"
 lines = {
 "1": {
 "next_id": "2",
@@ -240,56 +240,64 @@ lines = {
 "type": "condition"
 },
 "1000": {
-"is_snippet": true,
-"next_id": "988",
-"next_id_after": "1001",
-"parent_id": "999",
-"type": "goto"
+"next_id": "1001",
+"next_id_after": "1002",
+"text": "Because \".exe\" files are exclusive to malicious websites",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Because \".exe\" files are exclusive to malicious websites",
+"type": "response"
 },
 "1001": {
+"is_snippet": true,
+"next_id": "988",
+"next_id_after": "1002",
+"parent_id": "1000",
+"type": "goto"
+},
+"1002": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"1003": {
-"next_id": "1004",
+"1004": {
+"next_id": "1005",
 "text": "2218922117/Q15b",
 "type": "title"
 },
-"1004": {
+"1005": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1005",
+"next_id": "1006",
 "text": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "type": "dialogue"
 },
-"1005": {
-"next_id": "1006",
-"next_id_after": "1014",
-"responses": PackedStringArray("1005", "1007", "1010", "1012"),
+"1006": {
+"next_id": "1007",
+"next_id_after": "1015",
+"responses": PackedStringArray("1006", "1008", "1011", "1013"),
 "text": "Because all files with \".exe\" extension are malware",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because all files with \".exe\" extension are malware",
 "type": "response"
 },
-"1006": {
+"1007": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1014",
-"parent_id": "1005",
+"next_id_after": "1015",
+"parent_id": "1006",
 "type": "goto"
 },
-"1007": {
-"next_id": "1008",
-"next_id_after": "1014",
+"1008": {
+"next_id": "1009",
+"next_id_after": "1015",
 "text": "Because the source of the file matters",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because the source of the file matters",
 "type": "response"
 },
-"1008": {
+"1009": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -307,19 +315,9 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1009",
-"parent_id": "1007",
+"next_id": "1010",
+"parent_id": "1008",
 "type": "mutation"
-},
-"1009": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "1014",
-"parent_id": "1007",
-"text": "[[Correct|That is right|Well done]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Correct|That is right|Well done]]!",
-"type": "dialogue"
 },
 "101": {
 "is_snippet": false,
@@ -328,69 +326,72 @@ lines = {
 "type": "goto"
 },
 "1010": {
-"next_id": "1011",
-"next_id_after": "1014",
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1015",
+"parent_id": "1008",
+"text": "[[Correct|That is right|Well done]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Correct|That is right|Well done]]!",
+"type": "dialogue"
+},
+"1011": {
+"next_id": "1012",
+"next_id_after": "1015",
 "text": "Because \".exe\" files are harmless and should be freely downloaded",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because \".exe\" files are harmless and should be freely downloaded",
 "type": "response"
 },
-"1011": {
+"1012": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1014",
-"parent_id": "1010",
+"next_id_after": "1015",
+"parent_id": "1011",
 "type": "goto"
 },
-"1012": {
-"next_id": "1013",
-"next_id_after": "1014",
+"1013": {
+"next_id": "1014",
+"next_id_after": "1015",
 "text": "Because \".exe\" files are exclusive to malicious websites",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because \".exe\" files are exclusive to malicious websites",
 "type": "response"
 },
-"1013": {
+"1014": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1014",
-"parent_id": "1012",
+"next_id_after": "1015",
+"parent_id": "1013",
 "type": "goto"
 },
-"1014": {
+"1015": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"1016": {
-"next_id": "1017",
+"1017": {
+"next_id": "1018",
 "text": "2218922117/Q15c",
 "type": "title"
 },
-"1017": {
+"1018": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1018",
+"next_id": "1019",
 "text": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "type": "dialogue"
 },
-"1018": {
-"next_id": "1019",
-"next_id_after": "1027",
-"responses": PackedStringArray("1018", "1020", "1022", "1025"),
+"1019": {
+"next_id": "1020",
+"next_id_after": "1028",
+"responses": PackedStringArray("1019", "1021", "1023", "1026"),
 "text": "Because all files with \".exe\" extension are malware",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because all files with \".exe\" extension are malware",
 "type": "response"
-},
-"1019": {
-"is_snippet": true,
-"next_id": "988",
-"next_id_after": "1027",
-"parent_id": "1018",
-"type": "goto"
 },
 "102": {
 "condition": {
@@ -417,29 +418,36 @@ lines = {
 "type": "condition"
 },
 "1020": {
-"next_id": "1021",
-"next_id_after": "1027",
+"is_snippet": true,
+"next_id": "988",
+"next_id_after": "1028",
+"parent_id": "1019",
+"type": "goto"
+},
+"1021": {
+"next_id": "1022",
+"next_id_after": "1028",
 "text": "Because \".exe\" files are harmless and should be freely downloaded",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because \".exe\" files are harmless and should be freely downloaded",
 "type": "response"
 },
-"1021": {
+"1022": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1027",
-"parent_id": "1020",
+"next_id_after": "1028",
+"parent_id": "1021",
 "type": "goto"
 },
-"1022": {
-"next_id": "1023",
-"next_id_after": "1027",
+"1023": {
+"next_id": "1024",
+"next_id_after": "1028",
 "text": "Because the source of the file matters",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because the source of the file matters",
 "type": "response"
 },
-"1023": {
+"1024": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -457,44 +465,39 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1024",
-"parent_id": "1022",
+"next_id": "1025",
+"parent_id": "1023",
 "type": "mutation"
 },
-"1024": {
+"1025": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1027",
-"parent_id": "1022",
+"next_id": "1028",
+"parent_id": "1023",
 "text": "[[Correct|That is right|Well done]]!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "[[Correct|That is right|Well done]]!",
 "type": "dialogue"
 },
-"1025": {
-"next_id": "1026",
-"next_id_after": "1027",
+"1026": {
+"next_id": "1027",
+"next_id_after": "1028",
 "text": "Because \".exe\" files are exclusive to malicious websites",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because \".exe\" files are exclusive to malicious websites",
 "type": "response"
 },
-"1026": {
+"1027": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1027",
-"parent_id": "1025",
+"next_id_after": "1028",
+"parent_id": "1026",
 "type": "goto"
 },
-"1027": {
+"1028": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
-},
-"1029": {
-"next_id": "1030",
-"text": "2218922117/Q15d",
-"type": "title"
 },
 "103": {
 "is_snippet": false,
@@ -503,69 +506,74 @@ lines = {
 "type": "goto"
 },
 "1030": {
+"next_id": "1031",
+"text": "2218922117/Q15d",
+"type": "title"
+},
+"1031": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1031",
+"next_id": "1032",
 "text": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "type": "dialogue"
 },
-"1031": {
-"next_id": "1032",
-"next_id_after": "1040",
-"responses": PackedStringArray("1031", "1033", "1035", "1037"),
+"1032": {
+"next_id": "1033",
+"next_id_after": "1041",
+"responses": PackedStringArray("1032", "1034", "1036", "1038"),
 "text": "Because all files with \".exe\" extension are malware",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because all files with \".exe\" extension are malware",
 "type": "response"
 },
-"1032": {
+"1033": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1040",
-"parent_id": "1031",
+"next_id_after": "1041",
+"parent_id": "1032",
 "type": "goto"
 },
-"1033": {
-"next_id": "1034",
-"next_id_after": "1040",
+"1034": {
+"next_id": "1035",
+"next_id_after": "1041",
 "text": "Because \".exe\" files are harmless and should be freely downloaded",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because \".exe\" files are harmless and should be freely downloaded",
 "type": "response"
 },
-"1034": {
+"1035": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1040",
-"parent_id": "1033",
+"next_id_after": "1041",
+"parent_id": "1034",
 "type": "goto"
 },
-"1035": {
-"next_id": "1036",
-"next_id_after": "1040",
+"1036": {
+"next_id": "1037",
+"next_id_after": "1041",
 "text": "Because \".exe\" files are exclusive to malicious websites",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because \".exe\" files are exclusive to malicious websites",
 "type": "response"
 },
-"1036": {
+"1037": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1040",
-"parent_id": "1035",
+"next_id_after": "1041",
+"parent_id": "1036",
 "type": "goto"
 },
-"1037": {
-"next_id": "1038",
-"next_id_after": "1040",
+"1038": {
+"next_id": "1039",
+"next_id_after": "1041",
 "text": "Because the source of the file matters",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because the source of the file matters",
 "type": "response"
 },
-"1038": {
+"1039": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -583,19 +591,9 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1039",
-"parent_id": "1037",
-"type": "mutation"
-},
-"1039": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
 "next_id": "1040",
-"parent_id": "1037",
-"text": "[[Correct|That is right|Well done]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Correct|That is right|Well done]]!",
-"type": "dialogue"
+"parent_id": "1038",
+"type": "mutation"
 },
 "104": {
 "condition": {
@@ -622,16 +620,26 @@ lines = {
 "type": "condition"
 },
 "1040": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1041",
+"parent_id": "1038",
+"text": "[[Correct|That is right|Well done]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Correct|That is right|Well done]]!",
+"type": "dialogue"
+},
+"1041": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"1042": {
-"next_id": "1043",
+"1043": {
+"next_id": "1044",
 "text": "2218922117/securityQ1",
 "type": "title"
 },
-"1043": {
+"1044": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -644,10 +652,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "1044",
+"next_id": "1045",
 "type": "mutation"
 },
-"1044": {
+"1045": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -674,21 +682,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1045",
+"next_id": "1046",
 "type": "mutation"
 },
-"1045": {
+"1046": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1048",
+"next_id_after": "1049",
 "type": "goto"
 },
-"1047": {
-"next_id": "1048",
+"1048": {
+"next_id": "1049",
 "text": "2218922117/securityQ2",
 "type": "title"
 },
-"1048": {
+"1049": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -715,14 +723,8 @@ lines = {
 }])])
 }])
 },
-"next_id": "1049",
+"next_id": "1050",
 "type": "mutation"
-},
-"1049": {
-"is_snippet": true,
-"next_id": "2",
-"next_id_after": "1052",
-"type": "goto"
 },
 "105": {
 "is_snippet": false,
@@ -730,12 +732,18 @@ lines = {
 "parent_id": "104",
 "type": "goto"
 },
-"1051": {
-"next_id": "1052",
+"1050": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "1053",
+"type": "goto"
+},
+"1052": {
+"next_id": "1053",
 "text": "2218922117/securityQ3",
 "type": "title"
 },
-"1052": {
+"1053": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -762,21 +770,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1053",
+"next_id": "1054",
 "type": "mutation"
 },
-"1053": {
+"1054": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1056",
+"next_id_after": "1057",
 "type": "goto"
 },
-"1055": {
-"next_id": "1056",
+"1056": {
+"next_id": "1057",
 "text": "2218922117/securityQ4",
 "type": "title"
 },
-"1056": {
+"1057": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -803,19 +811,14 @@ lines = {
 }])])
 }])
 },
-"next_id": "1057",
+"next_id": "1058",
 "type": "mutation"
 },
-"1057": {
+"1058": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1060",
+"next_id_after": "1061",
 "type": "goto"
-},
-"1059": {
-"next_id": "1060",
-"text": "2218922117/securityQ5",
-"type": "title"
 },
 "106": {
 "condition": {
@@ -842,6 +845,11 @@ lines = {
 "type": "condition"
 },
 "1060": {
+"next_id": "1061",
+"text": "2218922117/securityQ5",
+"type": "title"
+},
+"1061": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -868,21 +876,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1061",
+"next_id": "1062",
 "type": "mutation"
 },
-"1061": {
+"1062": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1064",
+"next_id_after": "1065",
 "type": "goto"
 },
-"1063": {
-"next_id": "1064",
+"1064": {
+"next_id": "1065",
 "text": "2218922117/securityQ6",
 "type": "title"
 },
-"1064": {
+"1065": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -909,21 +917,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1065",
+"next_id": "1066",
 "type": "mutation"
 },
-"1065": {
+"1066": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1068",
+"next_id_after": "1069",
 "type": "goto"
 },
-"1067": {
-"next_id": "1068",
+"1068": {
+"next_id": "1069",
 "text": "2218922117/securityQ7",
 "type": "title"
 },
-"1068": {
+"1069": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -950,14 +958,8 @@ lines = {
 }])])
 }])
 },
-"next_id": "1069",
+"next_id": "1070",
 "type": "mutation"
-},
-"1069": {
-"is_snippet": true,
-"next_id": "2",
-"next_id_after": "1072",
-"type": "goto"
 },
 "107": {
 "is_snippet": false,
@@ -965,12 +967,18 @@ lines = {
 "parent_id": "106",
 "type": "goto"
 },
-"1071": {
-"next_id": "1072",
+"1070": {
+"is_snippet": true,
+"next_id": "2",
+"next_id_after": "1073",
+"type": "goto"
+},
+"1072": {
+"next_id": "1073",
 "text": "2218922117/securityQ8",
 "type": "title"
 },
-"1072": {
+"1073": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -997,21 +1005,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1073",
+"next_id": "1074",
 "type": "mutation"
 },
-"1073": {
+"1074": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1076",
+"next_id_after": "1077",
 "type": "goto"
 },
-"1075": {
-"next_id": "1076",
+"1076": {
+"next_id": "1077",
 "text": "2218922117/securityQ9",
 "type": "title"
 },
-"1076": {
+"1077": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1038,19 +1046,14 @@ lines = {
 }])])
 }])
 },
-"next_id": "1077",
+"next_id": "1078",
 "type": "mutation"
 },
-"1077": {
+"1078": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1080",
+"next_id_after": "1081",
 "type": "goto"
-},
-"1079": {
-"next_id": "1080",
-"text": "2218922117/securityQ10",
-"type": "title"
 },
 "108": {
 "next_conditional_id": "186",
@@ -1060,6 +1063,11 @@ lines = {
 "type": "condition"
 },
 "1080": {
+"next_id": "1081",
+"text": "2218922117/securityQ10",
+"type": "title"
+},
+"1081": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1086,42 +1094,33 @@ lines = {
 }])])
 }])
 },
-"next_id": "1081",
+"next_id": "1082",
 "type": "mutation"
 },
-"1081": {
+"1082": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1083",
+"next_id_after": "1084",
 "type": "goto"
 },
-"1083": {
+"1084": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"1086": {
+"1087": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1089",
+"next_id": "1090",
 "text": "import \"res://Assets/Diologue/Question Files/SecurityQuestions.dialogue\" as SecQ",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "import \"res://Assets/Diologue/Question Files/SecurityQuestions.dialogue\" as SecQ",
 "type": "dialogue"
 },
-"1088": {
-"next_id": "1089",
+"1089": {
+"next_id": "1090",
 "text": "start",
 "type": "title"
-},
-"1089": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "1090",
-"text": "[[Hello|Hi|Howdy]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hello|Hi|Howdy]]!",
-"type": "dialogue"
 },
 "109": {
 "is_snippet": false,
@@ -1130,6 +1129,15 @@ lines = {
 "type": "goto"
 },
 "1090": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1091",
+"text": "[[Hello|Hi|Howdy]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hello|Hi|Howdy]]!",
+"type": "dialogue"
+},
+"1091": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1147,88 +1155,68 @@ lines = {
 "value": 3
 }])
 },
-"next_id": "1091",
+"next_id": "1092",
 "type": "mutation"
 },
-"1091": {
+"1092": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1092",
+"next_id": "1093",
 "text": "Well, that was a fun activity but I think it's time to see if you remember what all those boards said, don't you?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well, that was a fun activity but I think it's time to see if you remember what all those boards said, don't you?",
 "type": "dialogue"
 },
-"1092": {
-"next_id": "1093",
-"next_id_after": "1099",
-"responses": PackedStringArray("1092", "1095"),
+"1093": {
+"next_id": "1094",
+"next_id_after": "1100",
+"responses": PackedStringArray("1093", "1096"),
 "text": "Yes",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes",
 "type": "response"
 },
-"1093": {
+"1094": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1094",
-"parent_id": "1092",
+"next_id": "1095",
+"parent_id": "1093",
 "text": "Great! Then I'll ask you a couple of questions about it.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Great! Then I'll ask you a couple of questions about it.",
 "type": "dialogue"
 },
-"1094": {
+"1095": {
 "is_snippet": true,
-"next_id": "1043",
-"next_id_after": "1099",
-"parent_id": "1092",
+"next_id": "1044",
+"next_id_after": "1100",
+"parent_id": "1093",
 "type": "goto"
 },
-"1095": {
-"next_id": "1096",
-"next_id_after": "1099",
+"1096": {
+"next_id": "1097",
+"next_id_after": "1100",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "response"
 },
-"1096": {
+"1097": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1097",
-"parent_id": "1095",
+"next_id": "1098",
+"parent_id": "1096",
 "text": "Well, you know what they say, illusion of choice and all...",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well, you know what they say, illusion of choice and all...",
 "type": "dialogue"
 },
-"1097": {
+"1098": {
 "is_snippet": true,
-"next_id": "1043",
-"next_id_after": "1099",
-"parent_id": "1095",
+"next_id": "1044",
+"next_id_after": "1100",
+"parent_id": "1096",
 "type": "goto"
-},
-"1099": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "1100",
-"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
-"text_replacements": Array[Dictionary]([{
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "testScore"
-}]),
-"value_in_text": "{{Global.testScore}}"
-}]),
-"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
-"type": "dialogue"
 },
 "11": {
 "is_snippet": false,
@@ -1260,49 +1248,69 @@ lines = {
 "type": "condition"
 },
 "1100": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "1101",
-"next_id_after": "1106",
-"responses": PackedStringArray("1100", "1102"),
+"text": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "testScore"
+}]),
+"value_in_text": "{{Global.testScore}}"
+}]),
+"translation_key": "Well, your managed to get a score of {{Global.testScore}}. If you're happy with that we can part ways for now, or you can try again once more if you like.",
+"type": "dialogue"
+},
+"1101": {
+"next_id": "1102",
+"next_id_after": "1107",
+"responses": PackedStringArray("1101", "1103"),
 "text": "Try again",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Try again",
 "type": "response"
 },
-"1101": {
+"1102": {
 "is_snippet": false,
-"next_id": "1106",
-"parent_id": "1100",
+"next_id": "1107",
+"parent_id": "1101",
 "type": "goto"
 },
-"1102": {
-"next_id": "1103",
-"next_id_after": "1106",
+"1103": {
+"next_id": "1104",
+"next_id_after": "1107",
 "text": "We can part ways.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We can part ways.",
 "type": "response"
 },
-"1103": {
+"1104": {
 "is_snippet": false,
-"next_id": "1111",
-"parent_id": "1102",
+"next_id": "1112",
+"parent_id": "1103",
 "type": "goto"
 },
-"1105": {
-"next_id": "1106",
+"1106": {
+"next_id": "1107",
 "text": "testRetake",
 "type": "title"
 },
-"1106": {
+"1107": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1107",
+"next_id": "1108",
 "text": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Great, I'll start up a new test for you. Remember, this is the last chane so do your best!",
 "type": "dialogue"
 },
-"1107": {
+"1108": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1320,13 +1328,13 @@ lines = {
 "value": 0
 }])
 },
-"next_id": "1108",
+"next_id": "1109",
 "type": "mutation"
 },
-"1108": {
+"1109": {
 "is_snippet": true,
-"next_id": "1043",
-"next_id_after": "1111",
+"next_id": "1044",
+"next_id_after": "1112",
 "type": "goto"
 },
 "111": {
@@ -1360,12 +1368,12 @@ lines = {
 "parent_id": "110",
 "type": "mutation"
 },
-"1110": {
-"next_id": "1111",
+"1111": {
+"next_id": "1112",
 "text": "testShowScore",
 "type": "title"
 },
-"1111": {
+"1112": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1378,10 +1386,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "1112",
+"next_id": "1113",
 "type": "mutation"
 },
-"1112": {
+"1113": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1399,10 +1407,10 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1113",
+"next_id": "1114",
 "type": "mutation"
 },
-"1113": {
+"1114": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1420,13 +1428,13 @@ lines = {
 "value": 0
 }])
 },
-"next_id": "1114",
+"next_id": "1115",
 "type": "mutation"
 },
-"1114": {
+"1115": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1115",
+"next_id": "1116",
 "text": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to identify {{Global.level3MiniScore}} of the threats. You did a great job!",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
@@ -1454,16 +1462,16 @@ lines = {
 "translation_key": "Alright, you managed to get a final score of {{Global.testScore}} for the quiz. You also managed to identify {{Global.level3MiniScore}} of the threats. You did a great job!",
 "type": "dialogue"
 },
-"1115": {
+"1116": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1116",
+"next_id": "1117",
 "text": "Bye now!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Bye now!",
 "type": "dialogue"
 },
-"1116": {
+"1117": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1476,10 +1484,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "1117",
+"next_id": "1118",
 "type": "mutation"
 },
-"1117": {
+"1118": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1492,10 +1500,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "1118",
+"next_id": "1119",
 "type": "mutation"
 },
-"1118": {
+"1119": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "get_tree",
@@ -1512,7 +1520,7 @@ lines = {
 }])])
 }])
 },
-"next_id": "1120",
+"next_id": "1121",
 "type": "mutation"
 },
 "112": {
@@ -1539,7 +1547,7 @@ lines = {
 "parent_id": "110",
 "type": "condition"
 },
-"1120": {
+"1121": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
@@ -2578,7 +2586,7 @@ lines = {
 },
 "173": {
 "is_snippet": false,
-"next_id": "991",
+"next_id": "992",
 "parent_id": "172",
 "type": "goto"
 },
@@ -2608,7 +2616,7 @@ lines = {
 },
 "175": {
 "is_snippet": false,
-"next_id": "1004",
+"next_id": "1005",
 "parent_id": "174",
 "type": "goto"
 },
@@ -2638,7 +2646,7 @@ lines = {
 },
 "177": {
 "is_snippet": false,
-"next_id": "1017",
+"next_id": "1018",
 "parent_id": "176",
 "type": "goto"
 },
@@ -2668,7 +2676,7 @@ lines = {
 },
 "179": {
 "is_snippet": false,
-"next_id": "1030",
+"next_id": "1031",
 "parent_id": "178",
 "type": "goto"
 },
@@ -10262,11 +10270,16 @@ lines = {
 "988": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "991",
-"text": "A file being an exe file is not enough to call it malware, where it comes from is an important factor to consider.=> END",
+"next_id": "989",
+"text": "A file being an exe file is not enough to call it malware, where it comes from is an important factor to consider.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "A file being an exe file is not enough to call it malware, where it comes from is an important factor to consider.=> END",
+"translation_key": "A file being an exe file is not enough to call it malware, where it comes from is an important factor to consider.",
 "type": "dialogue"
+},
+"989": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 },
 "99": {
 "mutation": {
@@ -10299,30 +10312,30 @@ lines = {
 "parent_id": "98",
 "type": "mutation"
 },
-"990": {
-"next_id": "991",
+"991": {
+"next_id": "992",
 "text": "2218922117/Q15a",
 "type": "title"
 },
-"991": {
+"992": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "992",
+"next_id": "993",
 "text": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it advised to be cautious when downloading files with the \".exe\" extension?",
 "type": "dialogue"
 },
-"992": {
-"next_id": "993",
-"next_id_after": "1001",
-"responses": PackedStringArray("992", "995", "997", "999"),
+"993": {
+"next_id": "994",
+"next_id_after": "1002",
+"responses": PackedStringArray("993", "996", "998", "1000"),
 "text": "Because the source of the file matters",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because the source of the file matters",
 "type": "response"
 },
-"993": {
+"994": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -10340,57 +10353,49 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "994",
-"parent_id": "992",
+"next_id": "995",
+"parent_id": "993",
 "type": "mutation"
 },
-"994": {
+"995": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1001",
-"parent_id": "992",
+"next_id": "1002",
+"parent_id": "993",
 "text": "[[Correct|That is right|Well done]]!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "[[Correct|That is right|Well done]]!",
 "type": "dialogue"
 },
-"995": {
-"next_id": "996",
-"next_id_after": "1001",
+"996": {
+"next_id": "997",
+"next_id_after": "1002",
 "text": "Because all files with \".exe\" extension are malware",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because all files with \".exe\" extension are malware",
 "type": "response"
 },
-"996": {
+"997": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1001",
-"parent_id": "995",
+"next_id_after": "1002",
+"parent_id": "996",
 "type": "goto"
 },
-"997": {
-"next_id": "998",
-"next_id_after": "1001",
+"998": {
+"next_id": "999",
+"next_id_after": "1002",
 "text": "Because \".exe\" files are harmless and should be freely downloaded",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because \".exe\" files are harmless and should be freely downloaded",
 "type": "response"
 },
-"998": {
+"999": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1001",
-"parent_id": "997",
+"next_id_after": "1002",
+"parent_id": "998",
 "type": "goto"
-},
-"999": {
-"next_id": "1000",
-"next_id_after": "1001",
-"text": "Because \".exe\" files are exclusive to malicious websites",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Because \".exe\" files are exclusive to malicious websites",
-"type": "response"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

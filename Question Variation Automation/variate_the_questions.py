@@ -58,7 +58,7 @@ with open('output.txt', 'w') as f:
                 '''
                 f.write("- "+answer)
                 f.write("\tdo Global.testScore +=1\n") #Specific to my needs of tracking correct answers
-                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n") 
+                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n\t=> END\n") 
                 f.write("- "+wrong1)
                 f.write("\t =>< E"+str(qNum)+"\n") #Points to explination id for question and once completed returns to question
                 f.write("- "+wrong2)
@@ -70,7 +70,7 @@ with open('output.txt', 'w') as f:
                 f.write("\t =>< E"+str(qNum)+"\n")
                 f.write("- "+answer)
                 f.write("\tdo Global.testScore +=1\n")
-                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n")
+                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n\t=> END\n") 
                 f.write("- "+wrong2)
                 f.write("\t =>< E"+str(qNum)+"\n")
                 f.write("- "+wrong3)
@@ -82,7 +82,7 @@ with open('output.txt', 'w') as f:
                 f.write("\t =>< E"+str(qNum)+"\n")
                 f.write("- "+answer)
                 f.write("\tdo Global.testScore +=1\n")
-                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n")
+                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n\t=> END\n") 
                 f.write("- "+wrong3)
                 f.write("\t =>< E"+str(qNum)+"\n")
             if qAns == 'd':
@@ -94,7 +94,7 @@ with open('output.txt', 'w') as f:
                 f.write("\t =>< E"+str(qNum)+"\n")
                 f.write("- "+answer)
                 f.write("\tdo Global.testScore +=1\n")
-                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n")
+                f.write("\tDigibot: [[Correct|That is right|Well done]]!\n\t=> END\n") 
             
             #cycle answer key to do next variation
             qAns = changeAns(qAns)

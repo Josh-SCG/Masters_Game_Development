@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_5nts0"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7pqw7"]
 
 [resource]
-script = ExtResource("1_5nts0")
+script = ExtResource("1_7pqw7")
 titles = {
 "E1": "190",
 "E10": "703",
@@ -40,10 +40,10 @@ titles = {
 "Q14b": "948",
 "Q14c": "961",
 "Q14d": "974",
-"Q15a": "991",
-"Q15b": "1004",
-"Q15c": "1017",
-"Q15d": "1030",
+"Q15a": "992",
+"Q15b": "1005",
+"Q15c": "1018",
+"Q15d": "1031",
 "Q1a": "194",
 "Q1b": "207",
 "Q1c": "220",
@@ -80,16 +80,16 @@ titles = {
 "Q9b": "663",
 "Q9c": "676",
 "Q9d": "689",
-"mentalQ1": "1044",
-"mentalQ10": "1081",
-"mentalQ2": "1049",
-"mentalQ3": "1053",
-"mentalQ4": "1057",
-"mentalQ5": "1061",
-"mentalQ6": "1065",
-"mentalQ7": "1069",
-"mentalQ8": "1073",
-"mentalQ9": "1077",
+"mentalQ1": "1045",
+"mentalQ10": "1082",
+"mentalQ2": "1050",
+"mentalQ3": "1054",
+"mentalQ4": "1058",
+"mentalQ5": "1062",
+"mentalQ6": "1066",
+"mentalQ7": "1070",
+"mentalQ8": "1074",
+"mentalQ9": "1078",
 "questionSelection": "2",
 "somethingIsWrong": "186"
 }
@@ -150,56 +150,64 @@ lines = {
 "type": "condition"
 },
 "1000": {
-"is_snippet": true,
-"next_id": "988",
-"next_id_after": "1001",
-"parent_id": "999",
-"type": "goto"
+"next_id": "1001",
+"next_id_after": "1002",
+"text": "To minimize the time spent on hobbies",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "To minimize the time spent on hobbies",
+"type": "response"
 },
 "1001": {
+"is_snippet": true,
+"next_id": "988",
+"next_id_after": "1002",
+"parent_id": "1000",
+"type": "goto"
+},
+"1002": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"1003": {
-"next_id": "1004",
+"1004": {
+"next_id": "1005",
 "text": "Q15b",
 "type": "title"
 },
-"1004": {
+"1005": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1005",
+"next_id": "1006",
 "text": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "type": "dialogue"
 },
-"1005": {
-"next_id": "1006",
-"next_id_after": "1014",
-"responses": PackedStringArray("1005", "1007", "1010", "1012"),
+"1006": {
+"next_id": "1007",
+"next_id_after": "1015",
+"responses": PackedStringArray("1006", "1008", "1011", "1013"),
 "text": "To conform to societal expectations",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To conform to societal expectations",
 "type": "response"
 },
-"1006": {
+"1007": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1014",
-"parent_id": "1005",
+"next_id_after": "1015",
+"parent_id": "1006",
 "type": "goto"
 },
-"1007": {
-"next_id": "1008",
-"next_id_after": "1014",
+"1008": {
+"next_id": "1009",
+"next_id_after": "1015",
 "text": "Because benefits may not be guaranteed for everyone (Correct)",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because benefits may not be guaranteed for everyone (Correct)",
 "type": "response"
 },
-"1008": {
+"1009": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -217,19 +225,9 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1009",
-"parent_id": "1007",
+"next_id": "1010",
+"parent_id": "1008",
 "type": "mutation"
-},
-"1009": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "1014",
-"parent_id": "1007",
-"text": "[[Correct|That is right|Well done]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Correct|That is right|Well done]]!",
-"type": "dialogue"
 },
 "101": {
 "is_snippet": false,
@@ -238,69 +236,72 @@ lines = {
 "type": "goto"
 },
 "1010": {
-"next_id": "1011",
-"next_id_after": "1014",
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1015",
+"parent_id": "1008",
+"text": "[[Correct|That is right|Well done]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Correct|That is right|Well done]]!",
+"type": "dialogue"
+},
+"1011": {
+"next_id": "1012",
+"next_id_after": "1015",
 "text": "To ensure uniformity in experiences",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To ensure uniformity in experiences",
 "type": "response"
 },
-"1011": {
+"1012": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1014",
-"parent_id": "1010",
+"next_id_after": "1015",
+"parent_id": "1011",
 "type": "goto"
 },
-"1012": {
-"next_id": "1013",
-"next_id_after": "1014",
+"1013": {
+"next_id": "1014",
+"next_id_after": "1015",
 "text": "To minimize the time spent on hobbies",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To minimize the time spent on hobbies",
 "type": "response"
 },
-"1013": {
+"1014": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1014",
-"parent_id": "1012",
+"next_id_after": "1015",
+"parent_id": "1013",
 "type": "goto"
 },
-"1014": {
+"1015": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"1016": {
-"next_id": "1017",
+"1017": {
+"next_id": "1018",
 "text": "Q15c",
 "type": "title"
 },
-"1017": {
+"1018": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1018",
+"next_id": "1019",
 "text": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "type": "dialogue"
 },
-"1018": {
-"next_id": "1019",
-"next_id_after": "1027",
-"responses": PackedStringArray("1018", "1020", "1022", "1025"),
+"1019": {
+"next_id": "1020",
+"next_id_after": "1028",
+"responses": PackedStringArray("1019", "1021", "1023", "1026"),
 "text": "To conform to societal expectations",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To conform to societal expectations",
 "type": "response"
-},
-"1019": {
-"is_snippet": true,
-"next_id": "988",
-"next_id_after": "1027",
-"parent_id": "1018",
-"type": "goto"
 },
 "102": {
 "condition": {
@@ -327,29 +328,36 @@ lines = {
 "type": "condition"
 },
 "1020": {
-"next_id": "1021",
-"next_id_after": "1027",
+"is_snippet": true,
+"next_id": "988",
+"next_id_after": "1028",
+"parent_id": "1019",
+"type": "goto"
+},
+"1021": {
+"next_id": "1022",
+"next_id_after": "1028",
 "text": "To ensure uniformity in experiences",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To ensure uniformity in experiences",
 "type": "response"
 },
-"1021": {
+"1022": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1027",
-"parent_id": "1020",
+"next_id_after": "1028",
+"parent_id": "1021",
 "type": "goto"
 },
-"1022": {
-"next_id": "1023",
-"next_id_after": "1027",
+"1023": {
+"next_id": "1024",
+"next_id_after": "1028",
 "text": "Because benefits may not be guaranteed for everyone (Correct)",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because benefits may not be guaranteed for everyone (Correct)",
 "type": "response"
 },
-"1023": {
+"1024": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -367,44 +375,39 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1024",
-"parent_id": "1022",
+"next_id": "1025",
+"parent_id": "1023",
 "type": "mutation"
 },
-"1024": {
+"1025": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1027",
-"parent_id": "1022",
+"next_id": "1028",
+"parent_id": "1023",
 "text": "[[Correct|That is right|Well done]]!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "[[Correct|That is right|Well done]]!",
 "type": "dialogue"
 },
-"1025": {
-"next_id": "1026",
-"next_id_after": "1027",
+"1026": {
+"next_id": "1027",
+"next_id_after": "1028",
 "text": "To minimize the time spent on hobbies",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To minimize the time spent on hobbies",
 "type": "response"
 },
-"1026": {
+"1027": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1027",
-"parent_id": "1025",
+"next_id_after": "1028",
+"parent_id": "1026",
 "type": "goto"
 },
-"1027": {
+"1028": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
-},
-"1029": {
-"next_id": "1030",
-"text": "Q15d",
-"type": "title"
 },
 "103": {
 "is_snippet": false,
@@ -413,69 +416,74 @@ lines = {
 "type": "goto"
 },
 "1030": {
+"next_id": "1031",
+"text": "Q15d",
+"type": "title"
+},
+"1031": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1031",
+"next_id": "1032",
 "text": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "type": "dialogue"
 },
-"1031": {
-"next_id": "1032",
-"next_id_after": "1040",
-"responses": PackedStringArray("1031", "1033", "1035", "1037"),
+"1032": {
+"next_id": "1033",
+"next_id_after": "1041",
+"responses": PackedStringArray("1032", "1034", "1036", "1038"),
 "text": "To conform to societal expectations",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To conform to societal expectations",
 "type": "response"
 },
-"1032": {
+"1033": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1040",
-"parent_id": "1031",
+"next_id_after": "1041",
+"parent_id": "1032",
 "type": "goto"
 },
-"1033": {
-"next_id": "1034",
-"next_id_after": "1040",
+"1034": {
+"next_id": "1035",
+"next_id_after": "1041",
 "text": "To ensure uniformity in experiences",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To ensure uniformity in experiences",
 "type": "response"
 },
-"1034": {
+"1035": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1040",
-"parent_id": "1033",
+"next_id_after": "1041",
+"parent_id": "1034",
 "type": "goto"
 },
-"1035": {
-"next_id": "1036",
-"next_id_after": "1040",
+"1036": {
+"next_id": "1037",
+"next_id_after": "1041",
 "text": "To minimize the time spent on hobbies",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To minimize the time spent on hobbies",
 "type": "response"
 },
-"1036": {
+"1037": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1040",
-"parent_id": "1035",
+"next_id_after": "1041",
+"parent_id": "1036",
 "type": "goto"
 },
-"1037": {
-"next_id": "1038",
-"next_id_after": "1040",
+"1038": {
+"next_id": "1039",
+"next_id_after": "1041",
 "text": "Because benefits may not be guaranteed for everyone (Correct)",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because benefits may not be guaranteed for everyone (Correct)",
 "type": "response"
 },
-"1038": {
+"1039": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -493,19 +501,9 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "1039",
-"parent_id": "1037",
-"type": "mutation"
-},
-"1039": {
-"character": "Digibot",
-"character_replacements": Array[Dictionary]([]),
 "next_id": "1040",
-"parent_id": "1037",
-"text": "[[Correct|That is right|Well done]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Correct|That is right|Well done]]!",
-"type": "dialogue"
+"parent_id": "1038",
+"type": "mutation"
 },
 "104": {
 "condition": {
@@ -532,16 +530,26 @@ lines = {
 "type": "condition"
 },
 "1040": {
+"character": "Digibot",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "1041",
+"parent_id": "1038",
+"text": "[[Correct|That is right|Well done]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Correct|That is right|Well done]]!",
+"type": "dialogue"
+},
+"1041": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"1043": {
-"next_id": "1044",
+"1044": {
+"next_id": "1045",
 "text": "mentalQ1",
 "type": "title"
 },
-"1044": {
+"1045": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -554,10 +562,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "1045",
+"next_id": "1046",
 "type": "mutation"
 },
-"1045": {
+"1046": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -584,21 +592,27 @@ lines = {
 }])])
 }])
 },
-"next_id": "1046",
+"next_id": "1047",
 "type": "mutation"
 },
-"1046": {
+"1047": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1049",
+"next_id_after": "1050",
 "type": "goto"
 },
-"1048": {
-"next_id": "1049",
+"1049": {
+"next_id": "1050",
 "text": "mentalQ2",
 "type": "title"
 },
-"1049": {
+"105": {
+"is_snippet": false,
+"next_id": "676",
+"parent_id": "104",
+"type": "goto"
+},
+"1050": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -625,27 +639,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1050",
+"next_id": "1051",
 "type": "mutation"
 },
-"105": {
-"is_snippet": false,
-"next_id": "676",
-"parent_id": "104",
-"type": "goto"
-},
-"1050": {
+"1051": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1053",
+"next_id_after": "1054",
 "type": "goto"
 },
-"1052": {
-"next_id": "1053",
+"1053": {
+"next_id": "1054",
 "text": "mentalQ3",
 "type": "title"
 },
-"1053": {
+"1054": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -672,21 +680,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1054",
+"next_id": "1055",
 "type": "mutation"
 },
-"1054": {
+"1055": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1057",
+"next_id_after": "1058",
 "type": "goto"
 },
-"1056": {
-"next_id": "1057",
+"1057": {
+"next_id": "1058",
 "text": "mentalQ4",
 "type": "title"
 },
-"1057": {
+"1058": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -713,13 +721,13 @@ lines = {
 }])])
 }])
 },
-"next_id": "1058",
+"next_id": "1059",
 "type": "mutation"
 },
-"1058": {
+"1059": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1061",
+"next_id_after": "1062",
 "type": "goto"
 },
 "106": {
@@ -746,12 +754,12 @@ lines = {
 "parent_id": "98",
 "type": "condition"
 },
-"1060": {
-"next_id": "1061",
+"1061": {
+"next_id": "1062",
 "text": "mentalQ5",
 "type": "title"
 },
-"1061": {
+"1062": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -778,21 +786,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1062",
+"next_id": "1063",
 "type": "mutation"
 },
-"1062": {
+"1063": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1065",
+"next_id_after": "1066",
 "type": "goto"
 },
-"1064": {
-"next_id": "1065",
+"1065": {
+"next_id": "1066",
 "text": "mentalQ6",
 "type": "title"
 },
-"1065": {
+"1066": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -819,21 +827,27 @@ lines = {
 }])])
 }])
 },
-"next_id": "1066",
+"next_id": "1067",
 "type": "mutation"
 },
-"1066": {
+"1067": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1069",
+"next_id_after": "1070",
 "type": "goto"
 },
-"1068": {
-"next_id": "1069",
+"1069": {
+"next_id": "1070",
 "text": "mentalQ7",
 "type": "title"
 },
-"1069": {
+"107": {
+"is_snippet": false,
+"next_id": "689",
+"parent_id": "106",
+"type": "goto"
+},
+"1070": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -860,27 +874,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1070",
+"next_id": "1071",
 "type": "mutation"
 },
-"107": {
-"is_snippet": false,
-"next_id": "689",
-"parent_id": "106",
-"type": "goto"
-},
-"1070": {
+"1071": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1073",
+"next_id_after": "1074",
 "type": "goto"
 },
-"1072": {
-"next_id": "1073",
+"1073": {
+"next_id": "1074",
 "text": "mentalQ8",
 "type": "title"
 },
-"1073": {
+"1074": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -907,21 +915,21 @@ lines = {
 }])])
 }])
 },
-"next_id": "1074",
+"next_id": "1075",
 "type": "mutation"
 },
-"1074": {
+"1075": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1077",
+"next_id_after": "1078",
 "type": "goto"
 },
-"1076": {
-"next_id": "1077",
+"1077": {
+"next_id": "1078",
 "text": "mentalQ9",
 "type": "title"
 },
-"1077": {
+"1078": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -948,13 +956,13 @@ lines = {
 }])])
 }])
 },
-"next_id": "1078",
+"next_id": "1079",
 "type": "mutation"
 },
-"1078": {
+"1079": {
 "is_snippet": true,
 "next_id": "2",
-"next_id_after": "1081",
+"next_id_after": "1082",
 "type": "goto"
 },
 "108": {
@@ -964,12 +972,12 @@ lines = {
 "parent_id": "98",
 "type": "condition"
 },
-"1080": {
-"next_id": "1081",
+"1081": {
+"next_id": "1082",
 "text": "mentalQ10",
 "type": "title"
 },
-"1081": {
+"1082": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -996,10 +1004,10 @@ lines = {
 }])])
 }])
 },
-"next_id": "1082",
+"next_id": "1083",
 "type": "mutation"
 },
-"1082": {
+"1083": {
 "is_snippet": true,
 "next_id": "2",
 "next_id_after": "",
@@ -2129,7 +2137,7 @@ lines = {
 },
 "173": {
 "is_snippet": false,
-"next_id": "991",
+"next_id": "992",
 "parent_id": "172",
 "type": "goto"
 },
@@ -2159,7 +2167,7 @@ lines = {
 },
 "175": {
 "is_snippet": false,
-"next_id": "1004",
+"next_id": "1005",
 "parent_id": "174",
 "type": "goto"
 },
@@ -2189,7 +2197,7 @@ lines = {
 },
 "177": {
 "is_snippet": false,
-"next_id": "1017",
+"next_id": "1018",
 "parent_id": "176",
 "type": "goto"
 },
@@ -2219,7 +2227,7 @@ lines = {
 },
 "179": {
 "is_snippet": false,
-"next_id": "1030",
+"next_id": "1031",
 "parent_id": "178",
 "type": "goto"
 },
@@ -9813,11 +9821,16 @@ lines = {
 "988": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "991",
-"text": "It is important to remember that everyone is different and will have different reactions to things which means what helps one person may not always help the next.=> END",
+"next_id": "989",
+"text": "It is important to remember that everyone is different and will have different reactions to things which means what helps one person may not always help the next.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "It is important to remember that everyone is different and will have different reactions to things which means what helps one person may not always help the next.=> END",
+"translation_key": "It is important to remember that everyone is different and will have different reactions to things which means what helps one person may not always help the next.",
 "type": "dialogue"
+},
+"989": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 },
 "99": {
 "mutation": {
@@ -9850,30 +9863,30 @@ lines = {
 "parent_id": "98",
 "type": "mutation"
 },
-"990": {
-"next_id": "991",
+"991": {
+"next_id": "992",
 "text": "Q15a",
 "type": "title"
 },
-"991": {
+"992": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "992",
+"next_id": "993",
 "text": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why is it important to find what works for you when it comes to disconnecting from technology and the internet?",
 "type": "dialogue"
 },
-"992": {
-"next_id": "993",
-"next_id_after": "1001",
-"responses": PackedStringArray("992", "995", "997", "999"),
+"993": {
+"next_id": "994",
+"next_id_after": "1002",
+"responses": PackedStringArray("993", "996", "998", "1000"),
 "text": "Because benefits may not be guaranteed for everyone (Correct)",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Because benefits may not be guaranteed for everyone (Correct)",
 "type": "response"
 },
-"993": {
+"994": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -9891,57 +9904,49 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "994",
-"parent_id": "992",
+"next_id": "995",
+"parent_id": "993",
 "type": "mutation"
 },
-"994": {
+"995": {
 "character": "Digibot",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "1001",
-"parent_id": "992",
+"next_id": "1002",
+"parent_id": "993",
 "text": "[[Correct|That is right|Well done]]!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "[[Correct|That is right|Well done]]!",
 "type": "dialogue"
 },
-"995": {
-"next_id": "996",
-"next_id_after": "1001",
+"996": {
+"next_id": "997",
+"next_id_after": "1002",
 "text": "To conform to societal expectations",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To conform to societal expectations",
 "type": "response"
 },
-"996": {
+"997": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1001",
-"parent_id": "995",
+"next_id_after": "1002",
+"parent_id": "996",
 "type": "goto"
 },
-"997": {
-"next_id": "998",
-"next_id_after": "1001",
+"998": {
+"next_id": "999",
+"next_id_after": "1002",
 "text": "To ensure uniformity in experiences",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "To ensure uniformity in experiences",
 "type": "response"
 },
-"998": {
+"999": {
 "is_snippet": true,
 "next_id": "988",
-"next_id_after": "1001",
-"parent_id": "997",
+"next_id_after": "1002",
+"parent_id": "998",
 "type": "goto"
-},
-"999": {
-"next_id": "1000",
-"next_id_after": "1001",
-"text": "To minimize the time spent on hobbies",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "To minimize the time spent on hobbies",
-"type": "response"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"

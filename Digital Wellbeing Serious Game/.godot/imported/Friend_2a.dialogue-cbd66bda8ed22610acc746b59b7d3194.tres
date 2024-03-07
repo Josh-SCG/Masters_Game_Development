@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_g03pg"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_qon0b"]
 
 [resource]
-script = ExtResource("1_g03pg")
+script = ExtResource("1_qon0b")
 titles = {
-"init": "9",
-"spoken": "27",
+"init": "12",
+"spoken": "30",
 "start": "3"
 }
 character_names = PackedStringArray("Friend", "Phone")
@@ -17,105 +17,119 @@ lines = {
 "text": "start",
 "type": "title"
 },
-"10": {
+"11": {
+"next_id": "12",
+"text": "init",
+"type": "title"
+},
+"12": {
 "character": "Friend",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "11",
+"next_id": "13",
+"text": "[[Hi|Hello|Howdy]]!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hi|Hello|Howdy]]!",
+"type": "dialogue"
+},
+"13": {
+"character": "Friend",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "14",
 "text": "Didn't expect to see you out here. How are you?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Didn't expect to see you out here. How are you?",
 "type": "dialogue"
 },
-"11": {
-"next_id": "14",
-"next_id_after": "14",
-"responses": PackedStringArray("11", "12"),
+"14": {
+"next_id": "17",
+"next_id_after": "17",
+"responses": PackedStringArray("14", "15"),
 "text": "Good, yourself?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Good, yourself?",
 "type": "response"
 },
-"12": {
-"next_id": "14",
-"next_id_after": "14",
+"15": {
+"next_id": "17",
+"next_id_after": "17",
 "text": "Alright, what about you?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Alright, what about you?",
 "type": "response"
 },
-"14": {
+"17": {
 "character": "Friend",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "16",
+"next_id": "19",
 "text": "Fine, I guess. Just feeling a bit down after scrolling online a bit and seeing all the news going on at the moment.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Fine, I guess. Just feeling a bit down after scrolling online a bit and seeing all the news going on at the moment.",
 "type": "dialogue"
 },
-"16": {
+"19": {
 "character": "Phone",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "18",
+"next_id": "21",
 "text": "** ding **",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "** ding **",
-"type": "dialogue"
-},
-"18": {
-"character": "Friend",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "19",
-"text": "Oh, give me a sec.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Oh, give me a sec.",
-"type": "dialogue"
-},
-"19": {
-"character": "Friend",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "20",
-"text": "...",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "...",
-"type": "dialogue"
-},
-"20": {
-"character": "Friend",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "21",
-"text": "...",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "...",
 "type": "dialogue"
 },
 "21": {
 "character": "Friend",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "22",
-"text": "...",
+"text": "Oh, give me a sec.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "...",
+"translation_key": "Oh, give me a sec.",
 "type": "dialogue"
 },
 "22": {
 "character": "Friend",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "23",
-"text": "Sorry, just had to check what that was.",
+"text": "...",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Sorry, just had to check what that was.",
+"translation_key": "...",
 "type": "dialogue"
 },
 "23": {
 "character": "Friend",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "24",
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": "dialogue"
+},
+"24": {
+"character": "Friend",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "25",
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": "dialogue"
+},
+"25": {
+"character": "Friend",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "26",
+"text": "Sorry, just had to check what that was.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sorry, just had to check what that was.",
+"type": "dialogue"
+},
+"26": {
+"character": "Friend",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "27",
 "text": "What was I saying? Oh yeah, I was just complaining to you. Make no mind of it.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "What was I saying? Oh yeah, I was just complaining to you. Make no mind of it.",
 "type": "dialogue"
 },
-"24": {
+"27": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -133,29 +147,52 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "27",
+"next_id": "30",
 "type": "mutation"
 },
-"26": {
-"next_id": "27",
+"29": {
+"next_id": "30",
 "text": "spoken",
 "type": "title"
 },
-"27": {
+"3": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isDialogueSkipped"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "bool",
+"value": false
+}])
+},
+"next_conditional_id": "8",
+"next_id": "4",
+"next_id_after": "12",
+"type": "condition"
+},
+"30": {
 "character": "Friend",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "29",
+"next_id": "32",
 "text": "I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'm sure you have to head out now since I see that robot buddy of yours waiting behind you now. Bye!",
 "type": "dialogue"
 },
-"29": {
+"32": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"3": {
+"4": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -173,18 +210,19 @@ lines = {
 "value": 0
 }])
 },
-"next_conditional_id": "5",
-"next_id": "4",
-"next_id_after": "9",
+"next_conditional_id": "6",
+"next_id": "5",
+"next_id_after": "12",
+"parent_id": "3",
 "type": "condition"
 },
-"4": {
+"5": {
 "is_snippet": false,
-"next_id": "9",
-"parent_id": "3",
+"next_id": "12",
+"parent_id": "4",
 "type": "goto"
 },
-"5": {
+"6": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -202,30 +240,40 @@ lines = {
 "value": 1
 }])
 },
-"next_conditional_id": "9",
-"next_id": "6",
-"next_id_after": "9",
+"next_conditional_id": "12",
+"next_id": "7",
+"next_id_after": "12",
+"parent_id": "3",
 "type": "condition"
 },
-"6": {
+"7": {
 "is_snippet": false,
-"next_id": "27",
-"parent_id": "5",
+"next_id": "30",
+"parent_id": "6",
 "type": "goto"
 },
 "8": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isDialogueSkipped"
+}])
+},
+"next_conditional_id": "12",
 "next_id": "9",
-"text": "init",
-"type": "title"
+"next_id_after": "12",
+"type": "condition"
 },
 "9": {
-"character": "Friend",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "10",
-"text": "[[Hi|Hello|Howdy]]!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hi|Hello|Howdy]]!",
-"type": "dialogue"
+"is_snippet": false,
+"next_id": "30",
+"parent_id": "8",
+"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "2.11.3"
