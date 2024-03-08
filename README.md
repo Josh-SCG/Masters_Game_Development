@@ -29,3 +29,10 @@ For the quiz sections of the game, I decided it would be a good thing to have th
 Anyway, once I finished writting the questions and answers, I did not want to spend hours manually changing 135 answer locations (3 quizzes with 15 questions and 4 answers each minus the origional 15 in each quiz) so I wrote a script to take in the questions and then both format and create the variations I needed.
 
 This is a very specific script and I doubt it will be needed by any but maybe it will one day. [Here](https://github.com/Josh-SCG/Masters_Game_Development/blob/main/Question%20Variation%20Automation/variate_the_questions.py) it is if you need it.
+
+# Game Screenshots
+![Main Menu](https://github.com/Josh-SCG/Masters_Game_Development/blob/main/Game%20Screenshots/1.png)
+![Character Select](https://github.com/Josh-SCG/Masters_Game_Development/blob/main/Game%20Screenshots/2.png)
+![Level Select](https://github.com/Josh-SCG/Masters_Game_Development/blob/main/Game%20Screenshots/3.png)
+![Level Example](https://github.com/Josh-SCG/Masters_Game_Development/blob/main/Game%20Screenshots/4.png)
+![Minigame](https://github.com/Josh-SCG/Masters_Game_Development/blob/main/Game%20Screenshots/5.png)
