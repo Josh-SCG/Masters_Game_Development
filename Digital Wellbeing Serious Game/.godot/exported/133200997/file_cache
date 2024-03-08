@@ -37,8 +37,8 @@ res://Assets/Menu Scenes/Achievements.tscn::4a1805e6fbacca703a846ae6b51454ae::17
 res://Assets/Menu Scenes/Character Select.tscn::da92f4e4e945649d0b1dca404a423dfb::1698079131::res://.godot/exported/133200997/export-e4d0c9c0bc851f85df402ae5f54491dd-Character Select.scn
 res://Assets/Menu Scenes/Credits.tscn::ca532d35973fba0b8316f9c58e8ba303::1707020218::res://.godot/exported/133200997/export-4d143f6a54496fb358775a0ec212d12f-Credits.scn
 res://Assets/Menu Scenes/How To.tscn::f9f81ef80d682eeb1d6f4de6ed0383a4::1707172080::res://.godot/exported/133200997/export-ad3147564c90e7c0474404c473c7aa97-How To.scn
-res://Assets/Menu Scenes/Level Select.tscn::98ae0301bd1b2fc53078eff7cee805e5::1709792857::res://.godot/exported/133200997/export-c455bd79e941edc1b82c7dad2c741a73-Level Select.scn
-res://Assets/Menu Scenes/Main Menu.tscn::d48fbfb7040547f0583be05c71601d17::1709792923::res://.godot/exported/133200997/export-c9274558a8f5e837462117f00bdcca33-Main Menu.scn
+res://Assets/Menu Scenes/Level Select.tscn::95b35c3b02d1db0e1adb5de98b232258::1709883119::res://.godot/exported/133200997/export-c455bd79e941edc1b82c7dad2c741a73-Level Select.scn
+res://Assets/Menu Scenes/Main Menu.tscn::d64c86f34fc187a1a304f9dc6002ec3e::1709883276::res://.godot/exported/133200997/export-c9274558a8f5e837462117f00bdcca33-Main Menu.scn
 res://Assets/Menu Scenes/PausePopUp.tscn::c73e733de152d5b884c37c8ffd6eeeae::1695855727::res://.godot/exported/133200997/export-e99deef38c4f0024cd4359a02a23e113-PausePopUp.scn
 res://Assets/Player/Player.tscn::5c2d087c63c55e241e6de8740588035d::1704401799::res://.godot/exported/133200997/export-44f7ed648c6198cdc9dccc4d540018c9-Player.scn
 res://Assets/Player/ui.tscn::06531e1e78ea2e8801003af2ceae8ea3::1697537211::res://.godot/exported/133200997/export-948d3e3183d756490dcc16045f5542be-ui.scn
@@ -54,5 +54,5 @@ res://Presets/Sign3.tscn::a53e71a9a46e7e440c68ab949a1e2dcc::1707171848::res://.g
 res://Presets/Sign.tscn::67380ac5b6e141a12c9f4d1065fff2b9::1707172051::res://.godot/exported/133200997/export-a009c3a771f55e546188da7c0e08aae5-Sign.scn
 res://anim_test.tscn::5f3453ccd4d8f7396454d03aaf7a4ea2::1695855728::res://.godot/exported/133200997/export-8150164f2cc810641c33562220659974-anim_test.scn
 res://default_env.tres::756de160834ef7cc033c2a79cd80f338::1678186778::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
-res://Assets/Music/music.tscn::3c877fd8738e0664dbc8547ef3bab2ba::1709792857::res://.godot/exported/133200997/export-03341b20fc00333845eba508809c594e-music.scn
+res://Assets/Music/music.tscn::02ad2a69306de15c64560691a0a50e87::1709883119::res://.godot/exported/133200997/export-03341b20fc00333845eba508809c594e-music.scn
 res://Assets/Diologue/portraits_balloon/small_balloon.tscn::f9487f2aefd479e93b913e6032e180f0::1709792474::res://.godot/exported/133200997/export-901a3931d911827005abde876485801c-small_balloon.scn

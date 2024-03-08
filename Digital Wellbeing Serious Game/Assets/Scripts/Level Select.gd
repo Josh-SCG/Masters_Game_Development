@@ -40,13 +40,16 @@ func _on_security_explination_mouse_entered():
 	$extraInformation/informationLabel.text = "This level deals with devices security. This includes passwords, phishing and malware."
 
 func _on_physical_explination_mouse_exited():
-	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."
+	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more. 
+Click on the level 'Word' at the top of the box to select a level."
 	
 func _on_menatl_explination_mouse_exited():
-	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."
+	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more. 
+Click on the level 'Word' at the top of the box to select a level."
 
 func _on_security_explination_mouse_exited():
-	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more."
+	$extraInformation/informationLabel.text = "Hover over a level's mini description to see more. 
+Click on the level 'Word' at the top of the box to select a level."
 
 
 func _on_start_physical_button_pressed():
