@@ -5,14 +5,14 @@
  The intentions behind the development of this game is to create a serious game, or a game for health and behavioural change, that will teach users about digital wellbeing. The main hope is that with a better understanding of digital wellbeing, users/players will be able to be more aware of their relationship with technology and improve it if needed. 
  
  # What is Digital Wellbeing?
-This game will be using a self set definition of digital wellbeing based off of research conducted [here](https://github.com/Josh-SCG/Masters_Research_Project). The definition, as such, is thus: 
+This game will be using a self set definition of digital wellbeing based off of research conducted as a part of my Master's dissertation. The definition, as such, is thus: 
 
 *Digital Wellbeing encompass an individual’s ability to foster healthy usage of technological devices and includes being able to protect said devices, privacy as well as their own physical and mental health.*
 
 With this definition in mind, this game will focus on the education of a person's physical wellbeing, mental wellbeing and security with regards to technology.
  
  # Design principles and philosophies 
- As mentioned, this game is developed along side some research. For the specific principles followed, the first few can be found in an article written for CELDA 2022 [here](https://www.researchgate.net/publication/365301760_Linking_gamification_ludology_and_pedagogy_Principles_to_design_a_serious_game). Additional principles are also being reserched and as such will be found in the accomanying [research repository](https://github.com/Josh-SCG/Masters_Research_Project).
+ As mentioned, this game is developed along side some research. The specific design principles followed were Reflection, Feedback, Narrative, Structuring, Tailoring, and a few general interaction design principles.
  
  # Design and Development checklist:
  - [x] Decide on a game engine to make use of
