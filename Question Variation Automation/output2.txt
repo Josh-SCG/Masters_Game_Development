@@ -1,0 +1,134 @@
+Question 1: 
+Which of these is NOT a way to make a strong password?
+(i)  Using your birthday and name (Correct)
+(ii)  Turning a sentence into a password
+(iii)  Add punctuation to a password
+(iv)  Make a long password
+If incorrect: Using information that people maybe able to find out about you is not a good idea.
+
+
+Question 2: 
+Which of the following is the stronger password?
+(i)  P@5sW0rD (Correct)
+(ii)  password
+(iii)  1234password
+(iv)  23password!
+If incorrect: While all the options can be uncovered by an attacker, P@5sW0rD is the stronger of the bunch as it requires more effort.
+
+
+Question 3: 
+What would "Whispers of twilight linger, shadows dance beneath the Moon!" look like as a password?
+(i)  Wotl,sdbtM! (Correct)
+(ii)  wotlsdbtm
+(iii)  whistwillingshaddanbenmoon
+(iv)  wotlsdbtm!
+If incorrect: Using a sentence as a password means including all of the capitalisation and punctuation!
+
+
+Question 4: 
+What should you try when setting up a password?
+(i)  Utilizing the first letter of each word in sentence (Correct)
+(ii)  Using common song lyrics as password phrases
+(iii)  Including only lowercase letters and numbers in the password
+(iv)  Keep it short to make them easier to remember
+If incorrect: Using a sentence to set up a password is a good way to make a password strong against dictionary attacks.
+
+
+Question 5: 
+Which of the following would make a good sentence for a password?
+(i)  "I can do anything? Even shuffle all the cards!" (Correct)
+(ii)  "May the force be with you."
+(iii)  "You’re a wizard, Harry!"
+(iv)  "Somebody once told me, the world is gonna roll me."
+If incorrect: The choice of sentence for a password should be memorable like these, but it shouldn’t be something popular like a song or movie quote.
+
+
+Question 6: 
+Which of the following is a characteristic of phishing attacks?
+(i)  Targeting individuals to obtain sensitive information (Correct)
+(ii)  Targeting only computer systems
+(iii)  Typically involving physical intrusion
+(iv)  Exclusively conducted through social media platforms
+If incorrect: Phishing attacks target people and are done through a wide array of places such as email, SMSs or social media.
+
+
+Question 7: 
+Which is not a common way through which phishing attacks may occur?
+(i)  Physical letters (Correct)
+(ii)  Email
+(iii)  SMSs
+(iv)  Web pages
+If incorrect: Due the how quickly, and how automated, phishing attacks can be done, sending a message through email or SMS, or even creating a fake website, is most common.
+
+
+Question 8: 
+What is NOT a way to spot a phishing link or account?
+(i)  Looking for a business you know (Correct)
+(ii)  Misspelling in the account name.
+(iii)  Extra letters where there shouldn’t be
+(iv)  Switching letters for other letters or numbers
+If incorrect: Spelling mistakes, extra letters and switched or swapped characters are common ways used to impersonate an account. If you look for a business name you know, the link may still be bad. For Example, while google.suport@email.com looks legitimate, such a google account would use gmail.com as the domain and has misspelled support.
+
+
+Question 9: 
+How can phishing attempts often be identified?
+(i)  They may exhibit signs of rushing the recipient (Correct)
+(ii)  They always come from a businesses
+(iii)  They are impossible to detect
+(iv)  They are exclusively caught by automated systems
+If incorrect: Remember, automated systems may miss some phishing attempts and attackers can also impersonate people, not only businesses. They also try to rush you and have questionable account names imitating legitimate ones.
+
+
+Question 10: 
+Which of the following is NOT an aim of phishing?
+(i)  To provide you with free software (Correct)
+(ii)  To get you personal information
+(iii)  To gain access to one of your accounts
+(iv)  To get you to download malware
+If incorrect: Phishing attempts aim to get your information, account and password or to download malware. Providing you with free software may be the claim made in a phishing attack, but it is not an aim.
+
+
+Question 11: 
+You get an email from your friend, Digibot, through your school emails. Which of the following emails would you trust?
+(i)  Digibot@school.edu (Correct)
+(ii)  Digibot@schoo1.edu
+(iii)  Digiboot@school.edu
+(iv)  Digibot@school.com
+If incorrect: Always be vigilant for accounts adding extra letters, "Digiboot", using a different domain, "school.com". or swapping out letters, "schoo1". While these a could be blatant, swapping out an lower case L for an upper case i might be difficult to see. 
+
+
+Question 12: 
+What is the primary purpose of ransomware?
+(i)  To demand payment for regaining access to the computer (Correct)
+(ii)  To render a computer unusable
+(iii)  To delete random files
+(iv)  To steal sensitive data
+If incorrect: While ransomware does make a computer unusable, the main goal of it is to get payment from a victim.
+
+
+Question 13: 
+What is a common function of spyware?
+(i)  Stealing data and monitoring user activity (Correct)
+(ii)  Making a computer unusable
+(iii)  Deleting random files
+(iv)  Encrypting files and demanding ransom
+If incorrect: Spyware is made to spy on you, see what you are doing and access information and send it to the attacker.
+
+
+Question 14: 
+What caution should individuals exercise when downloading files from the internet?
+(i)  Only download files from known and trusted sources (Correct)
+(ii)  Ignore the source of the file if it looks legitimate
+(iii)  Avoid files with extensions like ".exe" altogether
+(iv)  Always share downloaded files with others for verification
+If incorrect: Files downloaded online should only come from a known and trusted source. You can’t ignore all exe files as some are legitimate and you should never send files you are suspicious of to others and rather delete them.
+
+
+Question 15: 
+Why is it advised to be cautious when downloading files with the ".exe" extension?
+(i)  Because the source of the file matters (Correct)
+(ii)  Because all files with ".exe" extension are malware
+(iii)  Because ".exe" files are harmless and should be freely downloaded
+(iv)  Because ".exe" files are exclusive to malicious websites
+If incorrect: A file being an exe file is not enough to call it malware, where it comes from is an important factor to consider.
+

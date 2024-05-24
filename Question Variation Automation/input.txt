@@ -13,8 +13,8 @@ While all the options can be uncovered by an attacker, P@5sW0rD is the stronger 
 What would "Whispers of twilight linger, shadows dance beneath the Moon!" look like as a password?
  Wotl,sdbtM! (Correct)
  wotlsdbtm
- whistwillingshaddanbenmoon
- wotlsdbtm!
+ WotlsdbM
+ wotl,sdbtm!
 Using a sentence as a password means including all of the capitalisation and punctuation!
 What should you try when setting up a password?
  Utilizing the first letter of each word in sentence (Correct)
@@ -83,7 +83,7 @@ What caution should individuals exercise when downloading files from the interne
  Always share downloaded files with others for verification
 Files downloaded online should only come from a known and trusted source. You can’t ignore all exe files as some are legitimate and you should never send files you are suspicious of to others and rather delete them.
 Why is it advised to be cautious when downloading files with the ".exe" extension?
- Because the source of the file matters (Correct)
+ Because the source of the file matters; files from unknown sources may be malware (Correct)
  Because all files with ".exe" extension are malware
  Because ".exe" files are harmless and should be freely downloaded
  Because ".exe" files are exclusive to malicious websites
